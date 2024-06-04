@@ -14,14 +14,15 @@
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="setcolor">Set color</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -90,13 +91,12 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="249792253678164">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="Sala0" sid="442697878956134">
+        <object-type name="Room0" sid="442697878956134">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="roomIdNumber" sid="776675158314163" type="number" />
+                <instance-variable name="basePositionX" sid="535999329138781" type="number" />
+                <instance-variable name="basePositionY" sid="315310087775777" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570780403566099" speed="5">
@@ -104,10 +104,12 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sala1" sid="772370049837350">
+        <object-type name="Room1" sid="772370049837350">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="roomIdNumber" sid="229031017607485" type="number" />
+                <instance-variable name="basePositionX" sid="149047397278009" type="number" />
+                <instance-variable name="basePositionY" sid="634837546747550" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="461149651298048" speed="5">
@@ -115,7 +117,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type global="1" name="Dictionary" sid="505527448067151">
+        <object-type global="1" name="RoomPos" sid="505527448067151">
             <plugin id="Dictionary" />
         </object-type>
         <object-type name="Function" sid="965219507958135">
@@ -123,6 +125,18 @@
         </object-type>
         <object-type name="Stone" sid="888350203983373">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BelongsToRoom" sid="957122842641575" type="number" />
+                <instance-variable name="isInTemplate" sid="947137567085997" type="boolean" />
+                <instance-variable name="BelongsToUID" sid="795481516764010" type="number" />
+                <instance-variable name="xRelative" sid="753367861128793" type="number" />
+                <instance-variable name="yRelative" sid="705615979230843" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="863985964319219">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491437205004618" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -141,9 +155,43 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="roomIdNumber" sid="720165840860136" type="number" />
+                <instance-variable name="basePositionX" sid="820520520145107" type="number" />
+                <instance-variable name="basePositionY" sid="691610717106435" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="657675211517479" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MinMapFragment" sid="457812378686284">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="pos" sid="915040285697225" type="string" />
+            </instance-variables>
+            <effects>
+                <effect-type name="SetColor">
+                    <effect id="setcolor" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486552844271893" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BackgroundMiniMap" sid="553452685920156">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="686220003576109" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MiniMapPlayer" sid="828441318348456">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="505610885047705" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
