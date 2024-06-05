@@ -1,0 +1,1349 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="randomEnemyMove" sid="797349292731202" static="0" type="number">-1</variable>
+        <variable constant="0" name="currentPosEnemyY" sid="392929565606330" static="0" type="number">0</variable>
+        <variable constant="0" name="currentPosEnemyX" sid="974414569111351" static="0" type="number">0</variable>
+        <variable constant="0" name="currentPosStoneX" sid="164683384188628" static="0" type="number">0</variable>
+        <variable constant="0" name="currentPosStoneY" sid="693037944701090" static="0" type="number">0</variable>
+        <variable constant="0" name="currentIndexRoom" sid="613253184470334" static="0" type="number">1000000000000000000000</variable>
+        <variable constant="0" name="PlayerCurrentY" sid="678556481435945" static="0" type="number">1</variable>
+        <variable constant="0" name="PlayerCurrentX" sid="555444587529161" static="0" type="number">1</variable>
+        <variable constant="0" name="currentRoomColumn" sid="651883815768319" static="0" type="number">0</variable>
+        <variable constant="0" name="currentRoomRow" sid="842847704648671" static="0" type="number">0</variable>
+        <variable constant="0" name="lastBullet" sid="670338399652371" static="0" type="number">0</variable>
+        <variable constant="0" name="CooldownForShooting" sid="278398774355574" static="0" type="number">2</variable>
+        <variable constant="0" name="CanShoot" sid="803582677249439" static="0" type="number">1</variable>
+        <event-block sid="916904981726356">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="517530331270243" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="807599160083945">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="674633368939850" type="System">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="978257243430815" type="Stone">
+                            <param id="0" name="Object">Room0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="716026324865331" type="Stone">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="255479334290629">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="537578926502303" type="System">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="140017570711566" type="Stone">
+                            <param id="0" name="Object">Room1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="529112332840313" type="Stone">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="520252712718026">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="310731189017542" type="System">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="410840494326380" type="Stone">
+                            <param id="0" name="Object">SpecialRoom</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="308511719889398" type="Stone">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Here the rooms are generated, starting with a loop of 10 keys on a Dictionary (0,0;0,1;0,2;1,0,etc). Later will be used as an bi-dimentional Array</comment>
+        <event-block sid="121811746103110">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="286147872746515" type="System" />
+                <condition id="-10" name="For" sid="372494076099064" type="System">
+                    <param id="0" name="Name">&quot;roomGenLoop&quot;</param>
+                    <param id="1" name="Start index">1</param>
+                    <param id="2" name="End index">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Add key" sid="151566602233680" type="RoomPos">
+                    <param id="0" name="Key">currentRoomRow&amp;&quot;,&quot;&amp;currentRoomColumn</param>
+                    <param id="1" name="Value">round(random(0,5))</param>
+                </action>
+                <action id="-10" name="Add to" sid="745041090042614" type="System">
+                    <param id="0" name="Variable">currentRoomRow</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="483034329228691">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="574780233552612" type="System">
+                            <param id="0" name="Variable">currentRoomRow</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="746889528938114" type="System">
+                            <param id="0" name="Variable">currentRoomRow</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="346265821514514" type="System">
+                            <param id="0" name="Variable">currentRoomColumn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>After every key is generated, the room-UID got attached to each key.</comment>
+                <event-block sid="444099702082740">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="302449258777072" type="System">
+                            <param id="0" name="First value">loopindex</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">10</param>
+                        </condition>
+                        <condition id="1" name="For each key" sid="893960201176974" type="RoomPos" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="726577766706983">
+                            <conditions>
+                                <condition id="2" name="Compare current value" sid="974748606642901" type="RoomPos">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set key" sid="590303110677930" type="RoomPos">
+                                    <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                    <param id="1" name="Value">round(random(0,1))</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="770281951517483">
+                                    <conditions>
+                                        <condition id="2" name="Compare current value" sid="626401277230894" type="RoomPos">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="426515201038334" type="Kitchen">
+                                            <param id="0" name="Object">Room0</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-25" name="Move to bottom" sid="486036566284174" type="Room0" />
+                                        <action id="1" name="Set key" sid="940577868192718" type="RoomPos">
+                                            <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                            <param id="1" name="Value">Room0.UID</param>
+                                        </action>
+                                        <action id="-24" name="Stop loop" sid="938911296370416" type="System" />
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="658394121294761">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="662899063214865" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="575758135770681" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="127306401205704" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="119541948987916" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneX</param>
+                                                    <param id="1" name="Value">Stone.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="252062095951969" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneY</param>
+                                                    <param id="1" name="Value">Stone.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="310148459068582" type="Room0">
+                                                    <param id="0" name="Object">Stone</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="531056256945972" type="Stone">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room0.basePositionX-currentPosStoneX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="903245976286194" type="Stone">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room0.basePositionY-currentPosStoneY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="580356470315628" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="261106548477247" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room0.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="516053373224303">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="274270417430861" type="System">
+                                                    <param id="0" name="Object">Enemy0</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="442116814600659" type="Enemy0">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="744120206221573" type="Enemy0">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="717269464863084" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Enemy0.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="904719810460084" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Enemy0.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="444314593154018" type="Room0">
+                                                    <param id="0" name="Object">Enemy0</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="874359412354223" type="Enemy0">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room0.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="562413566999136" type="Enemy0">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room0.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="491681936499426" type="Enemy0">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="782787804122590" type="Enemy0">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room0.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="840335186541770">
+                                    <conditions>
+                                        <condition id="2" name="Compare current value" sid="606433275705244" type="RoomPos">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="819720992200735" type="Kitchen">
+                                            <param id="0" name="Object">Room1</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-25" name="Move to bottom" sid="224284785043170" type="Room1" />
+                                        <action id="1" name="Set key" sid="902811625789296" type="RoomPos">
+                                            <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                            <param id="1" name="Value">Room1.UID</param>
+                                        </action>
+                                        <action id="-24" name="Stop loop" sid="245061608897087" type="System" />
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="248085942343706">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="282470991530734" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="591486357640157" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="962620726535565" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="242747954659362" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneX</param>
+                                                    <param id="1" name="Value">Stone.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="354379201488243" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneY</param>
+                                                    <param id="1" name="Value">Stone.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="473266028824113" type="Room1">
+                                                    <param id="0" name="Object">Stone</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="481609247784023" type="Stone">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room1.basePositionX-currentPosStoneX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="543920187856955" type="Stone">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room1.basePositionY-currentPosStoneY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="961723060557704" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="211808134054152" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room1.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="793830012385225">
+                                    <conditions>
+                                        <condition id="3" name="Has key" sid="558414654386077" type="RoomPos">
+                                            <param id="0" name="Key">&quot;1,1&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Set key" sid="747736526778686" type="RoomPos">
+                                            <param id="0" name="Key">&quot;1,1&quot;</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="980142065861573">
+                            <conditions>
+                                <condition id="2" name="Compare current value" sid="303886016161612" type="RoomPos">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="917835420705568" type="Kitchen">
+                                    <param id="0" name="Object">SpecialRoom</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-25" name="Move to bottom" sid="970310858552164" type="SpecialRoom" />
+                                <action id="1" name="Set key" sid="950924560657393" type="RoomPos">
+                                    <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                    <param id="1" name="Value">SpecialRoom.UID</param>
+                                </action>
+                                <action id="-24" name="Stop loop" sid="749900906392679" type="System" />
+                            </actions>
+                            <sub-events>
+                                <event-block sid="653749378229195">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="287301590126704" type="System">
+                                            <param id="0" name="Object">Stone</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="609629489745565" type="Stone">
+                                            <param id="0" name="Instance variable">isInTemplate</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="522340226570959" type="Stone">
+                                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="321279494555010" type="System">
+                                            <param id="0" name="Variable">currentPosStoneX</param>
+                                            <param id="1" name="Value">Stone.X</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="920190919888487" type="System">
+                                            <param id="0" name="Variable">currentPosStoneY</param>
+                                            <param id="1" name="Value">Stone.Y</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="468454711556730" type="SpecialRoom">
+                                            <param id="0" name="Object">Stone</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="880707557390102" type="Stone">
+                                            <param id="0" name="Instance variable">xRelative</param>
+                                            <param id="1" name="Value">SpecialRoom.basePositionX-currentPosStoneX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="931730504898040" type="Stone">
+                                            <param id="0" name="Instance variable">yRelative</param>
+                                            <param id="1" name="Value">SpecialRoom.basePositionY-currentPosStoneY</param>
+                                        </action>
+                                        <action id="-14" name="Toggle boolean" sid="168441871408418" type="Stone">
+                                            <param id="0" name="Instance variable">isInTemplate</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="687208628213480" type="Stone">
+                                            <param id="0" name="Instance variable">BelongsToUID</param>
+                                            <param id="1" name="Value">SpecialRoom.UID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="778818100842301" title="MovementTriggers">
+            <sub-events>
+                <comment>When player got to end of one direction, triggers a function. Arg0:playerX;Arg1:playerY;Arg2:Direction as string</comment>
+                <event-block sid="673393888397611">
+                    <conditions>
+                        <condition id="-21" name="Is between values" sid="969046178763979" type="System">
+                            <param id="0" name="Value">Player.X</param>
+                            <param id="1" name="Lower bound">410</param>
+                            <param id="2" name="Upper bound">470</param>
+                        </condition>
+                        <condition id="-21" name="Is between values" sid="164574782491679" type="System">
+                            <param id="0" name="Value">Player.Y</param>
+                            <param id="1" name="Lower bound">60</param>
+                            <param id="2" name="Upper bound">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="759658869782090" type="Function">
+                            <param id="0" name="Name">&quot;generateRoom&quot;</param>
+                            <param id="1" name="Parameter {n}">PlayerCurrentX{###}PlayerCurrentY{###}&quot;up&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="321149812934004">
+                    <conditions>
+                        <condition id="-21" name="Is between values" sid="691784939945702" type="System">
+                            <param id="0" name="Value">Player.X</param>
+                            <param id="1" name="Lower bound">820</param>
+                            <param id="2" name="Upper bound">850</param>
+                        </condition>
+                        <condition id="-21" name="Is between values" sid="954995877880499" type="System">
+                            <param id="0" name="Value">Player.Y</param>
+                            <param id="1" name="Lower bound">380</param>
+                            <param id="2" name="Upper bound">490</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="413814017554599" type="Function">
+                            <param id="0" name="Name">&quot;generateRoom&quot;</param>
+                            <param id="1" name="Parameter {n}">PlayerCurrentX{###}PlayerCurrentY{###}&quot;right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="560460150243141">
+                    <conditions>
+                        <condition id="-21" name="Is between values" sid="242599084164192" type="System">
+                            <param id="0" name="Value">Player.X</param>
+                            <param id="1" name="Lower bound">410</param>
+                            <param id="2" name="Upper bound">470</param>
+                        </condition>
+                        <condition id="-21" name="Is between values" sid="556469514429984" type="System">
+                            <param id="0" name="Value">Player.Y</param>
+                            <param id="1" name="Lower bound">830</param>
+                            <param id="2" name="Upper bound">860</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="784347508381694" type="Function">
+                            <param id="0" name="Name">&quot;generateRoom&quot;</param>
+                            <param id="1" name="Parameter {n}">PlayerCurrentX{###}PlayerCurrentY{###}&quot;down&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="504876924567180">
+                    <conditions>
+                        <condition id="-21" name="Is between values" sid="607415053541155" type="System">
+                            <param id="0" name="Value">Player.X</param>
+                            <param id="1" name="Lower bound">59</param>
+                            <param id="2" name="Upper bound">80</param>
+                        </condition>
+                        <condition id="-21" name="Is between values" sid="727286175377075" type="System">
+                            <param id="0" name="Value">Player.Y</param>
+                            <param id="1" name="Lower bound">380</param>
+                            <param id="2" name="Upper bound">490</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="967563623311530" type="Function">
+                            <param id="0" name="Name">&quot;generateRoom&quot;</param>
+                            <param id="1" name="Parameter {n}">PlayerCurrentX{###}PlayerCurrentY{###}&quot;left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="867760090836489" title="Shooting">
+            <sub-events>
+                <event-block sid="619674199897009">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="768830809453449" type="System">
+                            <param id="0" name="Variable">CanShoot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="247994625219712">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="866111534382348" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="470295559091099" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="603488064951953" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="601910508563739" type="Keyboard">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="248083055726517" type="System">
+                                    <param id="0" name="Variable">CanShoot</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="330459891818927" type="Player">
+                                    <param id="0" name="Object">Bullet</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="258556690051075" type="System">
+                                    <param id="0" name="Variable">lastBullet</param>
+                                    <param id="1" name="Value">Bullet.UID</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="535808569173246">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="833484817156293" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="173421635912713" type="Function">
+                                            <param id="0" name="Name">&quot;bulletGenerated&quot;</param>
+                                            <param id="1" name="Parameter {n}">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="913505233557456">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="426920381503311" type="Keyboard">
+                                            <param id="0" name="Key">40</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="546624048905601" type="Function">
+                                            <param id="0" name="Name">&quot;bulletGenerated&quot;</param>
+                                            <param id="1" name="Parameter {n}">90</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="885993931667949">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="441367326159899" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="573883228374099" type="Function">
+                                            <param id="0" name="Name">&quot;bulletGenerated&quot;</param>
+                                            <param id="1" name="Parameter {n}">180</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="296833003952667">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="241029279368153" type="Keyboard">
+                                            <param id="0" name="Key">38</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="562796292565552" type="Function">
+                                            <param id="0" name="Name">&quot;bulletGenerated&quot;</param>
+                                            <param id="1" name="Parameter {n}">270</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="367717345199034" title="Movement">
+            <sub-events>
+                <event-block sid="449120590736352">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="829150895547828" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="773791371665127" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="429454917204256">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="631393422368269" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="736387352909598" type="Player">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="760378971136230">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="474857961028704" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="886709784924858" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="624444637609053">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="720159343604397" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="836913799107161" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="450710199945040" title="Functions">
+            <sub-events>
+                <event-group description="" sid="221004789363985" title="Room-Related">
+                    <sub-events>
+                        <comment>This function doesn&apos;t really &quot;generate&quot; rooms, it detects where playing is moving (And if it can move here): Arg 0: PlayerX. Arg1: PlayerY. Arg2: String(up/down/left/right)</comment>
+                        <event-block sid="255177401203612">
+                            <conditions>
+                                <condition id="0" name="On function" sid="289104009095526" type="Function">
+                                    <param id="0" name="Name">&quot;generateRoom&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="799745677750419">
+                                    <conditions>
+                                        <condition id="1" name="Compare parameter" sid="580466919044087" type="Function">
+                                            <param id="0" name="Index">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;up&quot;</param>
+                                        </condition>
+                                        <condition id="1" name="Compare parameter" sid="211574529963024" type="Function">
+                                            <param id="0" name="Index">1</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="936139790507393" type="Player">
+                                            <param id="0" name="Y">800</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="423449183122161" type="System">
+                                            <param id="0" name="Variable">PlayerCurrentY</param>
+                                            <param id="1" name="Value">PlayerCurrentY - 1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="714223246856637" type="Function">
+                                            <param id="0" name="Name">&quot;moveRoom&quot;</param>
+                                            <param id="1" name="Parameter {n}">currentIndexRoom</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="678474054313267" type="Function">
+                                            <param id="0" name="Name">&quot;takeRoomToPlayer&quot;</param>
+                                            <param id="1" name="Parameter {n}">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="327491931124979">
+                                    <conditions>
+                                        <condition id="1" name="Compare parameter" sid="785582396352988" type="Function">
+                                            <param id="0" name="Index">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;down&quot;</param>
+                                        </condition>
+                                        <condition id="1" name="Compare parameter" sid="529330932290537" type="Function">
+                                            <param id="0" name="Index">1</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="741162667551616" type="Player">
+                                            <param id="0" name="Y">100</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="874398556851945" type="System">
+                                            <param id="0" name="Variable">PlayerCurrentY</param>
+                                            <param id="1" name="Value">PlayerCurrentY + 1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="599685249157664" type="Function">
+                                            <param id="0" name="Name">&quot;moveRoom&quot;</param>
+                                            <param id="1" name="Parameter {n}">currentIndexRoom</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="453271038290691" type="Function">
+                                            <param id="0" name="Name">&quot;takeRoomToPlayer&quot;</param>
+                                            <param id="1" name="Parameter {n}">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="566135404938287">
+                                    <conditions>
+                                        <condition id="1" name="Compare parameter" sid="831556590496961" type="Function">
+                                            <param id="0" name="Index">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;right&quot;</param>
+                                        </condition>
+                                        <condition id="1" name="Compare parameter" sid="343347037687480" type="Function">
+                                            <param id="0" name="Index">0</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="909375849337563" type="Player">
+                                            <param id="0" name="X">120</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="590778111413169" type="System">
+                                            <param id="0" name="Variable">PlayerCurrentX</param>
+                                            <param id="1" name="Value">PlayerCurrentX + 1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="618318041200887" type="Function">
+                                            <param id="0" name="Name">&quot;moveRoom&quot;</param>
+                                            <param id="1" name="Parameter {n}">currentIndexRoom</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="226208473687512" type="Function">
+                                            <param id="0" name="Name">&quot;takeRoomToPlayer&quot;</param>
+                                            <param id="1" name="Parameter {n}">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="322687580374417">
+                                    <conditions>
+                                        <condition id="1" name="Compare parameter" sid="648508619367373" type="Function">
+                                            <param id="0" name="Index">2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;left&quot;</param>
+                                        </condition>
+                                        <condition id="1" name="Compare parameter" sid="877528585895003" type="Function">
+                                            <param id="0" name="Index">0</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="981135101786327" type="Player">
+                                            <param id="0" name="X">800</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="677443560339387" type="System">
+                                            <param id="0" name="Variable">PlayerCurrentX</param>
+                                            <param id="1" name="Value">PlayerCurrentX - 1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="753808801317750" type="Function">
+                                            <param id="0" name="Name">&quot;moveRoom&quot;</param>
+                                            <param id="1" name="Parameter {n}">currentIndexRoom</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="218711307041324" type="Function">
+                                            <param id="0" name="Name">&quot;takeRoomToPlayer&quot;</param>
+                                            <param id="1" name="Parameter {n}">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>After the player exits the room, it shall be gone. It can&apos;t be destroyed: Just moves really really far away. No args required</comment>
+                        <event-block sid="374115234947981">
+                            <conditions>
+                                <condition id="0" name="On function" sid="978299382010082" type="Function">
+                                    <param id="0" name="Name">&quot;moveRoom&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="417762964872754" type="Function">
+                                    <param id="0" name="Name">&quot;destroyBullets&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="197087543640226">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="983999031695868" type="Room0">
+                                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="669529317878424" type="Room0">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="926614978920991" type="Function">
+                                            <param id="0" name="Name">&quot;destroyRocks&quot;</param>
+                                            <param id="1" name="Parameter {n}">Room0.UID</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="807020829941470" type="Function">
+                                            <param id="0" name="Name">&quot;destroyEnemies&quot;</param>
+                                            <param id="1" name="Parameter {n}">Room0.UID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="167929556154335">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="558511877787625" type="Room1">
+                                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="822198073334127" type="Room1">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="451567576345086" type="Function">
+                                            <param id="0" name="Name">&quot;destroyRocks&quot;</param>
+                                            <param id="1" name="Parameter {n}">Room1.UID</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="765556453463577" type="Function">
+                                            <param id="0" name="Name">&quot;destroyEnemies&quot;</param>
+                                            <param id="1" name="Parameter {n}">Room1.UID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="827017908219706">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="672053325780324" type="SpecialRoom">
+                                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="822963818388619" type="SpecialRoom">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="985354724443668" type="Function">
+                                            <param id="0" name="Name">&quot;destroyRocks&quot;</param>
+                                            <param id="1" name="Parameter {n}">SpecialRoom.UID</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="235668310389988" type="Function">
+                                            <param id="0" name="Name">&quot;destroyEnemies&quot;</param>
+                                            <param id="1" name="Parameter {n}">SpecialRoom.UID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>When the player enters a new room, it gots tped to player</comment>
+                        <comment bookmark="1">TODO: Look for a mathematical algorythm for room&apos;s distance, because it can&apos;t be escalated.</comment>
+                        <event-block sid="420846728022459">
+                            <conditions>
+                                <condition id="0" name="On function" sid="559796369298976" type="Function">
+                                    <param id="0" name="Name">&quot;takeRoomToPlayer&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="154555386835025" type="System">
+                                    <param id="0" name="Variable">currentIndexRoom</param>
+                                    <param id="1" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="823273945671358">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="600727508951051" type="Room0">
+                                            <param id="0" name="Unique ID">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="591125716344371" type="Room0">
+                                            <param id="0" name="X">458</param>
+                                            <param id="1" name="Y">458</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="192464072065467" type="Function">
+                                            <param id="0" name="Name">&quot;paintRoom&quot;</param>
+                                            <param id="1" name="Parameter {n}">240{###}245{###}9</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="394282507577841">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="418811041043289" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="483237621133939" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-4" name="Set position to another object" sid="860698681846696" type="Stone">
+                                                    <param id="0" name="Object">Room0</param>
+                                                    <param id="1" name="Image point (optional)">0</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="839200790825854" type="Stone">
+                                                    <param id="0" name="X">(Stone.X - Stone.xRelative)</param>
+                                                </action>
+                                                <action id="-2" name="Set Y" sid="139461800847963" type="Stone">
+                                                    <param id="0" name="Y">Stone.Y - Stone.yRelative</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="488448159711733">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="888057798765670" type="System">
+                                                    <param id="0" name="Object">Enemy0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="122812295829635" type="Enemy0">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-4" name="Set position to another object" sid="201101560421469" type="Enemy0">
+                                                    <param id="0" name="Object">Room0</param>
+                                                    <param id="1" name="Image point (optional)">0</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="585133889502273" type="Enemy0">
+                                                    <param id="0" name="X">(Enemy0.X - Enemy0.xRelative)</param>
+                                                </action>
+                                                <action id="-2" name="Set Y" sid="770908323882633" type="Enemy0">
+                                                    <param id="0" name="Y">(Enemy0.Y - Enemy0.yRelative)</param>
+                                                </action>
+                                                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="457644611726725" type="Enemy0">
+                                                    <param id="0" name="Obstacle">Stone</param>
+                                                </action>
+                                                <action behavior="LineOfSight" id="1" name="Set cone of view" sid="207974892756244" type="Enemy0">
+                                                    <param id="0" name="Cone of view">45</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="443136277970476">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="845539805584104" type="Room1">
+                                            <param id="0" name="Unique ID">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="286043218715782" type="Room1">
+                                            <param id="0" name="X">458</param>
+                                            <param id="1" name="Y">458</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="941914461585291" type="Function">
+                                            <param id="0" name="Name">&quot;paintRoom&quot;</param>
+                                            <param id="1" name="Parameter {n}">100{###}0{###}100</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="893659884480616">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="831144627821234" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="812572293117717" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-4" name="Set position to another object" sid="344392240937453" type="Stone">
+                                                    <param id="0" name="Object">Room1</param>
+                                                    <param id="1" name="Image point (optional)">0</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="696196943574435" type="Stone">
+                                                    <param id="0" name="X">Stone.X - Stone.xRelative</param>
+                                                </action>
+                                                <action id="-2" name="Set Y" sid="443403434394332" type="Stone">
+                                                    <param id="0" name="Y">Stone.Y - Stone.yRelative</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="740881858322993">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="252258330072003" type="SpecialRoom">
+                                            <param id="0" name="Unique ID">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="311927285804279" type="SpecialRoom">
+                                            <param id="0" name="X">458</param>
+                                            <param id="1" name="Y">458</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="497184637179794" type="Function">
+                                            <param id="0" name="Name">&quot;paintRoom&quot;</param>
+                                            <param id="1" name="Parameter {n}">0{###}100{###}0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="401128859456621">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="988441504446845" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="809283372869081" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-4" name="Set position to another object" sid="459113827440725" type="Stone">
+                                                    <param id="0" name="Object">SpecialRoom</param>
+                                                    <param id="1" name="Image point (optional)">0</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="240473606965849" type="Stone">
+                                                    <param id="0" name="X">(Stone.X - Stone.xRelative)</param>
+                                                </action>
+                                                <action id="-2" name="Set Y" sid="545036696796563" type="Stone">
+                                                    <param id="0" name="Y">Stone.Y - Stone.yRelative</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>When the player enters a new room, it&apos;s painted on minimap. Arg0: redColor;Arg1:greenColor;Arg2:blueColor</comment>
+                        <event-block sid="941764316052288">
+                            <conditions>
+                                <condition id="0" name="On function" sid="442097799008766" type="Function">
+                                    <param id="0" name="Name">&quot;paintRoom&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="845348154704353">
+                                    <conditions>
+                                        <condition id="-15" name="Pick nearest/furthest" sid="872212853725306" type="MiniMapPlayer">
+                                            <param id="0" name="Which">0</param>
+                                            <param id="1" name="X">0</param>
+                                            <param id="2" name="Y">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="196815277667702" type="MiniMapPlayer" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="850133758924337">
+                                    <conditions>
+                                        <condition id="3" name="Has key" sid="162100037011458" type="RoomPos">
+                                            <param id="0" name="Key">PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="823171748366470" type="MinMapFragment">
+                                            <param id="0" name="Instance variable">pos</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="324353315623083" type="MinMapFragment">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">Function.Param(0)</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="492247037666712" type="MinMapFragment">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">Function.Param(1)</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="932027887412269" type="MinMapFragment">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">Function.Param(2)</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="960377084998677" type="MinMapFragment">
+                                            <param id="0" name="Object">MiniMapPlayer</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>Moves away every rock after player leaves the room</comment>
+                        <event-block sid="164361626643078">
+                            <conditions>
+                                <condition id="0" name="On function" sid="507899945533280" type="Function">
+                                    <param id="0" name="Name">&quot;destroyRocks&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>Moves away every rock after player leaves the room</comment>
+                                <comment>Moves away every rock after player leaves the room</comment>
+                                <event-block sid="456247484333166">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="460181954580336" type="System">
+                                            <param id="0" name="Object">Stone</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="638342057582857" type="Stone">
+                                            <param id="0" name="Instance variable">BelongsToUID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="153339394918808" type="Stone">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>Moves away every Enemy after player leaves the room</comment>
+                        <event-block sid="742492303471834">
+                            <conditions>
+                                <condition id="0" name="On function" sid="672573784061301" type="Function">
+                                    <param id="0" name="Name">&quot;destroyEnemies&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="199361762898751">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="447242927864446" type="System">
+                                            <param id="0" name="Object">Enemy0</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="942356857101959" type="Enemy0">
+                                            <param id="0" name="Instance variable">BelongsToUID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="160798475096254" type="Enemy0">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
+                                        <action behavior="Pathfinding" id="2" name="Stop" sid="803917220783446" type="Enemy0" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="705224651800733" title="Bullet-Related">
+                    <sub-events>
+                        <comment>When the player enters a new room, every bullet mid-air gets destroyed. No args required</comment>
+                        <event-block sid="698189300745824">
+                            <conditions>
+                                <condition id="0" name="On function" sid="105116625750492" type="Function">
+                                    <param id="0" name="Name">&quot;destroyBullets&quot;</param>
+                                </condition>
+                                <condition id="-11" name="For Each" sid="907620164844808" type="System">
+                                    <param id="0" name="Object">Bullet</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="501512022679204" type="Bullet" />
+                            </actions>
+                        </event-block>
+                        <comment>After a bullet is created, it&apos;s angle is decided. Arg0:Angle</comment>
+                        <event-block sid="819061965806604">
+                            <conditions>
+                                <condition id="0" name="On function" sid="291076225365890" type="Function">
+                                    <param id="0" name="Name">&quot;bulletGenerated&quot;</param>
+                                </condition>
+                                <condition id="-14" name="Pick by unique ID" sid="113028797455615" type="Bullet">
+                                    <param id="0" name="Unique ID">lastBullet</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="869976964010057" type="Bullet">
+                                    <param id="0" name="Angle">Function.Param(0)</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="495146083898344" type="System">
+                                    <param id="0" name="Seconds">CooldownForShooting</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="931855925974027" type="System">
+                                    <param id="0" name="Variable">CanShoot</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="804714540547799" title="EnemyBehavior">
+            <sub-events>
+                <comment>Every half second, pathfinding gets updated</comment>
+                <event-block sid="988044545900035">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="815545351855573" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="5" name="Add obstacle" sid="427939840431479" type="Enemy0">
+                            <param id="0" name="Obstacle">Stone</param>
+                        </action>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="733943485609987" type="Enemy0">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="931447453760100" type="Enemy0" />
+                    </actions>
+                </event-block>
+                <event-block sid="327696139609216">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="547685019475384" type="System">
+                            <param id="0" name="Variable">randomEnemyMove</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="482344625612184" type="Enemy0">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="162047478217582">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="402170986626356" type="System">
+                            <param id="0" name="Variable">randomEnemyMove</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="202545987350290" type="Enemy0">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="593544462790408">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="515336623443774" type="System">
+                            <param id="0" name="Variable">randomEnemyMove</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="684905580026575" type="Enemy0">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="306688091022634">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="967544746446683" type="System">
+                            <param id="0" name="Variable">randomEnemyMove</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="589748400664681" type="Enemy0">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="887241821627111">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="856904941179523" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="392305571667952">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="350797598431297" type="Enemy0">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="251037499580010" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="413334341176874" type="System">
+                    <param id="0" name="Variable">randomEnemyMove</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action behavior="Pathfinding" id="3" name="Set enabled" sid="564047258901038" type="Enemy0">
+                    <param id="0" name="Set">1</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="339116947537447" type="Enemy0">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="770150946635964" type="Enemy0" />
+                <action behavior="LineOfSight" id="1" name="Set cone of view" sid="573909377602994" type="Enemy0">
+                    <param id="0" name="Cone of view">360</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="527609766326518">
+            <conditions>
+                <condition id="-22" name="Else" sid="546284885452018" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="180016765585380" type="System">
+                    <param id="0" name="Variable">randomEnemyMove</param>
+                    <param id="1" name="Value">round(random(0,3))</param>
+                </action>
+                <action behavior="Pathfinding" id="3" name="Set enabled" sid="534604189090263" type="Enemy0">
+                    <param id="0" name="Set">0</param>
+                </action>
+                <action behavior="LineOfSight" id="1" name="Set cone of view" sid="568400260913997" type="Enemy0">
+                    <param id="0" name="Cone of view">360</param>
+                </action>
+                <action id="-16" name="Wait" sid="453820913664949" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="122540767386223">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="717557071579159" type="Enemy0" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="391150654765202" type="Enemy0">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

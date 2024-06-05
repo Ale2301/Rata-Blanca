@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2rn7eb37fgdgc</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="setcolor">Set color</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>900</width>
+        <height>900</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Player" sid="279724106697321">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="343136766020134">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439081439518646" speed="5">
+                    <frame duration="1" hotspotX="0.496" hotspotY="0.512" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Border" sid="395581903204839">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="164516575661033">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="888958616059358" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="434107571166779">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Bullet" sid="121242000398670">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="329889905275437">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="252500979097290" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Room0" sid="442697878956134">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="776675158314163" type="number" />
+                <instance-variable name="basePositionY" sid="315310087775777" type="number" />
+                <instance-variable name="basePositionX" sid="535999329138781" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570780403566099" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Room1" sid="772370049837350">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="229031017607485" type="number" />
+                <instance-variable name="basePositionX" sid="149047397278009" type="number" />
+                <instance-variable name="basePositionY" sid="634837546747550" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="461149651298048" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="RoomPos" sid="505527448067151">
+            <plugin id="Dictionary" />
+        </object-type>
+        <object-type name="Function" sid="965219507958135">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Stone" sid="888350203983373">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BelongsToRoom" sid="957122842641575" type="number" />
+                <instance-variable name="isInTemplate" sid="947137567085997" type="boolean" />
+                <instance-variable name="BelongsToUID" sid="795481516764010" type="number" />
+                <instance-variable name="xRelative" sid="753367861128793" type="number" />
+                <instance-variable name="yRelative" sid="705615979230843" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="863985964319219">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491437205004618" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\UNAHUR\Downloads\piedra.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Kitchen" sid="729315451374514">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="257437866665345" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpecialRoom" sid="588474284833412">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="720165840860136" type="number" />
+                <instance-variable name="basePositionX" sid="820520520145107" type="number" />
+                <instance-variable name="basePositionY" sid="691610717106435" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="657675211517479" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MinMapFragment" sid="457812378686284">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="pos" sid="915040285697225" type="string" />
+            </instance-variables>
+            <effects>
+                <effect-type name="SetColor">
+                    <effect id="setcolor" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486552844271893" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BackgroundMiniMap" sid="553452685920156">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="686220003576109" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MiniMapPlayer" sid="828441318348456">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="505610885047705" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy0" sid="199337083264550">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BelongsToRoom" sid="596350519514402" type="number" />
+                <instance-variable name="isInTemplate" sid="767066129219154" type="boolean" />
+                <instance-variable name="BelongsToUID" sid="421417997981455" type="number" />
+                <instance-variable name="xRelative" sid="259291774025846" type="number" />
+                <instance-variable name="yRelative" sid="343996313292385" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="246706088162877">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="848044528312703">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="897418388727227">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="681151956067808">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="705699620771387">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="610853897373082">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570124849517561" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy1" sid="134919678673777">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="830472003592938" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+        <global-instance type="Function" uid="12" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file-folder name="JavaScript">
+            <file name="test.js" />
+        </file-folder>
+    </files-folder>
+</c2project>
