@@ -1,22 +1,14 @@
-const runtimeTemp = cr_createRuntime("c2canvas");
-let updatedRuntime = false;
-function testShoot(keyPressed, instance) {
-  updatedRuntime = cr_getC2Runtime(runtimeTemp);
-  let bulletInstance = updatedRuntime.getObjectByUID(instance);
-  let arrow =
-    keyPressed == 37
-      ? (bulletInstance.angle = 180)
-      : keyPressed == 38
-      ? (bulletInstance.angle = 90)
-      : keyPressed == 39
-      ? (bulletInstance.angle = 0)
-      : (bulletInstance.angle = 270);
-}
-
-function test(vel) {
-  for (let i = 0; i < 20; i++) {
-    setTimeout(() => {
-      vel = vel + 100;
-    }, 600);
-  }
+console.log("si ves esto el programador no hizo bien su trabajo");
+function randomNumberGen() {
+  let runtime = cr_createRuntime;
+  runtime = cr_getC2Runtime(runtime);
+  console.log("testing number...");
+  let tempNumber;
+  let enemyMovingNow = runtime.all_global_vars.find(
+    (e) => e.name === "randomEnemyMove"
+  );
+  do {
+    tempNumber = Math.round(Math.random() * 3);
+  } while (tempNumber === enemyMovingNow.data);
+  enemyMovingNow.data = tempNumber;
 }

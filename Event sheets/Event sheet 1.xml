@@ -3,7 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <variable constant="0" name="randomEnemyMove" sid="797349292731202" static="0" type="number">-1</variable>
+        <variable constant="0" name="playerLife" sid="186121573667452" static="0" type="number">100</variable>
+        <variable constant="0" name="enemyCountOnRoom" sid="855897341240433" static="0" type="number">0</variable>
         <variable constant="0" name="currentPosEnemyY" sid="392929565606330" static="0" type="number">0</variable>
         <variable constant="0" name="currentPosEnemyX" sid="974414569111351" static="0" type="number">0</variable>
         <variable constant="0" name="currentPosStoneX" sid="164683384188628" static="0" type="number">0</variable>
@@ -14,7 +15,7 @@
         <variable constant="0" name="currentRoomColumn" sid="651883815768319" static="0" type="number">0</variable>
         <variable constant="0" name="currentRoomRow" sid="842847704648671" static="0" type="number">0</variable>
         <variable constant="0" name="lastBullet" sid="670338399652371" static="0" type="number">0</variable>
-        <variable constant="0" name="CooldownForShooting" sid="278398774355574" static="0" type="number">2</variable>
+        <variable constant="0" name="CooldownForShooting" sid="278398774355574" static="0" type="number">0.5</variable>
         <variable constant="0" name="CanShoot" sid="803582677249439" static="0" type="number">1</variable>
         <event-block sid="916904981726356">
             <conditions>
@@ -67,6 +68,38 @@
                         <action id="-10" name="Set value" sid="308511719889398" type="Stone">
                             <param id="0" name="Instance variable">BelongsToRoom</param>
                             <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="944031714894511">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="256145152719440" type="System">
+                            <param id="0" name="Object">Enloquecido</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="873978616582537" type="Enloquecido">
+                            <param id="0" name="Object">Room0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="517088462194175" type="Enloquecido">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="139328770199390">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="261652069524817" type="System">
+                            <param id="0" name="Object">Enloquecido</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="351164857191413" type="Enloquecido">
+                            <param id="0" name="Object">Room1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="707075380809267" type="Enloquecido">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -207,12 +240,12 @@
                                         <event-block sid="516053373224303">
                                             <conditions>
                                                 <condition id="-11" name="For Each" sid="274270417430861" type="System">
-                                                    <param id="0" name="Object">Enemy0</param>
+                                                    <param id="0" name="Object">Enloquecido</param>
                                                 </condition>
-                                                <condition id="-8" name="Is boolean instance variable set" sid="442116814600659" type="Enemy0">
+                                                <condition id="-8" name="Is boolean instance variable set" sid="442116814600659" type="Enloquecido">
                                                     <param id="0" name="Instance variable">isInTemplate</param>
                                                 </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="744120206221573" type="Enemy0">
+                                                <condition id="-7" name="Compare instance variable" sid="744120206221573" type="Enloquecido">
                                                     <param id="0" name="Instance variable">BelongsToRoom</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">0</param>
@@ -221,29 +254,29 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="717269464863084" type="System">
                                                     <param id="0" name="Variable">currentPosEnemyX</param>
-                                                    <param id="1" name="Value">Enemy0.X</param>
+                                                    <param id="1" name="Value">Enloquecido.X</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="904719810460084" type="System">
                                                     <param id="0" name="Variable">currentPosEnemyY</param>
-                                                    <param id="1" name="Value">Enemy0.Y</param>
+                                                    <param id="1" name="Value">Enloquecido.Y</param>
                                                 </action>
                                                 <action id="0" name="Spawn another object" sid="444314593154018" type="Room0">
-                                                    <param id="0" name="Object">Enemy0</param>
+                                                    <param id="0" name="Object">Enloquecido</param>
                                                     <param id="1" name="Layer">0</param>
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
-                                                <action id="-10" name="Set value" sid="874359412354223" type="Enemy0">
+                                                <action id="-10" name="Set value" sid="874359412354223" type="Enloquecido">
                                                     <param id="0" name="Instance variable">xRelative</param>
                                                     <param id="1" name="Value">Room0.basePositionX - currentPosEnemyX</param>
                                                 </action>
-                                                <action id="-10" name="Set value" sid="562413566999136" type="Enemy0">
+                                                <action id="-10" name="Set value" sid="562413566999136" type="Enloquecido">
                                                     <param id="0" name="Instance variable">yRelative</param>
                                                     <param id="1" name="Value">Room0.basePositionY - currentPosEnemyY</param>
                                                 </action>
-                                                <action id="-14" name="Toggle boolean" sid="491681936499426" type="Enemy0">
+                                                <action id="-14" name="Toggle boolean" sid="491681936499426" type="Enloquecido">
                                                     <param id="0" name="Instance variable">isInTemplate</param>
                                                 </action>
-                                                <action id="-10" name="Set value" sid="782787804122590" type="Enemy0">
+                                                <action id="-10" name="Set value" sid="782787804122590" type="Enloquecido">
                                                     <param id="0" name="Instance variable">BelongsToUID</param>
                                                     <param id="1" name="Value">Room0.UID</param>
                                                 </action>
@@ -312,6 +345,51 @@
                                                     <param id="0" name="Instance variable">isInTemplate</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="211808134054152" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room1.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="573492228431259">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="220295625013702" type="System">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="115378291548823" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="721462591174488" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="259479678662648" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Enloquecido.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="154568492536041" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Enloquecido.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="517347916297932" type="Room1">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="786718099488824" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room1.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="791610885548100" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room1.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="917343584083625" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="209400625255958" type="Enloquecido">
                                                     <param id="0" name="Instance variable">BelongsToUID</param>
                                                     <param id="1" name="Value">Room1.UID</param>
                                                 </action>
@@ -654,6 +732,11 @@
                                 <condition id="0" name="On function" sid="289104009095526" type="Function">
                                     <param id="0" name="Name">&quot;generateRoom&quot;</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="547518686450527" type="System">
+                                    <param id="0" name="Variable">enemyCountOnRoom</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions />
                             <sub-events>
@@ -863,7 +946,6 @@
                             </sub-events>
                         </event-block>
                         <comment>When the player enters a new room, it gots tped to player</comment>
-                        <comment bookmark="1">TODO: Look for a mathematical algorythm for room&apos;s distance, because it can&apos;t be escalated.</comment>
                         <event-block sid="420846728022459">
                             <conditions>
                                 <condition id="0" name="On function" sid="559796369298976" type="Function">
@@ -921,30 +1003,31 @@
                                         <event-block sid="488448159711733">
                                             <conditions>
                                                 <condition id="-11" name="For Each" sid="888057798765670" type="System">
-                                                    <param id="0" name="Object">Enemy0</param>
+                                                    <param id="0" name="Object">Enloquecido</param>
                                                 </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="122812295829635" type="Enemy0">
+                                                <condition id="-7" name="Compare instance variable" sid="122812295829635" type="Enloquecido">
                                                     <param id="0" name="Instance variable">BelongsToUID</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-4" name="Set position to another object" sid="201101560421469" type="Enemy0">
+                                                <action id="-4" name="Set position to another object" sid="201101560421469" type="Enloquecido">
                                                     <param id="0" name="Object">Room0</param>
                                                     <param id="1" name="Image point (optional)">0</param>
                                                 </action>
-                                                <action id="-1" name="Set X" sid="585133889502273" type="Enemy0">
-                                                    <param id="0" name="X">(Enemy0.X - Enemy0.xRelative)</param>
+                                                <action id="-1" name="Set X" sid="585133889502273" type="Enloquecido">
+                                                    <param id="0" name="X">(Enloquecido.X - Enloquecido.xRelative)</param>
                                                 </action>
-                                                <action id="-2" name="Set Y" sid="770908323882633" type="Enemy0">
-                                                    <param id="0" name="Y">(Enemy0.Y - Enemy0.yRelative)</param>
+                                                <action id="-2" name="Set Y" sid="770908323882633" type="Enloquecido">
+                                                    <param id="0" name="Y">(Enloquecido.Y - Enloquecido.yRelative)</param>
                                                 </action>
-                                                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="457644611726725" type="Enemy0">
+                                                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="457644611726725" type="Enloquecido">
                                                     <param id="0" name="Obstacle">Stone</param>
                                                 </action>
-                                                <action behavior="LineOfSight" id="1" name="Set cone of view" sid="207974892756244" type="Enemy0">
-                                                    <param id="0" name="Cone of view">45</param>
+                                                <action id="-10" name="Add to" sid="101044723716577" type="System">
+                                                    <param id="0" name="Variable">enemyCountOnRoom</param>
+                                                    <param id="1" name="Value">1</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -988,6 +1071,37 @@
                                                 </action>
                                                 <action id="-2" name="Set Y" sid="443403434394332" type="Stone">
                                                     <param id="0" name="Y">Stone.Y - Stone.yRelative</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="496965462322759">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="856388082423444" type="System">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="874202540245142" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-4" name="Set position to another object" sid="538911587239423" type="Enloquecido">
+                                                    <param id="0" name="Object">Room1</param>
+                                                    <param id="1" name="Image point (optional)">0</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="599732106010331" type="Enloquecido">
+                                                    <param id="0" name="X">(Enloquecido.X - Enloquecido.xRelative)</param>
+                                                </action>
+                                                <action id="-2" name="Set Y" sid="919641513745502" type="Enloquecido">
+                                                    <param id="0" name="Y">(Enloquecido.Y - Enloquecido.yRelative)</param>
+                                                </action>
+                                                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="333820600057532" type="Enloquecido">
+                                                    <param id="0" name="Obstacle">Stone</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="582379031214955" type="System">
+                                                    <param id="0" name="Variable">enemyCountOnRoom</param>
+                                                    <param id="1" name="Value">1</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1035,6 +1149,36 @@
                                             </actions>
                                         </event-block>
                                     </sub-events>
+                                </event-block>
+                                <event-block sid="800428152846514">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="648551030863109" type="System">
+                                            <param id="0" name="Variable">enemyCountOnRoom</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="579838251311785" type="Text2">
+                                            <param id="0" name="Text">&quot;Rooms locked&quot;</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="939049877820114" type="Text2">
+                                            <param id="0" name="Color">rgb(255, 0, 0)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="945322037190752">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="554341950555700" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="437277088291363" type="Text2">
+                                            <param id="0" name="Text">&quot;Rooms unlocked&quot;</param>
+                                        </action>
+                                        <action id="4" name="Set font color" sid="125189885264224" type="Text2">
+                                            <param id="0" name="Color">rgb(0,255, 0)</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -1105,7 +1249,6 @@
                             <actions />
                             <sub-events>
                                 <comment>Moves away every rock after player leaves the room</comment>
-                                <comment>Moves away every rock after player leaves the room</comment>
                                 <event-block sid="456247484333166">
                                     <conditions>
                                         <condition id="-11" name="For Each" sid="460181954580336" type="System">
@@ -1138,20 +1281,51 @@
                                 <event-block sid="199361762898751">
                                     <conditions>
                                         <condition id="-11" name="For Each" sid="447242927864446" type="System">
-                                            <param id="0" name="Object">Enemy0</param>
+                                            <param id="0" name="Object">Enloquecido</param>
                                         </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="942356857101959" type="Enemy0">
+                                        <condition id="-7" name="Compare instance variable" sid="942356857101959" type="Enloquecido">
                                             <param id="0" name="Instance variable">BelongsToUID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">Function.Param(0)</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-3" name="Set position" sid="160798475096254" type="Enemy0">
+                                        <action id="-3" name="Set position" sid="160798475096254" type="Enloquecido">
                                             <param id="0" name="X">9999</param>
                                             <param id="1" name="Y">9999</param>
                                         </action>
-                                        <action behavior="Pathfinding" id="2" name="Stop" sid="803917220783446" type="Enemy0" />
+                                        <action behavior="Pathfinding" id="2" name="Stop" sid="803917220783446" type="Enloquecido" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="191578666313579">
+                            <conditions>
+                                <condition id="0" name="On function" sid="594254231929145" type="Function">
+                                    <param id="0" name="Name">&quot;playerDamaged&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="394997185552570" type="Text">
+                                    <param id="0" name="Text">&quot;Vida: &quot;&amp;playerLife</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="589572765181430" type="Player">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="778775905116601">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="652721461967238" type="System">
+                                            <param id="0" name="Variable">playerLife</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="275110002790268" type="Player" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -1203,145 +1377,278 @@
         </event-group>
         <event-group description="" sid="804714540547799" title="EnemyBehavior">
             <sub-events>
-                <comment>Every half second, pathfinding gets updated</comment>
-                <event-block sid="988044545900035">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="815545351855573" type="System">
-                            <param id="0" name="Interval (seconds)">0.1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Pathfinding" id="5" name="Add obstacle" sid="427939840431479" type="Enemy0">
-                            <param id="0" name="Obstacle">Stone</param>
-                        </action>
-                        <action behavior="Pathfinding" id="0" name="Find path" sid="733943485609987" type="Enemy0">
-                            <param id="0" name="X">Player.X</param>
-                            <param id="1" name="Y">Player.Y</param>
-                        </action>
-                        <action behavior="Pathfinding" id="1" name="Move along path" sid="931447453760100" type="Enemy0" />
-                    </actions>
-                </event-block>
-                <event-block sid="327696139609216">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="547685019475384" type="System">
-                            <param id="0" name="Variable">randomEnemyMove</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="482344625612184" type="Enemy0">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="162047478217582">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="402170986626356" type="System">
-                            <param id="0" name="Variable">randomEnemyMove</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="202545987350290" type="Enemy0">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="593544462790408">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="515336623443774" type="System">
-                            <param id="0" name="Variable">randomEnemyMove</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="684905580026575" type="Enemy0">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="306688091022634">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="967544746446683" type="System">
-                            <param id="0" name="Variable">randomEnemyMove</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="589748400664681" type="Enemy0">
-                            <param id="0" name="Control">3</param>
-                        </action>
-                    </actions>
-                </event-block>
+                <event-group description="" sid="406833065310304" title="Enloquecido">
+                    <sub-events>
+                        <event-group description="" sid="354106795307795" title="Basic movement">
+                            <sub-events>
+                                <comment>Regular movements</comment>
+                                <event-block sid="327696139609216">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="547685019475384" type="Enloquecido">
+                                            <param id="0" name="Instance variable">movingTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="482344625612184" type="Enloquecido">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="162047478217582">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="599427046761029" type="Enloquecido">
+                                            <param id="0" name="Instance variable">movingTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="202545987350290" type="Enloquecido">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="593544462790408">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="960409178722815" type="Enloquecido">
+                                            <param id="0" name="Instance variable">movingTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="684905580026575" type="Enloquecido">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="306688091022634">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="400621518143246" type="Enloquecido">
+                                            <param id="0" name="Instance variable">movingTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="589748400664681" type="Enloquecido">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="244168285509307" title="Behavior">
+                            <sub-events>
+                                <comment>Every tick check if it&apos;s on screen</comment>
+                                <event-block sid="892819825228976">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="797555507446919" type="System">
+                                            <param id="0" name="Interval (seconds)">0.1</param>
+                                        </condition>
+                                        <condition id="-11" name="For Each" sid="584061295126726" type="System">
+                                            <param id="0" name="Object">Enloquecido</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <comment>If enemy has LOS to player (Ignoring stones) will folow it. Will also set the cone-of-vision to 360º</comment>
+                                        <event-block sid="383377031320906">
+                                            <conditions>
+                                                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="144333136802714" type="Enloquecido">
+                                                    <param id="0" name="Object">Player</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="150265567789074" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">movingTo</param>
+                                                    <param id="1" name="Value">-1</param>
+                                                </action>
+                                                <action behavior="Pathfinding" id="3" name="Set enabled" sid="299130566018382" type="Enloquecido">
+                                                    <param id="0" name="Set">1</param>
+                                                </action>
+                                                <action behavior="Pathfinding" id="0" name="Find path" sid="646852140923741" type="Enloquecido">
+                                                    <param id="0" name="X">Player.X</param>
+                                                    <param id="1" name="Y">Player.Y</param>
+                                                </action>
+                                                <action behavior="Pathfinding" id="1" name="Move along path" sid="141694638051811" type="Enloquecido" />
+                                                <action behavior="LineOfSight" id="1" name="Set cone of view" sid="967321313741293" type="Enloquecido">
+                                                    <param id="0" name="Cone of view">360</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <comment>If enemy has NOT LOS to player, stops following and moves on a random direction</comment>
+                                        <event-block sid="274433685384526">
+                                            <conditions>
+                                                <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="548841994490242" type="Enloquecido">
+                                                    <param id="0" name="Object">Player</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="249117061409505" type="System">
+                                                    <param id="0" name="Seconds">1.0</param>
+                                                </action>
+                                                <action behavior="Pathfinding" id="3" name="Set enabled" sid="977029671846704" type="Enloquecido">
+                                                    <param id="0" name="Set">0</param>
+                                                </action>
+                                                <action behavior="Pathfinding" id="2" name="Stop" sid="441756151116615" type="Enloquecido" />
+                                                <action id="-10" name="Set value" sid="507065161504295" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">movingTo</param>
+                                                    <param id="1" name="Value">round(random(0,3))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <comment>If enemy gets, someway, to the end of Pathfinding, will check it again. This is only for avoid possible future bugs</comment>
+                                <event-block sid="122540767386223">
+                                    <conditions>
+                                        <condition behavior="Pathfinding" id="5" name="On arrived" sid="717557071579159" type="Enloquecido" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="0" name="Find path" sid="391150654765202" type="Enloquecido">
+                                            <param id="0" name="X">Player.X</param>
+                                            <param id="1" name="Y">Player.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <comment>Collitions for Enloquecido</comment>
+                        <event-group description="" sid="394651441577418" title="Colliders">
+                            <sub-events>
+                                <event-block sid="438340690447982">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="228825006823692" type="Enloquecido">
+                                            <param id="0" name="Object">Bullet</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Flash" id="0" name="Flash" sid="179019019428248" type="Enloquecido">
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                            <param id="2" name="Duration">1.0</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="763770913164864" type="Enloquecido">
+                                            <param id="0" name="Instance variable">life</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="626939273116830" type="Bullet" />
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="864308884042935">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="226328655538923" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">life</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="289177883457890" type="Enloquecido" />
+                                                <action id="-11" name="Subtract from" sid="898955864055840" type="System">
+                                                    <param id="0" name="Variable">enemyCountOnRoom</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="423583529945995">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="922152601597170" type="Enloquecido">
+                                            <param id="0" name="Object">Player</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="714705327442040" type="System">
+                                            <param id="0" name="Variable">playerLife</param>
+                                            <param id="1" name="Value">playerLife - Enloquecido.damage</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="697844450840322" type="Function">
+                                            <param id="0" name="Name">&quot;playerDamaged&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="568415494400643">
+                                    <conditions>
+                                        <condition id="-3" name="Is on-screen" sid="265750552780858" type="Enloquecido" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <comment>If enemy collides on a border or stone, will change the movement</comment>
+                                        <event-block any="1" sid="193948875713581">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="681124012565174" type="Enloquecido">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="0" name="On collision with another object" sid="199404740239141" type="Enloquecido">
+                                                    <param id="0" name="Object">Border</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="487195955995691" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">movingTo</param>
+                                                    <param id="1" name="Value">round(random(0,3))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="450394702565157">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="212428569198663" type="Enloquecido">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="888814324270851" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">movingTo</param>
+                                                    <param id="1" name="Value">round(random(0,3))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="887241821627111">
+        <event-block sid="479509220188245">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="856904941179523" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
+                <condition id="-14" name="Compare variable" sid="268760205616377" type="System">
+                    <param id="0" name="Variable">enemyCountOnRoom</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="-4" name="Trigger once while true" sid="150543236373314" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Set text" sid="126780222372161" type="Text2">
+                    <param id="0" name="Text">&quot;Rooms unlocked&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="288528797071568" type="Text2">
+                    <param id="0" name="Color">rgb(0,255, 0)</param>
+                </action>
+            </actions>
         </event-block>
-        <event-block sid="392305571667952">
+        <event-block sid="254362715287873">
             <conditions>
-                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="350797598431297" type="Enemy0">
+                <condition id="-3" inverted="1" name="Is on-screen" sid="818869905691541" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="591676300109119" type="Player" />
+                <action id="0" name="Spawn another object" sid="588786944955711" type="Kitchen">
                     <param id="0" name="Object">Player</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-16" name="Wait" sid="251037499580010" type="System">
-                    <param id="0" name="Seconds">2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
                 </action>
-                <action id="-9" name="Set value" sid="413334341176874" type="System">
-                    <param id="0" name="Variable">randomEnemyMove</param>
-                    <param id="1" name="Value">-1</param>
-                </action>
-                <action behavior="Pathfinding" id="3" name="Set enabled" sid="564047258901038" type="Enemy0">
-                    <param id="0" name="Set">1</param>
-                </action>
-                <action behavior="Pathfinding" id="0" name="Find path" sid="339116947537447" type="Enemy0">
-                    <param id="0" name="X">Player.X</param>
-                    <param id="1" name="Y">Player.Y</param>
-                </action>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="770150946635964" type="Enemy0" />
-                <action behavior="LineOfSight" id="1" name="Set cone of view" sid="573909377602994" type="Enemy0">
-                    <param id="0" name="Cone of view">360</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="527609766326518">
-            <conditions>
-                <condition id="-22" name="Else" sid="546284885452018" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="180016765585380" type="System">
-                    <param id="0" name="Variable">randomEnemyMove</param>
-                    <param id="1" name="Value">round(random(0,3))</param>
-                </action>
-                <action behavior="Pathfinding" id="3" name="Set enabled" sid="534604189090263" type="Enemy0">
-                    <param id="0" name="Set">0</param>
-                </action>
-                <action behavior="LineOfSight" id="1" name="Set cone of view" sid="568400260913997" type="Enemy0">
-                    <param id="0" name="Cone of view">360</param>
-                </action>
-                <action id="-16" name="Wait" sid="453820913664949" type="System">
-                    <param id="0" name="Seconds">0.2</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="122540767386223">
-            <conditions>
-                <condition behavior="Pathfinding" id="5" name="On arrived" sid="717557071579159" type="Enemy0" />
-            </conditions>
-            <actions>
-                <action behavior="Pathfinding" id="0" name="Find path" sid="391150654765202" type="Enemy0">
-                    <param id="0" name="X">Player.X</param>
-                    <param id="1" name="Y">Player.Y</param>
+                <action id="-3" name="Set position" sid="182010519542455" type="Player">
+                    <param id="0" name="X">416</param>
+                    <param id="1" name="Y">436</param>
                 </action>
             </actions>
         </event-block>
