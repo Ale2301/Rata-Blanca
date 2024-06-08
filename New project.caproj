@@ -10,10 +10,12 @@
     <unique-id>2rn7eb37fgdgc</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -58,6 +60,9 @@
             <behaviors>
                 <behavior-type name="8Direction" sid="343136766020134">
                     <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="788089966415365">
+                    <behavior id="Flash" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -200,7 +205,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Enemy0" sid="199337083264550">
+        <object-type name="Enloquecido" sid="199337083264550">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="BelongsToRoom" sid="596350519514402" type="number" />
@@ -208,6 +213,9 @@
                 <instance-variable name="BelongsToUID" sid="421417997981455" type="number" />
                 <instance-variable name="xRelative" sid="259291774025846" type="number" />
                 <instance-variable name="yRelative" sid="343996313292385" type="number" />
+                <instance-variable name="life" sid="117224625171738" type="number" />
+                <instance-variable name="movingTo" sid="461377145102989" type="number" />
+                <instance-variable name="damage" sid="359001838870705" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pathfinding" sid="246706088162877">
@@ -228,6 +236,9 @@
                 <behavior-type name="Flash" sid="610853897373082">
                     <behavior id="Flash" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="689928527186756">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570124849517561" speed="5">
@@ -235,13 +246,51 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Enemy1" sid="134919678673777">
+        <object-type name="Browser" sid="550041761718162">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Cuervo" sid="262459532853911">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BelongsToRoom" sid="165444218572767" type="number" />
+                <instance-variable name="isInTemplate" sid="432674175929185" type="boolean" />
+                <instance-variable name="BelongsToUID" sid="388599396562566" type="number" />
+                <instance-variable name="xRelative" sid="887796592392607" type="number" />
+                <instance-variable name="yRelative" sid="699210371607219" type="number" />
+                <instance-variable name="life" sid="691008093250623" type="number" />
+                <instance-variable name="movingTo" sid="448560598006346" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="647325453788325">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="643308554150120">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="650440374540407">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="626301948727175">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="516543613106479">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="305490565845959">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="830472003592938" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="512680358205839" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="653175363364694">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="968139382721136">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
@@ -254,6 +303,7 @@
     <global-instances>
         <global-instance type="Keyboard" uid="5" />
         <global-instance type="Function" uid="12" />
+        <global-instance type="Browser" uid="35" />
     </global-instances>
     <sounds-folder />
     <music-folder />
