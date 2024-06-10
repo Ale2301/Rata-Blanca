@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Score" sid="519366257059953" static="0" type="number">0</variable>
         <variable constant="0" name="offsetRoomPos" sid="681542362953755" static="0" type="number">0</variable>
         <variable constant="0" name="playerLife" sid="186121573667452" static="0" type="number">100</variable>
         <variable constant="0" name="enemyCountOnRoom" sid="855897341240433" static="0" type="number">0</variable>
@@ -99,6 +100,38 @@
                     </conditions>
                     <actions>
                         <action id="-10" name="Set value" sid="707075380809267" type="Enloquecido">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="915419020907611">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="243149206470475" type="System">
+                            <param id="0" name="Object">Cuervo</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="136312544448464" type="Cuervo">
+                            <param id="0" name="Object">Room0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="642620184752055" type="Cuervo">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="147990982764975">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="217950435581736" type="System">
+                            <param id="0" name="Object">Cuervo</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="397568396645198" type="Cuervo">
+                            <param id="0" name="Object">Room1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="937278129190467" type="Cuervo">
                             <param id="0" name="Instance variable">BelongsToRoom</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -294,6 +327,54 @@
                                                 </action>
                                             </actions>
                                         </event-block>
+                                        <event-block sid="734594321401699">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="397207508250686" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="114675855562486" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="507325209343940" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="303306206444521" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Cuervo.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="976794482647490" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Cuervo.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="954976939701036" type="Room0">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="692151369784913" type="Cuervo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="611552918404027" type="Cuervo">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room0.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="783316273359756" type="Cuervo">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room0.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="147109132840262" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="178146158761945" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room0.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
                                     </sub-events>
                                 </event-block>
                                 <event-block sid="840335186541770">
@@ -413,6 +494,54 @@
                                                     <param id="0" name="Instance variable">isInTemplate</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="209400625255958" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room1.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="580250787251391">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="103713287757502" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="214226355725376" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="421389457901638" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="364280355396128" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Cuervo.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="891743575194217" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Cuervo.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="797241614449965" type="Room1">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="842054698119433" type="Cuervo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="914551265485094" type="Cuervo">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room1.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="606793759170911" type="Cuervo">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room1.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="267846980647815" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="517289710200068" type="Cuervo">
                                                     <param id="0" name="Instance variable">BelongsToUID</param>
                                                     <param id="1" name="Value">Room1.UID</param>
                                                 </action>
@@ -1065,6 +1194,37 @@
                                                 </action>
                                             </actions>
                                         </event-block>
+                                        <event-block sid="545541553969940">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="598500682055330" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="703899878946697" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-4" name="Set position to another object" sid="781774920314084" type="Cuervo">
+                                                    <param id="0" name="Object">Room0</param>
+                                                    <param id="1" name="Image point (optional)">0</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="893064193535990" type="Cuervo">
+                                                    <param id="0" name="X">(Cuervo.X - Cuervo.xRelative)</param>
+                                                </action>
+                                                <action id="-2" name="Set Y" sid="825118091160269" type="Cuervo">
+                                                    <param id="0" name="Y">(Cuervo.Y - Cuervo.yRelative)</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="632414645495636" type="System">
+                                                    <param id="0" name="Variable">enemyCountOnRoom</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="737663680280968" type="Cuervo">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
                                     </sub-events>
                                 </event-block>
                                 <event-block sid="443136277970476">
@@ -1138,6 +1298,37 @@
                                                     <param id="1" name="Value">1</param>
                                                 </action>
                                                 <action behavior="Solid" id="0" name="Set enabled" sid="124837681413563" type="Enloquecido">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="281510522531156">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="133964063851419" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="449768426073662" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-4" name="Set position to another object" sid="592726284487423" type="Cuervo">
+                                                    <param id="0" name="Object">Room1</param>
+                                                    <param id="1" name="Image point (optional)">0</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="443335553959318" type="Cuervo">
+                                                    <param id="0" name="X">(Cuervo.X - Cuervo.xRelative)</param>
+                                                </action>
+                                                <action id="-2" name="Set Y" sid="794598335402709" type="Cuervo">
+                                                    <param id="0" name="Y">(Cuervo.Y - Cuervo.yRelative)</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="397045194529647" type="System">
+                                                    <param id="0" name="Variable">enemyCountOnRoom</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="426000711618806" type="Cuervo">
                                                     <param id="0" name="State">1</param>
                                                 </action>
                                             </actions>
@@ -1334,6 +1525,24 @@
                                         <action behavior="Pathfinding" id="2" name="Stop" sid="803917220783446" type="Enloquecido" />
                                     </actions>
                                 </event-block>
+                                <event-block sid="856530473010027">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="511010894010078" type="System">
+                                            <param id="0" name="Object">Cuervo</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="198211418121160" type="Cuervo">
+                                            <param id="0" name="Instance variable">BelongsToUID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Function.Param(0)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="978893176449012" type="Cuervo">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="191578666313579">
@@ -1414,6 +1623,225 @@
         </event-group>
         <event-group description="" sid="804714540547799" title="EnemyBehavior">
             <sub-events>
+                <event-group description="" sid="918203214178306" title="Cuervo">
+                    <sub-events>
+                        <event-group description="" sid="590366520266950" title="BehaviorCuervo">
+                            <sub-events>
+                                <event-block sid="971763913369704">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="498246447129475" type="System">
+                                            <param id="0" name="Interval (seconds)">0.1</param>
+                                        </condition>
+                                        <condition id="-11" name="For Each" sid="482114280335279" type="System">
+                                            <param id="0" name="Object">Cuervo</param>
+                                        </condition>
+                                        <condition id="-3" name="Is on-screen" sid="315835228772752" type="Cuervo" />
+                                        <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="417791198681355" type="Cuervo">
+                                            <param id="0" name="Object">Player</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="477897973480800" type="Cuervo">
+                                            <param id="0" name="Instance variable">attacking</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition behavior="Pathfinding" id="4" inverted="1" name="Is moving along path" sid="272298198760392" type="Cuervo" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="3" name="Set enabled" sid="504967150105061" type="Cuervo">
+                                            <param id="0" name="Set">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="785865263856092" type="Cuervo">
+                                            <param id="0" name="Instance variable">vulnerable</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action behavior="Pathfinding" id="0" name="Find path" sid="408358143284167" type="Cuervo">
+                                            <param id="0" name="X">random(21,867)</param>
+                                            <param id="1" name="Y">random(34,873)</param>
+                                        </action>
+                                        <action behavior="Pathfinding" id="1" name="Move along path" sid="449773701916428" type="Cuervo" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="432677139777193">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="881582199588238" type="System">
+                                            <param id="0" name="Interval (seconds)">0.1</param>
+                                        </condition>
+                                        <condition id="-11" name="For Each" sid="679288113807342" type="System">
+                                            <param id="0" name="Object">Cuervo</param>
+                                        </condition>
+                                        <condition id="-3" name="Is on-screen" sid="275265093766416" type="Cuervo" />
+                                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="663012498249994" type="Cuervo">
+                                            <param id="0" name="Object">Player</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="706302352963003" type="Cuervo">
+                                            <param id="0" name="Instance variable">attacking</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="402875458014620" type="Cuervo">
+                                            <param id="0" name="Instance variable">canAttack</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="205985946529757" type="Cuervo">
+                                            <param id="0" name="Instance variable">canAttack</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="11" name="Set collisions enabled" sid="653422223805285" type="Cuervo">
+                                            <param id="0" name="Collisions">0</param>
+                                        </action>
+                                        <action behavior="Pathfinding" id="2" name="Stop" sid="773982187479652" type="Cuervo" />
+                                        <action behavior="Pathfinding" id="3" name="Set enabled" sid="801557361967394" type="Cuervo">
+                                            <param id="0" name="Set">0</param>
+                                        </action>
+                                        <action behavior="8Direction" id="8" name="Set enabled" sid="788959013398475" type="Cuervo">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="635592857644376" type="Cuervo">
+                                            <param id="0" name="Instance variable">attacking</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="142868306106424" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="785263676829876" type="Cuervo">
+                                            <param id="0" name="X">1000</param>
+                                            <param id="1" name="Y">1000</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="295860094300875" type="Player">
+                                            <param id="0" name="Object">Mark</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Flash" id="0" name="Flash" sid="912421682770030" type="Mark">
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                            <param id="2" name="Duration">0.3</param>
+                                        </action>
+                                        <action behavior="8Direction" id="8" name="Set enabled" sid="372439401831336" type="Cuervo">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="568984696022384" type="System">
+                                            <param id="0" name="Seconds">random(0.25,1.5)</param>
+                                        </action>
+                                        <action id="11" name="Set collisions enabled" sid="579625891346666" type="Cuervo">
+                                            <param id="0" name="Collisions">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="704718377163109" type="Cuervo">
+                                            <param id="0" name="Instance variable">vulnerable</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="415122401071693" type="Mark" />
+                                        <action id="-4" name="Set position to another object" sid="144565582067832" type="Cuervo">
+                                            <param id="0" name="Object">Mark</param>
+                                            <param id="1" name="Image point (optional)">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="695270053038306" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="875721589530483" type="Cuervo">
+                                            <param id="0" name="Instance variable">attacking</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="722816328896341" type="System">
+                                            <param id="0" name="Seconds">5</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="736567020182148" type="Cuervo">
+                                            <param id="0" name="Instance variable">canAttack</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="517452583011339">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="429521468304385" type="Cuervo">
+                                            <param id="0" name="Instance variable">attacking</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="883467136928801" type="Cuervo">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-group description="" sid="900499585249507" title="CollidersCuervo">
+                                    <sub-events>
+                                        <event-block sid="379514724335496">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="480714093219870" type="Cuervo">
+                                                    <param id="0" name="Object">Bullet</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="363563425941084" type="Cuervo">
+                                                    <param id="0" name="Instance variable">vulnerable</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Flash" id="0" name="Flash" sid="812192658623784" type="Cuervo">
+                                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                                    <param id="2" name="Duration">1.0</param>
+                                                </action>
+                                                <action id="-12" name="Subtract from" sid="723610357854325" type="Cuervo">
+                                                    <param id="0" name="Instance variable">life</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-9" name="Destroy" sid="963901050280018" type="Bullet" />
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="170136106933777">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="831425365828920" type="Cuervo">
+                                                            <param id="0" name="Instance variable">life</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="615977058947928" type="Cuervo" />
+                                                        <action id="-11" name="Subtract from" sid="952259496932455" type="System">
+                                                            <param id="0" name="Variable">enemyCountOnRoom</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-10" name="Add to" sid="908193389111329" type="System">
+                                                            <param id="0" name="Variable">Score</param>
+                                                            <param id="1" name="Value">200</param>
+                                                        </action>
+                                                        <action id="0" name="Set text" sid="567874559287248" type="Score">
+                                                            <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="286232781277674">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="957316894586897" type="Cuervo">
+                                                    <param id="0" name="Object">Player</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="895361282811721" type="System">
+                                                    <param id="0" name="Variable">playerLife</param>
+                                                    <param id="1" name="Value">playerLife - Enloquecido.damage</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="304183090745167" type="Function">
+                                                    <param id="0" name="Name">&quot;playerDamaged&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="406833065310304" title="Enloquecido">
                     <sub-events>
                         <event-group description="" sid="354106795307795" title="Basic movement">
@@ -1477,7 +1905,7 @@
                                 </event-block>
                             </sub-events>
                         </event-group>
-                        <event-group description="" sid="244168285509307" title="Behavior">
+                        <event-group description="" sid="244168285509307" title="BehaviorEnloquecido">
                             <sub-events>
                                 <comment>If enemy has LOS to player (Ignoring stones) will folow it. Will also set the cone-of-vision to 360º</comment>
                                 <event-block sid="892819825228976">
@@ -1586,6 +2014,13 @@
                                                     <param id="0" name="Variable">enemyCountOnRoom</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
+                                                <action id="-10" name="Add to" sid="378736483266977" type="System">
+                                                    <param id="0" name="Variable">Score</param>
+                                                    <param id="1" name="Value">100</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="713949110580919" type="Score">
+                                                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                     </sub-events>
@@ -1675,6 +2110,5 @@
                 </action>
             </actions>
         </event-block>
-        <comment>Enemy right bottom on yellow room is the bug.</comment>
     </events>
 </c2eventsheet>
