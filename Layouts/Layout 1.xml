@@ -82,8 +82,8 @@
                     </properties>
                     <instance-variables>
                         <roomIdNumber>0</roomIdNumber>
-                        <basePositionY>2511</basePositionY>
-                        <basePositionX>-1050</basePositionX>
+                        <basePositionY>0</basePositionY>
+                        <basePositionX>0</basePositionX>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
