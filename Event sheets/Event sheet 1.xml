@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="variableRoomPosX" sid="693664031443667" static="0" type="number">0</variable>
+        <variable constant="0" name="variableRoomPosY" sid="841770477888913" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="519366257059953" static="0" type="number">0</variable>
         <variable constant="0" name="offsetRoomPos" sid="681542362953755" static="0" type="number">0</variable>
         <variable constant="0" name="playerLife" sid="186121573667452" static="0" type="number">100</variable>
@@ -23,7 +25,32 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="517530331270243" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="-10" name="Set value" sid="674432330068250" type="Room0">
+                    <param id="0" name="Instance variable">basePositionX</param>
+                    <param id="1" name="Value">Room0.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="675887378481409" type="Room0">
+                    <param id="0" name="Instance variable">basePositionY</param>
+                    <param id="1" name="Value">Room0.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="606115772629439" type="Room1">
+                    <param id="0" name="Instance variable">basePositionX</param>
+                    <param id="1" name="Value">Room1.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="293816116916636" type="Room1">
+                    <param id="0" name="Instance variable">basePositionY</param>
+                    <param id="1" name="Value">Room1.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="107991560403389" type="SpecialRoom">
+                    <param id="0" name="Instance variable">basePositionX</param>
+                    <param id="1" name="Value">SpecialRoom.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="335280709282635" type="SpecialRoom">
+                    <param id="0" name="Instance variable">basePositionY</param>
+                    <param id="1" name="Value">SpecialRoom.Y</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="807599160083945">
                     <conditions>
@@ -211,12 +238,34 @@
                                             <param id="0" name="Comparison">0</param>
                                             <param id="1" name="Value">0</param>
                                         </condition>
+                                        <condition id="-33" name="Pick by comparison" sid="737267854928580" type="System">
+                                            <param id="0" name="Object">Room0</param>
+                                            <param id="1" name="Expression">Room0.basePositionX</param>
+                                            <param id="2" name="Comparison">1</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-9" name="Set value" sid="622596482844144" type="System">
+                                            <param id="0" name="Variable">variableRoomPosX</param>
+                                            <param id="1" name="Value">Room0.basePositionX</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="864956528305962" type="System">
+                                            <param id="0" name="Variable">variableRoomPosY</param>
+                                            <param id="1" name="Value">Room0.basePositionY</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="426515201038334" type="Kitchen">
                                             <param id="0" name="Object">Room0</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="801211652447534" type="Room0">
+                                            <param id="0" name="Instance variable">basePositionX</param>
+                                            <param id="1" name="Value">variableRoomPosX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="698006571429247" type="Room0">
+                                            <param id="0" name="Instance variable">basePositionY</param>
+                                            <param id="1" name="Value">variableRoomPosY</param>
                                         </action>
                                         <action id="-25" name="Move to bottom" sid="486036566284174" type="Room0" />
                                         <action id="1" name="Set key" sid="940577868192718" type="RoomPos">
@@ -383,8 +432,22 @@
                                             <param id="0" name="Comparison">0</param>
                                             <param id="1" name="Value">1</param>
                                         </condition>
+                                        <condition id="-33" name="Pick by comparison" sid="367698303059956" type="System">
+                                            <param id="0" name="Object">Room1</param>
+                                            <param id="1" name="Expression">Room1.basePositionX</param>
+                                            <param id="2" name="Comparison">1</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-9" name="Set value" sid="816925896353297" type="System">
+                                            <param id="0" name="Variable">variableRoomPosX</param>
+                                            <param id="1" name="Value">Room1.basePositionX</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="723309093086920" type="System">
+                                            <param id="0" name="Variable">variableRoomPosY</param>
+                                            <param id="1" name="Value">Room1.basePositionY</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="819720992200735" type="Kitchen">
                                             <param id="0" name="Object">Room1</param>
                                             <param id="1" name="Layer">0</param>
@@ -404,6 +467,14 @@
                                             <param id="1" name="Value">offsetRoomPos + 900</param>
                                         </action>
                                         <action id="-24" name="Stop loop" sid="245061608897087" type="System" />
+                                        <action id="-10" name="Set value" sid="701036852194886" type="Room1">
+                                            <param id="0" name="Instance variable">basePositionX</param>
+                                            <param id="1" name="Value">variableRoomPosX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="729699826940333" type="Room1">
+                                            <param id="0" name="Instance variable">basePositionY</param>
+                                            <param id="1" name="Value">variableRoomPosY</param>
+                                        </action>
                                     </actions>
                                     <sub-events>
                                         <event-block sid="248085942343706">
@@ -570,12 +641,34 @@
                                     <param id="0" name="Comparison">0</param>
                                     <param id="1" name="Value">5</param>
                                 </condition>
+                                <condition id="-33" name="Pick by comparison" sid="754725829718677" type="System">
+                                    <param id="0" name="Object">SpecialRoom</param>
+                                    <param id="1" name="Expression">SpecialRoom.basePositionX</param>
+                                    <param id="2" name="Comparison">1</param>
+                                    <param id="3" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
+                                <action id="-9" name="Set value" sid="926963457189039" type="System">
+                                    <param id="0" name="Variable">variableRoomPosX</param>
+                                    <param id="1" name="Value">SpecialRoom.basePositionX</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="484956079083967" type="System">
+                                    <param id="0" name="Variable">variableRoomPosY</param>
+                                    <param id="1" name="Value">SpecialRoom.basePositionY</param>
+                                </action>
                                 <action id="0" name="Spawn another object" sid="917835420705568" type="Kitchen">
                                     <param id="0" name="Object">SpecialRoom</param>
                                     <param id="1" name="Layer">0</param>
                                     <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="404387293175897" type="SpecialRoom">
+                                    <param id="0" name="Instance variable">basePositionX</param>
+                                    <param id="1" name="Value">variableRoomPosX</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="992178061883841" type="SpecialRoom">
+                                    <param id="0" name="Instance variable">basePositionY</param>
+                                    <param id="1" name="Value">variableRoomPosY</param>
                                 </action>
                                 <action id="-25" name="Move to bottom" sid="970310858552164" type="SpecialRoom" />
                                 <action id="1" name="Set key" sid="950924560657393" type="RoomPos">
@@ -2090,23 +2183,6 @@
                 </action>
                 <action id="4" name="Set font color" sid="288528797071568" type="Text2">
                     <param id="0" name="Color">rgb(0,255, 0)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="254362715287873">
-            <conditions>
-                <condition id="-3" inverted="1" name="Is on-screen" sid="818869905691541" type="Player" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="591676300109119" type="Player" />
-                <action id="0" name="Spawn another object" sid="588786944955711" type="Kitchen">
-                    <param id="0" name="Object">Player</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-3" name="Set position" sid="182010519542455" type="Player">
-                    <param id="0" name="X">416</param>
-                    <param id="1" name="Y">436</param>
                 </action>
             </actions>
         </event-block>
