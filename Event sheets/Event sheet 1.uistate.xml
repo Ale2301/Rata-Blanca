@@ -4,9 +4,9 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <show-addaction-links>1</show-addaction-links>
-    <scroll-pos>0</scroll-pos>
+    <scroll-pos>1950</scroll-pos>
     <conditions-column>259</conditions-column>
-    <actions-namecolumn>17</actions-namecolumn>
+    <actions-namecolumn>18</actions-namecolumn>
     <condition-namecolumns>
         <nest>81</nest>
         <nest>83</nest>
@@ -17,14 +17,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <nest>24</nest>
         <nest>18</nest>
         <nest>15</nest>
-        <nest>14</nest>
     </condition-namecolumns>
     <events>
         <event collapsed="1" sid="916904981726356" />
-        <event collapsed="1" sid="840335186541770" />
         <event collapsed="1" sid="980142065861573" />
         <event collapsed="1" sid="778818100842301" />
         <event collapsed="1" sid="867760090836489" />
+        <event collapsed="1" sid="619674199897009" />
         <event collapsed="1" sid="367717345199034" />
         <event collapsed="1" sid="255177401203612" />
         <event collapsed="1" sid="374115234947981" />
@@ -36,5 +35,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event collapsed="1" sid="705224651800733" />
         <event collapsed="1" sid="354106795307795" />
         <event collapsed="1" sid="438340690447982" />
+        <event collapsed="1" sid="332451436257779" />
     </events>
 </c2uistate>
