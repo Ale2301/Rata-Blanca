@@ -24,6 +24,7 @@
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
@@ -57,12 +58,18 @@
     <object-folder>
         <object-type name="Player" sid="279724106697321">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="vulnerable" sid="994739020141493" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="343136766020134">
                     <behavior id="EightDir" />
                 </behavior-type>
                 <behavior-type name="Flash" sid="788089966415365">
                     <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Pathfinding" sid="240831062500850">
+                    <behavior id="Pathfinding" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -242,7 +249,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570124849517561" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\Enloquecido_idle_derecha.gif">
+                        <collision-poly>
+                            <point x="0.402778" y="0.239669" />
+                            <point x="0.5" y="0.0165289" />
+                            <point x="0.861111" y="0.0826446" />
+                            <point x="0.597222" y="0.5" />
+                            <point x="0.986111" y="0.991736" />
+                            <point x="0.5" y="0.719008" />
+                            <point x="0" y="1" />
+                            <point x="0.236111" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -309,6 +327,19 @@
         <object-type name="Score" sid="136624075909953">
             <plugin id="Text" />
         </object-type>
+        <object-type name="CameraCenter" sid="291896592927574">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="751714617145669">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="411123492396719" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -335,6 +366,9 @@
         </file-folder>
         <file-folder name="JavaScript">
             <file name="test.js" />
+        </file-folder>
+        <file-folder name="Images">
+            <file name="Enloquecido_idle_derecha.gif" />
         </file-folder>
     </files-folder>
 </c2project>

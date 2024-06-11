@@ -28,7 +28,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="file-folder/JavaScript/" />
+        <folder expanded="0" path="file-folder/JavaScript/" />
+        <folder expanded="1" path="file-folder/Images/" />
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/Border/" />
         <folder expanded="1" path="animation-folder/Bullet/" />
@@ -43,5 +44,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Enloquecido/" />
         <folder expanded="1" path="animation-folder/Cuervo/" />
         <folder expanded="1" path="animation-folder/Mark/" />
+        <folder expanded="1" path="animation-folder/CameraCenter/" />
     </folders-expanded>
 </c2uistate>
