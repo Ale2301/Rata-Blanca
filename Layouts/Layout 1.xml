@@ -88,8 +88,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1050</x>
-                        <y>2511</y>
+                        <x>-290</x>
+                        <y>2311</y>
                         <z>0</z>
                         <width>900</width>
                         <height>900</height>
@@ -115,8 +115,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-56</x>
-                        <y>2413</y>
+                        <x>884</x>
+                        <y>2323</y>
                         <z>0</z>
                         <width>900</width>
                         <height>900</height>
@@ -142,8 +142,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1056.564086914</x>
-                        <y>2365.563964844</y>
+                        <x>2027</x>
+                        <y>2316</y>
                         <z>0</z>
                         <width>900</width>
                         <height>900</height>
@@ -161,6 +161,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <vulnerable>1</vulnerable>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
                             <properties>
@@ -174,6 +177,20 @@
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Flash" />
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>-1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>100000</max-speed>
+                                <acceleration>100000</acceleration>
+                                <deceleration>3000</deceleration>
+                                <rotate-speed>10000</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Disabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -670,8 +687,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1025</x>
-                        <y>2274</y>
+                        <x>-265</x>
+                        <y>2094</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -706,8 +723,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-165</x>
-                        <y>2395</y>
+                        <x>795</x>
+                        <y>2375</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -742,8 +759,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1297</x>
-                        <y>2519</y>
+                        <x>2267</x>
+                        <y>2459</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -778,8 +795,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>91</x>
-                        <y>2635</y>
+                        <x>71</x>
+                        <y>3575</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -836,8 +853,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1267</x>
-                        <y>2624</y>
+                        <x>-507</x>
+                        <y>2444</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -872,8 +889,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>850</x>
-                        <y>2112</y>
+                        <x>1820</x>
+                        <y>2052</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -908,8 +925,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1288</x>
-                        <y>2187</y>
+                        <x>2258</x>
+                        <y>2127</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -971,8 +988,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-781</x>
-                        <y>2874</y>
+                        <x>-21</x>
+                        <y>2694</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1007,8 +1024,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1244</x>
-                        <y>2370</y>
+                        <x>-484</x>
+                        <y>2190</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1043,8 +1060,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-789</x>
-                        <y>2164</y>
+                        <x>-29</x>
+                        <y>1984</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1079,8 +1096,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1135</x>
-                        <y>2618</y>
+                        <x>2105</x>
+                        <y>2558</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1115,302 +1132,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1334</x>
-                        <y>2271</y>
+                        <x>2304</x>
+                        <y>2211</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enloquecido" uid="37">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <BelongsToRoom>0</BelongsToRoom>
-                        <isInTemplate>true</isInTemplate>
-                        <BelongsToUID>0</BelongsToUID>
-                        <xRelative>0</xRelative>
-                        <yRelative>0</yRelative>
-                        <life>2</life>
-                        <movingTo>-1</movingTo>
-                        <damage>1</damage>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pathfinding">
-                            <properties>
-                                <cell-size>30</cell-size>
-                                <cell-border>1</cell-border>
-                                <obstacles>Solids</obstacles>
-                                <max-speed>200</max-speed>
-                                <acceleration>1000</acceleration>
-                                <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
-                                <rotate-object>Yes</rotate-object>
-                                <diagonals>Enabled</diagonals>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>0</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                                <jump-strength>0</jump-strength>
-                                <gravity>0</gravity>
-                                <max-fall-speed>0</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>0</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>No</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Solids</obstacles>
-                                <range>450</range>
-                                <cone-of-view>180</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>200</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>No</set-angle>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Flash" />
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1333</x>
-                        <y>2701</y>
-                        <z>0</z>
-                        <width>45.541191101</width>
-                        <height>45.541191101</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enloquecido" uid="40">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <BelongsToRoom>0</BelongsToRoom>
-                        <isInTemplate>true</isInTemplate>
-                        <BelongsToUID>0</BelongsToUID>
-                        <xRelative>0</xRelative>
-                        <yRelative>0</yRelative>
-                        <life>2</life>
-                        <movingTo>-1</movingTo>
-                        <damage>1</damage>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pathfinding">
-                            <properties>
-                                <cell-size>30</cell-size>
-                                <cell-border>1</cell-border>
-                                <obstacles>Solids</obstacles>
-                                <max-speed>200</max-speed>
-                                <acceleration>1000</acceleration>
-                                <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
-                                <rotate-object>Yes</rotate-object>
-                                <diagonals>Enabled</diagonals>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>0</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                                <jump-strength>0</jump-strength>
-                                <gravity>0</gravity>
-                                <max-fall-speed>0</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>0</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>No</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Solids</obstacles>
-                                <range>450</range>
-                                <cone-of-view>180</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>200</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>No</set-angle>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Flash" />
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1045</x>
-                        <y>2073</y>
-                        <z>0</z>
-                        <width>45.541191101</width>
-                        <height>45.541191101</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enloquecido" uid="43">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <BelongsToRoom>0</BelongsToRoom>
-                        <isInTemplate>true</isInTemplate>
-                        <BelongsToUID>0</BelongsToUID>
-                        <xRelative>0</xRelative>
-                        <yRelative>0</yRelative>
-                        <life>2</life>
-                        <movingTo>-1</movingTo>
-                        <damage>1</damage>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pathfinding">
-                            <properties>
-                                <cell-size>30</cell-size>
-                                <cell-border>1</cell-border>
-                                <obstacles>Solids</obstacles>
-                                <max-speed>200</max-speed>
-                                <acceleration>1000</acceleration>
-                                <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
-                                <rotate-object>Yes</rotate-object>
-                                <diagonals>Enabled</diagonals>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>0</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                                <jump-strength>0</jump-strength>
-                                <gravity>0</gravity>
-                                <max-fall-speed>0</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>0</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>No</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Solids</obstacles>
-                                <range>450</range>
-                                <cone-of-view>180</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>200</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>No</set-angle>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Flash" />
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>747</x>
-                        <y>2238</y>
-                        <z>0</z>
-                        <width>45.541191101</width>
-                        <height>45.541191101</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1469,8 +1195,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>95</x>
-                        <y>2160</y>
+                        <x>1055</x>
+                        <y>2140</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1505,8 +1231,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-355</x>
-                        <y>2600</y>
+                        <x>605</x>
+                        <y>2580</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1541,8 +1267,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-286</x>
-                        <y>2100</y>
+                        <x>674</x>
+                        <y>2080</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1577,8 +1303,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>75</x>
-                        <y>2470</y>
+                        <x>1035</x>
+                        <y>2450</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1613,8 +1339,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-245</x>
-                        <y>2740</y>
+                        <x>-265</x>
+                        <y>3680</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1649,44 +1375,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1105</x>
-                        <y>2300</y>
-                        <z>0</z>
-                        <width>55.416603088</width>
-                        <height>55.416599274</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Stone" uid="47">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <BelongsToRoom>0</BelongsToRoom>
-                        <isInTemplate>true</isInTemplate>
-                        <BelongsToUID>0</BelongsToUID>
-                        <xRelative>0</xRelative>
-                        <yRelative>0</yRelative>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>645</x>
-                        <y>2620</y>
+                        <x>2075</x>
+                        <y>2240</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1721,44 +1411,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>854</x>
-                        <y>2670</y>
-                        <z>0</z>
-                        <width>55.416603088</width>
-                        <height>55.416599274</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Stone" uid="54">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <BelongsToRoom>0</BelongsToRoom>
-                        <isInTemplate>true</isInTemplate>
-                        <BelongsToUID>0</BelongsToUID>
-                        <xRelative>0</xRelative>
-                        <yRelative>0</yRelative>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-1116</x>
-                        <y>2710</y>
+                        <x>1824</x>
+                        <y>2610</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1793,108 +1447,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1166</x>
-                        <y>2240</y>
+                        <x>-406</x>
+                        <y>2060</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enloquecido" uid="61">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <BelongsToRoom>0</BelongsToRoom>
-                        <isInTemplate>true</isInTemplate>
-                        <BelongsToUID>0</BelongsToUID>
-                        <xRelative>0</xRelative>
-                        <yRelative>0</yRelative>
-                        <life>2</life>
-                        <movingTo>-1</movingTo>
-                        <damage>1</damage>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pathfinding">
-                            <properties>
-                                <cell-size>30</cell-size>
-                                <cell-border>1</cell-border>
-                                <obstacles>Solids</obstacles>
-                                <max-speed>200</max-speed>
-                                <acceleration>1000</acceleration>
-                                <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
-                                <rotate-object>Yes</rotate-object>
-                                <diagonals>Enabled</diagonals>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>0</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                                <jump-strength>0</jump-strength>
-                                <gravity>0</gravity>
-                                <max-fall-speed>0</max-fall-speed>
-                                <double-jump>Disabled</double-jump>
-                                <jump-sustain>0</jump-sustain>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>0</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>No</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="LineOfSight">
-                            <properties>
-                                <obstacles>Solids</obstacles>
-                                <range>450</range>
-                                <cone-of-view>180</cone-of-view>
-                                <use-collision-cells>Yes</use-collision-cells>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>200</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>No</set-angle>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Flash" />
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1036</x>
-                        <y>2687</y>
-                        <z>0</z>
-                        <width>45.541191101</width>
-                        <height>45.541191101</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1966,8 +1523,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-768</x>
-                        <y>2615</y>
+                        <x>-8</x>
+                        <y>2435</y>
                         <z>0</z>
                         <width>53.103672028</width>
                         <height>53.103672028</height>
@@ -2067,8 +1624,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>838</x>
-                        <y>2395</y>
+                        <x>1808</x>
+                        <y>2335</y>
                         <z>0</z>
                         <width>53.103672028</width>
                         <height>53.103672028</height>
@@ -2143,8 +1700,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1390</x>
-                        <y>2177</y>
+                        <x>-630</x>
+                        <y>1997</y>
                         <z>0</z>
                         <width>53.103672028</width>
                         <height>53.103672028</height>
@@ -2219,8 +1776,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1367</x>
-                        <y>2770</y>
+                        <x>-607</x>
+                        <y>2590</y>
                         <z>0</z>
                         <width>53.103672028</width>
                         <height>53.103672028</height>
@@ -2295,8 +1852,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1044</x>
-                        <y>2477</y>
+                        <x>-284</x>
+                        <y>2297</y>
                         <z>0</z>
                         <width>53.103672028</width>
                         <height>53.103672028</height>
@@ -2371,8 +1928,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-789</x>
-                        <y>2402</y>
+                        <x>-29</x>
+                        <y>2222</y>
                         <z>0</z>
                         <width>53.103672028</width>
                         <height>53.103672028</height>
@@ -2447,8 +2004,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1390</x>
-                        <y>2485</y>
+                        <x>-630</x>
+                        <y>2305</y>
                         <z>0</z>
                         <width>53.103672028</width>
                         <height>53.103672028</height>
@@ -2523,8 +2080,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-691</x>
-                        <y>2830</y>
+                        <x>69</x>
+                        <y>2650</y>
                         <z>0</z>
                         <width>53.103672028</width>
                         <height>53.103672028</height>
@@ -2558,6 +2115,672 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enloquecido" uid="64">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                        <life>2</life>
+                        <movingTo>-1</movingTo>
+                        <damage>1</damage>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>200</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Enabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>0</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                                <jump-strength>0</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>0</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Solids</obstacles>
+                                <range>450</range>
+                                <cone-of-view>180</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>500</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-310</x>
+                        <y>2636</y>
+                        <z>0</z>
+                        <width>52.463451385</width>
+                        <height>88.167747498</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Cuervo" uid="65">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                        <life>2</life>
+                        <movingTo>-1</movingTo>
+                        <damage>1</damage>
+                        <attacking>0</attacking>
+                        <vulnerable>0</vulnerable>
+                        <canAttack>1</canAttack>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>180</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>1200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>4000</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>-1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>200</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Enabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2163</x>
+                        <y>2327</y>
+                        <z>0</z>
+                        <width>53.103672028</width>
+                        <height>53.103672028</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Cuervo" uid="66">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                        <life>2</life>
+                        <movingTo>-1</movingTo>
+                        <damage>1</damage>
+                        <attacking>0</attacking>
+                        <vulnerable>0</vulnerable>
+                        <canAttack>1</canAttack>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>180</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>1200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>4000</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>-1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>200</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Enabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1626</x>
+                        <y>2376</y>
+                        <z>0</z>
+                        <width>53.103672028</width>
+                        <height>53.103672028</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CameraCenter" uid="47">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>412</x>
+                        <y>438</y>
+                        <z>0</z>
+                        <width>18.973665237</width>
+                        <height>18.973665237</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enloquecido" uid="37">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                        <life>2</life>
+                        <movingTo>-1</movingTo>
+                        <damage>1</damage>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>200</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Enabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>0</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                                <jump-strength>0</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>0</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Solids</obstacles>
+                                <range>450</range>
+                                <cone-of-view>180</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>500</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1637</x>
+                        <y>2109</y>
+                        <z>0</z>
+                        <width>52.463451385</width>
+                        <height>88.167747498</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enloquecido" uid="40">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                        <life>2</life>
+                        <movingTo>-1</movingTo>
+                        <damage>1</damage>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>200</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Enabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>0</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                                <jump-strength>0</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>0</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Solids</obstacles>
+                                <range>450</range>
+                                <cone-of-view>180</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>500</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2020</x>
+                        <y>1989</y>
+                        <z>0</z>
+                        <width>52.463451385</width>
+                        <height>88.167747498</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enloquecido" uid="43">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                        <life>2</life>
+                        <movingTo>-1</movingTo>
+                        <damage>1</damage>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>200</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Enabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>0</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                                <jump-strength>0</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>0</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Solids</obstacles>
+                                <range>450</range>
+                                <cone-of-view>180</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>500</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1967</x>
+                        <y>2597</y>
+                        <z>0</z>
+                        <width>52.463451385</width>
+                        <height>88.167747498</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enloquecido" uid="54">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                        <life>2</life>
+                        <movingTo>-1</movingTo>
+                        <damage>1</damage>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>200</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Enabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>0</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                                <jump-strength>0</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>0</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Solids</obstacles>
+                                <range>450</range>
+                                <cone-of-view>180</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>500</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2343</x>
+                        <y>2642</y>
+                        <z>0</z>
+                        <width>52.463451385</width>
+                        <height>88.167747498</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

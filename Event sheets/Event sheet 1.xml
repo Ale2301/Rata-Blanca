@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="playerCanMove" sid="975110956151980" static="0" type="number">1</variable>
         <variable constant="0" name="variableRoomPosX" sid="693664031443667" static="0" type="number">0</variable>
         <variable constant="0" name="variableRoomPosY" sid="841770477888913" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="519366257059953" static="0" type="number">0</variable>
@@ -930,10 +931,22 @@
                         <condition id="2" name="Key is down" sid="829150895547828" type="Keyboard">
                             <param id="0" name="Key">87</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="940102789174442" type="System">
+                            <param id="0" name="Variable">playerCanMove</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="8Direction" id="7" name="Simulate control" sid="773791371665127" type="Player">
                             <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="849355650243056" type="Player">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y - 250</param>
+                        </action>
+                        <action behavior="Pathfinding" id="13" name="Set diagonals enabled" sid="470929312743953" type="Player">
+                            <param id="0" name="Diagonals">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -942,10 +955,22 @@
                         <condition id="2" name="Key is down" sid="631393422368269" type="Keyboard">
                             <param id="0" name="Key">83</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="598876035827393" type="System">
+                            <param id="0" name="Variable">playerCanMove</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="8Direction" id="7" name="Simulate control" sid="736387352909598" type="Player">
                             <param id="0" name="Control">3</param>
+                        </action>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="457082335520314" type="Player">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y + 250</param>
+                        </action>
+                        <action behavior="Pathfinding" id="13" name="Set diagonals enabled" sid="808281346928369" type="Player">
+                            <param id="0" name="Diagonals">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -954,10 +979,22 @@
                         <condition id="2" name="Key is down" sid="474857961028704" type="Keyboard">
                             <param id="0" name="Key">65</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="308493088317578" type="System">
+                            <param id="0" name="Variable">playerCanMove</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="8Direction" id="7" name="Simulate control" sid="886709784924858" type="Player">
                             <param id="0" name="Control">0</param>
+                        </action>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="768181498648616" type="Player">
+                            <param id="0" name="X">Player.X - 250</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                        <action behavior="Pathfinding" id="13" name="Set diagonals enabled" sid="377903440745690" type="Player">
+                            <param id="0" name="Diagonals">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -966,10 +1003,87 @@
                         <condition id="2" name="Key is down" sid="720159343604397" type="Keyboard">
                             <param id="0" name="Key">68</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="668089579903641" type="System">
+                            <param id="0" name="Variable">playerCanMove</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="8Direction" id="7" name="Simulate control" sid="836913799107161" type="Player">
                             <param id="0" name="Control">1</param>
+                        </action>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="136776026484784" type="Player">
+                            <param id="0" name="X">Player.X + 250</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                        <action behavior="Pathfinding" id="13" name="Set diagonals enabled" sid="266162573462695" type="Player">
+                            <param id="0" name="Diagonals">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="204419824962581">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="261826361569483" type="Keyboard">
+                            <param id="0" name="Key">16</param>
+                        </condition>
+                        <condition behavior="Pathfinding" id="7" name="Diagonals are enabled" sid="366110020599018" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="324094694039833" type="Player">
+                            <param id="0" name="Instance variable">vulnerable</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="148014296895221" type="Player" />
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="226485623174174" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="325260563308484" type="Player" />
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="892825014581051" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="512149443993539" type="System">
+                            <param id="0" name="Variable">playerCanMove</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="963977220692620" type="Player">
+                            <param id="0" name="Angle">180</param>
+                            <param id="1" name="Distance">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="349723855228820">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="5" name="On arrived" sid="514560416789834" type="Player" />
+                        <condition behavior="Pathfinding" id="1" name="On failed to find path" sid="747625308712905" type="Player" />
+                        <condition id="0" name="On collision with another object" sid="840962324788545" type="Player">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="350333281405163" type="Player">
+                            <param id="0" name="Object">Border</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="807007134650752" type="Player">
+                            <param id="0" name="Object">Enloquecido</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="457737119045591" type="Player">
+                            <param id="0" name="Object">Cuervo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="271996928488414" type="Player" />
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="295576093528766" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="227784960293521" type="Player">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="640167516518422" type="System">
+                            <param id="0" name="Variable">playerCanMove</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="228271729612278" type="Player">
+                            <param id="0" name="Instance variable">vulnerable</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1643,15 +1757,31 @@
                                 <condition id="0" name="On function" sid="594254231929145" type="Function">
                                     <param id="0" name="Name">&quot;playerDamaged&quot;</param>
                                 </condition>
+                                <condition id="-7" name="Compare instance variable" sid="361515881695824" type="Player">
+                                    <param id="0" name="Instance variable">vulnerable</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="394997185552570" type="Text">
                                     <param id="0" name="Text">&quot;Vida: &quot;&amp;playerLife</param>
                                 </action>
+                                <action id="-10" name="Set value" sid="336054972104066" type="Player">
+                                    <param id="0" name="Instance variable">vulnerable</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
                                 <action behavior="Flash" id="0" name="Flash" sid="589572765181430" type="Player">
                                     <param id="0" name="&apos;On&apos; time">0.1</param>
                                     <param id="1" name="&apos;Off&apos; time">0.1</param>
                                     <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="876641627155994" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="754345673632593" type="Player">
+                                    <param id="0" name="Instance variable">vulnerable</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -1729,9 +1859,6 @@
                                             <param id="0" name="Object">Cuervo</param>
                                         </condition>
                                         <condition id="-3" name="Is on-screen" sid="315835228772752" type="Cuervo" />
-                                        <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="417791198681355" type="Cuervo">
-                                            <param id="0" name="Object">Player</param>
-                                        </condition>
                                         <condition id="-7" name="Compare instance variable" sid="477897973480800" type="Cuervo">
                                             <param id="0" name="Instance variable">attacking</param>
                                             <param id="1" name="Comparison">0</param>
@@ -1739,20 +1866,38 @@
                                         </condition>
                                         <condition behavior="Pathfinding" id="4" inverted="1" name="Is moving along path" sid="272298198760392" type="Cuervo" />
                                     </conditions>
-                                    <actions>
-                                        <action behavior="Pathfinding" id="3" name="Set enabled" sid="504967150105061" type="Cuervo">
-                                            <param id="0" name="Set">1</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="785865263856092" type="Cuervo">
-                                            <param id="0" name="Instance variable">vulnerable</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
-                                        <action behavior="Pathfinding" id="0" name="Find path" sid="408358143284167" type="Cuervo">
-                                            <param id="0" name="X">random(21,867)</param>
-                                            <param id="1" name="Y">random(34,873)</param>
-                                        </action>
-                                        <action behavior="Pathfinding" id="1" name="Move along path" sid="449773701916428" type="Cuervo" />
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block any="1" sid="728187217075676">
+                                            <conditions>
+                                                <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="193409639083722" type="Cuervo">
+                                                    <param id="0" name="Object">Player</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="544259248182669" type="Cuervo">
+                                                    <param id="0" name="Instance variable">canAttack</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Pathfinding" id="3" name="Set enabled" sid="997498790441745" type="Cuervo">
+                                                    <param id="0" name="Set">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="233665293384615" type="Cuervo">
+                                                    <param id="0" name="Instance variable">vulnerable</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action behavior="Pathfinding" id="0" name="Find path" sid="707848157472270" type="Cuervo">
+                                                    <param id="0" name="X">random(21,867)</param>
+                                                    <param id="1" name="Y">random(34,873)</param>
+                                                </action>
+                                                <action behavior="Pathfinding" id="1" name="Move along path" sid="804256969940989" type="Cuervo" />
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="727869567501219" type="Cuervo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="432677139777193">
                                     <conditions>
@@ -1819,6 +1964,9 @@
                                         <action id="-16" name="Wait" sid="568984696022384" type="System">
                                             <param id="0" name="Seconds">random(0.25,1.5)</param>
                                         </action>
+                                        <action behavior="Solid" id="0" name="Set enabled" sid="120403036526650" type="Cuervo">
+                                            <param id="0" name="State">1</param>
+                                        </action>
                                         <action id="11" name="Set collisions enabled" sid="579625891346666" type="Cuervo">
                                             <param id="0" name="Collisions">1</param>
                                         </action>
@@ -1831,15 +1979,27 @@
                                             <param id="0" name="Object">Mark</param>
                                             <param id="1" name="Image point (optional)">0</param>
                                         </action>
+                                        <action behavior="ScrollTo" id="0" name="Shake" sid="746540033423691" type="CameraCenter">
+                                            <param id="0" name="Magnitude">35</param>
+                                            <param id="1" name="Duration">1</param>
+                                            <param id="2" name="Mode">0</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="695270053038306" type="System">
-                                            <param id="0" name="Seconds">2</param>
+                                            <param id="0" name="Seconds">3</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="866845168935924" type="Cuervo">
+                                            <param id="0" name="Instance variable">vulnerable</param>
+                                            <param id="1" name="Value">0</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="875721589530483" type="Cuervo">
                                             <param id="0" name="Instance variable">attacking</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
+                                        <action behavior="Solid" id="0" name="Set enabled" sid="404659987458798" type="Cuervo">
+                                            <param id="0" name="State">0</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="722816328896341" type="System">
-                                            <param id="0" name="Seconds">5</param>
+                                            <param id="0" name="Seconds">random(3,8)</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="736567020182148" type="Cuervo">
                                             <param id="0" name="Instance variable">canAttack</param>
@@ -1916,6 +2076,11 @@
                                             <conditions>
                                                 <condition id="0" name="On collision with another object" sid="957316894586897" type="Cuervo">
                                                     <param id="0" name="Object">Player</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="923531783856208" type="Cuervo">
+                                                    <param id="0" name="Instance variable">vulnerable</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
