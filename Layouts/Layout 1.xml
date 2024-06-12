@@ -163,6 +163,7 @@
                     </properties>
                     <instance-variables>
                         <vulnerable>1</vulnerable>
+                        <playerCanDash>1</playerCanDash>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -2778,6 +2779,43 @@
                         <z>0</z>
                         <width>52.463451385</width>
                         <height>88.167747498</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bulletCuervo" uid="61">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <damage>1</damage>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>650</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3294</x>
+                        <y>605</y>
+                        <z>0</z>
+                        <width>34.928497314</width>
+                        <height>34.928497314</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

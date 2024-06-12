@@ -1028,6 +1028,11 @@
                             <param id="0" name="Key">16</param>
                         </condition>
                         <condition behavior="Pathfinding" id="7" name="Diagonals are enabled" sid="366110020599018" type="Player" />
+                        <condition id="-7" name="Compare instance variable" sid="557367728017728" type="Player">
+                            <param id="0" name="Instance variable">playerCanDash</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-10" name="Set value" sid="324094694039833" type="Player">
@@ -1049,6 +1054,17 @@
                         <action id="-23" name="Move at angle" sid="963977220692620" type="Player">
                             <param id="0" name="Angle">180</param>
                             <param id="1" name="Distance">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="379852539323490" type="Player">
+                            <param id="0" name="Instance variable">playerCanDash</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="736628544428873" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="776776847634696" type="Player">
+                            <param id="0" name="Instance variable">playerCanDash</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1979,6 +1995,38 @@
                                             <param id="0" name="Object">Mark</param>
                                             <param id="1" name="Image point (optional)">0</param>
                                         </action>
+                                        <action id="0" name="Spawn another object" sid="396849037300050" type="Cuervo">
+                                            <param id="0" name="Object">bulletCuervo</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="669552179625570" type="bulletCuervo">
+                                            <param id="0" name="Angle">0</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="942461471783146" type="Cuervo">
+                                            <param id="0" name="Object">bulletCuervo</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="650133915727906" type="bulletCuervo">
+                                            <param id="0" name="Angle">90</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="162657684801996" type="Cuervo">
+                                            <param id="0" name="Object">bulletCuervo</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="181885541042355" type="bulletCuervo">
+                                            <param id="0" name="Angle">180</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="541168765479802" type="Cuervo">
+                                            <param id="0" name="Object">bulletCuervo</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="827257648259612" type="bulletCuervo">
+                                            <param id="0" name="Angle">270</param>
+                                        </action>
                                         <action behavior="ScrollTo" id="0" name="Shake" sid="746540033423691" type="CameraCenter">
                                             <param id="0" name="Magnitude">35</param>
                                             <param id="1" name="Duration">1</param>
@@ -2086,12 +2134,40 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="895361282811721" type="System">
                                                     <param id="0" name="Variable">playerLife</param>
-                                                    <param id="1" name="Value">playerLife - Enloquecido.damage</param>
+                                                    <param id="1" name="Value">playerLife - Cuervo.damage</param>
                                                 </action>
                                                 <action id="0" name="Call function" sid="304183090745167" type="Function">
                                                     <param id="0" name="Name">&quot;playerDamaged&quot;</param>
                                                     <param id="1" name="Parameter {n}"></param>
                                                 </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="463940369657779">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="807697619544838" type="Player">
+                                                    <param id="0" name="Object">bulletCuervo</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="308159238348029" type="System">
+                                                    <param id="0" name="Variable">playerLife</param>
+                                                    <param id="1" name="Value">playerLife - bulletCuervo.damage</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="126100689696758" type="Function">
+                                                    <param id="0" name="Name">&quot;playerDamaged&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="-9" name="Destroy" sid="201111491133102" type="bulletCuervo" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="496958307102543">
+                                            <conditions>
+                                                <condition id="0" name="On collision with another object" sid="804208646107637" type="bulletCuervo">
+                                                    <param id="0" name="Object">Border</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Destroy" sid="479311720529733" type="bulletCuervo" />
                                             </actions>
                                         </event-block>
                                     </sub-events>
