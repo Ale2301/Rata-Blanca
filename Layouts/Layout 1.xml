@@ -108,7 +108,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <roomIdNumber>0</roomIdNumber>
+                        <roomIdNumber>2</roomIdNumber>
                         <basePositionX>-56</basePositionX>
                         <basePositionY>2413</basePositionY>
                     </instance-variables>
@@ -164,6 +164,8 @@
                     <instance-variables>
                         <vulnerable>1</vulnerable>
                         <playerCanDash>1</playerCanDash>
+                        <energy>100</energy>
+                        <energyConsumed>0</energyConsumed>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -1009,7 +1011,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <BelongsToRoom>0</BelongsToRoom>
+                        <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
@@ -1479,6 +1481,7 @@
                         <life>2</life>
                         <damage>1</damage>
                         <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1549,8 +1552,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3026.166503906</x>
-                        <y>1171.166259766</y>
+                        <x>2999</x>
+                        <y>2059</y>
                         <z>0</z>
                         <width>66.332496643</width>
                         <height>66.332496643</height>
@@ -1580,6 +1583,7 @@
                         <life>2</life>
                         <damage>1</damage>
                         <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1656,6 +1660,7 @@
                         <life>2</life>
                         <damage>1</damage>
                         <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1732,6 +1737,7 @@
                         <life>2</life>
                         <damage>1</damage>
                         <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1797,7 +1803,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <BelongsToRoom>0</BelongsToRoom>
+                        <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
@@ -1808,6 +1814,7 @@
                         <life>2</life>
                         <damage>1</damage>
                         <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1884,6 +1891,7 @@
                         <life>2</life>
                         <damage>1</damage>
                         <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1960,6 +1968,7 @@
                         <life>2</life>
                         <damage>1</damage>
                         <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -2036,6 +2045,7 @@
                         <life>2</life>
                         <damage>1</damage>
                         <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -2128,7 +2138,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <BelongsToRoom>0</BelongsToRoom>
+                        <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
@@ -2136,6 +2146,7 @@
                         <life>2</life>
                         <movingTo>-1</movingTo>
                         <damage>1</damage>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pathfinding">
@@ -2236,6 +2247,7 @@
                         <life>2</life>
                         <damage>1</damage>
                         <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -2312,6 +2324,7 @@
                         <life>2</life>
                         <damage>1</damage>
                         <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -2414,6 +2427,7 @@
                         <life>2</life>
                         <movingTo>-1</movingTo>
                         <damage>1</damage>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pathfinding">
@@ -2511,6 +2525,7 @@
                         <life>2</life>
                         <movingTo>-1</movingTo>
                         <damage>1</damage>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pathfinding">
@@ -2608,6 +2623,7 @@
                         <life>2</life>
                         <movingTo>-1</movingTo>
                         <damage>1</damage>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pathfinding">
@@ -2705,6 +2721,7 @@
                         <life>2</life>
                         <movingTo>-1</movingTo>
                         <damage>1</damage>
+                        <energyDropRate>50</energyDropRate>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pathfinding">
@@ -2811,8 +2828,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3294</x>
-                        <y>605</y>
+                        <x>3060</x>
+                        <y>1861</y>
                         <z>0</z>
                         <width>34.928497314</width>
                         <height>34.928497314</height>
@@ -2823,7 +2840,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="63">
+                <instance type="Energy" uid="63">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2833,11 +2850,11 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>400</speed>
+                                <speed>120</speed>
                                 <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
+                                <gravity>100</gravity>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>No</set-angle>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -2853,6 +2870,244 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Cuervo" uid="67">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>-1</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                        <movingTo>-1</movingTo>
+                        <attacking>0</attacking>
+                        <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
+                        <energyDropRate>50</energyDropRate>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>180</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>1200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>4000</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>-1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>200</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Enabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2952</x>
+                        <y>1848</y>
+                        <z>0</z>
+                        <width>53.103672028</width>
+                        <height>53.103672028</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="68">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>-1</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2793</x>
+                        <y>1876</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enloquecido" uid="69">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>-1</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                        <life>2</life>
+                        <movingTo>-1</movingTo>
+                        <damage>1</damage>
+                        <energyDropRate>50</energyDropRate>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>200</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Enabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>0</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                                <jump-strength>0</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>0</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Solids</obstacles>
+                                <range>450</range>
+                                <cone-of-view>180</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>500</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3175</x>
+                        <y>1854</y>
+                        <z>0</z>
+                        <width>52.463451385</width>
+                        <height>88.167747498</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="energyText" uid="70">
+                    <properties>
+                        <text>Energy: / Consumed:</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>13</x>
+                        <y>143.010437012</y>
+                        <z>0</z>
+                        <width>457</width>
+                        <height>70</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

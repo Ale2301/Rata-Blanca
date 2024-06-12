@@ -1103,10 +1103,72 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="962978450271330">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="481483715786901" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="440940232153821" type="Player">
+                            <param id="0" name="Instance variable">energy</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="792639842114676" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="316589258110110" type="Player">
+                            <param id="0" name="Instance variable">energy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="965771017473827" type="Player">
+                            <param id="0" name="Instance variable">energyConsumed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="482188326757182" type="energyText">
+                            <param id="0" name="Text">&quot;Energy:&quot;&amp;Player.energy&amp; &quot;/ Consumed:&quot;&amp;Player.energyConsumed</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="450710199945040" title="Functions">
             <sub-events>
+                <event-group description="" sid="201130205718484" title="Enemy-Related">
+                    <sub-events>
+                        <comment>When an enemy dies, checks the % of energy drop. Param0: Energy drop (On %), Param1: UID of element</comment>
+                        <event-block sid="211324208053446">
+                            <conditions>
+                                <condition id="0" name="On function" sid="414149393546876" type="Function">
+                                    <param id="0" name="Name">&quot;killEnemy&quot;</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="287968900644608" type="System">
+                                    <param id="0" name="First value">round(random(0,100))</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">Function.Param(0)</param>
+                                </condition>
+                                <condition id="-34" name="Pick by evaluate" sid="960530953920247" type="System">
+                                    <param id="0" name="Object">Enemies</param>
+                                    <param id="1" name="Expression">Enemies.UID = Function.Param(1)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="376965666600930" type="Enemies">
+                                    <param id="0" name="Object">Energy</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="580925694858174" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="704045527030412" type="Energy">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="221004789363985" title="Room-Related">
                     <sub-events>
                         <comment>This function doesn&apos;t really &quot;generate&quot; rooms, it detects where playing is moving (And if it can move here): Arg 0: PlayerX. Arg1: PlayerY. Arg2: String(up/down/left/right)</comment>
@@ -1265,12 +1327,12 @@
                             <sub-events>
                                 <event-block sid="197087543640226">
                                     <conditions>
-                                        <condition id="-14" name="Pick by unique ID" sid="983999031695868" type="Room0">
+                                        <condition id="-14" name="Pick by unique ID" sid="983999031695868" type="Rooms">
                                             <param id="0" name="Unique ID">Function.Param(0)</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-3" name="Set position" sid="669529317878424" type="Room0">
+                                        <action id="-3" name="Set position" sid="669529317878424" type="Rooms">
                                             <param id="0" name="X">9999</param>
                                             <param id="1" name="Y">9999</param>
                                         </action>
@@ -1282,47 +1344,9 @@
                                             <param id="0" name="Name">&quot;destroyEnemies&quot;</param>
                                             <param id="1" name="Parameter {n}">Room0.UID</param>
                                         </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="167929556154335">
-                                    <conditions>
-                                        <condition id="-14" name="Pick by unique ID" sid="558511877787625" type="Room1">
-                                            <param id="0" name="Unique ID">Function.Param(0)</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Set position" sid="822198073334127" type="Room1">
-                                            <param id="0" name="X">9999</param>
-                                            <param id="1" name="Y">9999</param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="451567576345086" type="Function">
-                                            <param id="0" name="Name">&quot;destroyRocks&quot;</param>
-                                            <param id="1" name="Parameter {n}">Room1.UID</param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="765556453463577" type="Function">
-                                            <param id="0" name="Name">&quot;destroyEnemies&quot;</param>
-                                            <param id="1" name="Parameter {n}">Room1.UID</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="827017908219706">
-                                    <conditions>
-                                        <condition id="-14" name="Pick by unique ID" sid="672053325780324" type="SpecialRoom">
-                                            <param id="0" name="Unique ID">Function.Param(0)</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-3" name="Set position" sid="822963818388619" type="SpecialRoom">
-                                            <param id="0" name="X">9999</param>
-                                            <param id="1" name="Y">9999</param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="985354724443668" type="Function">
-                                            <param id="0" name="Name">&quot;destroyRocks&quot;</param>
-                                            <param id="1" name="Parameter {n}">SpecialRoom.UID</param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="235668310389988" type="Function">
-                                            <param id="0" name="Name">&quot;destroyEnemies&quot;</param>
-                                            <param id="1" name="Parameter {n}">SpecialRoom.UID</param>
+                                        <action id="0" name="Call function" sid="591411716849252" type="Function">
+                                            <param id="0" name="Name">&quot;destroyEnergy&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1768,6 +1792,27 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>Destroys every piece of Energy after player leaves the room</comment>
+                        <event-block sid="948928592937711">
+                            <conditions>
+                                <condition id="0" name="On function" sid="116573171015865" type="Function">
+                                    <param id="0" name="Name">&quot;destroyEnergy&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="922900772236470">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="967089107037144" type="System">
+                                            <param id="0" name="Object">Energy</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="149740837851827" type="Energy" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                         <event-block sid="191578666313579">
                             <conditions>
                                 <condition id="0" name="On function" sid="594254231929145" type="Function">
@@ -2072,109 +2117,113 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-group description="" sid="900499585249507" title="CollidersCuervo">
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="900499585249507" title="CollidersCuervo">
+                            <sub-events>
+                                <event-block sid="379514724335496">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="480714093219870" type="Cuervo">
+                                            <param id="0" name="Object">Bullet</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="363563425941084" type="Cuervo">
+                                            <param id="0" name="Instance variable">vulnerable</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Flash" id="0" name="Flash" sid="812192658623784" type="Cuervo">
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                            <param id="2" name="Duration">1.0</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="723610357854325" type="Cuervo">
+                                            <param id="0" name="Instance variable">life</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="963901050280018" type="Bullet" />
+                                    </actions>
                                     <sub-events>
-                                        <event-block sid="379514724335496">
+                                        <event-block sid="170136106933777">
                                             <conditions>
-                                                <condition id="0" name="On collision with another object" sid="480714093219870" type="Cuervo">
-                                                    <param id="0" name="Object">Bullet</param>
-                                                </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="363563425941084" type="Cuervo">
-                                                    <param id="0" name="Instance variable">vulnerable</param>
+                                                <condition id="-7" name="Compare instance variable" sid="831425365828920" type="Cuervo">
+                                                    <param id="0" name="Instance variable">life</param>
                                                     <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">1</param>
+                                                    <param id="2" name="Value">0</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action behavior="Flash" id="0" name="Flash" sid="812192658623784" type="Cuervo">
-                                                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
-                                                    <param id="2" name="Duration">1.0</param>
-                                                </action>
-                                                <action id="-12" name="Subtract from" sid="723610357854325" type="Cuervo">
-                                                    <param id="0" name="Instance variable">life</param>
+                                                <action id="-9" name="Destroy" sid="615977058947928" type="Cuervo" />
+                                                <action id="-11" name="Subtract from" sid="952259496932455" type="System">
+                                                    <param id="0" name="Variable">enemyCountOnRoom</param>
                                                     <param id="1" name="Value">1</param>
                                                 </action>
-                                                <action id="-9" name="Destroy" sid="963901050280018" type="Bullet" />
-                                            </actions>
-                                            <sub-events>
-                                                <event-block sid="170136106933777">
-                                                    <conditions>
-                                                        <condition id="-7" name="Compare instance variable" sid="831425365828920" type="Cuervo">
-                                                            <param id="0" name="Instance variable">life</param>
-                                                            <param id="1" name="Comparison">0</param>
-                                                            <param id="2" name="Value">0</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action id="-9" name="Destroy" sid="615977058947928" type="Cuervo" />
-                                                        <action id="-11" name="Subtract from" sid="952259496932455" type="System">
-                                                            <param id="0" name="Variable">enemyCountOnRoom</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                        <action id="-10" name="Add to" sid="908193389111329" type="System">
-                                                            <param id="0" name="Variable">Score</param>
-                                                            <param id="1" name="Value">200</param>
-                                                        </action>
-                                                        <action id="0" name="Set text" sid="567874559287248" type="Score">
-                                                            <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                            </sub-events>
-                                        </event-block>
-                                        <event-block sid="286232781277674">
-                                            <conditions>
-                                                <condition id="0" name="On collision with another object" sid="957316894586897" type="Cuervo">
-                                                    <param id="0" name="Object">Player</param>
-                                                </condition>
-                                                <condition id="-7" name="Compare instance variable" sid="923531783856208" type="Cuervo">
-                                                    <param id="0" name="Instance variable">vulnerable</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">1</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="895361282811721" type="System">
-                                                    <param id="0" name="Variable">playerLife</param>
-                                                    <param id="1" name="Value">playerLife - Cuervo.damage</param>
+                                                <action id="-10" name="Add to" sid="908193389111329" type="System">
+                                                    <param id="0" name="Variable">Score</param>
+                                                    <param id="1" name="Value">200</param>
                                                 </action>
-                                                <action id="0" name="Call function" sid="304183090745167" type="Function">
-                                                    <param id="0" name="Name">&quot;playerDamaged&quot;</param>
-                                                    <param id="1" name="Parameter {n}"></param>
+                                                <action id="0" name="Set text" sid="567874559287248" type="Score">
+                                                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
                                                 </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="463940369657779">
-                                            <conditions>
-                                                <condition id="0" name="On collision with another object" sid="807697619544838" type="Player">
-                                                    <param id="0" name="Object">bulletCuervo</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="308159238348029" type="System">
-                                                    <param id="0" name="Variable">playerLife</param>
-                                                    <param id="1" name="Value">playerLife - bulletCuervo.damage</param>
+                                                <action id="0" name="Call function" sid="218754952409508" type="Function">
+                                                    <param id="0" name="Name">&quot;killEnemy&quot;</param>
+                                                    <param id="1" name="Parameter {n}">Cuervo.energyDropRate{###}Cuervo.UID</param>
                                                 </action>
-                                                <action id="0" name="Call function" sid="126100689696758" type="Function">
-                                                    <param id="0" name="Name">&quot;playerDamaged&quot;</param>
-                                                    <param id="1" name="Parameter {n}"></param>
-                                                </action>
-                                                <action id="-9" name="Destroy" sid="201111491133102" type="bulletCuervo" />
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="496958307102543">
-                                            <conditions>
-                                                <condition id="0" name="On collision with another object" sid="804208646107637" type="bulletCuervo">
-                                                    <param id="0" name="Object">Border</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Destroy" sid="479311720529733" type="bulletCuervo" />
                                             </actions>
                                         </event-block>
                                     </sub-events>
-                                </event-group>
+                                </event-block>
+                                <event-block sid="286232781277674">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="957316894586897" type="Cuervo">
+                                            <param id="0" name="Object">Player</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="923531783856208" type="Cuervo">
+                                            <param id="0" name="Instance variable">vulnerable</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="895361282811721" type="System">
+                                            <param id="0" name="Variable">playerLife</param>
+                                            <param id="1" name="Value">playerLife - Cuervo.damage</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="304183090745167" type="Function">
+                                            <param id="0" name="Name">&quot;playerDamaged&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="463940369657779">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="807697619544838" type="Player">
+                                            <param id="0" name="Object">bulletCuervo</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="308159238348029" type="System">
+                                            <param id="0" name="Variable">playerLife</param>
+                                            <param id="1" name="Value">playerLife - bulletCuervo.damage</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="126100689696758" type="Function">
+                                            <param id="0" name="Name">&quot;playerDamaged&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="201111491133102" type="bulletCuervo" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="496958307102543">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="804208646107637" type="bulletCuervo">
+                                            <param id="0" name="Object">Border</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="479311720529733" type="bulletCuervo" />
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-group>
                     </sub-events>
@@ -2358,6 +2407,10 @@
                                                 <action id="0" name="Set text" sid="713949110580919" type="Score">
                                                     <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
                                                 </action>
+                                                <action id="0" name="Call function" sid="509875984818786" type="Function">
+                                                    <param id="0" name="Name">&quot;killEnemy&quot;</param>
+                                                    <param id="1" name="Parameter {n}">Enloquecido.energyDropRate{###}Enloquecido.UID</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                     </sub-events>
@@ -2410,6 +2463,27 @@
                         </event-group>
                     </sub-events>
                 </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="173439685168354" title="Energy">
+            <sub-events>
+                <event-block sid="841888217227761">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="236548709363619" type="Player">
+                            <param id="0" name="Object">Energy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="987479362490621" type="Player">
+                            <param id="0" name="Instance variable">energy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="543579812800889" type="Energy" />
+                        <action id="0" name="Set text" sid="632682019519245" type="energyText">
+                            <param id="0" name="Text">&quot;Energy:&quot;&amp;Player.energy&amp; &quot;/ Consumed:&quot;&amp;Player.energyConsumed</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-block sid="479509220188245">
