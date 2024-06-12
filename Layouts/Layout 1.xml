@@ -1473,12 +1473,12 @@
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
                         <yRelative>0</yRelative>
-                        <life>2</life>
                         <movingTo>-1</movingTo>
-                        <damage>1</damage>
                         <attacking>0</attacking>
-                        <vulnerable>0</vulnerable>
                         <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1574,12 +1574,12 @@
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
                         <yRelative>0</yRelative>
-                        <life>2</life>
                         <movingTo>-1</movingTo>
-                        <damage>1</damage>
                         <attacking>0</attacking>
-                        <vulnerable>0</vulnerable>
                         <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1650,12 +1650,12 @@
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
                         <yRelative>0</yRelative>
-                        <life>2</life>
                         <movingTo>-1</movingTo>
-                        <damage>1</damage>
                         <attacking>0</attacking>
-                        <vulnerable>0</vulnerable>
                         <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1726,12 +1726,12 @@
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
                         <yRelative>0</yRelative>
-                        <life>2</life>
                         <movingTo>-1</movingTo>
-                        <damage>1</damage>
                         <attacking>0</attacking>
-                        <vulnerable>0</vulnerable>
                         <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1802,12 +1802,12 @@
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
                         <yRelative>0</yRelative>
-                        <life>2</life>
                         <movingTo>-1</movingTo>
-                        <damage>1</damage>
                         <attacking>0</attacking>
-                        <vulnerable>0</vulnerable>
                         <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1878,12 +1878,12 @@
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
                         <yRelative>0</yRelative>
-                        <life>2</life>
                         <movingTo>-1</movingTo>
-                        <damage>1</damage>
                         <attacking>0</attacking>
-                        <vulnerable>0</vulnerable>
                         <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -1954,12 +1954,12 @@
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
                         <yRelative>0</yRelative>
-                        <life>2</life>
                         <movingTo>-1</movingTo>
-                        <damage>1</damage>
                         <attacking>0</attacking>
-                        <vulnerable>0</vulnerable>
                         <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -2030,12 +2030,12 @@
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
                         <yRelative>0</yRelative>
-                        <life>2</life>
                         <movingTo>-1</movingTo>
-                        <damage>1</damage>
                         <attacking>0</attacking>
-                        <vulnerable>0</vulnerable>
                         <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -2230,12 +2230,12 @@
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
                         <yRelative>0</yRelative>
-                        <life>2</life>
                         <movingTo>-1</movingTo>
-                        <damage>1</damage>
                         <attacking>0</attacking>
-                        <vulnerable>0</vulnerable>
                         <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -2306,12 +2306,12 @@
                         <BelongsToUID>0</BelongsToUID>
                         <xRelative>0</xRelative>
                         <yRelative>0</yRelative>
-                        <life>2</life>
                         <movingTo>-1</movingTo>
-                        <damage>1</damage>
                         <attacking>0</attacking>
-                        <vulnerable>0</vulnerable>
                         <canAttack>1</canAttack>
+                        <life>2</life>
+                        <damage>1</damage>
+                        <vulnerable>0</vulnerable>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
@@ -2816,6 +2816,40 @@
                         <z>0</z>
                         <width>34.928497314</width>
                         <height>34.928497314</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite" uid="63">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1298.196166992</x>
+                        <y>987.196166992</y>
+                        <z>0</z>
+                        <width>10.39230442</width>
+                        <height>10.39230442</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

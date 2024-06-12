@@ -1866,6 +1866,7 @@
                     <sub-events>
                         <event-group description="" sid="590366520266950" title="BehaviorCuervo">
                             <sub-events>
+                                <comment>Every milisecond, if Cuervo is not moving and is not attacking:</comment>
                                 <event-block sid="971763913369704">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="498246447129475" type="System">
@@ -1884,6 +1885,7 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
+                                        <comment>And if can&apos;t attack and isn&apos;t seeing the player, will deambulate on room (Flying)</comment>
                                         <event-block any="1" sid="728187217075676">
                                             <conditions>
                                                 <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="193409639083722" type="Cuervo">
@@ -1915,6 +1917,7 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
+                                <comment>Every milisecond, if Cuervo is seeing player, not attacking and can&apos;t attack, will do the scripted attack</comment>
                                 <event-block sid="432677139777193">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="881582199588238" type="System">

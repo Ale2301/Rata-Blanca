@@ -282,12 +282,12 @@
                 <instance-variable name="BelongsToUID" sid="938226907758050" type="number" />
                 <instance-variable name="xRelative" sid="682232381285017" type="number" />
                 <instance-variable name="yRelative" sid="988629124821290" type="number" />
-                <instance-variable name="life" sid="149715840349558" type="number" />
                 <instance-variable name="movingTo" sid="377624259558588" type="number" />
-                <instance-variable name="damage" sid="864500349301113" type="number" />
                 <instance-variable name="attacking" sid="152619294904759" type="number" />
-                <instance-variable name="vulnerable" sid="629602526786522" type="number" />
                 <instance-variable name="canAttack" sid="403470189859687" type="number" />
+                <instance-variable name="life" sid="149715840349558" type="number" />
+                <instance-variable name="damage" sid="864500349301113" type="number" />
+                <instance-variable name="vulnerable" sid="629602526786522" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="LineOfSight" sid="853176954679089">
@@ -353,6 +353,19 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="175994574975637" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="193675541909200">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="895874478076328">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875180953433572" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
