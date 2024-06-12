@@ -2,13 +2,15 @@ Acá voy a explicar de manera fácil y accesible qué carajo significa cada vari
 
 VARS EN TODOS LOS OBJETOS FUERA DE LAYOUT:
 
-Casi todos los objetos tienen variables manejables por código. No deben ser bajo ningún concepto editados.
+Casi todos los objetos tienen variables manejables por código. No deben ser bajo ningún concepto editados ya que pueden provocar fallos críticos en el programa.
 Estos son: BelongsToRoom, isInTemplate, BelongsToUID, xRelative, yRelative y movingTo
 
 
 PLAYER: 
 vulnerable: Si el jugador puede recibir daño. 0 = Invulnerable 1 = vulnerable
 playerCanDash: Si el jugador puede realizar el dash. 0 = Dash en cooldown, 1 = listo
+energy: Cantidad de energía sin consumir
+energyConsumed: Cantidad de energía consumida
 
 
 ENLOQUECIDO:
@@ -21,3 +23,6 @@ damage: Daño que realiza
 vulnerable: Si el cuervo esta en estado "volador" o no
 attacking: Identifica si el cuervo está o no atacando. No debe ser editado
 canAttack: Identifica si el cuervo puede o no atacar. No debe ser editado
+
+BULLETCUERVO
+damage: Daño que realiza
