@@ -61,6 +61,8 @@
             <instance-variables>
                 <instance-variable name="vulnerable" sid="994739020141493" type="number" />
                 <instance-variable name="playerCanDash" sid="178036297670973" type="number" />
+                <instance-variable name="energy" sid="343089034873563" type="number" />
+                <instance-variable name="energyConsumed" sid="757162675079976" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="343136766020134">
@@ -224,6 +226,7 @@
                 <instance-variable name="life" sid="117224625171738" type="number" />
                 <instance-variable name="movingTo" sid="461377145102989" type="number" />
                 <instance-variable name="damage" sid="359001838870705" type="number" />
+                <instance-variable name="energyDropRate" sid="813493133039224" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pathfinding" sid="246706088162877">
@@ -282,12 +285,13 @@
                 <instance-variable name="BelongsToUID" sid="938226907758050" type="number" />
                 <instance-variable name="xRelative" sid="682232381285017" type="number" />
                 <instance-variable name="yRelative" sid="988629124821290" type="number" />
-                <instance-variable name="life" sid="149715840349558" type="number" />
                 <instance-variable name="movingTo" sid="377624259558588" type="number" />
-                <instance-variable name="damage" sid="864500349301113" type="number" />
                 <instance-variable name="attacking" sid="152619294904759" type="number" />
-                <instance-variable name="vulnerable" sid="629602526786522" type="number" />
                 <instance-variable name="canAttack" sid="403470189859687" type="number" />
+                <instance-variable name="life" sid="149715840349558" type="number" />
+                <instance-variable name="damage" sid="864500349301113" type="number" />
+                <instance-variable name="vulnerable" sid="629602526786522" type="number" />
+                <instance-variable name="energyDropRate" sid="592361040024564" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="LineOfSight" sid="853176954679089">
@@ -357,8 +361,42 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Energy" sid="193675541909200">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="895874478076328">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875180953433572" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="energyText" sid="792560175319847">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
+            <members>
+                <member>Cuervo</member>
+            </members>
+        </family>
+        <family name="Solids" plugin-id="Sprite" sid="222675099484832">
+            <members>
+                <member>Stone</member>
+            </members>
+        </family>
+        <family name="Rooms" plugin-id="Sprite" sid="198523782862662">
+            <members>
+                <member>Room0</member>
+                <member>Room1</member>
+                <member>SpecialRoom</member>
+            </members>
+        </family>
+    </families>
     <layout-folder>
         <layout>Layout 1.xml</layout>
     </layout-folder>
