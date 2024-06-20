@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>Game</name>
     <sid>681113616487900</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Game</event-sheet>
     <size>
         <width>1900</width>
         <height>1800</height>
@@ -2408,7 +2408,6 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
-                        <name>&quot;ninfa&quot;</name>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -2434,7 +2433,6 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
-                        <name>&quot;otro&quot;</name>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

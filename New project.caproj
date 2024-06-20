@@ -11,6 +11,7 @@
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -396,9 +397,6 @@
         </object-type>
         <object-type name="ItemNinfa" sid="151358105699073">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="name" sid="542042371455118" type="string" />
-            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463374301621450" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -407,9 +405,6 @@
         </object-type>
         <object-type name="doubleSpeed" sid="669076575341757">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="name" sid="143477316837513" type="string" />
-            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="818066890851457" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -428,6 +423,28 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="StartBackGround" sid="994936530280810">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527924789561567" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StartText" sid="910311490926236">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="869786627381684">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373167415222921" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonStart" sid="538237199927450">
+            <plugin id="Button" />
         </object-type>
     </object-folder>
     <families>
@@ -460,10 +477,12 @@
         </family>
     </families>
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Start.xml</layout>
+        <layout>Game.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Game.xml</event-sheet>
+        <event-sheet>Start.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="5" />

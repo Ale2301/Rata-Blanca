@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>Game</name>
     <events>
         <variable constant="0" name="QuantityOfSpawnableItems" sid="530174953702453" static="0" type="number">0</variable>
         <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">100</variable>
