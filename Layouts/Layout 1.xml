@@ -166,6 +166,12 @@
                         <playerCanDash>1</playerCanDash>
                         <energy>100</energy>
                         <energyConsumed>0</energyConsumed>
+                        <damage>1</damage>
+                        <resistance>0</resistance>
+                        <playerFireRate>0</playerFireRate>
+                        <playerShootSpeed>0</playerShootSpeed>
+                        <playerMaxHealth>0</playerMaxHealth>
+                        <playerCurrentHealth>0</playerCurrentHealth>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -2386,6 +2392,96 @@
                         <z>0</z>
                         <width>52.463451385</width>
                         <height>88.167747498</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ItemNinfa" uid="36">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <id>0</id>
+                        <name>&quot;ninfa&quot;</name>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1096</x>
+                        <y>494</y>
+                        <z>0</z>
+                        <width>49.638694763</width>
+                        <height>49.638694763</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="doubleSpeed" uid="34">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <id>0</id>
+                        <name>&quot;otro&quot;</name>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1091</x>
+                        <y>618</y>
+                        <z>0</z>
+                        <width>50.960769653</width>
+                        <height>50.960769653</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EntityNinfa" uid="39">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>-1</cell-border>
+                                <obstacles>Custom</obstacles>
+                                <max-speed>1000</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Disabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-175.078460693</x>
+                        <y>495.921508789</y>
+                        <z>0</z>
+                        <width>22.248596191</width>
+                        <height>22.248596191</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
