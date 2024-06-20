@@ -11,12 +11,12 @@
         <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">1</variable>
         <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">400</variable>
         <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">0.5</variable>
+        <variable constant="0" name="playerLife" sid="186121573667452" static="0" type="number">100</variable>
         <variable constant="0" name="playerCanMove" sid="975110956151980" static="0" type="number">1</variable>
         <variable constant="0" name="variableRoomPosX" sid="693664031443667" static="0" type="number">0</variable>
         <variable constant="0" name="variableRoomPosY" sid="841770477888913" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="519366257059953" static="0" type="number">0</variable>
         <variable constant="0" name="offsetRoomPos" sid="681542362953755" static="0" type="number">0</variable>
-        <variable constant="0" name="playerLife" sid="186121573667452" static="0" type="number">100</variable>
         <variable constant="0" name="enemyCountOnRoom" sid="855897341240433" static="0" type="number">0</variable>
         <variable constant="0" name="currentPosEnemyY" sid="392929565606330" static="0" type="number">0</variable>
         <variable constant="0" name="currentPosEnemyX" sid="974414569111351" static="0" type="number">0</variable>
@@ -190,7 +190,27 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="678408644794133" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="-3" name="Set position" sid="410822208995990" type="LoadScreen">
+                    <param id="0" name="X">458</param>
+                    <param id="1" name="Y">458</param>
+                </action>
+                <action id="-9" name="Set value" sid="444787383098902" type="System">
+                    <param id="0" name="Variable">playerCanMove</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="876427235710503" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-3" name="Set position" sid="219612435457302" type="LoadScreen">
+                    <param id="0" name="X">9999</param>
+                    <param id="1" name="Y">9999</param>
+                </action>
+                <action id="-9" name="Set value" sid="417975775973316" type="System">
+                    <param id="0" name="Variable">playerCanMove</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
         </event-block>
         <comment>Here the rooms are generated, starting with a loop of 10 keys on a Dictionary (0,0;0,1;0,2;1,0,etc). Later will be used as an bi-dimentional Array</comment>
         <event-block sid="121811746103110">

@@ -446,6 +446,14 @@
         <object-type name="ButtonStart" sid="538237199927450">
             <plugin id="Button" />
         </object-type>
+        <object-type name="LoadScreen" sid="825938675822403">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220167854641811" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
