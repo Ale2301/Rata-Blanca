@@ -10,6 +10,7 @@
     <unique-id>2rn7eb37fgdgc</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
@@ -454,6 +455,20 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="DeathBackGround" sid="803114154243556">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315906274535725" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DeathText" sid="512919895713435">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="ArrayDeathPhrases" sid="903975236261961">
+            <plugin id="Arr" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
@@ -487,10 +502,12 @@
     <layout-folder>
         <layout>Start.xml</layout>
         <layout>Game.xml</layout>
+        <layout>DeathScreen.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Game.xml</event-sheet>
         <event-sheet>Start.xml</event-sheet>
+        <event-sheet>DeathScreen.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="5" />
