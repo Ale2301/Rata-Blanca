@@ -469,6 +469,9 @@
         <object-type global="1" name="ArrayDeathPhrases" sid="903975236261961">
             <plugin id="Arr" />
         </object-type>
+        <object-type name="ButtonRestart" sid="803331971407645">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
