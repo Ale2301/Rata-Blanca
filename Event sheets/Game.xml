@@ -1,14 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>Game</name>
     <events>
+        <variable constant="0" name="QuantityOfSpawnableItems" sid="530174953702453" static="0" type="number">0</variable>
+        <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">10</variable>
+        <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">10</variable>
+        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">200</variable>
+        <variable constant="0" name="playerResistance" sid="289707736190923" static="0" type="number">0</variable>
+        <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">1</variable>
+        <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">400</variable>
+        <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">0.5</variable>
+        <variable constant="0" name="playerLife" sid="186121573667452" static="0" type="number">100</variable>
         <variable constant="0" name="playerCanMove" sid="975110956151980" static="0" type="number">1</variable>
         <variable constant="0" name="variableRoomPosX" sid="693664031443667" static="0" type="number">0</variable>
         <variable constant="0" name="variableRoomPosY" sid="841770477888913" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="519366257059953" static="0" type="number">0</variable>
         <variable constant="0" name="offsetRoomPos" sid="681542362953755" static="0" type="number">0</variable>
-        <variable constant="0" name="playerLife" sid="186121573667452" static="0" type="number">100</variable>
         <variable constant="0" name="enemyCountOnRoom" sid="855897341240433" static="0" type="number">0</variable>
         <variable constant="0" name="currentPosEnemyY" sid="392929565606330" static="0" type="number">0</variable>
         <variable constant="0" name="currentPosEnemyX" sid="974414569111351" static="0" type="number">0</variable>
@@ -20,7 +28,6 @@
         <variable constant="0" name="currentRoomColumn" sid="651883815768319" static="0" type="number">0</variable>
         <variable constant="0" name="currentRoomRow" sid="842847704648671" static="0" type="number">0</variable>
         <variable constant="0" name="lastBullet" sid="670338399652371" static="0" type="number">0</variable>
-        <variable constant="0" name="CooldownForShooting" sid="278398774355574" static="0" type="number">0.5</variable>
         <variable constant="0" name="CanShoot" sid="803582677249439" static="0" type="number">1</variable>
         <event-block sid="916904981726356">
             <conditions>
@@ -50,6 +57,10 @@
                 <action id="-10" name="Set value" sid="335280709282635" type="SpecialRoom">
                     <param id="0" name="Instance variable">basePositionY</param>
                     <param id="1" name="Value">SpecialRoom.Y</param>
+                </action>
+                <action id="0" name="Call function" sid="510152405846369" type="Function">
+                    <param id="0" name="Name">&quot;updateStats&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
             <sub-events>
@@ -165,7 +176,41 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="838404433915822">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="487272684712552" type="System">
+                            <param id="0" name="Object">Items</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="676718103057785">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="678408644794133" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="410822208995990" type="LoadScreen">
+                    <param id="0" name="X">458</param>
+                    <param id="1" name="Y">458</param>
+                </action>
+                <action id="-9" name="Set value" sid="444787383098902" type="System">
+                    <param id="0" name="Variable">playerCanMove</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="876427235710503" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-3" name="Set position" sid="219612435457302" type="LoadScreen">
+                    <param id="0" name="X">9999</param>
+                    <param id="1" name="Y">9999</param>
+                </action>
+                <action id="-9" name="Set value" sid="417975775973316" type="System">
+                    <param id="0" name="Variable">playerCanMove</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
         </event-block>
         <comment>Here the rooms are generated, starting with a loop of 10 keys on a Dictionary (0,0;0,1;0,2;1,0,etc). Later will be used as an bi-dimentional Array</comment>
         <event-block sid="121811746103110">
@@ -1391,6 +1436,17 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="919538085082485">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="730809658631215" type="System">
+                                            <param id="0" name="Object">Items</param>
+                                        </condition>
+                                        <condition id="-3" name="Is on-screen" sid="209128701365686" type="Items" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="574729588703789" type="Items" />
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <comment>When the player enters a new room, it gots tped to player</comment>
@@ -1913,55 +1969,57 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="191578666313579">
+                    </sub-events>
+                </event-group>
+                <event-block sid="191578666313579">
+                    <conditions>
+                        <condition id="0" name="On function" sid="594254231929145" type="Function">
+                            <param id="0" name="Name">&quot;playerDamaged&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="189290417324788" type="Function">
+                            <param id="0" name="Name">&quot;updateStats&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-10" name="Set value" sid="336054972104066" type="Player">
+                            <param id="0" name="Instance variable">vulnerable</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="589572765181430" type="Player">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="394997185552570" type="Text">
+                            <param id="0" name="Text">&quot;Vida: &quot;&amp;Player.playerCurrentHealth&amp;&quot;/&quot;&amp;Player.playerMaxHealth</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="876641627155994" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="754345673632593" type="Player">
+                            <param id="0" name="Instance variable">vulnerable</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="778775905116601">
                             <conditions>
-                                <condition id="0" name="On function" sid="594254231929145" type="Function">
-                                    <param id="0" name="Name">&quot;playerDamaged&quot;</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="361515881695824" type="Player">
-                                    <param id="0" name="Instance variable">vulnerable</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
+                                <condition id="-7" name="Compare instance variable" sid="652721461967238" type="Player">
+                                    <param id="0" name="Instance variable">playerCurrentHealth</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="394997185552570" type="Text">
-                                    <param id="0" name="Text">&quot;Vida: &quot;&amp;playerLife</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="336054972104066" type="Player">
-                                    <param id="0" name="Instance variable">vulnerable</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action behavior="Flash" id="0" name="Flash" sid="589572765181430" type="Player">
-                                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
-                                    <param id="2" name="Duration">1.0</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="876641627155994" type="System">
-                                    <param id="0" name="Seconds">1.0</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="754345673632593" type="Player">
-                                    <param id="0" name="Instance variable">vulnerable</param>
-                                    <param id="1" name="Value">1</param>
+                                <action id="-21" name="Reset global variables" sid="301162592091616" type="System" />
+                                <action id="-2" name="Go to layout" sid="556810665752787" type="System">
+                                    <param id="0" name="Layout">DeathScreen</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="778775905116601">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="652721461967238" type="System">
-                                            <param id="0" name="Variable">playerLife</param>
-                                            <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="275110002790268" type="Player" />
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                     </sub-events>
-                </event-group>
+                </event-block>
                 <event-group description="" sid="705224651800733" title="Bullet-Related">
                     <sub-events>
                         <comment>When the player enters a new room, every bullet mid-air gets destroyed. No args required</comment>
@@ -1992,17 +2050,131 @@
                                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="869976964010057" type="Bullet">
                                     <param id="0" name="Angle">Function.Param(0)</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="495146083898344" type="System">
-                                    <param id="0" name="Seconds">CooldownForShooting</param>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="745988252726342" type="Bullet">
+                                    <param id="0" name="Speed">Player.playerShootSpeed</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="931855925974027" type="System">
-                                    <param id="0" name="Variable">CanShoot</param>
-                                    <param id="1" name="Value">1</param>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="137087445372057">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="343415880009173" type="Bullet">
+                                            <param id="0" name="Unique ID">lastBullet</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="495146083898344" type="System">
+                                            <param id="0" name="Seconds">playerFireRate</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="931855925974027" type="System">
+                                            <param id="0" name="Variable">CanShoot</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="209332823304458">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="179208694909811" type="Bullet">
+                                            <param id="0" name="Unique ID">lastBullet</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="811857925333261" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="840484074001918" type="Bullet" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="965078372852972">
+                    <conditions>
+                        <condition id="0" name="On function" sid="521206120229751" type="Function">
+                            <param id="0" name="Name">&quot;updateStats&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="572529460411302" type="Player">
+                            <param id="0" name="Max Speed">playerSpeed</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="559184934543570" type="Player">
+                            <param id="0" name="Instance variable">damage</param>
+                            <param id="1" name="Value">playerDamage</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="632779377643923" type="Player">
+                            <param id="0" name="Instance variable">resistance</param>
+                            <param id="1" name="Value">playerResistance</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="168855944647282" type="Player">
+                            <param id="0" name="Instance variable">playerFireRate</param>
+                            <param id="1" name="Value">playerFireRate</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="960635997080722" type="Player">
+                            <param id="0" name="Instance variable">playerShootSpeed</param>
+                            <param id="1" name="Value">playerShootSpeed</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="946978538017319" type="Player">
+                            <param id="0" name="Instance variable">playerMaxHealth</param>
+                            <param id="1" name="Value">playerMaxHealth</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="938042228571438" type="Player">
+                            <param id="0" name="Instance variable">playerCurrentHealth</param>
+                            <param id="1" name="Value">playerCurrentHealth</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="885975562644703">
+                    <conditions>
+                        <condition id="0" name="On function" sid="817442330846132" type="Function">
+                            <param id="0" name="Name">&quot;spawnItem&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="816236758719017" type="System">
+                            <param id="0" name="First value">round(random(0,10))</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="980906073883189" type="Chest">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="301700647860093">
+                            <conditions>
+                                <condition id="-33" name="Pick by comparison" sid="538018414936760" type="System">
+                                    <param id="0" name="Object">Items</param>
+                                    <param id="1" name="Expression">Items.id</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">round(random(0,(QuantityOfSpawnableItems-1)))</param>
+                                </condition>
+                                <condition id="-16" name="Pick random instance" sid="160315668294504" type="System">
+                                    <param id="0" name="Object">Items</param>
+                                </condition>
+                                <condition id="-31" name="Object UID exists" sid="549993609988282" type="System">
+                                    <param id="0" name="UID">Items.UID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="308604209082878" type="Items">
+                                    <param id="0" name="Object">Chest</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="801913936845728">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="528314657377456" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="537999826291016" type="Function">
+                                    <param id="0" name="Name">&quot;spawnItem&quot;</param>
+                                    <param id="1" name="Parameter {n}">Chest.UID</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-group>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="804714540547799" title="EnemyBehavior">
@@ -2240,7 +2412,7 @@
                                         </action>
                                         <action id="-12" name="Subtract from" sid="723610357854325" type="Cuervo">
                                             <param id="0" name="Instance variable">life</param>
-                                            <param id="1" name="Value">1</param>
+                                            <param id="1" name="Value">Player.damage</param>
                                         </action>
                                         <action id="-9" name="Destroy" sid="963901050280018" type="Bullet" />
                                     </actions>
@@ -2287,8 +2459,8 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Set value" sid="895361282811721" type="System">
-                                            <param id="0" name="Variable">playerLife</param>
-                                            <param id="1" name="Value">playerLife - Cuervo.damage</param>
+                                            <param id="0" name="Variable">playerCurrentHealth</param>
+                                            <param id="1" name="Value">playerCurrentHealth - Cuervo.damage</param>
                                         </action>
                                         <action id="0" name="Call function" sid="304183090745167" type="Function">
                                             <param id="0" name="Name">&quot;playerDamaged&quot;</param>
@@ -2301,11 +2473,16 @@
                                         <condition id="0" name="On collision with another object" sid="807697619544838" type="Player">
                                             <param id="0" name="Object">bulletCuervo</param>
                                         </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="461809796550356" type="Player">
+                                            <param id="0" name="Instance variable">vulnerable</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Set value" sid="308159238348029" type="System">
-                                            <param id="0" name="Variable">playerLife</param>
-                                            <param id="1" name="Value">playerLife - bulletCuervo.damage</param>
+                                        <action id="-9" name="Set value" sid="748217723917770" type="System">
+                                            <param id="0" name="Variable">playerCurrentHealth</param>
+                                            <param id="1" name="Value">playerCurrentHealth - bulletCuervo.damage</param>
                                         </action>
                                         <action id="0" name="Call function" sid="126100689696758" type="Function">
                                             <param id="0" name="Name">&quot;playerDamaged&quot;</param>
@@ -2481,7 +2658,7 @@
                                         </action>
                                         <action id="-12" name="Subtract from" sid="763770913164864" type="Enloquecido">
                                             <param id="0" name="Instance variable">life</param>
-                                            <param id="1" name="Value">1</param>
+                                            <param id="1" name="Value">Player.damage</param>
                                         </action>
                                         <action id="-9" name="Destroy" sid="626939273116830" type="Bullet" />
                                     </actions>
@@ -2521,16 +2698,29 @@
                                             <param id="0" name="Object">Player</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="714705327442040" type="System">
-                                            <param id="0" name="Variable">playerLife</param>
-                                            <param id="1" name="Value">playerLife - Enloquecido.damage</param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="697844450840322" type="Function">
-                                            <param id="0" name="Name">&quot;playerDamaged&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="526749551071083">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="862838290215296" type="Player">
+                                                    <param id="0" name="Instance variable">vulnerable</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-4" name="Trigger once while true" sid="701424996691303" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="714705327442040" type="System">
+                                                    <param id="0" name="Variable">playerCurrentHealth</param>
+                                                    <param id="1" name="Value">playerCurrentHealth - Enloquecido.damage</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="697844450840322" type="Function">
+                                                    <param id="0" name="Name">&quot;playerDamaged&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="332451436257779">
                                     <conditions>
@@ -2591,15 +2781,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-11" name="Add to" sid="858337541549798" type="Player">
-                            <param id="0" name="Instance variable">energy</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="109946156946612" type="Energy" />
-                        <action id="0" name="Set text" sid="856110893339881" type="energyText">
-                            <param id="0" name="Text">&quot;Energy:&quot;&amp;Player.energy&amp; &quot;/ Consumed:&quot;&amp;Player.energyConsumed</param>
-                        </action>
                         <action id="-9" name="Destroy" sid="416677903407720" type="Chest" />
+                        <action id="0" name="Call function" sid="641499960180593" type="Function">
+                            <param id="0" name="Name">&quot;spawnItem&quot;</param>
+                            <param id="1" name="Parameter {n}">Chest.UID</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="933070943071077">
@@ -2635,6 +2821,63 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="121896889319088" title="Items">
+            <sub-events>
+                <event-group description="" sid="739199603974611" title="SpecificBehavior">
+                    <sub-events>
+                        <event-block sid="698814753445489">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="4" inverted="1" name="Is moving along path" sid="642586558971741" type="EntityNinfa" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="0" name="Find path" sid="760134453423674" type="EntityNinfa">
+                                    <param id="0" name="X">random(Player.X-200,Player.X+200)</param>
+                                    <param id="1" name="Y">random(Player.Y-200,Player.Y+200)</param>
+                                </action>
+                                <action behavior="Pathfinding" id="1" name="Move along path" sid="553739330519217" type="EntityNinfa" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="328929936108444" title="Collitions">
+                    <sub-events>
+                        <event-block sid="650533468463226">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="138344160848067" type="Player">
+                                    <param id="0" name="Object">ItemNinfa</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="693060669335364" type="ItemNinfa" />
+                                <action id="0" name="Spawn another object" sid="728721992129367" type="Player">
+                                    <param id="0" name="Object">EntityNinfa</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="630891935959144">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="575240954830124" type="Player">
+                                    <param id="0" name="Object">doubleSpeed</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="266633351992121" type="doubleSpeed" />
+                                <action id="-9" name="Set value" sid="888102766197837" type="System">
+                                    <param id="0" name="Variable">playerSpeed</param>
+                                    <param id="1" name="Value">playerSpeed * 2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="968404737672350" type="Function">
+                                    <param id="0" name="Name">&quot;updateStats&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
         <event-block sid="479509220188245">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="268760205616377" type="System">
@@ -2650,6 +2893,24 @@
                 </action>
                 <action id="4" name="Set font color" sid="288528797071568" type="Text2">
                     <param id="0" name="Color">rgb(0,255, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="405691679992960">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="868055606560836" type="System" />
+                <condition id="-11" name="For Each" sid="781107881343714" type="System">
+                    <param id="0" name="Object">Items</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="178447034003580" type="Items">
+                    <param id="0" name="Instance variable">id</param>
+                    <param id="1" name="Value">QuantityOfSpawnableItems</param>
+                </action>
+                <action id="-10" name="Add to" sid="281426424677457" type="System">
+                    <param id="0" name="Variable">QuantityOfSpawnableItems</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DeathScreen</name>
+    <events>
+        <event-block sid="649722530334991">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="111436918195150" type="System" />
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="846847209783182" type="Browser">
+                    <param id="0" name="Javascript">&quot;$.getScript(&apos;test.js&apos;);&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="579468231186669" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Set text" sid="301458756004887" type="DeathText">
+                    <param id="0" name="Text">Browser.ExecJS(&quot;getDeathScreenPhrase()&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="814099946639330">
+            <conditions>
+                <condition id="0" name="On clicked" sid="218121739054320" type="ButtonRestart" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="831458347818915" type="System">
+                    <param id="0" name="Layout">Start</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

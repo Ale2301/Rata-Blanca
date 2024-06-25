@@ -10,19 +10,22 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Layout 1</layout>
-        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <layout order="0">Game</layout>
+        <layout order="2">DeathScreen</layout>
+        <event-sheet active="1" order="1">Game</event-sheet>
+        <event-sheet order="3">DeathScreen</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
-        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
         <family expanded="1" name="Enemies" />
         <family expanded="0" name="Solids" />
         <family expanded="0" name="Rooms" />
+        <family expanded="1" name="Items" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="0" path="object-folder/" />
@@ -32,7 +35,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="0" path="file-folder/JavaScript/" />
+        <folder expanded="1" path="file-folder/JavaScript/" />
         <folder expanded="1" path="file-folder/Images/" />
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/Border/" />
@@ -52,5 +55,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/bulletCuervo/" />
         <folder expanded="1" path="animation-folder/Energy/" />
         <folder expanded="1" path="animation-folder/Chest/" />
+        <folder expanded="1" path="animation-folder/ItemNinfa/" />
+        <folder expanded="1" path="animation-folder/doubleSpeed/" />
+        <folder expanded="1" path="animation-folder/EntityNinfa/" />
+        <folder expanded="1" path="animation-folder/StartBackGround/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/LoadScreen/" />
+        <folder expanded="1" path="animation-folder/DeathBackGround/" />
     </folders-expanded>
 </c2uistate>

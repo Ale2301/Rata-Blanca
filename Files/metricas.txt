@@ -1,0 +1,2 @@
+Todos los ítems tienen que estar agrupados, para poder ir eliminandolos de los spawns a medida que el jugador los obtiene
+Debe ser fácil agregar un ítem nuevo (El código debe ser escalable)
