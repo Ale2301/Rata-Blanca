@@ -10,8 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Game</layout>
-        <event-sheet active="1" order="1">Game</event-sheet>
+        <layout order="0">Start</layout>
+        <layout order="2">Game</layout>
+        <event-sheet order="1">Start</event-sheet>
+        <event-sheet active="1" order="3">Game</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -22,7 +24,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1">
         <family expanded="1" name="Enemies" />
         <family expanded="0" name="Solids" />
-        <family expanded="0" name="Rooms" />
+        <family expanded="1" name="Rooms" />
         <family expanded="1" name="Items" />
     </families-expanded>
     <folders-expanded>
@@ -61,7 +63,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/LoadScreen/" />
         <folder expanded="1" path="animation-folder/DeathBackGround/" />
         <folder expanded="1" path="animation-folder/OptionsBackGround/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/RubyCry/" />
         <folder expanded="1" path="animation-folder/CreditsBackGround/" />
+        <folder expanded="1" path="animation-folder/NextLevel/" />
     </folders-expanded>
 </c2uistate>

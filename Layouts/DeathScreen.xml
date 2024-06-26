@@ -102,7 +102,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="80">
+                <instance type="RubyCry" uid="80">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -128,14 +128,6 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances>
-        <instance type="ArrayDeathPhrases" uid="66">
-            <properties>
-                <width>10</width>
-                <height>1</height>
-                <depth>1</depth>
-            </properties>
-        </instance>
-    </nonworld-instances>
+    <nonworld-instances />
     <effects />
 </c2layout>

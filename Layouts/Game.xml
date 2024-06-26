@@ -375,6 +375,7 @@
                     </properties>
                     <instance-variables>
                         <pos>0,0</pos>
+                        <visited>0</visited>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="SetColor">
@@ -409,6 +410,7 @@
                     </properties>
                     <instance-variables>
                         <pos>1,0</pos>
+                        <visited>0</visited>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="SetColor">
@@ -443,6 +445,7 @@
                     </properties>
                     <instance-variables>
                         <pos>2,0</pos>
+                        <visited>0</visited>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="SetColor">
@@ -477,6 +480,7 @@
                     </properties>
                     <instance-variables>
                         <pos>0,1</pos>
+                        <visited>0</visited>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="SetColor">
@@ -511,6 +515,7 @@
                     </properties>
                     <instance-variables>
                         <pos>1,1</pos>
+                        <visited>1</visited>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="SetColor">
@@ -545,6 +550,7 @@
                     </properties>
                     <instance-variables>
                         <pos>2,1</pos>
+                        <visited>0</visited>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="SetColor">
@@ -579,6 +585,7 @@
                     </properties>
                     <instance-variables>
                         <pos>0,2</pos>
+                        <visited>0</visited>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="SetColor">
@@ -613,6 +620,7 @@
                     </properties>
                     <instance-variables>
                         <pos>1,2</pos>
+                        <visited>0</visited>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="SetColor">
@@ -647,6 +655,7 @@
                     </properties>
                     <instance-variables>
                         <pos>2,2</pos>
+                        <visited>0</visited>
                     </instance-variables>
                     <effect-instances>
                         <effect-instance type="SetColor">
@@ -2409,6 +2418,9 @@
                     <instance-variables>
                         <id>0</id>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2434,6 +2446,9 @@
                     <instance-variables>
                         <id>0</id>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2528,6 +2543,28 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="NextLevel" uid="66">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-924</x>
+                        <y>921</y>
+                        <z>0</z>
+                        <width>250</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
