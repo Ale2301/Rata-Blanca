@@ -102,7 +102,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="TextVolume" uid="77">
+                <instance type="TextCreds" uid="77">
                     <properties>
                         <text>Volumen</text>
                         <initial-visibility>Visible</initial-visibility>

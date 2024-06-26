@@ -46,5 +46,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="602366667147398">
+            <conditions>
+                <condition id="0" name="On clicked" sid="376855150970981" type="ButtonCredits" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="179874884948663" type="System">
+                    <param id="0" name="Layout">Credits</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

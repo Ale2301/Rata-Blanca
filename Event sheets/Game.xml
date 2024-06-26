@@ -2002,23 +2002,21 @@
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="778775905116601">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="652721461967238" type="Player">
-                                    <param id="0" name="Instance variable">playerCurrentHealth</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-21" name="Reset global variables" sid="301162592091616" type="System" />
-                                <action id="-2" name="Go to layout" sid="556810665752787" type="System">
-                                    <param id="0" name="Layout">DeathScreen</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                </event-block>
+                <event-block sid="778775905116601">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="652721461967238" type="Player">
+                            <param id="0" name="Instance variable">playerCurrentHealth</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Reset global variables" sid="301162592091616" type="System" />
+                        <action id="-2" name="Go to layout" sid="556810665752787" type="System">
+                            <param id="0" name="Layout">DeathScreen</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-group description="" sid="705224651800733" title="Bullet-Related">
                     <sub-events>
