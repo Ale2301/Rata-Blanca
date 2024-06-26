@@ -452,8 +452,11 @@
         <object-type name="LoadScreen" sid="825938675822403">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220167854641811" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220167854641811" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\4.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -461,7 +464,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315906274535725" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\muerte2.0.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -502,6 +505,17 @@
         </object-type>
         <object-type name="ButtonBackToInit" sid="909106099461845">
             <plugin id="Button" />
+        </object-type>
+        <object-type name="Sprite2" sid="868146608790046">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508574524252898" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\Default_0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\Default_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\Default_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\Default_3.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>

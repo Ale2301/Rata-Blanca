@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>451</x>
-                        <y>451</y>
+                        <x>449.469696045</x>
+                        <y>454.469696045</y>
                         <z>0</z>
-                        <width>900</width>
-                        <height>900</height>
+                        <width>913.65802002</width>
+                        <height>913.65802002</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -55,25 +55,25 @@
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-96,400,0</font>
-                        <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <font>Arial,-32,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>78</x>
-                        <y>30</y>
+                        <x>697.102294922</x>
+                        <y>327</y>
                         <z>0</z>
-                        <width>761</width>
-                        <height>344</height>
+                        <width>263.53805542</width>
+                        <height>119.128898621</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -92,14 +92,36 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>261</x>
-                        <y>676</y>
+                        <x>72</x>
+                        <y>764</y>
                         <z>0</z>
                         <width>264.187408447</width>
                         <height>88.062477112</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="Sprite2" uid="80">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>233.959487915</x>
+                        <y>582.976257324</y>
+                        <z>0</z>
+                        <width>128.816421509</width>
+                        <height>212.742263794</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0.17453292</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
