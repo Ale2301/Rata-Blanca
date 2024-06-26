@@ -16,8 +16,10 @@
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -472,6 +474,35 @@
         <object-type name="ButtonRestart" sid="803331971407645">
             <plugin id="Button" />
         </object-type>
+        <object-type name="ButtonOptions" sid="129607452673574">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="OptionsBackGround" sid="853595542659954">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="404749606509254" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OptionsText" sid="434990188057131">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LocalStorage" sid="984717723399248">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="SliderBar" sid="118792191325306">
+            <plugin id="sliderbar" />
+        </object-type>
+        <object-type name="TextVolume" sid="392863905780213">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ButtonCredits" sid="290333442892442">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="ButtonBackToInit" sid="909106099461845">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
@@ -506,16 +537,19 @@
         <layout>Start.xml</layout>
         <layout>Game.xml</layout>
         <layout>DeathScreen.xml</layout>
+        <layout>Options.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Game.xml</event-sheet>
         <event-sheet>Start.xml</event-sheet>
         <event-sheet>DeathScreen.xml</event-sheet>
+        <event-sheet>Options.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="5" />
         <global-instance type="Function" uid="12" />
         <global-instance type="Browser" uid="35" />
+        <global-instance type="LocalStorage" uid="75" />
     </global-instances>
     <sounds-folder />
     <music-folder />
