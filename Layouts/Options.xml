@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Start</name>
-    <sid>273518839850328</sid>
-    <event-sheet>Start</event-sheet>
+    <name>Options</name>
+    <sid>852039050789619</sid>
+    <event-sheet>Options</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="219752990425460">
+        <layer name="Layer 0" sid="899205758647735">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="StartBackGround" uid="42">
+                <instance type="OptionsBackGround" uid="73">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>449</x>
-                        <y>448</y>
+                        <x>449.5</x>
+                        <y>451.5</y>
                         <z>0</z>
-                        <width>898.972167969</width>
-                        <height>898.972167969</height>
+                        <width>897</width>
+                        <height>903</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -51,14 +51,14 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="StartText" uid="57">
+                <instance type="OptionsText" uid="74">
                     <properties>
-                        <text>RATA BLANCA</text>
+                        <text>Opciones</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-96,400,0</font>
+                        <font>Arial,-48,400,0</font>
                         <color>255,255,255</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -66,11 +66,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>64</x>
-                        <y>36</y>
+                        <x>334</x>
+                        <y>38</y>
                         <z>0</z>
-                        <width>776.328796387</width>
-                        <height>277.482971191</height>
+                        <width>211</width>
+                        <height>76</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -78,49 +78,100 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ButtonStart" uid="58">
+                <instance type="SliderBar" uid="76">
                     <properties>
-                        <type>Button</type>
-                        <text>START</text>
+                        <value>0</value>
+                        <minimum>0</minimum>
+                        <maximum>100</maximum>
+                        <step>1</step>
                         <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
                         <enabled>Yes</enabled>
-                        <auto-font-size>No</auto-font-size>
                         <id-optional></id-optional>
-                        <checked>No</checked>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>375</x>
-                        <y>396</y>
+                        <x>399</x>
+                        <y>253</y>
                         <z>0</z>
-                        <width>125.666229248</width>
-                        <height>41.888744354</height>
+                        <width>283</width>
+                        <height>25</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="ButtonOptions" uid="72">
+                <instance type="TextVolume" uid="77">
+                    <properties>
+                        <text>Volumen</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-48,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>113</x>
+                        <y>239</y>
+                        <z>0</z>
+                        <width>224</width>
+                        <height>76</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ButtonCredits" uid="78">
                     <properties>
                         <type>Button</type>
-                        <text>OPTIONS</text>
+                        <text>CREDITOS</text>
                         <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
                         <enabled>Yes</enabled>
-                        <auto-font-size>No</auto-font-size>
+                        <auto-font-size>Yes</auto-font-size>
                         <id-optional></id-optional>
                         <checked>No</checked>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>378</x>
-                        <y>475</y>
+                        <x>244</x>
+                        <y>510</y>
                         <z>0</z>
-                        <width>125.666229248</width>
-                        <height>41.888744354</height>
+                        <width>371.346191406</width>
+                        <height>123.782066345</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="ButtonBackToInit" uid="79">
+                    <properties>
+                        <type>Button</type>
+                        <text>Volver al inicio</text>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                        <checked>No</checked>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>252</x>
+                        <y>736</y>
+                        <z>0</z>
+                        <width>371.346191406</width>
+                        <height>123.782066345</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

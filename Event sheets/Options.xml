@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Options</name>
+    <events>
+        <event-block sid="412435913409153">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="627256026930506" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="241809369079919" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="195150597497049">
+            <conditions>
+                <condition id="1" name="On item get" sid="690742534128863" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set value" sid="459804220642509" type="SliderBar">
+                    <param id="0" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="476043720705139">
+            <conditions>
+                <condition id="2" name="On changed" sid="714412921124412" type="SliderBar" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="111549465009226" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume&quot;</param>
+                    <param id="1" name="Value">SliderBar.Value</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="536504575667012">
+            <conditions>
+                <condition id="0" name="On clicked" sid="709471729102568" type="ButtonBackToInit" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="764971679804568" type="System">
+                    <param id="0" name="Layout">Start</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
