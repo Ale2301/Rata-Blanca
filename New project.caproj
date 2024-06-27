@@ -925,6 +925,9 @@
         <object-type name="TextNotEnoughEnergy" sid="190207725804011">
             <plugin id="Text" />
         </object-type>
+        <object-type name="BossHealth" sid="461471269474474">
+            <plugin id="progressbar" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">

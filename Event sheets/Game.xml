@@ -3538,6 +3538,12 @@
                                         <action behavior="Pathfinding" id="3" name="Set enabled" sid="960520844658950" type="BossMiniSlime">
                                             <param id="0" name="Set">1</param>
                                         </action>
+                                        <action id="3" name="Set progress" sid="223900216141768" type="BossHealth">
+                                            <param id="0" name="Value">100</param>
+                                        </action>
+                                        <action id="1" name="Set visible" sid="203063505481392" type="BossHealth">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="800428152846514">
@@ -4140,6 +4146,9 @@
                                             <param id="2" name="Duration">1.0</param>
                                         </action>
                                         <action id="-9" name="Destroy" sid="791214438476147" type="Bullet" />
+                                        <action id="3" name="Set progress" sid="244454613299482" type="BossHealth">
+                                            <param id="0" name="Value">BossSlime.life</param>
+                                        </action>
                                     </actions>
                                     <sub-events>
                                         <event-block sid="549969708807456">
