@@ -1961,6 +1961,74 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+                <event-group description="" sid="705224651800733" title="Bullet-Related">
+                    <sub-events>
+                        <comment>When the player enters a new room, every bullet mid-air gets destroyed. No args required</comment>
+                        <event-block sid="698189300745824">
+                            <conditions>
+                                <condition id="0" name="On function" sid="105116625750492" type="Function">
+                                    <param id="0" name="Name">&quot;destroyBullets&quot;</param>
+                                </condition>
+                                <condition id="-11" name="For Each" sid="907620164844808" type="System">
+                                    <param id="0" name="Object">Bullet</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="501512022679204" type="Bullet" />
+                            </actions>
+                        </event-block>
+                        <comment>After a bullet is created, it&apos;s angle is decided. Arg0:Angle</comment>
+                        <event-block sid="819061965806604">
+                            <conditions>
+                                <condition id="0" name="On function" sid="291076225365890" type="Function">
+                                    <param id="0" name="Name">&quot;bulletGenerated&quot;</param>
+                                </condition>
+                                <condition id="-14" name="Pick by unique ID" sid="113028797455615" type="Bullet">
+                                    <param id="0" name="Unique ID">lastBullet</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="869976964010057" type="Bullet">
+                                    <param id="0" name="Angle">Function.Param(0)</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="745988252726342" type="Bullet">
+                                    <param id="0" name="Speed">Player.playerShootSpeed</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="137087445372057">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="343415880009173" type="Bullet">
+                                            <param id="0" name="Unique ID">lastBullet</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="495146083898344" type="System">
+                                            <param id="0" name="Seconds">playerFireRate</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="931855925974027" type="System">
+                                            <param id="0" name="Variable">CanShoot</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="209332823304458">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="179208694909811" type="Bullet">
+                                            <param id="0" name="Unique ID">lastBullet</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="811857925333261" type="System">
+                                            <param id="0" name="Seconds">2</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="840484074001918" type="Bullet" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block sid="191578666313579">
                     <conditions>
                         <condition id="0" name="On function" sid="594254231929145" type="Function">
@@ -2046,74 +2114,6 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-group description="" sid="705224651800733" title="Bullet-Related">
-                    <sub-events>
-                        <comment>When the player enters a new room, every bullet mid-air gets destroyed. No args required</comment>
-                        <event-block sid="698189300745824">
-                            <conditions>
-                                <condition id="0" name="On function" sid="105116625750492" type="Function">
-                                    <param id="0" name="Name">&quot;destroyBullets&quot;</param>
-                                </condition>
-                                <condition id="-11" name="For Each" sid="907620164844808" type="System">
-                                    <param id="0" name="Object">Bullet</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="501512022679204" type="Bullet" />
-                            </actions>
-                        </event-block>
-                        <comment>After a bullet is created, it&apos;s angle is decided. Arg0:Angle</comment>
-                        <event-block sid="819061965806604">
-                            <conditions>
-                                <condition id="0" name="On function" sid="291076225365890" type="Function">
-                                    <param id="0" name="Name">&quot;bulletGenerated&quot;</param>
-                                </condition>
-                                <condition id="-14" name="Pick by unique ID" sid="113028797455615" type="Bullet">
-                                    <param id="0" name="Unique ID">lastBullet</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="869976964010057" type="Bullet">
-                                    <param id="0" name="Angle">Function.Param(0)</param>
-                                </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="745988252726342" type="Bullet">
-                                    <param id="0" name="Speed">Player.playerShootSpeed</param>
-                                </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="137087445372057">
-                                    <conditions>
-                                        <condition id="-14" name="Pick by unique ID" sid="343415880009173" type="Bullet">
-                                            <param id="0" name="Unique ID">lastBullet</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-16" name="Wait" sid="495146083898344" type="System">
-                                            <param id="0" name="Seconds">playerFireRate</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="931855925974027" type="System">
-                                            <param id="0" name="Variable">CanShoot</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="209332823304458">
-                                    <conditions>
-                                        <condition id="-14" name="Pick by unique ID" sid="179208694909811" type="Bullet">
-                                            <param id="0" name="Unique ID">lastBullet</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-16" name="Wait" sid="811857925333261" type="System">
-                                            <param id="0" name="Seconds">2</param>
-                                        </action>
-                                        <action id="-9" name="Destroy" sid="840484074001918" type="Bullet" />
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
-                </event-group>
                 <event-block sid="965078372852972">
                     <conditions>
                         <condition id="0" name="On function" sid="521206120229751" type="Function">
@@ -3070,6 +3070,40 @@
             <actions>
                 <action id="-26" name="Restart layout" sid="360746402186872" type="System" />
             </actions>
+        </event-block>
+        <event-block sid="895897904037912">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="998357198551024" type="Keyboard">
+                    <param id="0" name="Key">27</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="931740755835793">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="166605711809618" type="System">
+                            <param id="0" name="First value">timescale</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="126874727153789" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="212509210898855">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="351080961343925" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="540486003219213" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
