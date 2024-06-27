@@ -11,8 +11,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Game</layout>
-        <layout order="2">Start</layout>
-        <layout order="3">Credits</layout>
         <event-sheet active="1" order="1">Game</event-sheet>
     </open-tabs>
     <properties>
@@ -22,13 +20,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="1" name="Enemies" />
+        <family expanded="0" name="Enemies" />
         <family expanded="0" name="Solids" />
         <family expanded="1" name="Rooms" />
-        <family expanded="1" name="Items" />
+        <family expanded="0" name="Items" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -79,6 +77,5 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Room6/" />
         <folder expanded="1" path="animation-folder/Room7/" />
         <folder expanded="1" path="animation-folder/Room8/" />
-        <folder expanded="1" path="animation-folder/Room10/" />
     </folders-expanded>
 </c2uistate>

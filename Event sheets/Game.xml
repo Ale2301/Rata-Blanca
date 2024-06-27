@@ -62,6 +62,62 @@
                     <param id="0" name="Instance variable">basePositionY</param>
                     <param id="1" name="Value">SpecialRoom.Y</param>
                 </action>
+                <action id="-10" name="Set value" sid="964251002853399" type="Room2">
+                    <param id="0" name="Instance variable">basePositionX</param>
+                    <param id="1" name="Value">Room2.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="359397914745248" type="Room2">
+                    <param id="0" name="Instance variable">basePositionY</param>
+                    <param id="1" name="Value">Room2.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="952194550121625" type="Room3">
+                    <param id="0" name="Instance variable">basePositionX</param>
+                    <param id="1" name="Value">Room3.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="339827549591774" type="Room3">
+                    <param id="0" name="Instance variable">basePositionY</param>
+                    <param id="1" name="Value">Room3.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="802748053205209" type="Room4">
+                    <param id="0" name="Instance variable">basePositionX</param>
+                    <param id="1" name="Value">Room4.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="544618547293753" type="Room4">
+                    <param id="0" name="Instance variable">basePositionY</param>
+                    <param id="1" name="Value">Room4.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="515237310841532" type="Room5">
+                    <param id="0" name="Instance variable">basePositionX</param>
+                    <param id="1" name="Value">Room5.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="902835503786129" type="Room5">
+                    <param id="0" name="Instance variable">basePositionY</param>
+                    <param id="1" name="Value">Room5.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="899741255776091" type="Room6">
+                    <param id="0" name="Instance variable">basePositionX</param>
+                    <param id="1" name="Value">Room6.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="306243515353351" type="Room6">
+                    <param id="0" name="Instance variable">basePositionY</param>
+                    <param id="1" name="Value">Room6.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="931887982242522" type="Room7">
+                    <param id="0" name="Instance variable">basePositionX</param>
+                    <param id="1" name="Value">Room7.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="392003137178182" type="Room7">
+                    <param id="0" name="Instance variable">basePositionY</param>
+                    <param id="1" name="Value">Room7.Y</param>
+                </action>
+                <action id="-10" name="Set value" sid="787556232349076" type="Room8">
+                    <param id="0" name="Instance variable">basePositionX</param>
+                    <param id="1" name="Value">Room8.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="724170172149766" type="Room8">
+                    <param id="0" name="Instance variable">basePositionY</param>
+                    <param id="1" name="Value">Room8.Y</param>
+                </action>
                 <action id="0" name="Call function" sid="510152405846369" type="Function">
                     <param id="0" name="Name">&quot;updateStats&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
@@ -152,6 +208,118 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="848736887503039">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="184173047064039" type="System">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="809586363650230" type="Stone">
+                            <param id="0" name="Object">Room2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="443075411114635" type="Stone">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="172498085204470">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="445689320630217" type="System">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="294267069170448" type="Stone">
+                            <param id="0" name="Object">Room3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="459462036078141" type="Stone">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="603915482921514">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="513037708191232" type="System">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="306162850068491" type="Stone">
+                            <param id="0" name="Object">Room4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="165529248211048" type="Stone">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="631990339182851">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="566795689017542" type="System">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="378059094977260" type="Stone">
+                            <param id="0" name="Object">Room5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="708368949946360" type="Stone">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="624782344786218">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="699964354766592" type="System">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="798764723699348" type="Stone">
+                            <param id="0" name="Object">Room6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="118991134414150" type="Stone">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="643225876241976">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="556350151350691" type="System">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="381149144024386" type="Stone">
+                            <param id="0" name="Object">Room7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="404448678894346" type="Stone">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">8</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="990596687310386">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="284971518005492" type="System">
+                            <param id="0" name="Object">Stone</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="497834083227626" type="Stone">
+                            <param id="0" name="Object">Room8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="793035345157491" type="Stone">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">9</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="520252712718026">
                     <conditions>
                         <condition id="-11" name="For Each" sid="310731189017542" type="System">
@@ -200,6 +368,118 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="599183670780940">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="786947553319914" type="System">
+                            <param id="0" name="Object">Enloquecido</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="402834954548989" type="Enloquecido">
+                            <param id="0" name="Object">Room2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="195555607941212" type="Enloquecido">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="882164435926393">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="750626819406720" type="System">
+                            <param id="0" name="Object">Enloquecido</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="517231455716293" type="Enloquecido">
+                            <param id="0" name="Object">Room3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="580765632378650" type="Enloquecido">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="657588054239808">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="510999332667338" type="System">
+                            <param id="0" name="Object">Enloquecido</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="741032635916301" type="Enloquecido">
+                            <param id="0" name="Object">Room4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="138862263039859" type="Enloquecido">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="590430587063355">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="113326852318749" type="System">
+                            <param id="0" name="Object">Enloquecido</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="944558845310556" type="Enloquecido">
+                            <param id="0" name="Object">Room5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="991106009211092" type="Enloquecido">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="768941179685871">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="112459684003116" type="System">
+                            <param id="0" name="Object">Enloquecido</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="845742692628971" type="Enloquecido">
+                            <param id="0" name="Object">Room6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="152028301661100" type="Enloquecido">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="116586964710012">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="330609065606877" type="System">
+                            <param id="0" name="Object">Enloquecido</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="527391714240616" type="Enloquecido">
+                            <param id="0" name="Object">Room7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="237037598198317" type="Enloquecido">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">8</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="120760348762644">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="375325259300735" type="System">
+                            <param id="0" name="Object">Enloquecido</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="246253015990120" type="Enloquecido">
+                            <param id="0" name="Object">Room8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="878055182815458" type="Enloquecido">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">9</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="915419020907611">
                     <conditions>
                         <condition id="-11" name="For Each" sid="243149206470475" type="System">
@@ -229,6 +509,118 @@
                         <action id="-10" name="Set value" sid="937278129190467" type="Cuervo">
                             <param id="0" name="Instance variable">BelongsToRoom</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="838301106623597">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="453227490297441" type="System">
+                            <param id="0" name="Object">Cuervo</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="126067746020226" type="Cuervo">
+                            <param id="0" name="Object">Room2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="468723781373077" type="Cuervo">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="240519447771952">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="251154055258477" type="System">
+                            <param id="0" name="Object">Cuervo</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="468199500528895" type="Cuervo">
+                            <param id="0" name="Object">Room3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="961625895114923" type="Cuervo">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="590980023621180">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="886005987980957" type="System">
+                            <param id="0" name="Object">Cuervo</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="565075921521747" type="Cuervo">
+                            <param id="0" name="Object">Room4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="522023870817468" type="Cuervo">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="346155273049880">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="545917001399843" type="System">
+                            <param id="0" name="Object">Cuervo</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="272454541393097" type="Cuervo">
+                            <param id="0" name="Object">Room5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="644044946278550" type="Cuervo">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="660046921514812">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="660914546620273" type="System">
+                            <param id="0" name="Object">Cuervo</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="502870509490455" type="Cuervo">
+                            <param id="0" name="Object">Room6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="848146465600543" type="Cuervo">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="937595169817488">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="346406153413777" type="System">
+                            <param id="0" name="Object">Cuervo</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="310826720102842" type="Cuervo">
+                            <param id="0" name="Object">Room7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="917602977200344" type="Cuervo">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">8</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="469847930145832">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="824052999178778" type="System">
+                            <param id="0" name="Object">Cuervo</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="203536944084869" type="Cuervo">
+                            <param id="0" name="Object">Room8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="803754062870900" type="Cuervo">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">9</param>
                         </action>
                     </actions>
                 </event-block>
@@ -384,7 +776,7 @@
                             <actions>
                                 <action id="1" name="Set key" sid="590303110677930" type="RoomPos">
                                     <param id="0" name="Key">RoomPos.CurrentKey</param>
-                                    <param id="1" name="Value">round(random(0,1))</param>
+                                    <param id="1" name="Value">round(random(0,8))</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -771,6 +1163,1364 @@
                                                 <action id="-10" name="Set value" sid="517289710200068" type="Cuervo">
                                                     <param id="0" name="Instance variable">BelongsToUID</param>
                                                     <param id="1" name="Value">Room1.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="677045811202884">
+                                    <conditions>
+                                        <condition id="2" name="Compare current value" sid="868330576272927" type="RoomPos">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-33" name="Pick by comparison" sid="402808773616979" type="System">
+                                            <param id="0" name="Object">Room2</param>
+                                            <param id="1" name="Expression">Room2.basePositionX</param>
+                                            <param id="2" name="Comparison">1</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="787584442951039" type="System">
+                                            <param id="0" name="Variable">variableRoomPosX</param>
+                                            <param id="1" name="Value">Room2.basePositionX</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="382808443776186" type="System">
+                                            <param id="0" name="Variable">variableRoomPosY</param>
+                                            <param id="1" name="Value">Room2.basePositionY</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="646517311030678" type="Kitchen">
+                                            <param id="0" name="Object">Room2</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-25" name="Move to bottom" sid="479344186694684" type="Room2" />
+                                        <action id="1" name="Set key" sid="100497440090205" type="RoomPos">
+                                            <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                            <param id="1" name="Value">Room2.UID</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="959411566726760" type="Room2">
+                                            <param id="0" name="X">Room2.X - offsetRoomPos</param>
+                                            <param id="1" name="Y">Room2.Y</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="763845792388442" type="System">
+                                            <param id="0" name="Variable">offsetRoomPos</param>
+                                            <param id="1" name="Value">offsetRoomPos + 900</param>
+                                        </action>
+                                        <action id="-24" name="Stop loop" sid="253007380794142" type="System" />
+                                        <action id="-10" name="Set value" sid="122820941359825" type="Room2">
+                                            <param id="0" name="Instance variable">basePositionX</param>
+                                            <param id="1" name="Value">variableRoomPosX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="134271782857691" type="Room2">
+                                            <param id="0" name="Instance variable">basePositionY</param>
+                                            <param id="1" name="Value">variableRoomPosY</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="128121179446428">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="922044558389386" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="136853957901830" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="317693504059605" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="854323449396592" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneX</param>
+                                                    <param id="1" name="Value">Stone.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="898559042163295" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneY</param>
+                                                    <param id="1" name="Value">Stone.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="468237093147013" type="Room2">
+                                                    <param id="0" name="Object">Stone</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="480855621522370" type="Stone">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room2.basePositionX-currentPosStoneX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="918127250331967" type="Stone">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room2.basePositionY-currentPosStoneY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="795035102821829" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="109800851726072" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room2.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="526184976938635">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="715706215617466" type="System">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="627794474226883" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="431019711412034" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="630123044482447" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Enloquecido.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="766348738374963" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Enloquecido.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="863710849393485" type="Room2">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="696443237879831" type="Enloquecido">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="990230408476111" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room2.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="924069114184700" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room2.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="119141433319014" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="537179508189798" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room2.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="790807011336285">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="160148817033753" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="918110846015817" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="480625103640653" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="590768156127050" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Cuervo.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="442515633279733" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Cuervo.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="115584228022947" type="Room2">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="661235729663640" type="Cuervo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="221279108207241" type="Cuervo">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room2.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="133291398376467" type="Cuervo">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room2.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="950169157983356" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="507892219894457" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room2.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="313306757394124">
+                                    <conditions>
+                                        <condition id="2" name="Compare current value" sid="312019050740054" type="RoomPos">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-33" name="Pick by comparison" sid="192739445095626" type="System">
+                                            <param id="0" name="Object">Room3</param>
+                                            <param id="1" name="Expression">Room3.basePositionX</param>
+                                            <param id="2" name="Comparison">1</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="302167146091394" type="System">
+                                            <param id="0" name="Variable">variableRoomPosX</param>
+                                            <param id="1" name="Value">Room3.basePositionX</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="344022935920507" type="System">
+                                            <param id="0" name="Variable">variableRoomPosY</param>
+                                            <param id="1" name="Value">Room3.basePositionY</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="137195759372974" type="Kitchen">
+                                            <param id="0" name="Object">Room3</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-25" name="Move to bottom" sid="784686099096872" type="Room3" />
+                                        <action id="1" name="Set key" sid="332421080599773" type="RoomPos">
+                                            <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                            <param id="1" name="Value">Room3.UID</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="171495886749026" type="Room3">
+                                            <param id="0" name="X">Room3.X - offsetRoomPos</param>
+                                            <param id="1" name="Y">Room3.Y</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="462931471674735" type="System">
+                                            <param id="0" name="Variable">offsetRoomPos</param>
+                                            <param id="1" name="Value">offsetRoomPos + 900</param>
+                                        </action>
+                                        <action id="-24" name="Stop loop" sid="412785034137350" type="System" />
+                                        <action id="-10" name="Set value" sid="483727488027504" type="Room3">
+                                            <param id="0" name="Instance variable">basePositionX</param>
+                                            <param id="1" name="Value">variableRoomPosX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="465384421667032" type="Room3">
+                                            <param id="0" name="Instance variable">basePositionY</param>
+                                            <param id="1" name="Value">variableRoomPosY</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="124674528302874">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="790151720838189" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="120918130712240" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="158715047557291" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="242287635779068" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneX</param>
+                                                    <param id="1" name="Value">Stone.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="152055858337257" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneY</param>
+                                                    <param id="1" name="Value">Stone.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="369823604247106" type="Room3">
+                                                    <param id="0" name="Object">Stone</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="249149633987717" type="Stone">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room3.basePositionX-currentPosStoneX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="144818879527705" type="Stone">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room3.basePositionY-currentPosStoneY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="940468382209116" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="274892925356834" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room3.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="395561293876545">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="824383076874750" type="System">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="830769564663843" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="371497682184096" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="426890574791085" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Enloquecido.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="779585630208780" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Enloquecido.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="993355775891754" type="Room3">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="974125951011371" type="Enloquecido">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="651500753442494" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room3.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="371578986581087" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room3.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="838298783539915" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="774074853011487" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room3.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="474001082947706">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="515144678713830" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="176858631192155" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="558615125268619" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="741527754435870" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Cuervo.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="838866404189071" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Cuervo.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="173210137011861" type="Room3">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="456738181551519" type="Cuervo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="679227804134339" type="Cuervo">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room3.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="179913454067515" type="Cuervo">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room3.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="364175762669752" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="586944473961744" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room3.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="283748539903289">
+                                    <conditions>
+                                        <condition id="2" name="Compare current value" sid="304310733985831" type="RoomPos">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Value">4</param>
+                                        </condition>
+                                        <condition id="-33" name="Pick by comparison" sid="678334819599238" type="System">
+                                            <param id="0" name="Object">Room4</param>
+                                            <param id="1" name="Expression">Room4.basePositionX</param>
+                                            <param id="2" name="Comparison">1</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="485849533292973" type="System">
+                                            <param id="0" name="Variable">variableRoomPosX</param>
+                                            <param id="1" name="Value">Room4.basePositionX</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="256967224477603" type="System">
+                                            <param id="0" name="Variable">variableRoomPosY</param>
+                                            <param id="1" name="Value">Room4.basePositionY</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="397953905475652" type="Kitchen">
+                                            <param id="0" name="Object">Room4</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-25" name="Move to bottom" sid="679524633221002" type="Room4" />
+                                        <action id="1" name="Set key" sid="640375496161755" type="RoomPos">
+                                            <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                            <param id="1" name="Value">Room4.UID</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="366416815587357" type="Room4">
+                                            <param id="0" name="X">Room4.X - offsetRoomPos</param>
+                                            <param id="1" name="Y">Room4.Y</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="590330647312098" type="System">
+                                            <param id="0" name="Variable">offsetRoomPos</param>
+                                            <param id="1" name="Value">offsetRoomPos + 900</param>
+                                        </action>
+                                        <action id="-24" name="Stop loop" sid="758739075645555" type="System" />
+                                        <action id="-10" name="Set value" sid="221618614964089" type="Room4">
+                                            <param id="0" name="Instance variable">basePositionX</param>
+                                            <param id="1" name="Value">variableRoomPosX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="609538104996560" type="Room4">
+                                            <param id="0" name="Instance variable">basePositionY</param>
+                                            <param id="1" name="Value">variableRoomPosY</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="898799275646557">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="852281732203306" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="884886118688442" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="272435854032482" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="165287004946213" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneX</param>
+                                                    <param id="1" name="Value">Stone.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="998618277285818" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneY</param>
+                                                    <param id="1" name="Value">Stone.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="522949371854363" type="Room4">
+                                                    <param id="0" name="Object">Stone</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="855447287312788" type="Stone">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room4.basePositionX-currentPosStoneX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="591381406606632" type="Stone">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room4.basePositionY-currentPosStoneY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="394935371820118" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="104750613402433" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room4.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="976861535205600">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="784172138222412" type="System">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="927597472878565" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="635744136265528" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="922095680711591" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Enloquecido.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="391921213786781" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Enloquecido.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="448454967207686" type="Room4">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="248524725264018" type="Enloquecido">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="732566953728212" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room4.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="376890877551125" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room4.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="634500910093487" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="647068515682204" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room4.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="198733371595839">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="651594776754145" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="405086892079462" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="362480711904437" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="914886315447806" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Cuervo.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="809501342487344" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Cuervo.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="245180770029421" type="Room4">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="921483346291410" type="Cuervo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="857079222277474" type="Cuervo">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room4.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="196175031875731" type="Cuervo">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room4.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="809921456167658" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="952470832739700" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room4.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="619556399160024">
+                                    <conditions>
+                                        <condition id="2" name="Compare current value" sid="259197596762722" type="RoomPos">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Value">5</param>
+                                        </condition>
+                                        <condition id="-33" name="Pick by comparison" sid="207388820292414" type="System">
+                                            <param id="0" name="Object">Room5</param>
+                                            <param id="1" name="Expression">Room5.basePositionX</param>
+                                            <param id="2" name="Comparison">1</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="298525295704091" type="System">
+                                            <param id="0" name="Variable">variableRoomPosX</param>
+                                            <param id="1" name="Value">Room5.basePositionX</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="832352459070627" type="System">
+                                            <param id="0" name="Variable">variableRoomPosY</param>
+                                            <param id="1" name="Value">Room5.basePositionY</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="744731863389326" type="Kitchen">
+                                            <param id="0" name="Object">Room5</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-25" name="Move to bottom" sid="254656117701921" type="Room5" />
+                                        <action id="1" name="Set key" sid="957239087808125" type="RoomPos">
+                                            <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                            <param id="1" name="Value">Room5.UID</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="323284091560049" type="Room5">
+                                            <param id="0" name="X">Room5.X - offsetRoomPos</param>
+                                            <param id="1" name="Y">Room5.Y</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="494675646948986" type="System">
+                                            <param id="0" name="Variable">offsetRoomPos</param>
+                                            <param id="1" name="Value">offsetRoomPos + 900</param>
+                                        </action>
+                                        <action id="-24" name="Stop loop" sid="455517784960513" type="System" />
+                                        <action id="-10" name="Set value" sid="179237783477606" type="Room5">
+                                            <param id="0" name="Instance variable">basePositionX</param>
+                                            <param id="1" name="Value">variableRoomPosX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="107054362533052" type="Room5">
+                                            <param id="0" name="Instance variable">basePositionY</param>
+                                            <param id="1" name="Value">variableRoomPosY</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="296911704526730">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="365429908473171" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="892886099854741" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="780945250551914" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="174212035606918" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneX</param>
+                                                    <param id="1" name="Value">Stone.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="940475950242448" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneY</param>
+                                                    <param id="1" name="Value">Stone.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="472505225020134" type="Room5">
+                                                    <param id="0" name="Object">Stone</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="866064231307628" type="Stone">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room5.basePositionX-currentPosStoneX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="800159594179673" type="Stone">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room5.basePositionY-currentPosStoneY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="897302788573768" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="871190060345816" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room5.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="327009519302668">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="972532276487510" type="System">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="182132456761304" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="186472049953877" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="145556067736335" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Enloquecido.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="744461528093677" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Enloquecido.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="661032385218585" type="Room5">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="305904696406787" type="Enloquecido">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="412724172933481" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room5.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="648714753476893" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room5.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="705466754150819" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="545740048404787" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room5.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="937930687082599">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="115953965292777" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="364481572612903" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="470066039906622" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="572989970972134" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Cuervo.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="993820772813060" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Cuervo.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="212491473701886" type="Room5">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="430228347083456" type="Cuervo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="621312004875639" type="Cuervo">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room5.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="107669470786954" type="Cuervo">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room5.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="349929774285764" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="608807059508175" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room5.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="309833745468229">
+                                    <conditions>
+                                        <condition id="2" name="Compare current value" sid="337966936489744" type="RoomPos">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Value">6</param>
+                                        </condition>
+                                        <condition id="-33" name="Pick by comparison" sid="684307727904713" type="System">
+                                            <param id="0" name="Object">Room6</param>
+                                            <param id="1" name="Expression">Room6.basePositionX</param>
+                                            <param id="2" name="Comparison">1</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="115260186983445" type="System">
+                                            <param id="0" name="Variable">variableRoomPosX</param>
+                                            <param id="1" name="Value">Room6.basePositionX</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="671697131572031" type="System">
+                                            <param id="0" name="Variable">variableRoomPosY</param>
+                                            <param id="1" name="Value">Room6.basePositionY</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="174881764166705" type="Kitchen">
+                                            <param id="0" name="Object">Room6</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-25" name="Move to bottom" sid="169531998455300" type="Room6" />
+                                        <action id="1" name="Set key" sid="117263683356671" type="RoomPos">
+                                            <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                            <param id="1" name="Value">Room6.UID</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="169324162311126" type="Room6">
+                                            <param id="0" name="X">Room6.X - offsetRoomPos</param>
+                                            <param id="1" name="Y">Room6.Y</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="178581311308595" type="System">
+                                            <param id="0" name="Variable">offsetRoomPos</param>
+                                            <param id="1" name="Value">offsetRoomPos + 900</param>
+                                        </action>
+                                        <action id="-24" name="Stop loop" sid="909958155237945" type="System" />
+                                        <action id="-10" name="Set value" sid="989208103960902" type="Room6">
+                                            <param id="0" name="Instance variable">basePositionX</param>
+                                            <param id="1" name="Value">variableRoomPosX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="857900025975036" type="Room6">
+                                            <param id="0" name="Instance variable">basePositionY</param>
+                                            <param id="1" name="Value">variableRoomPosY</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="819719396884350">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="437205080050597" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="527053769141220" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="888818679705731" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="498134226305467" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneX</param>
+                                                    <param id="1" name="Value">Stone.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="738568220851443" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneY</param>
+                                                    <param id="1" name="Value">Stone.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="543395382379344" type="Room6">
+                                                    <param id="0" name="Object">Stone</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="165740984429108" type="Stone">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room6.basePositionX-currentPosStoneX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="643499539146330" type="Stone">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room6.basePositionY-currentPosStoneY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="772931535123788" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="620697417570565" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room6.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="318295321097731">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="801608177236632" type="System">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="775440242459879" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="687183907195450" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="697391240555991" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Enloquecido.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="719111651066765" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Enloquecido.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="470427202655624" type="Room6">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="246731072134878" type="Enloquecido">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="279772974323666" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room6.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="340927373786101" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room6.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="596300079194363" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="341324409762244" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room6.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="824410307335869">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="849164785337206" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="140181875120415" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="732341882441337" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="174823972781378" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Cuervo.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="326753236762065" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Cuervo.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="984950701430584" type="Room6">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="544984780357614" type="Cuervo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="902555984328260" type="Cuervo">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room6.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="320989509152053" type="Cuervo">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room6.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="467140461284220" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="333020131759171" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room6.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="790906954461440">
+                                    <conditions>
+                                        <condition id="2" name="Compare current value" sid="644176110535236" type="RoomPos">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Value">7</param>
+                                        </condition>
+                                        <condition id="-33" name="Pick by comparison" sid="495574286782769" type="System">
+                                            <param id="0" name="Object">Room7</param>
+                                            <param id="1" name="Expression">Room7.basePositionX</param>
+                                            <param id="2" name="Comparison">1</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="168565421837885" type="System">
+                                            <param id="0" name="Variable">variableRoomPosX</param>
+                                            <param id="1" name="Value">Room7.basePositionX</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="832874030255898" type="System">
+                                            <param id="0" name="Variable">variableRoomPosY</param>
+                                            <param id="1" name="Value">Room7.basePositionY</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="131267314484577" type="Kitchen">
+                                            <param id="0" name="Object">Room7</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-25" name="Move to bottom" sid="243164683962448" type="Room7" />
+                                        <action id="1" name="Set key" sid="302975981647784" type="RoomPos">
+                                            <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                            <param id="1" name="Value">Room7.UID</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="922920854611297" type="Room7">
+                                            <param id="0" name="X">Room7.X - offsetRoomPos</param>
+                                            <param id="1" name="Y">Room7.Y</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="342436515366850" type="System">
+                                            <param id="0" name="Variable">offsetRoomPos</param>
+                                            <param id="1" name="Value">offsetRoomPos + 900</param>
+                                        </action>
+                                        <action id="-24" name="Stop loop" sid="130502424276349" type="System" />
+                                        <action id="-10" name="Set value" sid="874060516824400" type="Room7">
+                                            <param id="0" name="Instance variable">basePositionX</param>
+                                            <param id="1" name="Value">variableRoomPosX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="755049741132947" type="Room7">
+                                            <param id="0" name="Instance variable">basePositionY</param>
+                                            <param id="1" name="Value">variableRoomPosY</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="453284391328823">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="933397541343419" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="616674723319258" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="927304340233810" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">8</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="346816703536770" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneX</param>
+                                                    <param id="1" name="Value">Stone.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="517017036852406" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneY</param>
+                                                    <param id="1" name="Value">Stone.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="768174102771931" type="Room7">
+                                                    <param id="0" name="Object">Stone</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="626546105160342" type="Stone">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room7.basePositionX-currentPosStoneX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="459258504870725" type="Stone">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room7.basePositionY-currentPosStoneY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="950549074480769" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="590326659361124" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room7.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="967802748604817">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="835577622071681" type="System">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="703432946954868" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="142762675242191" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">8</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="903168086816610" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Enloquecido.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="386657351384103" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Enloquecido.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="460199827899660" type="Room7">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="424183758593832" type="Enloquecido">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="597157574485713" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room7.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="958911950263806" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room7.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="871677676150378" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="900244003038393" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room7.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="542301815197200">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="736309404430256" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="526201615608565" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="727006250042848" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">8</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="469992104993982" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Cuervo.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="355523168173981" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Cuervo.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="563257106772898" type="Room7">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="387502244335191" type="Cuervo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="369116698747178" type="Cuervo">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room7.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="434837134905838" type="Cuervo">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room7.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="250976488706552" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="942217460001463" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room7.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="507488795091908">
+                                    <conditions>
+                                        <condition id="2" name="Compare current value" sid="112057303438097" type="RoomPos">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Value">8</param>
+                                        </condition>
+                                        <condition id="-33" name="Pick by comparison" sid="325416582177851" type="System">
+                                            <param id="0" name="Object">Room8</param>
+                                            <param id="1" name="Expression">Room8.basePositionX</param>
+                                            <param id="2" name="Comparison">1</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="745508768769574" type="System">
+                                            <param id="0" name="Variable">variableRoomPosX</param>
+                                            <param id="1" name="Value">Room8.basePositionX</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="314981095227190" type="System">
+                                            <param id="0" name="Variable">variableRoomPosY</param>
+                                            <param id="1" name="Value">Room8.basePositionY</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="487405620399160" type="Kitchen">
+                                            <param id="0" name="Object">Room8</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-25" name="Move to bottom" sid="210271982802829" type="Room8" />
+                                        <action id="1" name="Set key" sid="827407822342648" type="RoomPos">
+                                            <param id="0" name="Key">RoomPos.CurrentKey</param>
+                                            <param id="1" name="Value">Room8.UID</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="601346678543986" type="Room8">
+                                            <param id="0" name="X">Room8.X - offsetRoomPos</param>
+                                            <param id="1" name="Y">Room8.Y</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="809122248115476" type="System">
+                                            <param id="0" name="Variable">offsetRoomPos</param>
+                                            <param id="1" name="Value">offsetRoomPos + 900</param>
+                                        </action>
+                                        <action id="-24" name="Stop loop" sid="934911498608857" type="System" />
+                                        <action id="-10" name="Set value" sid="972736192329467" type="Room8">
+                                            <param id="0" name="Instance variable">basePositionX</param>
+                                            <param id="1" name="Value">variableRoomPosX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="970626854933263" type="Room8">
+                                            <param id="0" name="Instance variable">basePositionY</param>
+                                            <param id="1" name="Value">variableRoomPosY</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="464563953932923">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="487748090182881" type="System">
+                                                    <param id="0" name="Object">Stone</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="476218197450304" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="530928749835327" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">9</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="394651502407248" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneX</param>
+                                                    <param id="1" name="Value">Stone.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="273434698514801" type="System">
+                                                    <param id="0" name="Variable">currentPosStoneY</param>
+                                                    <param id="1" name="Value">Stone.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="827356469589951" type="Room8">
+                                                    <param id="0" name="Object">Stone</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="385648549301945" type="Stone">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room8.basePositionX-currentPosStoneX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="755612231161391" type="Stone">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room8.basePositionY-currentPosStoneY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="285515866996991" type="Stone">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="571826715564401" type="Stone">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room8.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="878785909844352">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="870335617573870" type="System">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="382740483865121" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="678672799846923" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">9</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="637253849630226" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Enloquecido.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="153320023398634" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Enloquecido.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="385230737251505" type="Room8">
+                                                    <param id="0" name="Object">Enloquecido</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="493359470344840" type="Enloquecido">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="170079251878825" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room8.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="673504514211003" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room8.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="281211762319773" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="653802914380033" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room8.UID</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="545264329979249">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="789923692672198" type="System">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="986324217088835" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="315060938477143" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToRoom</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">9</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="257095393327043" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyX</param>
+                                                    <param id="1" name="Value">Cuervo.X</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="368339950391134" type="System">
+                                                    <param id="0" name="Variable">currentPosEnemyY</param>
+                                                    <param id="1" name="Value">Cuervo.Y</param>
+                                                </action>
+                                                <action id="0" name="Spawn another object" sid="515848477082991" type="Room8">
+                                                    <param id="0" name="Object">Cuervo</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Solid" id="0" name="Set enabled" sid="522950041167494" type="Cuervo">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="980328062324076" type="Cuervo">
+                                                    <param id="0" name="Instance variable">xRelative</param>
+                                                    <param id="1" name="Value">Room8.basePositionX - currentPosEnemyX</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="164706148773283" type="Cuervo">
+                                                    <param id="0" name="Instance variable">yRelative</param>
+                                                    <param id="1" name="Value">Room8.basePositionY - currentPosEnemyY</param>
+                                                </action>
+                                                <action id="-14" name="Toggle boolean" sid="310299862062787" type="Cuervo">
+                                                    <param id="0" name="Instance variable">isInTemplate</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="313879786108965" type="Cuervo">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Value">Room8.UID</param>
                                                 </action>
                                             </actions>
                                         </event-block>
