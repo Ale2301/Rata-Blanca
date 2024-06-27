@@ -8,7 +8,7 @@
         <variable constant="0" name="QuantityOfSpawnableItems" sid="530174953702453" static="0" type="number">0</variable>
         <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">10</variable>
         <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">10</variable>
-        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">200</variable>
+        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">100</variable>
         <variable constant="0" name="playerResistance" sid="289707736190923" static="0" type="number">0</variable>
         <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">10</variable>
         <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">400</variable>
@@ -266,8 +266,23 @@
                                     <param id="1" name="Layer">0</param>
                                     <param id="2" name="Image point">0</param>
                                 </action>
-                                <action id="0" name="Spawn another object" sid="127571736449424" type="Kitchen">
-                                    <param id="0" name="Object">doubleSpeed</param>
+                                <action id="0" name="Spawn another object" sid="719893658453574" type="Kitchen">
+                                    <param id="0" name="Object">itemMejoraRobotica</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="912950395602014" type="Kitchen">
+                                    <param id="0" name="Object">ItemLibroMaquiavelico</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="187801860746541" type="Kitchen">
+                                    <param id="0" name="Object">ItemBateria</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="141720627074008" type="Kitchen">
+                                    <param id="0" name="Object">ItemMaestriaRunica</param>
                                     <param id="1" name="Layer">0</param>
                                     <param id="2" name="Image point">0</param>
                                 </action>
@@ -2369,6 +2384,11 @@
                                             <param id="0" name="Instance variable">life</param>
                                             <param id="1" name="Value">Player.damage</param>
                                         </action>
+                                        <action behavior="Flash" id="0" name="Flash" sid="978575040046025" type="BossSlime">
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                            <param id="2" name="Duration">1.0</param>
+                                        </action>
                                         <action id="-9" name="Destroy" sid="791214438476147" type="Bullet" />
                                     </actions>
                                     <sub-events>
@@ -2415,6 +2435,11 @@
                                             <param id="0" name="Instance variable">life</param>
                                             <param id="1" name="Value">Player.damage</param>
                                         </action>
+                                        <action behavior="Flash" id="0" name="Flash" sid="342397535547045" type="BossMiniSlime">
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                            <param id="2" name="Duration">1.0</param>
+                                        </action>
                                         <action id="-9" name="Destroy" sid="971679093648014" type="Bullet" />
                                     </actions>
                                     <sub-events>
@@ -2455,6 +2480,36 @@
                                                     <param id="1" name="Value">playerCurrentHealth - BossSlime.damage</param>
                                                 </action>
                                                 <action id="0" name="Call function" sid="881257581506725" type="Function">
+                                                    <param id="0" name="Name">&quot;playerDamaged&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="391142985734015">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="491933288568270" type="BossMiniSlime">
+                                            <param id="0" name="Object">Player</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="281921488798548">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="755359595986630" type="Player">
+                                                    <param id="0" name="Instance variable">vulnerable</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-4" name="Trigger once while true" sid="364763432405896" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="128140207465842" type="System">
+                                                    <param id="0" name="Variable">playerCurrentHealth</param>
+                                                    <param id="1" name="Value">playerCurrentHealth - BossMiniSlime.damage</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="681441124358239" type="Function">
                                                     <param id="0" name="Name">&quot;playerDamaged&quot;</param>
                                                     <param id="1" name="Parameter {n}"></param>
                                                 </action>
@@ -3118,8 +3173,8 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="416677903407720" type="Chest" />
-                                        <action id="-10" name="Set value" sid="765552197573805" type="Player">
-                                            <param id="0" name="Instance variable">energyConsumed</param>
+                                        <action id="-9" name="Set value" sid="765552197573805" type="System">
+                                            <param id="0" name="Variable">playerConsumedEnergy</param>
                                             <param id="1" name="Value">Player.energyConsumed - 10</param>
                                         </action>
                                         <action id="0" name="Call function" sid="457685558919417" type="Function">
@@ -3196,6 +3251,144 @@
                                 <action behavior="Pathfinding" id="1" name="Move along path" sid="553739330519217" type="EntityNinfa" />
                             </actions>
                         </event-block>
+                        <event-block sid="682942344836611">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="297150358114012" type="System">
+                                    <param id="0" name="First value">ItemNinfa.Count</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                                <condition id="-3" inverted="1" name="Is on-screen" sid="825565782242543" type="EntityNinfa" />
+                                <condition id="-4" name="Trigger once while true" sid="558835062752209" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="516710632213686" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="986983811160336" type="Player">
+                                    <param id="0" name="Object">EntityNinfa</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="665207314646996">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="833625277635791" type="Cuervo">
+                                    <param id="0" name="Object">EntityNinfa</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="212195115440767" type="Cuervo">
+                                    <param id="0" name="Instance variable">vulnerable</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="255940529789866" type="Cuervo">
+                                    <param id="0" name="Instance variable">life</param>
+                                    <param id="1" name="Value">EntityNinfa.damage</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="959916223774724" type="Cuervo">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="789450419996757">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="977271469357232" type="Cuervo">
+                                            <param id="0" name="Instance variable">life</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="295907957138045" type="Cuervo" />
+                                        <action id="-11" name="Subtract from" sid="460532241622936" type="System">
+                                            <param id="0" name="Variable">enemyCountOnRoom</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="620589287960265" type="System">
+                                            <param id="0" name="Variable">Score</param>
+                                            <param id="1" name="Value">200</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="939095676665852" type="Score">
+                                            <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="437997844785884" type="Function">
+                                            <param id="0" name="Name">&quot;killEnemy&quot;</param>
+                                            <param id="1" name="Parameter {n}">Cuervo.energyDropRate{###}Cuervo.UID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="398596412814584">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="546899382383533" type="Enloquecido">
+                                    <param id="0" name="Object">EntityNinfa</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="476014586617211" type="Enloquecido">
+                                    <param id="0" name="Instance variable">life</param>
+                                    <param id="1" name="Value">EntityNinfa.damage</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="989612041554694" type="Enloquecido">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="373332630904461">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="499309156662056" type="Enloquecido">
+                                            <param id="0" name="Instance variable">life</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="611396153094246" type="Enloquecido" />
+                                        <action id="-11" name="Subtract from" sid="987796490818560" type="System">
+                                            <param id="0" name="Variable">enemyCountOnRoom</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="337197928525955" type="Function">
+                                            <param id="0" name="Name">&quot;killEnemy&quot;</param>
+                                            <param id="1" name="Parameter {n}">Enloquecido.energyDropRate{###}Enloquecido.UID</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="844637851785925" type="System">
+                                            <param id="0" name="Variable">Score</param>
+                                            <param id="1" name="Value">100</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="276497458717966" type="Score">
+                                            <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="493224790408142">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="277668334227111" type="EntityNinfa">
+                                    <param id="0" name="Object">BossMiniSlime</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="767006560354306" type="BossMiniSlime">
+                                    <param id="0" name="Instance variable">life</param>
+                                    <param id="1" name="Value">EntityNinfa.damage</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="934183067772285" type="BossMiniSlime">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="328929936108444" title="Collitions">
@@ -3208,26 +3401,95 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="693060669335364" type="ItemNinfa" />
-                                <action id="0" name="Spawn another object" sid="728721992129367" type="Player">
-                                    <param id="0" name="Object">EntityNinfa</param>
-                                    <param id="1" name="Layer">0</param>
-                                    <param id="2" name="Image point">0</param>
-                                </action>
                             </actions>
                         </event-block>
-                        <event-block sid="630891935959144">
+                        <event-block sid="522303996092773">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="575240954830124" type="Player">
-                                    <param id="0" name="Object">doubleSpeed</param>
+                                <condition id="0" name="On collision with another object" sid="404640105067697" type="Player">
+                                    <param id="0" name="Object">itemMejoraRobotica</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="266633351992121" type="doubleSpeed" />
-                                <action id="-9" name="Set value" sid="888102766197837" type="System">
-                                    <param id="0" name="Variable">playerSpeed</param>
-                                    <param id="1" name="Value">playerSpeed * 2</param>
+                                <action id="-9" name="Destroy" sid="327638576666584" type="itemMejoraRobotica" />
+                                <action id="-9" name="Set value" sid="164415605817735" type="System">
+                                    <param id="0" name="Variable">playerFireRate</param>
+                                    <param id="1" name="Value">max(round(playerFireRate/2),0.3)</param>
                                 </action>
-                                <action id="0" name="Call function" sid="968404737672350" type="Function">
+                                <action id="-9" name="Set value" sid="288528480955051" type="System">
+                                    <param id="0" name="Variable">playerDamage</param>
+                                    <param id="1" name="Value">playerDamage/2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="247496447947048" type="Function">
+                                    <param id="0" name="Name">&quot;updateStats&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="772672959664117">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="733215903182069" type="Player">
+                                    <param id="0" name="Object">ItemLibroMaquiavelico</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="727898177932436" type="ItemLibroMaquiavelico" />
+                                <action id="-9" name="Set value" sid="393036836900568" type="System">
+                                    <param id="0" name="Variable">playerDamage</param>
+                                    <param id="1" name="Value">playerDamage*2.5</param>
+                                </action>
+                                <action id="0" name="Call function" sid="868392729789518" type="Function">
+                                    <param id="0" name="Name">&quot;updateStats&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="339563377981243">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="222958381637654" type="Player">
+                                    <param id="0" name="Object">ItemBateria</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="922790654547331" type="ItemBateria" />
+                                <action id="-9" name="Set value" sid="613225936552010" type="System">
+                                    <param id="0" name="Variable">playerSpeed</param>
+                                    <param id="1" name="Value">playerSpeed*1.25</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="518341164340198" type="System">
+                                    <param id="0" name="Variable">playerFireRate</param>
+                                    <param id="1" name="Value">max(playerFireRate/1.3,0.3)</param>
+                                </action>
+                                <action id="0" name="Call function" sid="160378748036070" type="Function">
+                                    <param id="0" name="Name">&quot;updateStats&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="469881078057794">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="944415849284553" type="Player">
+                                    <param id="0" name="Object">ItemMaestriaRunica</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="713072603968284" type="ItemMaestriaRunica" />
+                                <action id="-9" name="Set value" sid="198069604104170" type="System">
+                                    <param id="0" name="Variable">playerSpeed</param>
+                                    <param id="1" name="Value">playerSpeed*0.6</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="506051126493564" type="System">
+                                    <param id="0" name="Variable">playerDamage</param>
+                                    <param id="1" name="Value">playerDamage*0.6</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="517810965240129" type="System">
+                                    <param id="0" name="Variable">playerFireRate</param>
+                                    <param id="1" name="Value">max(playerFireRate/1.2,0.3)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="994364806434623" type="System">
+                                    <param id="0" name="Variable">playerShootSpeed</param>
+                                    <param id="1" name="Value">playerShootSpeed*1.2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="722413877895039" type="Function">
                                     <param id="0" name="Name">&quot;updateStats&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>

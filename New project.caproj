@@ -408,16 +408,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="doubleSpeed" sid="669076575341757">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="818066890851457" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="EntityNinfa" sid="606327422321495">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="damage" sid="291658106996528" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Pathfinding" sid="910587460094414">
                     <behavior id="Pathfinding" />
@@ -560,6 +555,9 @@
                 <behavior-type name="Pathfinding" sid="654933113098979">
                     <behavior id="Pathfinding" />
                 </behavior-type>
+                <behavior-type name="Flash" sid="327819578955004">
+                    <behavior id="Flash" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945204477020863" speed="5">
@@ -580,9 +578,44 @@
                 <behavior-type name="Bullet" sid="614425939843722">
                     <behavior id="Bullet" />
                 </behavior-type>
+                <behavior-type name="Flash" sid="796464612034770">
+                    <behavior id="Flash" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="177872084555094" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="itemMejoraRobotica" sid="891281992797323">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878002130261867" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ItemLibroMaquiavelico" sid="226676892509405">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877186763757003" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ItemBateria" sid="380395710977132">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829567258953898" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ItemMaestriaRunica" sid="438844556606287">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231945534075393" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -609,7 +642,10 @@
         </family>
         <family name="Items" plugin-id="Sprite" sid="336569925668737">
             <members>
-                <member>doubleSpeed</member>
+                <member>ItemBateria</member>
+                <member>ItemLibroMaquiavelico</member>
+                <member>ItemMaestriaRunica</member>
+                <member>itemMejoraRobotica</member>
                 <member>ItemNinfa</member>
             </members>
             <instance-variables>

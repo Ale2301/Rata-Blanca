@@ -11,6 +11,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Game</layout>
+        <layout order="2">Start</layout>
         <event-sheet active="1" order="1">Game</event-sheet>
     </open-tabs>
     <properties>
@@ -26,7 +27,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="Items" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -54,7 +55,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Energy/" />
         <folder expanded="1" path="animation-folder/Chest/" />
         <folder expanded="1" path="animation-folder/ItemNinfa/" />
-        <folder expanded="1" path="animation-folder/doubleSpeed/" />
         <folder expanded="1" path="animation-folder/EntityNinfa/" />
         <folder expanded="1" path="animation-folder/StartBackGround/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
@@ -67,5 +67,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/RubyShoot/" />
         <folder expanded="1" path="animation-folder/BossSlime/" />
         <folder expanded="1" path="animation-folder/BossMiniSlime/" />
+        <folder expanded="1" path="animation-folder/itemMejoraRobotica/" />
+        <folder expanded="1" path="animation-folder/ItemLibroMaquiavelico/" />
+        <folder expanded="1" path="animation-folder/ItemBateria/" />
+        <folder expanded="1" path="animation-folder/ItemMaestriaRunica/" />
     </folders-expanded>
 </c2uistate>
