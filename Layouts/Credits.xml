@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>443</x>
-                        <y>448.596435547</y>
+                        <x>451.202392578</x>
+                        <y>450.851501465</y>
                         <z>0</z>
-                        <width>912</width>
-                        <height>897</height>
+                        <width>901</width>
+                        <height>901.186401367</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -53,7 +53,7 @@
                 </instance>
                 <instance type="TextCreds" uid="81">
                     <properties>
-                        <text>Gracias por jugar!</text>
+                        <text>Gracias por jugar! no se el nombre de toby xd</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-48,400,0</font>
                         <color>255,255,255</color>
@@ -66,11 +66,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>424</x>
-                        <y>76</y>
+                        <x>303</x>
+                        <y>-138</y>
                         <z>0</z>
-                        <width>615</width>
-                        <height>76</height>
+                        <width>422</width>
+                        <height>204</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -92,14 +92,58 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>233</x>
-                        <y>448</y>
+                        <x>212</x>
+                        <y>815</y>
                         <z>0</z>
                         <width>485</width>
-                        <height>291</height>
+                        <height>61</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="RubyShoot" uid="86">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>113</x>
+                        <y>278</y>
+                        <z>0</z>
+                        <width>224.407791138</width>
+                        <height>261.809082031</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="RubyShoot" uid="87">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>786</x>
+                        <y>727</y>
+                        <z>0</z>
+                        <width>-224</width>
+                        <height>262</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
