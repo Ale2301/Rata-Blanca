@@ -4884,6 +4884,10 @@
                         <action id="3" name="Set progress" sid="730890951025625" type="SpellLockPick">
                             <param id="0" name="Value">0</param>
                         </action>
+                        <action id="-3" name="Set position" sid="906276638903425" type="TextNotEnoughEnergy">
+                            <param id="0" name="X">9999</param>
+                            <param id="1" name="Y">9999</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="784299338907314">
@@ -4894,92 +4898,119 @@
                         <condition id="1" name="Is overlapping another object" sid="627149239534418" type="Player">
                             <param id="0" name="Object">Chest</param>
                         </condition>
-                        <condition id="-7" name="Compare instance variable" sid="719492057091784" type="Player">
-                            <param id="0" name="Instance variable">energyConsumed</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">10</param>
-                        </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="145245297494859">
+                        <event-block sid="119710949793527">
                             <conditions>
-                                <condition id="-6" name="Every X seconds" sid="790689458104181" type="System">
-                                    <param id="0" name="Interval (seconds)">0.25</param>
+                                <condition id="-7" name="Compare instance variable" sid="719492057091784" type="Player">
+                                    <param id="0" name="Instance variable">energyConsumed</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">10</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="3" name="Set progress" sid="737065104405202" type="SpellLockPick">
-                                    <param id="0" name="Value">SpellLockPick.Progress + 10</param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="514661817624008">
+                                <event-block sid="145245297494859">
                                     <conditions>
-                                        <condition id="1" name="Compare progress" sid="687967174941435" type="SpellLockPick">
-                                            <param id="0" name="Comparison">0</param>
-                                            <param id="1" name="Value">100</param>
+                                        <condition id="-6" name="Every X seconds" sid="790689458104181" type="System">
+                                            <param id="0" name="Interval (seconds)">0.25</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" sid="416677903407720" type="Chest" />
-                                        <action id="-9" name="Set value" sid="765552197573805" type="System">
-                                            <param id="0" name="Variable">playerConsumedEnergy</param>
-                                            <param id="1" name="Value">Player.energyConsumed - 10</param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="457685558919417" type="Function">
-                                            <param id="0" name="Name">&quot;updateStats&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                        <action id="0" name="Call function" sid="641499960180593" type="Function">
-                                            <param id="0" name="Name">&quot;spawnItem&quot;</param>
-                                            <param id="1" name="Parameter {n}">Chest.UID</param>
+                                        <action id="3" name="Set progress" sid="737065104405202" type="SpellLockPick">
+                                            <param id="0" name="Value">SpellLockPick.Progress + 10</param>
                                         </action>
                                     </actions>
                                     <sub-events>
-                                        <event-block sid="933070943071077">
+                                        <event-block sid="514661817624008">
                                             <conditions>
-                                                <condition id="-12" name="Repeat" sid="248160473604267" type="System">
-                                                    <param id="0" name="Count">round(random(3,5))</param>
+                                                <condition id="1" name="Compare progress" sid="687967174941435" type="SpellLockPick">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Value">100</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Spawn another object" sid="268310822432597" type="Chest">
-                                                    <param id="0" name="Object">Energy</param>
-                                                    <param id="1" name="Layer">0</param>
-                                                    <param id="2" name="Image point">0</param>
+                                                <action id="-9" name="Destroy" sid="416677903407720" type="Chest" />
+                                                <action id="-9" name="Set value" sid="765552197573805" type="System">
+                                                    <param id="0" name="Variable">playerConsumedEnergy</param>
+                                                    <param id="1" name="Value">Player.energyConsumed - 10</param>
                                                 </action>
-                                                <action id="-16" name="Wait" sid="120422627251236" type="System">
-                                                    <param id="0" name="Seconds">0.4</param>
+                                                <action id="0" name="Call function" sid="457685558919417" type="Function">
+                                                    <param id="0" name="Name">&quot;updateStats&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
                                                 </action>
-                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="838412296077612" type="Energy">
-                                                    <param id="0" name="Angle">random(0,360)</param>
-                                                </action>
-                                                <action behavior="Bullet" id="0" name="Set speed" sid="265680007026099" type="Energy">
-                                                    <param id="0" name="Speed">300</param>
-                                                </action>
-                                                <action id="-16" name="Wait" sid="843118338082213" type="System">
-                                                    <param id="0" name="Seconds">1.0</param>
-                                                </action>
-                                                <action behavior="Bullet" id="5" name="Set enabled" sid="535378383019372" type="Energy">
-                                                    <param id="0" name="State">0</param>
+                                                <action id="0" name="Call function" sid="641499960180593" type="Function">
+                                                    <param id="0" name="Name">&quot;spawnItem&quot;</param>
+                                                    <param id="1" name="Parameter {n}">Chest.UID</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="933070943071077">
+                                                    <conditions>
+                                                        <condition id="-12" name="Repeat" sid="248160473604267" type="System">
+                                                            <param id="0" name="Count">round(random(3,5))</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Spawn another object" sid="268310822432597" type="Chest">
+                                                            <param id="0" name="Object">Energy</param>
+                                                            <param id="1" name="Layer">0</param>
+                                                            <param id="2" name="Image point">0</param>
+                                                        </action>
+                                                        <action id="-16" name="Wait" sid="120422627251236" type="System">
+                                                            <param id="0" name="Seconds">0.4</param>
+                                                        </action>
+                                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="838412296077612" type="Energy">
+                                                            <param id="0" name="Angle">random(0,360)</param>
+                                                        </action>
+                                                        <action behavior="Bullet" id="0" name="Set speed" sid="265680007026099" type="Energy">
+                                                            <param id="0" name="Speed">300</param>
+                                                        </action>
+                                                        <action id="-16" name="Wait" sid="843118338082213" type="System">
+                                                            <param id="0" name="Seconds">1.0</param>
+                                                        </action>
+                                                        <action behavior="Bullet" id="5" name="Set enabled" sid="535378383019372" type="Energy">
+                                                            <param id="0" name="State">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
+                                <event-block sid="871443580000062">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="659092142659622" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="715057430261248" type="SpellLockPick">
+                                            <param id="0" name="X">Player.X - 100</param>
+                                            <param id="1" name="Y">Player.Y - 100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="871443580000062">
+                        <event-block sid="327008192662584">
                             <conditions>
-                                <condition id="-1" name="Every tick" sid="659092142659622" type="System" />
+                                <condition id="-22" name="Else" sid="290500549705508" type="System" />
                             </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="715057430261248" type="SpellLockPick">
-                                    <param id="0" name="X">Player.X - 100</param>
-                                    <param id="1" name="Y">Player.Y - 100</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="247652069415673">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="541589628303432" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="167660879584290" type="TextNotEnoughEnergy">
+                                            <param id="0" name="X">Player.X - 250</param>
+                                            <param id="1" name="Y">Player.Y - 100</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="925271616336530" type="TextNotEnoughEnergy" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>

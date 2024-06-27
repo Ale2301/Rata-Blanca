@@ -922,6 +922,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TextNotEnoughEnergy" sid="190207725804011">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
