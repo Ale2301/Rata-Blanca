@@ -87,8 +87,165 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439081439518646" speed="5">
-                    <frame duration="1" hotspotX="0.496" hotspotY="0.512" />
+                <animation framecount="4" loop="1" name="IdleDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="439081439518646" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\idle derecha\Ruby idle derecha1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\idle derecha\Ruby idle derecha2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\idle derecha\Ruby idle derecha3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\idle derecha\Ruby idle derecha4.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="IdleIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="759988951352744" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\idle izquierda\Ruby idle izquierda_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\idle izquierda\Ruby idle izquierda_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\idle izquierda\Ruby idle izquierda_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\idle izquierda\Ruby idle izquierda_4.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="CaminarDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="967528763407681" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar este\ruby caminar este1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar este\ruby caminar este2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar este\ruby caminar este3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar este\ruby caminar este4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar este\ruby caminar este5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar este\ruby caminar este6.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="CaminarIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="647874082607437" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar oeste\ruby caminar oeste1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar oeste\ruby caminar oeste2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar oeste\ruby caminar oeste3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar oeste\ruby caminar oeste4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar oeste\ruby caminar oeste5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar oeste\ruby caminar oeste6.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="CaminarArriba" pingpong="0" repeatcount="1" repeatto="0" sid="750422089998092" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar norte\ruby caminar norte1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar norte\ruby caminar norte2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar norte\ruby caminar norte3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar norte\ruby caminar norte4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar norte\ruby caminar norte5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\caminar norte\ruby caminar norte6.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="CaminarAbajo" pingpong="0" repeatcount="1" repeatto="0" sid="495147425764826" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Caminar sur\ruby caminar sur1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Caminar sur\ruby caminar sur2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Caminar sur\ruby caminar sur3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Caminar sur\ruby caminar sur4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Caminar sur\ruby caminar sur5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Caminar sur\ruby caminar sur6.png" />
+                </animation>
+                <animation framecount="8" loop="1" name="DashDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="881015740930564" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash este\ruby dash este1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash este\ruby dash este2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash este\ruby dash este3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash este\ruby dash este4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash este\ruby dash este5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash este\ruby dash este6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash este\ruby dash este7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash este\ruby dash este8.png" />
+                </animation>
+                <animation framecount="8" loop="1" name="DashIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="965621460447771" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash ooeste\ruby dash oeste1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash ooeste\ruby dash oeste2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash ooeste\ruby dash oeste3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash ooeste\ruby dash oeste4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash ooeste\ruby dash oeste5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash ooeste\ruby dash oeste6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash ooeste\ruby dash oeste7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash ooeste\ruby dash oeste8.png" />
+                </animation>
+                <animation framecount="8" loop="1" name="DashArriba" pingpong="0" repeatcount="1" repeatto="0" sid="692475158142259" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Dash norte\ruby dash norte1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Dash norte\ruby dash norte2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Dash norte\ruby dash norte3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Dash norte\ruby dash norte4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Dash norte\ruby dash norte5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Dash norte\ruby dash norte6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Dash norte\ruby dash norte7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Dash norte\ruby dash norte8.png" />
+                </animation>
+                <animation framecount="8" loop="1" name="DashAbajo" pingpong="0" repeatcount="1" repeatto="0" sid="472058672425250" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash sur\ruby dash sur1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash sur\ruby dash sur2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash sur\ruby dash sur3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash sur\ruby dash sur4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash sur\ruby dash sur5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash sur\ruby dash sur6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash sur\ruby dash sur7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\dash sur\ruby dash sur8.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="DispararDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="659830381996473" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo este\Ruby disparo este1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo este\Ruby disparo este2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo este\Ruby disparo este3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo este\Ruby disparo este4.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="DispararIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="335932350223557" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo oeste\Ruby disparo oeste1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo oeste\Ruby disparo oeste2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo oeste\Ruby disparo oeste3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo oeste\Ruby disparo oeste4.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="DispararArriba" pingpong="0" repeatcount="1" repeatto="0" sid="903014234409761" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo norte\Ruby disparo norte1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo norte\Ruby disparo norte2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo norte\Ruby disparo norte3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo norte\Ruby disparo norte4.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="DispararAbajo" pingpong="0" repeatcount="1" repeatto="0" sid="872948687650744" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo sur\Ruby disparo sur1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo sur\Ruby disparo sur2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo sur\Ruby disparo sur3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo sur\Ruby disparo sur4.png" />
+                </animation>
+                <animation framecount="9" loop="1" name="MuerteDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="103159517327673" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte9.png" />
+                </animation>
+                <animation framecount="9" loop="1" name="MuerteIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="202957584972323" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\muerte izquierda\ruby muerte izquierda1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\muerte izquierda\ruby muerte izquierda2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\muerte izquierda\ruby muerte izquierda3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\muerte izquierda\ruby muerte izquierda4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\muerte izquierda\ruby muerte izquierda5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\muerte izquierda\ruby muerte izquierda6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\muerte izquierda\ruby muerte izquierda7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\muerte izquierda\ruby muerte izquierda8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\muerte izquierda\ruby muerte izquierda9.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="RubyCryDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="290723771204676" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\lloro derecha\ruby lloro derecha1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\lloro derecha\ruby lloro derecha2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\lloro derecha\ruby lloro derecha3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\lloro derecha\ruby lloro derecha4.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="RubCryIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="376468695429208" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\lloro izquierda\ruby lloro izquierda1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\lloro izquierda\ruby lloro izquierda2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\lloro izquierda\ruby lloro izquierda3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\lloro izquierda\ruby lloro izquierda4.png" />
+                </animation>
+                <animation framecount="7" loop="1" name="RubyRecolectarDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="335172078002482" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar derecha\ruby recolectar derecha1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar derecha\ruby recolectar derecha2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar derecha\ruby recolectar derecha3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar derecha\ruby recolectar derecha4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar derecha\ruby recolectar derecha5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar derecha\ruby recolectar derecha6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar derecha\ruby recolectar derecha7.png" />
+                </animation>
+                <animation framecount="7" loop="1" name="RubyRecolectarIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="970346614963228" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar izquierda\ruby recolectar izquierda1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar izquierda\ruby recolectar izquierda2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar izquierda\ruby recolectar izquierda3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar izquierda\ruby recolectar izquierda4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar izquierda\ruby recolectar izquierda5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar izquierda\ruby recolectar izquierda6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\recolectar izquierda\ruby recolectar izquierda7.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -116,8 +273,11 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="252500979097290" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="252500979097290" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Disparo proyectil\Disparo proyectil1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Disparo proyectil\Disparo proyectil2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Disparo proyectil\Disparo proyectil3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Disparo proyectil\Disparo proyectil4.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -130,7 +290,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570780403566099" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room1.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -143,7 +303,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="461149651298048" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room2.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -190,7 +350,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="657675211517479" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room3 (posible spwan o sala de comerciante-verde).png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -368,8 +528,11 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="175994574975637" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="175994574975637" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\Shoot\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\Shoot\2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\Shoot\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\Shoot\4.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -395,16 +558,22 @@
                 <instance-variable name="BelongsToUID" sid="321553679080880" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292889700827717" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292889700827717" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="ItemNinfa" sid="151358105699073">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463374301621450" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463374301621450" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\1.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -419,8 +588,12 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944504107472893" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944504107472893" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\5.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -592,7 +765,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878002130261867" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\brazo.png">
+                        <collision-poly>
+                            <point x="0.251064" y="0.437037" />
+                            <point x="0.5" y="0.737037" />
+                            <point x="0.67234" y="0.57037" />
+                            <point x="0.670213" y="0.5" />
+                            <point x="0.5" y="0.862963" />
+                            <point x="0.255319" y="0.555556" />
+                            <point x="0.242553" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -600,7 +783,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877186763757003" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\Libro.png">
+                        <collision-poly>
+                            <point x="0.225" y="0.225" />
+                            <point x="0.5" y="0.105" />
+                            <point x="0.735" y="0.265" />
+                            <point x="0.735" y="0.735" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.225" y="0.775" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -608,7 +800,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829567258953898" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\Bateria.png">
+                        <collision-poly>
+                            <point x="0.29" y="0.29" />
+                            <point x="0.5" y="0.06" />
+                            <point x="0.58" y="0.42" />
+                            <point x="0.58" y="0.58" />
+                            <point x="0.5" y="0.995" />
+                            <point x="0.29" y="0.71" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -616,7 +817,121 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231945534075393" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\Runa.png">
+                        <collision-poly>
+                            <point x="0.385" y="0.385" />
+                            <point x="0.5" y="0.41" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.72" y="0.72" />
+                            <point x="0.5" y="0.745" />
+                            <point x="0.255" y="0.745" />
+                            <point x="0.13" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Room2" sid="418080946091671">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="115649270918313" type="number" />
+                <instance-variable name="basePositionY" sid="788586454756966" type="number" />
+                <instance-variable name="basePositionX" sid="344842222024672" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="511049385385322" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Room3" sid="600846411326949">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="253426795300324" type="number" />
+                <instance-variable name="basePositionY" sid="818417771563033" type="number" />
+                <instance-variable name="basePositionX" sid="999937622047403" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488738384217492" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Room4" sid="951875807796725">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="389981498629772" type="number" />
+                <instance-variable name="basePositionY" sid="723162720988125" type="number" />
+                <instance-variable name="basePositionX" sid="989508615624542" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309379254109833" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room6.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Room5" sid="741647396493914">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="160885119706286" type="number" />
+                <instance-variable name="basePositionY" sid="892968713409548" type="number" />
+                <instance-variable name="basePositionX" sid="742234125107947" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="727711287742701" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room7.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Room6" sid="740330942728971">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="120310762540780" type="number" />
+                <instance-variable name="basePositionY" sid="817837645272306" type="number" />
+                <instance-variable name="basePositionX" sid="526904666575082" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628713628406864" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room8.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Room7" sid="312091849274334">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="911450494380094" type="number" />
+                <instance-variable name="basePositionY" sid="602851272406607" type="number" />
+                <instance-variable name="basePositionX" sid="835917088220787" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549504540432999" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room9.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Room8" sid="206614965403727">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="882961870759642" type="number" />
+                <instance-variable name="basePositionY" sid="124822442694856" type="number" />
+                <instance-variable name="basePositionX" sid="894886940157793" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581643707311038" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Room10" sid="421037754035713">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="roomIdNumber" sid="623750045966585" type="number" />
+                <instance-variable name="basePositionY" sid="105266599910265" type="number" />
+                <instance-variable name="basePositionX" sid="477521552392886" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="642907145013856" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Salas\Room1.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -637,6 +952,14 @@
             <members>
                 <member>Room0</member>
                 <member>Room1</member>
+                <member>Room10</member>
+                <member>Room2</member>
+                <member>Room3</member>
+                <member>Room4</member>
+                <member>Room5</member>
+                <member>Room6</member>
+                <member>Room7</member>
+                <member>Room8</member>
                 <member>SpecialRoom</member>
             </members>
         </family>

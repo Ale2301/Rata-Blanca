@@ -12,6 +12,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Game</layout>
         <layout order="2">Start</layout>
+        <layout order="3">Credits</layout>
         <event-sheet active="1" order="1">Game</event-sheet>
     </open-tabs>
     <properties>
@@ -27,7 +28,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="Items" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -71,5 +72,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/ItemLibroMaquiavelico/" />
         <folder expanded="1" path="animation-folder/ItemBateria/" />
         <folder expanded="1" path="animation-folder/ItemMaestriaRunica/" />
+        <folder expanded="1" path="animation-folder/Room2/" />
+        <folder expanded="1" path="animation-folder/Room3/" />
+        <folder expanded="1" path="animation-folder/Room4/" />
+        <folder expanded="1" path="animation-folder/Room5/" />
+        <folder expanded="1" path="animation-folder/Room6/" />
+        <folder expanded="1" path="animation-folder/Room7/" />
+        <folder expanded="1" path="animation-folder/Room8/" />
+        <folder expanded="1" path="animation-folder/Room10/" />
     </folders-expanded>
 </c2uistate>

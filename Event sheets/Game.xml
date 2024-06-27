@@ -8,7 +8,7 @@
         <variable constant="0" name="QuantityOfSpawnableItems" sid="530174953702453" static="0" type="number">0</variable>
         <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">10</variable>
         <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">10</variable>
-        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">100</variable>
+        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">150</variable>
         <variable constant="0" name="playerResistance" sid="289707736190923" static="0" type="number">0</variable>
         <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">10</variable>
         <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">400</variable>

@@ -207,11 +207,11 @@
                         <x>416.925872803</x>
                         <y>436.084747314</y>
                         <z>0</z>
-                        <width>38.078865051</width>
-                        <height>38.078865051</height>
+                        <width>42.039066315</width>
+                        <height>68.237327576</height>
                         <depth>0</depth>
-                        <hotspotX>0.495999992</hotspotX>
-                        <hotspotY>0.512000024</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -357,8 +357,8 @@
                         <x>1186.485229492</x>
                         <y>262.485290527</y>
                         <z>0</z>
-                        <width>16.970561981</width>
-                        <height>16.970561981</height>
+                        <width>25</width>
+                        <height>25</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -705,8 +705,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-265</x>
-                        <y>2094</y>
+                        <x>-167</x>
+                        <y>2281</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -777,8 +777,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2267</x>
-                        <y>2459</y>
+                        <x>2034</x>
+                        <y>2366</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -835,8 +835,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-507</x>
-                        <y>2444</y>
+                        <x>-545</x>
+                        <y>2482</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -871,8 +871,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1820</x>
-                        <y>2052</y>
+                        <x>1824</x>
+                        <y>2133</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -907,7 +907,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2258</x>
+                        <x>2033</x>
                         <y>2127</y>
                         <z>0</z>
                         <width>55.416603088</width>
@@ -970,8 +970,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-21</x>
-                        <y>2694</y>
+                        <x>-55</x>
+                        <y>2486</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1006,8 +1006,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-484</x>
-                        <y>2190</y>
+                        <x>-526</x>
+                        <y>2063</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1042,8 +1042,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-29</x>
-                        <y>1984</y>
+                        <x>-71</x>
+                        <y>2065</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1078,8 +1078,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2105</x>
-                        <y>2558</y>
+                        <x>1812</x>
+                        <y>2376</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1114,8 +1114,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2304</x>
-                        <y>2211</y>
+                        <x>2037</x>
+                        <y>2253</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1321,8 +1321,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2075</x>
-                        <y>2240</y>
+                        <x>1816</x>
+                        <y>2248</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1357,8 +1357,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1824</x>
-                        <y>2610</y>
+                        <x>1816</x>
+                        <y>2496</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1393,8 +1393,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-406</x>
-                        <y>2060</y>
+                        <x>-419</x>
+                        <y>2289</y>
                         <z>0</z>
                         <width>55.416603088</width>
                         <height>55.416599274</height>
@@ -1543,8 +1543,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-310</x>
-                        <y>2636</y>
+                        <x>-446</x>
+                        <y>2411</y>
                         <z>0</z>
                         <width>52.463451385</width>
                         <height>88.167747498</height>
@@ -1670,8 +1670,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1637</x>
-                        <y>2109</y>
+                        <x>1744</x>
+                        <y>2031</y>
                         <z>0</z>
                         <width>52.463451385</width>
                         <height>88.167747498</height>
@@ -1768,8 +1768,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2020</x>
-                        <y>1989</y>
+                        <x>2156</x>
+                        <y>2087</y>
                         <z>0</z>
                         <width>52.463451385</width>
                         <height>88.167747498</height>
@@ -1866,8 +1866,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1967</x>
-                        <y>2597</y>
+                        <x>1738</x>
+                        <y>2542</y>
                         <z>0</z>
                         <width>52.463451385</width>
                         <height>88.167747498</height>
@@ -2004,8 +2004,8 @@
                         <x>3060</x>
                         <y>1861</y>
                         <z>0</z>
-                        <width>34.928497314</width>
-                        <height>34.928497314</height>
+                        <width>45</width>
+                        <height>45</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2299,10 +2299,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-1746</x>
-                        <y>2770</y>
+                        <y>2871.747802734</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>167.147247314</width>
+                        <height>228.505096436</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2396,8 +2396,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-203</x>
-                        <y>2425</y>
+                        <x>-148</x>
+                        <y>2158</y>
                         <z>0</z>
                         <width>52.463451385</width>
                         <height>88.167747498</height>
@@ -2427,8 +2427,8 @@
                         <x>1096</x>
                         <y>494</y>
                         <z>0</z>
-                        <width>49.638694763</width>
-                        <height>49.638694763</height>
+                        <width>95.306297302</width>
+                        <height>93.320747375</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2466,10 +2466,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-175.078460693</x>
-                        <y>495.921508789</y>
+                        <y>518.261474609</y>
                         <z>0</z>
-                        <width>22.248596191</width>
-                        <height>22.248596191</height>
+                        <width>88.347938538</width>
+                        <height>86.507354736</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2607,8 +2607,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-140</x>
-                        <y>2232</y>
+                        <x>-299</x>
+                        <y>2158</y>
                         <z>0</z>
                         <width>53.103672028</width>
                         <height>53.103672028</height>
@@ -2732,11 +2732,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1095</x>
-                        <y>574</y>
+                        <x>1189</x>
+                        <y>493</y>
                         <z>0</z>
-                        <width>41.809089661</width>
-                        <height>41.809089661</height>
+                        <width>139.248382568</width>
+                        <height>79.993751526</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2760,11 +2760,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1097</x>
-                        <y>638</y>
+                        <x>1096.832641602</x>
+                        <y>630.61907959</y>
                         <z>0</z>
-                        <width>38.418746948</width>
-                        <height>38.418746948</height>
+                        <width>66.109535217</width>
+                        <height>66.109535217</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2788,11 +2788,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1100.649536133</x>
-                        <y>693.649475098</y>
+                        <x>1181</x>
+                        <y>618</y>
                         <z>0</z>
-                        <width>45.299007416</width>
-                        <height>45.299007416</height>
+                        <width>60</width>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2816,11 +2816,2432 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1103</x>
-                        <y>757</y>
+                        <x>1140</x>
+                        <y>708</y>
                         <z>0</z>
-                        <width>48.145610809</width>
-                        <height>48.145610809</height>
+                        <width>115.723808289</width>
+                        <height>115.723808289</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Room2" uid="93">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <roomIdNumber>0</roomIdNumber>
+                        <basePositionY>0</basePositionY>
+                        <basePositionX>0</basePositionX>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-1096</x>
+                        <y>-1177</y>
+                        <z>0</z>
+                        <width>900</width>
+                        <height>900</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="94">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2038</x>
+                        <y>2485</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="95">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2254</x>
+                        <y>2477</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="96">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2254</x>
+                        <y>2358</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="97">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2250</x>
+                        <y>2239</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="98">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2258</x>
+                        <y>2112</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Room3" uid="99">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <roomIdNumber>0</roomIdNumber>
+                        <basePositionY>0</basePositionY>
+                        <basePositionX>0</basePositionX>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>55</x>
+                        <y>-1177</y>
+                        <z>0</z>
+                        <width>900</width>
+                        <height>900</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Room4" uid="100">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <roomIdNumber>0</roomIdNumber>
+                        <basePositionY>0</basePositionY>
+                        <basePositionX>0</basePositionX>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1285</x>
+                        <y>-1178</y>
+                        <z>0</z>
+                        <width>900</width>
+                        <height>900</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Room5" uid="101">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <roomIdNumber>0</roomIdNumber>
+                        <basePositionY>0</basePositionY>
+                        <basePositionX>0</basePositionX>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2823</x>
+                        <y>-1256</y>
+                        <z>0</z>
+                        <width>900</width>
+                        <height>900</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Room6" uid="102">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <roomIdNumber>0</roomIdNumber>
+                        <basePositionY>0</basePositionY>
+                        <basePositionX>0</basePositionX>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4319</x>
+                        <y>-1395</y>
+                        <z>0</z>
+                        <width>900</width>
+                        <height>900</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Room7" uid="103">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <roomIdNumber>0</roomIdNumber>
+                        <basePositionY>0</basePositionY>
+                        <basePositionX>0</basePositionX>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3063</x>
+                        <y>246</y>
+                        <z>0</z>
+                        <width>900</width>
+                        <height>900</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Room8" uid="104">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <roomIdNumber>0</roomIdNumber>
+                        <basePositionY>0</basePositionY>
+                        <basePositionX>0</basePositionX>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4493</x>
+                        <y>215</y>
+                        <z>0</z>
+                        <width>900</width>
+                        <height>900</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="105">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-1280</x>
+                        <y>-1179</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="106">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-1092</x>
+                        <y>-1356</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="107">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-915</x>
+                        <y>-1173</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="108">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-1098</x>
+                        <y>-987</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="113">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-195</x>
+                        <y>-1179</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="114">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>47</x>
+                        <y>-1167</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="115">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>302</x>
+                        <y>-1186</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="116">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>159</x>
+                        <y>-869</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="117">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-71</x>
+                        <y>-869</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="118">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-71</x>
+                        <y>-1509</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="119">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>146</x>
+                        <y>-1521</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="122">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1053</x>
+                        <y>-1422</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="123">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1283</x>
+                        <y>-1422</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="124">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1525</x>
+                        <y>-1428</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="125">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1432</x>
+                        <y>-1012</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="126">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1159</x>
+                        <y>-1006</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="127">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2482</x>
+                        <y>-1347</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="128">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2550</x>
+                        <y>-1446</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="129">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2612</x>
+                        <y>-1527</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="130">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2687</x>
+                        <y>-1577</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="131">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2724</x>
+                        <y>-1154</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="132">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2786</x>
+                        <y>-1241</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="133">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2854</x>
+                        <y>-1328</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="134">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2929</x>
+                        <y>-1390</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="135">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2972</x>
+                        <y>-937</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="136">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3047</x>
+                        <y>-1024</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="137">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3103</x>
+                        <y>-1099</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="138">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3184</x>
+                        <y>-1180</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="139">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4153</x>
+                        <y>-1571</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="140">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4265</x>
+                        <y>-1577</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="141">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4408</x>
+                        <y>-1565</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="142">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4520</x>
+                        <y>-1577</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="143">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4079</x>
+                        <y>-1397</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="144">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4203</x>
+                        <y>-1397</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="145">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4302</x>
+                        <y>-1385</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="146">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4439</x>
+                        <y>-1385</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="147">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4569</x>
+                        <y>-1379</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="148">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4480</x>
+                        <y>-1186</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="149">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4359</x>
+                        <y>-1186</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="150">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4230</x>
+                        <y>-1178</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="151">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4101</x>
+                        <y>-1186</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="152">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3400</x>
+                        <y>-106</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="153">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3287</x>
+                        <y>-33</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="154">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3174</x>
+                        <y>23</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="155">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2956</x>
+                        <y>23</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="156">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2859</x>
+                        <y>-33</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="157">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2746</x>
+                        <y>-81</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="158">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2730</x>
+                        <y>596</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="159">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2835</x>
+                        <y>540</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="160">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2956</x>
+                        <y>484</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="161">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3166</x>
+                        <y>476</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="162">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3287</x>
+                        <y>540</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="163">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3392</x>
+                        <y>588</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="164">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4271</x>
+                        <y>-25</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="165">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4239</x>
+                        <y>483</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="166">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4706</x>
+                        <y>402</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stone" uid="167">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <isInTemplate>true</isInTemplate>
+                        <BelongsToUID>0</BelongsToUID>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4795</x>
+                        <y>15</y>
+                        <z>0</z>
+                        <width>55.416603088</width>
+                        <height>55.416599274</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
