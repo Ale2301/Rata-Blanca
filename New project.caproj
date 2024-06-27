@@ -549,6 +549,44 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BossSlime" sid="196956422641004">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="damage" sid="133024778574847" type="number" />
+                <instance-variable name="life" sid="870369015552044" type="number" />
+                <instance-variable name="breakPoint" sid="550861158032188" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="654933113098979">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945204477020863" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BossMiniSlime" sid="276428186240715">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="life" sid="113285342681401" type="number" />
+                <instance-variable name="damage" sid="936595688727488" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="229007643361513">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="614425939843722">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="177872084555094" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
