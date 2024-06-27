@@ -1663,6 +1663,38 @@
                                                     <param id="0" name="State">1</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="876166323736036">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="226177872220426" type="System">
+                                                            <param id="0" name="Variable">playerEnergy</param>
+                                                            <param id="1" name="Comparison">5</param>
+                                                            <param id="2" name="Value">10</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Set value" sid="617112221542069" type="Enloquecido">
+                                                            <param id="0" name="Instance variable">life</param>
+                                                            <param id="1" name="Value">round((playerEnergy/2)+1)</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="884663112634210">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="664191487594282" type="System">
+                                                            <param id="0" name="Variable">playerConsumedEnergy</param>
+                                                            <param id="1" name="Comparison">5</param>
+                                                            <param id="2" name="Value">10</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Set value" sid="234145029116982" type="Enloquecido">
+                                                            <param id="0" name="Instance variable">damage</param>
+                                                            <param id="1" name="Value">round(playerConsumedEnergy/5)</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="570980067750313">
                                             <conditions>
