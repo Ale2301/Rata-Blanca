@@ -10,6 +10,7 @@
     <unique-id>2rn7eb37fgdgc</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
@@ -279,6 +280,18 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Disparo proyectil\Disparo proyectil3.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Disparo proyectil\Disparo proyectil4.png" />
                 </animation>
+                <animation framecount="10" loop="1" name="Impacto" pingpong="0" repeatcount="1" repeatto="0" sid="820746992955812" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Impacto\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Impacto\2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Impacto\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Impacto\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Impacto\5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Impacto\6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Impacto\7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Impacto\8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\Impacto\9.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Room0" sid="442697878956134">
@@ -483,8 +496,46 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="273376536130105" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="5" loop="1" name="VueloDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="273376536130105" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\vuelo derecha\cuervo vuelo2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\vuelo derecha\cuervo vuelo3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\vuelo derecha\cuervo vuelo4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\vuelo derecha\cuervo vuelo5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\vuelo derecha\cuervo vuelo6.png" />
+                </animation>
+                <animation framecount="5" loop="1" name="VueloIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="409663563948588" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\vuelo izquierda\cuervo vuelo izquierda1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\vuelo izquierda\cuervo vuelo izquierda2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\vuelo izquierda\cuervo vuelo izquierda3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\vuelo izquierda\cuervo vuelo izquierda4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\vuelo izquierda\cuervo vuelo izquierda5.png" />
+                </animation>
+                <animation framecount="9" loop="0" name="MuerteDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="503765220076298" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte\cuervo muerte derecha1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte\cuervo muerte derecha2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte\cuervo muerte derecha3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte\cuervo muerte derecha4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte\cuervo muerte derecha5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte\cuervo muerte derecha6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte\cuervo muerte derecha7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte\cuervo muerte derecha8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte\cuervo muerte derecha9.png" />
+                </animation>
+                <animation framecount="9" loop="0" name="MuerteIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="722703057408781" speed="5">
+                    <frame duration="1" hotspotX="-0.324561" hotspotY="-0.134228" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda9.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="Impulso" pingpong="0" repeatcount="1" repeatto="0" sid="281700142959626" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impulso\cuervo impulso1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impulso\cuervo impulso2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impulso\cuervo impulso3.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -496,8 +547,10 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="760689311408005" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="760689311408005" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\advertencia\advertencia1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\advertencia\advertencia2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\advertencia\advertencia3.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -558,7 +611,7 @@
                 <instance-variable name="BelongsToUID" sid="321553679080880" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292889700827717" speed="7">
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292889700827717" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop3.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop4.png" />
@@ -573,7 +626,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463374301621450" speed="7">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\1.png" />
+                    <frame duration="1" hotspotX="0.535" hotspotY="0.484305" original-source="C:\Users\lucho\Desktop\RB\Ninfa\1.png">
+                        <collision-poly>
+                            <point x="0.455" y="0.00224216" />
+                            <point x="0.69" y="0.00224215" />
+                            <point x="0.99" y="0.486547" />
+                            <point x="0.735" y="0.952915" />
+                            <point x="0.39" y="0.997758" />
+                            <point x="0.015" y="0.979821" />
+                            <point x="0.04" y="0.473094" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -589,11 +652,11 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944504107472893" speed="7">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\1.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\3.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\4.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ninfa\5.png" />
+                    <frame duration="1" hotspotX="0.535" hotspotY="0.484305" original-source="C:\Users\lucho\Desktop\RB\Ninfa\1.png" />
+                    <frame duration="1" hotspotX="0.520619" hotspotY="0.488584" original-source="C:\Users\lucho\Desktop\RB\Ninfa\2.png" />
+                    <frame duration="1" hotspotX="0.520619" hotspotY="0.490654" original-source="C:\Users\lucho\Desktop\RB\Ninfa\3.png" />
+                    <frame duration="1" hotspotX="0.520619" hotspotY="0.488584" original-source="C:\Users\lucho\Desktop\RB\Ninfa\4.png" />
+                    <frame duration="1" hotspotX="0.535" hotspotY="0.484305" original-source="C:\Users\lucho\Desktop\RB\Ninfa\5.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -688,7 +751,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="587132437521723" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Creditos\Creditos.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Creditos\Creditos2.0.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1241,13 +1304,13 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878002130261867" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\brazo.png">
                         <collision-poly>
-                            <point x="0.251064" y="0.437037" />
-                            <point x="0.5" y="0.737037" />
-                            <point x="0.67234" y="0.57037" />
-                            <point x="0.670213" y="0.5" />
-                            <point x="0.5" y="0.862963" />
-                            <point x="0.255319" y="0.555556" />
-                            <point x="0.242553" y="0.5" />
+                            <point x="0.478724" y="0.118519" />
+                            <point x="0.342553" y="0.425926" />
+                            <point x="0.589361" y="0.507407" />
+                            <point x="0.759574" y="0.592593" />
+                            <point x="0.421277" y="0.918519" />
+                            <point x="0.223404" y="0.466667" />
+                            <point x="0.374468" y="0.0851852" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1257,14 +1320,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877186763757003" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\Libro.png">
+                    <frame duration="1" hotspotX="0.47973" hotspotY="0.490909" original-source="C:\Users\lucho\Desktop\RB\Items\Libro.png">
                         <collision-poly>
-                            <point x="0.225" y="0.225" />
-                            <point x="0.5" y="0.105" />
-                            <point x="0.735" y="0.265" />
-                            <point x="0.735" y="0.735" />
-                            <point x="0.5" y="0.875" />
-                            <point x="0.225" y="0.775" />
+                            <point x="0.035473" y="0.1375" />
+                            <point x="0.668919" y="0.00454545" />
+                            <point x="0.876689" y="0.0147726" />
+                            <point x="0.883446" y="0.798864" />
+                            <point x="0.222973" y="0.981818" />
+                            <point x="0.0135135" y="0.948864" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1274,14 +1337,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829567258953898" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\Bateria.png">
+                    <frame duration="1" hotspotX="0.673469" hotspotY="0.47479" original-source="C:\Users\lucho\Desktop\RB\Items\Bateria.png">
                         <collision-poly>
-                            <point x="0.29" y="0.29" />
-                            <point x="0.5" y="0.06" />
-                            <point x="0.58" y="0.42" />
-                            <point x="0.58" y="0.58" />
-                            <point x="0.5" y="0.995" />
-                            <point x="0.29" y="0.71" />
+                            <point x="0.147959" y="0.0105042" />
+                            <point x="0.867347" y="0.012605" />
+                            <point x="0.887755" y="0.827731" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.137755" y="0.829833" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1291,15 +1354,15 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231945534075393" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\Runa.png">
+                    <frame duration="1" hotspotX="0.607362" hotspotY="0.336842" original-source="C:\Users\lucho\Desktop\RB\Items\Runa.png">
                         <collision-poly>
-                            <point x="0.385" y="0.385" />
-                            <point x="0.5" y="0.41" />
-                            <point x="0.75" y="0.5" />
-                            <point x="0.72" y="0.72" />
-                            <point x="0.5" y="0.745" />
-                            <point x="0.255" y="0.745" />
-                            <point x="0.13" y="0.5" />
+                            <point x="0.203988" y="0" />
+                            <point x="0.607362" y="0.1" />
+                            <point x="0.972393" y="0.221053" />
+                            <point x="0.944785" y="0.915789" />
+                            <point x="0.607362" y="0.981579" />
+                            <point x="0.0122699" y="0.855263" />
+                            <point x="0.0398773" y="0.336842" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1402,6 +1465,23 @@
         <object-type name="BossHealth" sid="461471269474474">
             <plugin id="progressbar" />
         </object-type>
+        <object-type name="ImpactoCuervo" sid="903881525614472">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282135223771054" speed="5">
+                    <frame duration="1" hotspotX="0.349462" hotspotY="0.785714" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impacto\cuervo impacto1.png" />
+                    <frame duration="1" hotspotX="0.420245" hotspotY="0.613208" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impacto\cuervo impacto2.png" />
+                    <frame duration="1" hotspotX="0.461131" hotspotY="0.58046" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impacto\cuervo impacto3.png" />
+                    <frame duration="1" hotspotX="0.47397" hotspotY="0.506803" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impacto\cuervo impacto4.png" />
+                    <frame duration="1" hotspotX="0.480165" hotspotY="0.510363" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impacto\cuervo impacto5.png" />
+                    <frame duration="1" hotspotX="0.490099" hotspotY="0.503745" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impacto\cuervo impacto6.png" />
+                    <frame duration="1" hotspotX="0.497399" hotspotY="0.506472" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impacto\cuervo impacto7.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sounds" sid="698676082250048">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
@@ -1466,9 +1546,50 @@
         <global-instance type="Function" uid="12" />
         <global-instance type="Browser" uid="35" />
         <global-instance type="LocalStorage" uid="75" />
+        <global-instance type="Sounds" uid="172">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
-    <music-folder />
+    <sounds-folder>
+        <file name="Cofre Abierto.ogg" />
+        <file name="Cofre Apareciendo.ogg" />
+        <file name="Cuervo Deambulando.ogg" />
+        <file name="Cuervo Detectado.ogg" />
+        <file name="Cuervo Muriendo.ogg" />
+        <file name="Disparo Magico.ogg" />
+        <file name="Eneergia Consumiendose.ogg" />
+        <file name="Energia Recolectandose.ogg" />
+        <file name="Enloquecido Deambulando.ogg" />
+        <file name="Enloquecido Detectando.ogg" />
+        <file name="Enloquecido Persiguiendo.ogg" />
+        <file name="Hechizo Usado.ogg" />
+        <file name="Pickeeando Item.ogg" />
+        <file name="Puerta Abriendose.ogg" />
+        <file name="Puerta Cerrandose.ogg" />
+        <file name="Ruby Esquivando.ogg" />
+        <file name="Slime Muriendo.ogg" />
+        <file name="Slime Saltando.ogg" />
+        <file name="Sonido De Prueba.ogg" />
+        <file name="Ruby Sufriendo Daño.ogg" />
+        <file name="Ruby_Piu_Piu.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="Acto 1 jefe.ogg" />
+        <file name="Acto 1 Pre-jefe.ogg" />
+        <file name="Pantalla de Muerte.ogg" />
+        <file name="Pantalla de titulo.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
