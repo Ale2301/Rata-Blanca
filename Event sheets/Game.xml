@@ -2997,7 +2997,7 @@
                 <event-block any="1" sid="349723855228820">
                     <conditions>
                         <condition behavior="Pathfinding" id="5" name="On arrived" sid="514560416789834" type="Player" />
-                        <condition behavior="Pathfinding" id="1" name="On failed to find path" sid="747625308712905" type="Player" />
+                        <condition behavior="Pathfinding" id="4" inverted="1" name="Is moving along path" sid="747625308712905" type="Player" />
                         <condition id="0" name="On collision with another object" sid="840962324788545" type="Player">
                             <param id="0" name="Object">Stone</param>
                         </condition>

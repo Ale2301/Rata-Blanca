@@ -342,7 +342,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491437205004618" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\UNAHUR\Downloads\piedra.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Assets\chatarra.png">
+                        <collision-poly>
+                            <point x="0.171348" y="0.131944" />
+                            <point x="0.522472" y="0.00694444" />
+                            <point x="0.890449" y="0.0902778" />
+                            <point x="0.924157" y="0.305556" />
+                            <point x="0.828652" y="0.368056" />
+                            <point x="0.522472" y="0.826389" />
+                            <point x="0.103933" y="0.645833" />
+                            <point x="0.00280899" y="0.305556" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -437,17 +448,118 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570124849517561" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\Enloquecido_idle_derecha.gif">
+                <animation framecount="3" loop="1" name="IdleDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="570124849517561" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Idle derecha\Enloquecido idle derecha-export1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Idle derecha\Enloquecido idle derecha-export2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Idle derecha\Enloquecido idle derecha-export3.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="IdleIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="434108902984565" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Idle izquierda\Enloquecido idle izquierda-export1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Idle izquierda\Enloquecido idle izquierda-export2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Idle izquierda\Enloquecido idle izquierda-export3.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="DeambularDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="790362344370762" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export6.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="DeambularIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="972047992088041" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export6.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="DeambularArriba" pingpong="0" repeatcount="1" repeatto="0" sid="255657641491479" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte5.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="DeambularAbajo" pingpong="0" repeatcount="1" repeatto="0" sid="850020178882506" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur6.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="CorrerDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="427454346954671" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export6.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="CorrerIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="791101466092983" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export6.png" />
+                </animation>
+                <animation framecount="7" loop="1" name="CorrerArriba" pingpong="0" repeatcount="1" repeatto="0" sid="897937988100789" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte6.png" />
+                </animation>
+                <animation framecount="6" loop="1" name="CorrerAbajo" pingpong="0" repeatcount="1" repeatto="0" sid="382921365988686" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr sur\Enloquecido correr sur1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr sur\Enloquecido correr sur2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr sur\Enloquecido correr sur3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr sur\Enloquecido correr sur4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr sur\Enloquecido correr sur5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr sur\Enloquecido correr sur6.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="AtqueIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="545276719873576" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\attack izquierda\Enloquecido animations1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\attack izquierda\Enloquecido animations2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\attack izquierda\Enloquecido animations3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\attack izquierda\Enloquecido animations4.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="AtqueDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="639204378969163" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.402778" y="0.239669" />
-                            <point x="0.5" y="0.0165289" />
-                            <point x="0.861111" y="0.0826446" />
-                            <point x="0.597222" y="0.5" />
-                            <point x="0.986111" y="0.991736" />
-                            <point x="0.5" y="0.719008" />
+                            <point x="1" y="1" />
                             <point x="0" y="1" />
-                            <point x="0.236111" y="0.5" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1482,6 +1594,160 @@
         <object-type name="Sounds" sid="698676082250048">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="Door" sid="811212322807663">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="711252619690346" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Assets\puerta.png">
+                        <collision-poly>
+                            <point x="0.00277778" y="0.0652174" />
+                            <point x="0.5" y="0.00434783" />
+                            <point x="0.997222" y="0.0652174" />
+                            <point x="0.997222" y="0.752174" />
+                            <point x="0.5" y="0.995652" />
+                            <point x="0.00277778" y="0.752174" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Barril" sid="544034347085765">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="391068976283418" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Assets\barril quimico.png">
+                        <collision-poly>
+                            <point x="0.00649351" y="0.620536" />
+                            <point x="0.467532" y="0.00446429" />
+                            <point x="0.993506" y="0.575893" />
+                            <point x="0.993506" y="0.40625" />
+                            <point x="0.467532" y="0.995536" />
+                            <point x="0.00649351" y="0.361607" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bandera" sid="885095232800755">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495519846595108" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Assets\bandera2.png">
+                        <collision-poly>
+                            <point x="0.131944" y="0.644737" />
+                            <point x="0.444444" y="0.135965" />
+                            <point x="0.881944" y="0.565789" />
+                            <point x="0.881944" y="0.241228" />
+                            <point x="0.444444" y="0.75" />
+                            <point x="0.118056" y="0.171053" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BanderaRota" sid="769511724781866">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887210619949245" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Assets\bandera.png">
+                        <collision-poly>
+                            <point x="0.131944" y="0.644737" />
+                            <point x="0.444444" y="0.135965" />
+                            <point x="0.881944" y="0.565789" />
+                            <point x="0.881944" y="0.241228" />
+                            <point x="0.444444" y="0.855263" />
+                            <point x="0.118056" y="0.171053" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Estante" sid="510297272420712">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881278975422074" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Assets\estante de libros 2.png">
+                        <collision-poly>
+                            <point x="0.00438596" y="0.0116822" />
+                            <point x="0.995614" y="0.0116822" />
+                            <point x="0.97807" y="0.997664" />
+                            <point x="0.0219298" y="0.997664" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EstanteRoto" sid="361061870448370">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="769806974404540" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Assets\estante de libros ..png">
+                        <collision-poly>
+                            <point x="0.00438596" y="0.0110132" />
+                            <point x="0.995614" y="0.0110132" />
+                            <point x="0.97807" y="0.940529" />
+                            <point x="0.5" y="0.955947" />
+                            <point x="0.0219298" y="0.940529" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Altar" sid="351452921771516">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985399793151393" speed="5">
+                    <frame duration="1" hotspotX="0.544444" hotspotY="0.484127" original-source="C:\Users\lucho\Desktop\RB\Assets\altar rr.png">
+                        <collision-poly>
+                            <point x="0.0611111" y="0.535714" />
+                            <point x="0.544444" y="0.00396825" />
+                            <point x="0.961111" y="0.583333" />
+                            <point x="0.961111" y="0.384921" />
+                            <point x="0.544444" y="0.996032" />
+                            <point x="0.0611111" y="0.43254" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enredaderas1" sid="562817802159891">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902771388179127" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Assets\enredarera 1.png">
+                        <collision-poly>
+                            <point x="0.0902439" y="0.350806" />
+                            <point x="0.443902" y="0.149194" />
+                            <point x="0.607317" y="0.665323" />
+                            <point x="0.978049" y="0.532258" />
+                            <point x="0.719512" y="0.584677" />
+                            <point x="0.443902" y="0.947581" />
+                            <point x="0.109756" y="0.681452" />
+                            <point x="0.0804878" y="0.532258" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enredaderas2" sid="232105695218357">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="337251203846276" speed="5">
+                    <frame duration="1" hotspotX="0.502024" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Assets\enredarera.png">
+                        <collision-poly>
+                            <point x="0.129555" y="0.115079" />
+                            <point x="0.88664" y="0.0912698" />
+                            <point x="0.97166" y="0.77381" />
+                            <point x="0.720648" y="0.460317" />
+                            <point x="0.906883" y="0.0833333" />
+                            <point x="0.88664" y="0.869048" />
+                            <point x="0.0566802" y="0.876984" />
+                            <point x="0.234818" y="0.460317" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
@@ -1587,6 +1853,10 @@
         <file name="Acto 1 Pre-jefe.ogg" />
         <file name="Pantalla de Muerte.ogg" />
         <file name="Pantalla de titulo.ogg" />
+        <file name="Cuervo Clavado.ogg" />
+        <file name="Enloquecido Muriendo.ogg" />
+        <file name="Pickeeando Item Corregido.ogg" />
+        <file name="Ruby Muriendo.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

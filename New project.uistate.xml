@@ -10,9 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
+        <layout order="0">Start</layout>
         <layout order="4">Credits</layout>
         <layout order="5">DeathScreen</layout>
-        <layout order="0">Start</layout>
         <layout active="1" order="7">Game</layout>
         <event-sheet order="1">Start</event-sheet>
         <event-sheet order="2">Options</event-sheet>
@@ -85,5 +85,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Room7/" />
         <folder expanded="1" path="animation-folder/Room8/" />
         <folder expanded="1" path="animation-folder/ImpactoCuervo/" />
+        <folder expanded="1" path="animation-folder/Door/" />
+        <folder expanded="1" path="animation-folder/Barril/" />
+        <folder expanded="1" path="animation-folder/Bandera/" />
+        <folder expanded="1" path="animation-folder/BanderaRota/" />
+        <folder expanded="1" path="animation-folder/Estante/" />
+        <folder expanded="1" path="animation-folder/EstanteRoto/" />
+        <folder expanded="1" path="animation-folder/Altar/" />
+        <folder expanded="1" path="animation-folder/Enredaderas1/" />
+        <folder expanded="1" path="animation-folder/Enredaderas2/" />
     </folders-expanded>
 </c2uistate>
