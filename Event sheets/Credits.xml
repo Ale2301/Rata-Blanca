@@ -13,5 +13,35 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="267875615445151">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="626731818954639" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="979082004036758" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="429971519575214" type="Sounds">
+                    <param id="0" name="Tag">&quot;backgroundBossMusic&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="147460887150148">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="720774687455675" type="Sounds">
+                            <param id="0" name="Tag">&quot;titleMusic&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="721018872808280" type="Sounds">
+                            <param id="0" name="Audio file">Pantalla de titulo</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;titleMusic&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

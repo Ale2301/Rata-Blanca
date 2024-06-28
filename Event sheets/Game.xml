@@ -12,7 +12,7 @@
         <variable constant="0" name="playerResistance" sid="289707736190923" static="0" type="number">0</variable>
         <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">10</variable>
         <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">400</variable>
-        <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">1</variable>
+        <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">0.1</variable>
         <variable constant="0" name="playerLife" sid="186121573667452" static="0" type="number">100</variable>
         <variable constant="0" name="playerCanMove" sid="975110956151980" static="0" type="number">1</variable>
         <variable constant="0" name="playerEnergy" sid="657378199167735" static="0" type="number">0</variable>
@@ -711,6 +711,15 @@
                 <action id="-9" name="Set value" sid="417975775973316" type="System">
                     <param id="0" name="Variable">playerCanMove</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="411948522281534" type="Sounds">
+                    <param id="0" name="Audio file">Acto 1 Pre-jefe</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;backgroundMusic&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="273935719793384" type="Sounds">
+                    <param id="0" name="Tag">&quot;backgroundBossMusic&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -2769,6 +2778,12 @@
                                     <param id="0" name="Variable">lastBullet</param>
                                     <param id="1" name="Value">Bullet.UID</param>
                                 </action>
+                                <action id="0" name="Play" sid="541763624356825" type="Sounds">
+                                    <param id="0" name="Audio file">Ruby_Piu_Piu</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="535808569173246">
@@ -2940,6 +2955,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="451603309897988" type="Sounds">
+                            <param id="0" name="Audio file">Ruby Esquivando</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-10" name="Set value" sid="379852539323490" type="Player">
                             <param id="0" name="Instance variable">playerCanDash</param>
                             <param id="1" name="Value">0</param>
@@ -3027,6 +3048,12 @@
                             <param id="0" name="Variable">playerEnergy</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="0" name="Play" sid="204262382490355" type="Sounds">
+                            <param id="0" name="Audio file">Eneergia Consumiendose</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-10" name="Add to" sid="965771017473827" type="System">
                             <param id="0" name="Variable">playerConsumedEnergy</param>
                             <param id="1" name="Value">1</param>
@@ -3101,6 +3128,12 @@
                                             <param id="0" name="Object">Chest</param>
                                             <param id="1" name="Layer">0</param>
                                             <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="811672907810200" type="Sounds">
+                                            <param id="0" name="Audio file">Cofre Apareciendo</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="392333112856446" type="Chest">
                                             <param id="0" name="Instance variable">BelongsToUID</param>
@@ -3544,6 +3577,15 @@
                                         <action id="1" name="Set visible" sid="203063505481392" type="BossHealth">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
+                                        <action id="6" name="Stop" sid="582805599131348" type="Sounds">
+                                            <param id="0" name="Tag">&quot;backgroundMusic&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="728065636967736" type="Sounds">
+                                            <param id="0" name="Audio file">Acto 1 jefe</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;backgroundBossMusic&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="800428152846514">
@@ -3561,6 +3603,12 @@
                                         <action id="4" name="Set font color" sid="939049877820114" type="Text2">
                                             <param id="0" name="Color">rgb(255, 0, 0)</param>
                                         </action>
+                                        <action id="0" name="Play" sid="474905781107409" type="Sounds">
+                                            <param id="0" name="Audio file">Puerta Cerrandose</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="945322037190752">
@@ -3573,6 +3621,12 @@
                                         </action>
                                         <action id="4" name="Set font color" sid="125189885264224" type="Text2">
                                             <param id="0" name="Color">rgb(0,255, 0)</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="109727055292960" type="Sounds">
+                                            <param id="0" name="Audio file">Puerta Abriendose</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3833,6 +3887,19 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="122208727068428">
+                            <conditions>
+                                <condition id="-19" name="On destroyed" sid="962328440534002" type="Bullet" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="599839897273461" type="Sounds">
+                                    <param id="0" name="Audio file">Disparo Magico</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-block sid="191578666313579">
@@ -3842,6 +3909,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="537951203326494" type="Sounds">
+                            <param id="0" name="Audio file">Ruby Sufriendo Daño</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="189290417324788" type="Function">
                             <param id="0" name="Name">&quot;updateStats&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -3878,6 +3951,9 @@
                     <actions>
                         <action id="11" name="Set collisions enabled" sid="901533531788306" type="Player">
                             <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="114451304861813" type="Sounds">
+                            <param id="0" name="Tag">&quot;backgroundMusic&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="581037553675981" type="System">
                             <param id="0" name="Variable">playerCanMove</param>
@@ -4043,6 +4119,12 @@
                                             <param id="1" name="Y">Player.Y</param>
                                         </action>
                                         <action behavior="Pathfinding" id="1" name="Move along path" sid="552057697311348" type="BossSlime" />
+                                        <action id="0" name="Play" sid="361245235752980" type="Sounds">
+                                            <param id="0" name="Audio file">Slime Saltando</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="347682561956728">
@@ -4062,6 +4144,12 @@
                                             <param id="1" name="Y">Player.Y</param>
                                         </action>
                                         <action behavior="Pathfinding" id="1" name="Move along path" sid="998852960073138" type="BossMiniSlime" />
+                                        <action id="0" name="Play" sid="260188813280834" type="Sounds">
+                                            <param id="0" name="Audio file">Slime Saltando</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -4166,6 +4254,12 @@
                                                     <param id="1" name="Layer">0</param>
                                                     <param id="2" name="Image point">0</param>
                                                 </action>
+                                                <action id="0" name="Play" sid="588879752928010" type="Sounds">
+                                                    <param id="0" name="Audio file">Slime Muriendo</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                             </actions>
                                             <sub-events>
                                                 <event-block sid="264424955093541">
@@ -4212,6 +4306,12 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Destroy" sid="602916445256016" type="BossMiniSlime" />
+                                                <action id="0" name="Play" sid="254185761933217" type="Sounds">
+                                                    <param id="0" name="Audio file">Slime Muriendo</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                     </sub-events>
@@ -4303,7 +4403,7 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <comment>And if can&apos;t attack and isn&apos;t seeing the player, will deambulate on room (Flying)</comment>
+                                        <comment>And if can&apos;t attack or isn&apos;t seeing the player, will deambulate on room (Flying)</comment>
                                         <event-block any="1" sid="728187217075676">
                                             <conditions>
                                                 <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="193409639083722" type="Cuervo">
@@ -4332,6 +4432,23 @@
                                                     <param id="0" name="State">0</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="775379248212170">
+                                                    <conditions>
+                                                        <condition id="5" inverted="1" name="Is tag playing" sid="458465878230145" type="Sounds">
+                                                            <param id="0" name="Tag">&quot;cuervoDeambulando&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Play" sid="205195414925133" type="Sounds">
+                                                            <param id="0" name="Audio file">Cuervo Deambulando</param>
+                                                            <param id="2" name="Loop">0</param>
+                                                            <param id="3" name="Volume">0</param>
+                                                            <param id="1" name="Tag (optional)">&quot;cuervoDeambulando&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -4360,6 +4477,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="471326087797972" type="Sounds">
+                                            <param id="0" name="Audio file">Cuervo Detectado</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="-10" name="Set value" sid="205985946529757" type="Cuervo">
                                             <param id="0" name="Instance variable">canAttack</param>
                                             <param id="1" name="Value">0</param>
@@ -4528,6 +4651,12 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Destroy" sid="615977058947928" type="Cuervo" />
+                                                <action id="0" name="Play" sid="156628175084816" type="Sounds">
+                                                    <param id="0" name="Audio file">Cuervo Muriendo</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                                 <action id="-11" name="Subtract from" sid="952259496932455" type="System">
                                                     <param id="0" name="Variable">enemyCountOnRoom</param>
                                                     <param id="1" name="Value">1</param>
@@ -4702,6 +4831,26 @@
                                             <param id="0" name="Cone of view">360</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="183675488033101">
+                                            <conditions>
+                                                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="909648947185619" type="Enloquecido">
+                                                    <param id="0" name="Object">Player</param>
+                                                </condition>
+                                                <condition id="5" inverted="1" name="Is tag playing" sid="657374698885646" type="Sounds">
+                                                    <param id="0" name="Tag">&quot;enloquecidoPersiguiendo&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="633247573060805" type="Sounds">
+                                                    <param id="0" name="Audio file">Enloquecido Persiguiendo</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;enloquecidoPersiguiendo&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <comment>If enemy has NOT LOS to player, stops following and moves on a random direction</comment>
                                 <event-block sid="340548716081442">
@@ -4848,6 +4997,51 @@
                                                 </action>
                                             </actions>
                                         </event-block>
+                                        <event-block sid="103018476211596">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="430170682474039" type="System">
+                                                    <param id="0" name="Interval (seconds)">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="220089066983904">
+                                                    <conditions>
+                                                        <condition id="-34" name="Pick by evaluate" sid="378224451723713" type="System">
+                                                            <param id="0" name="Object">Enloquecido</param>
+                                                            <param id="1" name="Expression">(Enloquecido.LineOfSight.ConeOfView = 360)</param>
+                                                        </condition>
+                                                        <condition id="5" inverted="1" name="Is tag playing" sid="532672925313945" type="Sounds">
+                                                            <param id="0" name="Tag">&quot;enloquecidoPersiguiendo&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Play" sid="191574955508543" type="Sounds">
+                                                            <param id="0" name="Audio file">Enloquecido Detectando</param>
+                                                            <param id="2" name="Loop">0</param>
+                                                            <param id="3" name="Volume">0</param>
+                                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="397999574267686">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="558857650811946" type="System" />
+                                                        <condition id="5" inverted="1" name="Is tag playing" sid="411953116732037" type="Sounds">
+                                                            <param id="0" name="Tag">&quot;enloquecidoPersiguiendo&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Play" sid="580080815551342" type="Sounds">
+                                                            <param id="0" name="Audio file">Enloquecido Deambulando</param>
+                                                            <param id="2" name="Loop">0</param>
+                                                            <param id="3" name="Volume">0</param>
+                                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
                                     </sub-events>
                                 </event-block>
                             </sub-events>
@@ -4873,6 +5067,12 @@
                         <action id="0" name="Call function" sid="436983018780288" type="Function">
                             <param id="0" name="Name">&quot;updateStats&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="876954473551986" type="Sounds">
+                            <param id="0" name="Audio file">Energia Recolectandose</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -4941,6 +5141,18 @@
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Destroy" sid="416677903407720" type="Chest" />
+                                                <action id="0" name="Play" sid="510281630191412" type="Sounds">
+                                                    <param id="0" name="Audio file">Hechizo Usado</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="368952475643371" type="Sounds">
+                                                    <param id="0" name="Audio file">Cofre Abierto</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                                 <action id="-9" name="Set value" sid="765552197573805" type="System">
                                                     <param id="0" name="Variable">playerConsumedEnergy</param>
                                                     <param id="1" name="Value">Player.energyConsumed - 10</param>
@@ -5183,6 +5395,21 @@
                 </event-group>
                 <event-group description="" sid="328929936108444" title="Collitions">
                     <sub-events>
+                        <event-block sid="870055216430123">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="481351248429068" type="Player">
+                                    <param id="0" name="Object">Items</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="964342744900897" type="Sounds">
+                                    <param id="0" name="Audio file">Pickeeando Item</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="650533468463226">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="138344160848067" type="Player">
@@ -5305,6 +5532,12 @@
                 <action id="4" name="Set font color" sid="288528797071568" type="Text2">
                     <param id="0" name="Color">rgb(0,255, 0)</param>
                 </action>
+                <action id="0" name="Play" sid="507335474227288" type="Sounds">
+                    <param id="0" name="Audio file">Puerta Abriendose</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="405691679992960">
@@ -5370,6 +5603,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="6" name="Stop" sid="447031106646484" type="Sounds">
+                    <param id="0" name="Tag">&quot;backgroundMusic&quot;</param>
+                </action>
                 <action id="-26" name="Restart layout" sid="360746402186872" type="System" />
             </actions>
         </event-block>

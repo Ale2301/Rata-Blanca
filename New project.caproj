@@ -1562,7 +1562,6 @@
         </global-instance>
     </global-instances>
     <sounds-folder>
-        <file name="Cofre Abierto.ogg" />
         <file name="Cofre Apareciendo.ogg" />
         <file name="Cuervo Deambulando.ogg" />
         <file name="Cuervo Detectado.ogg" />
@@ -1583,13 +1582,13 @@
         <file name="Sonido De Prueba.ogg" />
         <file name="Ruby Sufriendo Daño.ogg" />
         <file name="Ruby_Piu_Piu.ogg" />
-    </sounds-folder>
-    <music-folder>
+        <file name="Cofre Abierto.ogg" />
         <file name="Acto 1 jefe.ogg" />
         <file name="Acto 1 Pre-jefe.ogg" />
         <file name="Pantalla de Muerte.ogg" />
         <file name="Pantalla de titulo.ogg" />
-    </music-folder>
+    </sounds-folder>
+    <music-folder />
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
