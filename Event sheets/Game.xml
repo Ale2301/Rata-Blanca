@@ -704,6 +704,9 @@
                 <action id="-16" name="Wait" sid="876427235710503" type="System">
                     <param id="0" name="Seconds">1.5</param>
                 </action>
+                <action id="-15" name="Set visible" sid="687476226979753" type="HUD">
+                    <param id="0" name="Visibility">1</param>
+                </action>
                 <action id="-3" name="Set position" sid="219612435457302" type="LoadScreen">
                     <param id="0" name="X">9999</param>
                     <param id="1" name="Y">9999</param>
@@ -2947,52 +2950,85 @@
                         <condition id="0" name="On key pressed" sid="261826361569483" type="Keyboard">
                             <param id="0" name="Key">16</param>
                         </condition>
-                        <condition behavior="Pathfinding" id="7" name="Diagonals are enabled" sid="366110020599018" type="Player" />
-                        <condition id="-7" name="Compare instance variable" sid="557367728017728" type="Player">
-                            <param id="0" name="Instance variable">playerCanDash</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="451603309897988" type="Sounds">
-                            <param id="0" name="Audio file">Ruby Esquivando</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="379852539323490" type="Player">
-                            <param id="0" name="Instance variable">playerCanDash</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="324094694039833" type="Player">
-                            <param id="0" name="Instance variable">vulnerable</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action behavior="Pathfinding" id="1" name="Move along path" sid="148014296895221" type="Player" />
-                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="226485623174174" type="Player">
-                            <param id="0" name="Input">1</param>
-                        </action>
-                        <action behavior="8Direction" id="0" name="Stop" sid="325260563308484" type="Player" />
-                        <action behavior="8Direction" id="8" name="Set enabled" sid="892825014581051" type="Player">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="512149443993539" type="System">
-                            <param id="0" name="Variable">playerCanMove</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-23" name="Move at angle" sid="963977220692620" type="Player">
-                            <param id="0" name="Angle">180</param>
-                            <param id="1" name="Distance">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="736628544428873" type="System">
-                            <param id="0" name="Seconds">2</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="776776847634696" type="Player">
-                            <param id="0" name="Instance variable">playerCanDash</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="293750018611259">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="7" name="Diagonals are enabled" sid="366110020599018" type="Player" />
+                                <condition id="-7" name="Compare instance variable" sid="557367728017728" type="Player">
+                                    <param id="0" name="Instance variable">playerCanDash</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="451603309897988" type="Sounds">
+                                    <param id="0" name="Audio file">Ruby Esquivando</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="393413802448374" type="Player">
+                                    <param id="0" name="Instance variable">playerIsDashing</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="379852539323490" type="Player">
+                                    <param id="0" name="Instance variable">playerCanDash</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="324094694039833" type="Player">
+                                    <param id="0" name="Instance variable">vulnerable</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Pathfinding" id="1" name="Move along path" sid="148014296895221" type="Player" />
+                                <action behavior="8Direction" id="2" name="Set ignoring input" sid="226485623174174" type="Player">
+                                    <param id="0" name="Input">1</param>
+                                </action>
+                                <action behavior="8Direction" id="0" name="Stop" sid="325260563308484" type="Player" />
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="892825014581051" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="512149443993539" type="System">
+                                    <param id="0" name="Variable">playerCanMove</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-23" name="Move at angle" sid="963977220692620" type="Player">
+                                    <param id="0" name="Angle">180</param>
+                                    <param id="1" name="Distance">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="503652913691839" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="828578745856834" type="Player">
+                                    <param id="0" name="Instance variable">playerIsDashing</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="736628544428873" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="776776847634696" type="Player">
+                                    <param id="0" name="Instance variable">playerCanDash</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="898700311488355" type="TextDashOnCooldown">
+                                    <param id="0" name="X">9999</param>
+                                    <param id="1" name="Y">9999</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="710710072262855">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="316149873227427" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="499880061498641" type="TextDashOnCooldown">
+                                    <param id="0" name="X">247</param>
+                                    <param id="1" name="Y">84</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block any="1" sid="349723855228820">
                     <conditions>
@@ -3003,12 +3039,6 @@
                         </condition>
                         <condition id="0" name="On collision with another object" sid="350333281405163" type="Player">
                             <param id="0" name="Object">Border</param>
-                        </condition>
-                        <condition id="0" name="On collision with another object" sid="807007134650752" type="Player">
-                            <param id="0" name="Object">Enloquecido</param>
-                        </condition>
-                        <condition id="0" name="On collision with another object" sid="457737119045591" type="Player">
-                            <param id="0" name="Object">Cuervo</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -3028,6 +3058,23 @@
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="578582551903210">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="319678983615179" type="Player">
+                                    <param id="0" name="Instance variable">playerIsDashing</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="797683590974942" type="Player">
+                                    <param id="0" name="Instance variable">playerIsDashing</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="962978450271330">
                     <conditions>
@@ -3928,15 +3975,16 @@
                             <param id="1" name="&apos;Off&apos; time">0.1</param>
                             <param id="2" name="Duration">1.0</param>
                         </action>
-                        <action id="0" name="Set text" sid="394997185552570" type="Text">
-                            <param id="0" name="Text">&quot;Vida: &quot;&amp;Player.playerCurrentHealth&amp;&quot;/&quot;&amp;Player.playerMaxHealth</param>
-                        </action>
                         <action id="-16" name="Wait" sid="876641627155994" type="System">
                             <param id="0" name="Seconds">1.0</param>
                         </action>
                         <action id="-10" name="Set value" sid="754345673632593" type="Player">
                             <param id="0" name="Instance variable">vulnerable</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="928291804175184" type="Function">
+                            <param id="0" name="Name">&quot;updateStats&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
                 </event-block>
@@ -4038,8 +4086,17 @@
                             <param id="0" name="Instance variable">energyConsumed</param>
                             <param id="1" name="Value">playerConsumedEnergy</param>
                         </action>
+                        <action id="-8" name="Set angle" sid="157116484058327" type="energyText">
+                            <param id="0" name="Angle">45</param>
+                        </action>
                         <action id="0" name="Set text" sid="383658706910918" type="energyText">
-                            <param id="0" name="Text">&quot;Energy:&quot;&amp;Player.energy&amp; &quot;/ Consumed:&quot;&amp;Player.energyConsumed</param>
+                            <param id="0" name="Text">&quot;Consumida:&quot;&amp;Player.energyConsumed&amp;&quot;/&quot;&amp;Player.energy</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="617556009930587" type="LifeText">
+                            <param id="0" name="Angle">45</param>
+                        </action>
+                        <action id="0" name="Set text" sid="179206943655738" type="LifeText">
+                            <param id="0" name="Text">Player.playerCurrentHealth&amp;&quot;/&quot;&amp;Player.playerMaxHealth</param>
                         </action>
                     </actions>
                 </event-block>

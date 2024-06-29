@@ -167,6 +167,7 @@
                         <playerShootSpeed>0</playerShootSpeed>
                         <playerMaxHealth>0</playerMaxHealth>
                         <playerCurrentHealth>0</playerCurrentHealth>
+                        <playerIsDashing>0</playerIsDashing>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">

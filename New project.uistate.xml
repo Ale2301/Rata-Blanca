@@ -10,17 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Start</layout>
-        <layout order="4">Credits</layout>
-        <layout order="5">DeathScreen</layout>
-        <layout order="7">Game</layout>
-        <layout active="1" order="9">Bestiario</layout>
-        <event-sheet order="1">Start</event-sheet>
-        <event-sheet order="2">Options</event-sheet>
-        <event-sheet order="3">Credits</event-sheet>
-        <event-sheet order="6">DeathScreen</event-sheet>
-        <event-sheet order="8">Game</event-sheet>
-        <event-sheet order="10">Bestiario</event-sheet>
+        <layout active="1" order="0">Game</layout>
+        <layout order="2">Credits</layout>
+        <event-sheet order="1">Game</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -97,5 +89,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Enredaderas1/" />
         <folder expanded="1" path="animation-folder/Enredaderas2/" />
         <folder expanded="1" path="animation-folder/SinTítulo/" />
+        <folder expanded="1" path="animation-folder/HUD/" />
     </folders-expanded>
 </c2uistate>

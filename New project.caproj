@@ -75,6 +75,7 @@
                 <instance-variable name="playerShootSpeed" sid="351559435591660" type="number" />
                 <instance-variable name="playerMaxHealth" sid="968592233431781" type="number" />
                 <instance-variable name="playerCurrentHealth" sid="445691519246776" type="number" />
+                <instance-variable name="playerIsDashing" sid="474372001096019" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="343136766020134">
@@ -568,7 +569,7 @@
         <object-type name="Browser" sid="550041761718162">
             <plugin id="Browser" />
         </object-type>
-        <object-type name="Text" sid="653175363364694">
+        <object-type name="LifeText" sid="653175363364694">
             <plugin id="Text" />
         </object-type>
         <object-type name="Text2" sid="968139382721136">
@@ -1755,6 +1756,17 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\Sin título-2.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="HUD" sid="727210414477151">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="265509921814179" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextDashOnCooldown" sid="869510062203381">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>
