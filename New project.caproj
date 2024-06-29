@@ -1748,6 +1748,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="SinTítulo" sid="836629770850640">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280533988168111" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\Sin título-2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
@@ -1798,6 +1806,7 @@
         <layout>Game.xml</layout>
         <layout>DeathScreen.xml</layout>
         <layout>Options.xml</layout>
+        <layout>Bestiario.xml</layout>
         <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
@@ -1806,6 +1815,7 @@
         <event-sheet>DeathScreen.xml</event-sheet>
         <event-sheet>Options.xml</event-sheet>
         <event-sheet>Credits.xml</event-sheet>
+        <event-sheet>Bestiario.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="5" />
