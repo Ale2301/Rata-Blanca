@@ -650,6 +650,24 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impulso\cuervo impulso2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impulso\cuervo impulso3.png" />
                 </animation>
+                <animation framecount="16" loop="0" name="CuervoClavado" pingpong="0" repeatcount="1" repeatto="0" sid="235591424400761" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck step bro 1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck step bro 2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck step bro 3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck step bro 4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck step bro 5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck step bro 6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck stepbro1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck stepbro2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck stepbro3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck stepbro4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck stepbro5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck stepbro6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\3\im stuck step bro 3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\3\im stuck step bro 4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\3\im stuck step bro 5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\3\im stuck step bro 6.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Mark" sid="104182454275444">
@@ -711,7 +729,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875180953433572" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Eenergia.png">
+                        <collision-poly>
+                            <point x="0.248092" y="0.19697" />
+                            <point x="0.5" y="0.0030303" />
+                            <point x="0.645038" y="0.281818" />
+                            <point x="0.874046" y="0.5" />
+                            <point x="0.828244" y="0.863636" />
+                            <point x="0.5" y="0.99697" />
+                            <point x="0.171756" y="0.863636" />
+                            <point x="0.0496183" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
