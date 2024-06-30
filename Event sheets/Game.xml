@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game</name>
     <events>
+        <variable constant="0" name="RubyIsStanding" sid="244540284469047" static="0" type="number">0</variable>
+        <variable constant="0" name="RubyIsAnimated" sid="228913055798703" static="0" type="number">0</variable>
+        <variable constant="0" name="PlayerIsLookingAt" sid="607717405069171" static="0" type="text">up</variable>
         <variable constant="0" name="ItemPoolReset" sid="896117925124847" static="0" type="number">0</variable>
         <variable constant="0" name="completedRooms" sid="172608554826793" static="0" type="number">0</variable>
         <variable constant="0" name="QuantityOfSpawnableItems" sid="530174953702453" static="0" type="number">0</variable>
@@ -15,7 +18,7 @@
         <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">0.1</variable>
         <variable constant="0" name="playerLife" sid="186121573667452" static="0" type="number">100</variable>
         <variable constant="0" name="playerCanMove" sid="975110956151980" static="0" type="number">1</variable>
-        <variable constant="0" name="playerEnergy" sid="657378199167735" static="0" type="number">0</variable>
+        <variable constant="0" name="playerEnergy" sid="657378199167735" static="0" type="number">20</variable>
         <variable constant="0" name="playerConsumedEnergy" sid="486041956109124" static="0" type="number">0</variable>
         <variable constant="0" name="variableRoomPosX" sid="693664031443667" static="0" type="number">0</variable>
         <variable constant="0" name="variableRoomPosY" sid="841770477888913" static="0" type="number">0</variable>
@@ -2872,6 +2875,38 @@
                             <param id="0" name="Diagonals">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="730741871655382">
+                            <conditions>
+                                <condition id="2" inverted="1" name="Is playing" sid="481604380606356" type="Player">
+                                    <param id="0" name="Animation">&quot;DashArriba&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="494021832992796" type="Player">
+                                    <param id="0" name="Animation">&quot;DashAbajo&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="572126855629843" type="Player">
+                                    <param id="0" name="Animation">&quot;DashIzquierda&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="437840114179961" type="Player">
+                                    <param id="0" name="Animation">&quot;DashDerecha&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="211716779950446" type="Player">
+                                    <param id="0" name="Animation">&quot;CaminarArriba&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="536469922054661" type="System">
+                                    <param id="0" name="Variable">PlayerIsLookingAt</param>
+                                    <param id="1" name="Value">&quot;up&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="203802594485084" type="System">
+                                    <param id="0" name="Variable">RubyIsAnimated</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="429454917204256">
                     <conditions>
@@ -2895,7 +2930,39 @@
                         <action behavior="Pathfinding" id="13" name="Set diagonals enabled" sid="808281346928369" type="Player">
                             <param id="0" name="Diagonals">1</param>
                         </action>
+                        <action id="-9" name="Set value" sid="733674187141347" type="System">
+                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                            <param id="1" name="Value">&quot;down&quot;</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block any="1" sid="515811920541728">
+                            <conditions>
+                                <condition id="2" inverted="1" name="Is playing" sid="315857365093547" type="Player">
+                                    <param id="0" name="Animation">&quot;DashArriba&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="693450156071668" type="Player">
+                                    <param id="0" name="Animation">&quot;DashAbajo&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="420948769276155" type="Player">
+                                    <param id="0" name="Animation">&quot;DashIzquierda&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="784066550860483" type="Player">
+                                    <param id="0" name="Animation">&quot;DashDerecha&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="622032373520526" type="Player">
+                                    <param id="0" name="Animation">&quot;CaminarAbajo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="281757621367674" type="System">
+                                    <param id="0" name="Variable">RubyIsAnimated</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="760378971136230">
                     <conditions>
@@ -2919,7 +2986,39 @@
                         <action behavior="Pathfinding" id="13" name="Set diagonals enabled" sid="377903440745690" type="Player">
                             <param id="0" name="Diagonals">1</param>
                         </action>
+                        <action id="-9" name="Set value" sid="122517417917984" type="System">
+                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                            <param id="1" name="Value">&quot;left&quot;</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block any="1" sid="135842476075972">
+                            <conditions>
+                                <condition id="2" inverted="1" name="Is playing" sid="353664397310066" type="Player">
+                                    <param id="0" name="Animation">&quot;DashArriba&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="157959139237940" type="Player">
+                                    <param id="0" name="Animation">&quot;DashAbajo&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="846647665333246" type="Player">
+                                    <param id="0" name="Animation">&quot;DashIzquierda&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="389313101018110" type="Player">
+                                    <param id="0" name="Animation">&quot;DashDerecha&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="495597574814960" type="Player">
+                                    <param id="0" name="Animation">&quot;CaminarIzquierda&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="322455548293141" type="System">
+                                    <param id="0" name="Variable">RubyIsAnimated</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="624444637609053">
                     <conditions>
@@ -2943,7 +3042,39 @@
                         <action behavior="Pathfinding" id="13" name="Set diagonals enabled" sid="266162573462695" type="Player">
                             <param id="0" name="Diagonals">1</param>
                         </action>
+                        <action id="-9" name="Set value" sid="695793637528268" type="System">
+                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                            <param id="1" name="Value">&quot;right&quot;</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block any="1" sid="447512405090127">
+                            <conditions>
+                                <condition id="2" inverted="1" name="Is playing" sid="270795452831983" type="Player">
+                                    <param id="0" name="Animation">&quot;DashArriba&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="374809887362893" type="Player">
+                                    <param id="0" name="Animation">&quot;DashAbajo&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="918866256767180" type="Player">
+                                    <param id="0" name="Animation">&quot;DashIzquierda&quot;</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="323136874672760" type="Player">
+                                    <param id="0" name="Animation">&quot;DashDerecha&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="211749204634127" type="Player">
+                                    <param id="0" name="Animation">&quot;CaminarDerecha&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="438317678940989" type="System">
+                                    <param id="0" name="Variable">RubyIsAnimated</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="204419824962581">
                     <conditions>
@@ -2963,6 +3094,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-9" name="Set value" sid="512149443993539" type="System">
+                                    <param id="0" name="Variable">playerCanMove</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
                                 <action id="0" name="Play" sid="451603309897988" type="Sounds">
                                     <param id="0" name="Audio file">Ruby Esquivando</param>
                                     <param id="2" name="Loop">0</param>
@@ -2989,33 +3124,120 @@
                                 <action behavior="8Direction" id="8" name="Set enabled" sid="892825014581051" type="Player">
                                     <param id="0" name="State">0</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="512149443993539" type="System">
-                                    <param id="0" name="Variable">playerCanMove</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
                                 <action id="-23" name="Move at angle" sid="963977220692620" type="Player">
                                     <param id="0" name="Angle">180</param>
                                     <param id="1" name="Distance">0</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="503652913691839" type="System">
-                                    <param id="0" name="Seconds">0.5</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="828578745856834" type="Player">
-                                    <param id="0" name="Instance variable">playerIsDashing</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="736628544428873" type="System">
-                                    <param id="0" name="Seconds">1.5</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="776776847634696" type="Player">
-                                    <param id="0" name="Instance variable">playerCanDash</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="898700311488355" type="TextDashOnCooldown">
-                                    <param id="0" name="X">9999</param>
-                                    <param id="1" name="Y">9999</param>
-                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="115130278730535">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="788896758895076" type="System">
+                                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;up&quot;</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="622958734684767" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Stop" sid="171238476146416" type="Player" />
+                                        <action id="4" name="Set animation" sid="195672432605058" type="Player">
+                                            <param id="0" name="Animation">&quot;DashArriba&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="990763235204869" type="System">
+                                            <param id="0" name="Variable">RubyIsAnimated</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="896061434545933">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="167568381099990" type="System">
+                                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;down&quot;</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="523680381315898" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Stop" sid="124703212860676" type="Player" />
+                                        <action id="4" name="Set animation" sid="487225026873495" type="Player">
+                                            <param id="0" name="Animation">&quot;DashAbajo&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="997037573138728" type="System">
+                                            <param id="0" name="Variable">RubyIsAnimated</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="830638125938717">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="592841952533062" type="System">
+                                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;left&quot;</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="998595637537762" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Stop" sid="820487017270726" type="Player" />
+                                        <action id="4" name="Set animation" sid="449410844633224" type="Player">
+                                            <param id="0" name="Animation">&quot;DashIzquierda&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="924404928719932" type="System">
+                                            <param id="0" name="Variable">RubyIsAnimated</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="204129062772802">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="736238442381123" type="System">
+                                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;right&quot;</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="147673306681646" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Stop" sid="665127063600234" type="Player" />
+                                        <action id="4" name="Set animation" sid="190270383229746" type="Player">
+                                            <param id="0" name="Animation">&quot;DashDerecha&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="117588406262459" type="System">
+                                            <param id="0" name="Variable">RubyIsAnimated</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="173690660158773">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="503652913691839" type="System">
+                                            <param id="0" name="Seconds">1.5</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="828578745856834" type="Player">
+                                            <param id="0" name="Instance variable">playerIsDashing</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="736628544428873" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="776776847634696" type="Player">
+                                            <param id="0" name="Instance variable">playerCanDash</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="898700311488355" type="TextDashOnCooldown">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="710710072262855">
                             <conditions>
@@ -3033,31 +3255,18 @@
                 <event-block any="1" sid="349723855228820">
                     <conditions>
                         <condition behavior="Pathfinding" id="5" name="On arrived" sid="514560416789834" type="Player" />
-                        <condition behavior="Pathfinding" id="4" inverted="1" name="Is moving along path" sid="747625308712905" type="Player" />
                         <condition id="0" name="On collision with another object" sid="840962324788545" type="Player">
                             <param id="0" name="Object">Stone</param>
                         </condition>
                         <condition id="0" name="On collision with another object" sid="350333281405163" type="Player">
                             <param id="0" name="Object">Border</param>
                         </condition>
+                        <condition id="1" name="Is overlapping another object" sid="524390166914658" type="Player">
+                            <param id="0" name="Object">Door</param>
+                        </condition>
+                        <condition behavior="Pathfinding" id="4" inverted="1" name="Is moving along path" sid="747625308712905" type="Player" />
                     </conditions>
-                    <actions>
-                        <action behavior="Pathfinding" id="2" name="Stop" sid="271996928488414" type="Player" />
-                        <action behavior="8Direction" id="8" name="Set enabled" sid="295576093528766" type="Player">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="227784960293521" type="Player">
-                            <param id="0" name="Input">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="640167516518422" type="System">
-                            <param id="0" name="Variable">playerCanMove</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="228271729612278" type="Player">
-                            <param id="0" name="Instance variable">vulnerable</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="578582551903210">
                             <conditions>
@@ -3071,6 +3280,32 @@
                                 <action id="-10" name="Set value" sid="797683590974942" type="Player">
                                     <param id="0" name="Instance variable">playerIsDashing</param>
                                     <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="519603049957190" type="Player">
+                                    <param id="0" name="Instance variable">vulnerable</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="262581616926139">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="260948903475598" type="System">
+                                    <param id="0" name="Variable">RubyIsStanding</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="2" name="Stop" sid="227601973576916" type="Player" />
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="944084758183400" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="2" name="Set ignoring input" sid="985778304117824" type="Player">
+                                    <param id="0" name="Input">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="422943383703781" type="System">
+                                    <param id="0" name="Variable">playerCanMove</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -4000,6 +4235,26 @@
                         <action id="11" name="Set collisions enabled" sid="901533531788306" type="Player">
                             <param id="0" name="Collisions">0</param>
                         </action>
+                        <action id="-10" name="Set value" sid="774152059003159" type="Player">
+                            <param id="0" name="Instance variable">playerCanDash</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="971360053508571" type="System">
+                            <param id="0" name="Variable">playerCanMove</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="893573192621280" type="System">
+                            <param id="0" name="Variable">RubyIsAnimated</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="198004057754037" type="System">
+                            <param id="0" name="Variable">RubyIsStanding</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="915739029911398" type="Player">
+                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="6" name="Stop" sid="114451304861813" type="Sounds">
                             <param id="0" name="Tag">&quot;backgroundMusic&quot;</param>
                         </action>
@@ -4011,7 +4266,6 @@
                             <param id="0" name="Instance variable">vulnerable</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-21" name="Reset global variables" sid="301162592091616" type="System" />
                     </actions>
                     <sub-events>
                         <event-block sid="175186043771040">
@@ -4031,11 +4285,21 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="654438024095533">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="242103910697218" type="System">
+                                    <param id="0" name="Object">Enemies</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="318484352378849" type="Enemies" />
+                            </actions>
+                        </event-block>
                         <event-block sid="816327778969355">
                             <conditions />
                             <actions>
                                 <action id="-16" name="Wait" sid="238147960914488" type="System">
-                                    <param id="0" name="Seconds">0.5</param>
+                                    <param id="0" name="Seconds">1.5</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="556810665752787" type="System">
                                     <param id="0" name="Layout">DeathScreen</param>
@@ -4135,6 +4399,15 @@
                                 <action id="-4" name="Set position to another object" sid="308604209082878" type="Items">
                                     <param id="0" name="Object">Chest</param>
                                     <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="656893983508095" type="Items">
+                                    <param id="0" name="Collisions">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="457252739642266" type="System">
+                                    <param id="0" name="Seconds">3</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="204362133301339" type="Items">
+                                    <param id="0" name="Collisions">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -5465,7 +5738,117 @@
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
+                                <action id="-10" name="Set value" sid="265221210685769" type="Player">
+                                    <param id="0" name="Instance variable">playerCanDash</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="720352213366808" type="System">
+                                    <param id="0" name="Variable">playerCanMove</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="859113234562816" type="System">
+                                    <param id="0" name="Variable">RubyIsAnimated</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="274247971997950" type="System">
+                                    <param id="0" name="Variable">RubyIsStanding</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="404256857900559">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="925977372841747" type="System">
+                                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;up&quot;</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="559675466037583" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Stop" sid="354204830335431" type="Player" />
+                                        <action id="4" name="Set animation" sid="801782546371508" type="Player">
+                                            <param id="0" name="Animation">&quot;RubyRecolectarIzquierda&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="837598456096384">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="352273734300495" type="System">
+                                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;down&quot;</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="784517351789361" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Stop" sid="268508677242444" type="Player" />
+                                        <action id="4" name="Set animation" sid="708683837497874" type="Player">
+                                            <param id="0" name="Animation">&quot;RubyRecolectarDerecha&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="507606260315164">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="983544872106266" type="System">
+                                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;left&quot;</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="865553315583464" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Stop" sid="157728147782391" type="Player" />
+                                        <action id="4" name="Set animation" sid="662216098577165" type="Player">
+                                            <param id="0" name="Animation">&quot;RubyRecolectarIzquierda&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="388786059924654">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="633636688589233" type="System">
+                                            <param id="0" name="Variable">PlayerIsLookingAt</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;right&quot;</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="859906856523061" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Stop" sid="473858415852944" type="Player" />
+                                        <action id="4" name="Set animation" sid="719355290066137" type="Player">
+                                            <param id="0" name="Animation">&quot;RubyRecolectarDerecha&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="426994879121128">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="377103857260399" type="System">
+                                            <param id="0" name="Seconds">1.5</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="352087692261456" type="Player">
+                                            <param id="0" name="Instance variable">playerCanDash</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="263679105397417" type="System">
+                                            <param id="0" name="Variable">playerCanMove</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="620209471839614" type="System">
+                                            <param id="0" name="Variable">RubyIsAnimated</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="427320264592824" type="System">
+                                            <param id="0" name="Variable">RubyIsStanding</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="650533468463226">
                             <conditions>
@@ -5699,6 +6082,69 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="124860100727349">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="631323883885234" type="System">
+                    <param id="0" name="Variable">RubyIsAnimated</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="224034768302850">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="466208554902894" type="System">
+                            <param id="0" name="First value">PlayerIsLookingAt</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;left&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="638974087539954" type="System">
+                            <param id="0" name="First value">PlayerIsLookingAt</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;up&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="277484107131332" type="Player">
+                            <param id="0" name="Animation">&quot;IdleIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="727275033798632">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="430121735566912" type="System">
+                            <param id="0" name="First value">PlayerIsLookingAt</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;right&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="243100470018554" type="System">
+                            <param id="0" name="First value">PlayerIsLookingAt</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;down&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="908103357895075" type="Player">
+                            <param id="0" name="Animation">&quot;IdleDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="316764586518768">
+            <conditions>
+                <condition id="5" name="On any finished" sid="172689500142253" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="131830997750192" type="System">
+                    <param id="0" name="Variable">RubyIsAnimated</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

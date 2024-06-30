@@ -11,6 +11,7 @@
                 <action id="1" name="Get item" sid="435371417131956" type="LocalStorage">
                     <param id="0" name="Key">&quot;volume&quot;</param>
                 </action>
+                <action id="-21" name="Reset global variables" sid="136610408244480" type="System" />
             </actions>
         </event-block>
         <event-block sid="880288408835272">
