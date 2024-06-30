@@ -1905,7 +1905,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645915390550100" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501241" original-source="C:\Users\lucho\Desktop\UNAHUR\1er Cuatrimestre 2024\Introducción a los Videojuegos\Rata BLanca\Sentido_de_peligro.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1928,8 +1928,11 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="800862425237947" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="1" name="ComercianteIdle" pingpong="0" repeatcount="1" repeatto="0" sid="800862425237947" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\comerciante idle\comerciante idle1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\comerciante idle\comerciante idle2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\comerciante idle\comerciante idle3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\comerciante idle\comerciante idle4.png" />
                 </animation>
             </animation-folder>
         </object-type>

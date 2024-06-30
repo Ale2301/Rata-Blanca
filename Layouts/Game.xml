@@ -29,6 +29,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="BackgroundMiniMap" uid="25">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>848</x>
+                        <y>51</y>
+                        <z>0</z>
+                        <width>92.032600403</width>
+                        <height>92.032600403</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="Door" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -2094,8 +2116,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-530</x>
-                        <y>2419</y>
+                        <x>-656</x>
+                        <y>2666</y>
                         <z>0</z>
                         <width>52.827781677</width>
                         <height>88.532073975</height>
@@ -7266,28 +7288,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BackgroundMiniMap" uid="25">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>848</x>
-                        <y>51</y>
-                        <z>0</z>
-                        <width>92.032600403</width>
-                        <height>92.032600403</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="LifeText" uid="38">
                     <properties>
                         <text></text>
@@ -7894,14 +7894,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3408</x>
-                        <y>3100</y>
+                        <x>-558</x>
+                        <y>118</y>
                         <z>0</z>
-                        <width>764</width>
-                        <height>770</height>
+                        <width>757.001586914</width>
+                        <height>711.73034668</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.501240671</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -8004,8 +8004,8 @@
                         <x>415</x>
                         <y>2568</y>
                         <z>0</z>
-                        <width>77</width>
-                        <height>77</height>
+                        <width>57.287998199</width>
+                        <height>139.832000732</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

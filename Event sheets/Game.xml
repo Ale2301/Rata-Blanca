@@ -10,7 +10,7 @@
         <variable constant="0" name="ItemPoolReset" sid="896117925124847" static="0" type="number">0</variable>
         <variable constant="0" name="completedRooms" sid="172608554826793" static="0" type="number">0</variable>
         <variable constant="0" name="QuantityOfSpawnableItems" sid="530174953702453" static="0" type="number">0</variable>
-        <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">10</variable>
+        <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">999</variable>
         <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">10</variable>
         <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">150</variable>
         <variable constant="0" name="playerResistance" sid="289707736190923" static="0" type="number">0</variable>
@@ -4514,7 +4514,7 @@
                             <param id="0" name="Audio file">Ruby Sufriendo Daño</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;RubyDamaged&quot;</param>
                         </action>
                         <action id="0" name="Call function" sid="189290417324788" type="Function">
                             <param id="0" name="Name">&quot;updateStats&quot;</param>
@@ -4549,8 +4549,18 @@
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
+                        <condition id="-4" name="Trigger once while true" sid="527381352501713" type="System" />
                     </conditions>
                     <actions>
+                        <action id="6" name="Stop" sid="335399541440615" type="Sounds">
+                            <param id="0" name="Tag">&quot;RubyDamaged&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="598682665989704" type="Sounds">
+                            <param id="0" name="Audio file">Ruby Muriendo</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="11" name="Set collisions enabled" sid="901533531788306" type="Player">
                             <param id="0" name="Collisions">0</param>
                         </action>
@@ -5330,40 +5340,53 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block any="1" sid="423820150880061">
+                                        <event-block sid="280244401615014">
                                             <conditions>
-                                                <condition id="-21" name="Is between values" sid="472346355412447" type="System">
-                                                    <param id="0" name="Value">Cuervo.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Lower bound">0</param>
-                                                    <param id="2" name="Upper bound">90</param>
+                                                <condition id="2" inverted="1" name="Is playing" sid="864439438525785" type="Cuervo">
+                                                    <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
                                                 </condition>
-                                                <condition id="-21" name="Is between values" sid="591970521784920" type="System">
-                                                    <param id="0" name="Value">Cuervo.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Lower bound">270</param>
-                                                    <param id="2" name="Upper bound">360</param>
+                                                <condition id="2" inverted="1" name="Is playing" sid="790536938119792" type="Cuervo">
+                                                    <param id="0" name="Animation">&quot;MuerteIzquierda&quot;</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="816018004221489" type="Cuervo">
-                                                    <param id="0" name="Animation">&quot;VueloDerecha&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="605653235455893">
-                                            <conditions>
-                                                <condition id="-21" name="Is between values" sid="967047096626998" type="System">
-                                                    <param id="0" name="Value">Cuervo.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Lower bound">91</param>
-                                                    <param id="2" name="Upper bound">269</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="287636433668956" type="Cuervo">
-                                                    <param id="0" name="Animation">&quot;VueloIzquierda&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block any="1" sid="423820150880061">
+                                                    <conditions>
+                                                        <condition id="-21" name="Is between values" sid="472346355412447" type="System">
+                                                            <param id="0" name="Value">Cuervo.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Lower bound">0</param>
+                                                            <param id="2" name="Upper bound">90</param>
+                                                        </condition>
+                                                        <condition id="-21" name="Is between values" sid="591970521784920" type="System">
+                                                            <param id="0" name="Value">Cuervo.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Lower bound">270</param>
+                                                            <param id="2" name="Upper bound">360</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="816018004221489" type="Cuervo">
+                                                            <param id="0" name="Animation">&quot;VueloDerecha&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="605653235455893">
+                                                    <conditions>
+                                                        <condition id="-21" name="Is between values" sid="967047096626998" type="System">
+                                                            <param id="0" name="Value">Cuervo.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Lower bound">91</param>
+                                                            <param id="2" name="Upper bound">269</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="287636433668956" type="Cuervo">
+                                                            <param id="0" name="Animation">&quot;VueloIzquierda&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
