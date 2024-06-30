@@ -4782,6 +4782,61 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
+                                <event-block sid="558600008643511">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="149939723118274" type="System">
+                                            <param id="0" name="Interval (seconds)">0.8</param>
+                                        </condition>
+                                        <condition id="-11" name="For Each" sid="554491892597063" type="System">
+                                            <param id="0" name="Object">Cuervo</param>
+                                        </condition>
+                                        <condition id="-3" name="Is on-screen" sid="904570906413824" type="Cuervo" />
+                                        <condition id="-7" name="Compare instance variable" sid="441858936941095" type="Cuervo">
+                                            <param id="0" name="Instance variable">attacking</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition behavior="Pathfinding" id="4" name="Is moving along path" sid="273028137370603" type="Cuervo" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block any="1" sid="423820150880061">
+                                            <conditions>
+                                                <condition id="-21" name="Is between values" sid="472346355412447" type="System">
+                                                    <param id="0" name="Value">Cuervo.Pathfinding.MovingAngle</param>
+                                                    <param id="1" name="Lower bound">0</param>
+                                                    <param id="2" name="Upper bound">90</param>
+                                                </condition>
+                                                <condition id="-21" name="Is between values" sid="591970521784920" type="System">
+                                                    <param id="0" name="Value">Cuervo.Pathfinding.MovingAngle</param>
+                                                    <param id="1" name="Lower bound">270</param>
+                                                    <param id="2" name="Upper bound">360</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="816018004221489" type="Cuervo">
+                                                    <param id="0" name="Animation">&quot;VueloDerecha&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="605653235455893">
+                                            <conditions>
+                                                <condition id="-21" name="Is between values" sid="967047096626998" type="System">
+                                                    <param id="0" name="Value">Cuervo.Pathfinding.MovingAngle</param>
+                                                    <param id="1" name="Lower bound">91</param>
+                                                    <param id="2" name="Upper bound">269</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="287636433668956" type="Cuervo">
+                                                    <param id="0" name="Animation">&quot;VueloIzquierda&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
                                 <comment>Every milisecond, if Cuervo is seeing player, not attacking and can&apos;t attack, will do the scripted attack</comment>
                                 <event-block sid="432677139777193">
                                     <conditions>
@@ -4821,6 +4876,10 @@
                                             <param id="0" name="Collisions">0</param>
                                         </action>
                                         <action behavior="Pathfinding" id="2" name="Stop" sid="773982187479652" type="Cuervo" />
+                                        <action id="4" name="Set animation" sid="992864723193806" type="Cuervo">
+                                            <param id="0" name="Animation">&quot;Impulso&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
                                         <action behavior="Pathfinding" id="3" name="Set enabled" sid="801557361967394" type="Cuervo">
                                             <param id="0" name="Set">0</param>
                                         </action>
@@ -4853,6 +4912,10 @@
                                         </action>
                                         <action id="-16" name="Wait" sid="568984696022384" type="System">
                                             <param id="0" name="Seconds">random(0.25,1.5)</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="721905503076015" type="Cuervo">
+                                            <param id="0" name="Animation">&quot;CuervoClavado&quot;</param>
+                                            <param id="1" name="From">1</param>
                                         </action>
                                         <action behavior="Solid" id="0" name="Set enabled" sid="120403036526650" type="Cuervo">
                                             <param id="0" name="State">1</param>
@@ -4980,7 +5043,10 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Destroy" sid="615977058947928" type="Cuervo" />
+                                                <action id="4" name="Set animation" sid="233783994785613" type="Cuervo">
+                                                    <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
                                                 <action id="0" name="Play" sid="156628175084816" type="Sounds">
                                                     <param id="0" name="Audio file">Cuervo Muriendo</param>
                                                     <param id="2" name="Loop">0</param>
@@ -5061,6 +5127,16 @@
                                         <action id="-9" name="Destroy" sid="479311720529733" type="bulletCuervo" />
                                     </actions>
                                 </event-block>
+                                <event-block sid="885054632226970">
+                                    <conditions>
+                                        <condition id="4" name="On finished" sid="858574647905873" type="Cuervo">
+                                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="248835899296894" type="Cuervo" />
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-group>
                     </sub-events>
@@ -5083,6 +5159,34 @@
                                             <param id="0" name="Control">0</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="706121001356267">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="629484874157942" type="System">
+                                                    <param id="0" name="First value">Enloquecido.LineOfSight.ConeOfView</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">360</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="954760710399242" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;CorrerIzquierda&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="340219084798298">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="417066359366190" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="292748849606723" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;DeambularIzquierda&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="162047478217582">
                                     <conditions>
@@ -5097,6 +5201,34 @@
                                             <param id="0" name="Control">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="605239240730673">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="232470299802791" type="System">
+                                                    <param id="0" name="First value">Enloquecido.LineOfSight.ConeOfView</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">360</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="207242501728603" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;CorrerDerecha&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="261792587930812">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="311393813198174" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="831248468632652" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;DeambularDerecha&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="593544462790408">
                                     <conditions>
@@ -5111,6 +5243,34 @@
                                             <param id="0" name="Control">2</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="136356379567334">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="198655025613913" type="System">
+                                                    <param id="0" name="First value">Enloquecido.LineOfSight.ConeOfView</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">360</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="146584931426275" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;CorrerArriba&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="374058802634755">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="923243788350400" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="345866938570871" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;DeambularArriba&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="306688091022634">
                                     <conditions>
@@ -5125,6 +5285,34 @@
                                             <param id="0" name="Control">3</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="732989760758469">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="468039036591135" type="System">
+                                                    <param id="0" name="First value">Enloquecido.LineOfSight.ConeOfView</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">360</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="982125928795402" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;CorrerAbajo&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="168415221087516">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="763618923734505" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="899047597127153" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;DeambularAbajo&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-group>
@@ -5179,6 +5367,168 @@
                                                     <param id="1" name="Tag (optional)">&quot;enloquecidoPersiguiendo&quot;</param>
                                                 </action>
                                             </actions>
+                                        </event-block>
+                                        <event-block sid="571511537028097">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="389382924983924" type="System">
+                                                    <param id="0" name="First value">Enloquecido.Pathfinding.MovingAngle</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Second value">90</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="335478359910644">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="101043786304617" type="System">
+                                                            <param id="0" name="First value">Enloquecido.LineOfSight.ConeOfView</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">360</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="815594718721092" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;CorrerDerecha&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="335208068185665">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="839185018607912" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="313067224247293" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;DeambularDerecha&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="306229313156493">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="785094113577446" type="System">
+                                                    <param id="0" name="First value">Enloquecido.Pathfinding.MovingAngle</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">90</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="214807721677265" type="System">
+                                                    <param id="0" name="First value">Enloquecido.Pathfinding.MovingAngle</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Second value">160</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="463106680176282">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="532929480195903" type="System">
+                                                            <param id="0" name="First value">Enloquecido.LineOfSight.ConeOfView</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">360</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="109946592462325" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;CorrerAbajo&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="514118787765041">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="733463180026024" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="882555062177179" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;DeambularAbajo&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="994223366137042">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="179901293261464" type="System">
+                                                    <param id="0" name="First value">Enloquecido.Pathfinding.MovingAngle</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">160</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="228411225034807" type="System">
+                                                    <param id="0" name="First value">Enloquecido.Pathfinding.MovingAngle</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Second value">270</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="964735012431853">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="330419228984091" type="System">
+                                                            <param id="0" name="First value">Enloquecido.LineOfSight.ConeOfView</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">360</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="261437066564930" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;CorrerIzquierda&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="824664202556916">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="126339720616549" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="152500297531519" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;DeambularIzquierda&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="757827613757108">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="653695596509008" type="System">
+                                                    <param id="0" name="First value">Enloquecido.Pathfinding.MovingAngle</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">270</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="855499123120445">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="264717997625574" type="System">
+                                                            <param id="0" name="First value">Enloquecido.LineOfSight.ConeOfView</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Second value">360</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="788121555264953" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;CorrerArriba&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="370971032076580">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="563872871398275" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="343447465091699" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;DeambularArriba&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>

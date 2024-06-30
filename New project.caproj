@@ -459,7 +459,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Idle izquierda\Enloquecido idle izquierda-export2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Idle izquierda\Enloquecido idle izquierda-export3.png" />
                 </animation>
-                <animation framecount="6" loop="1" name="DeambularDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="790362344370762" speed="7">
+                <animation framecount="6" loop="0" name="DeambularDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="790362344370762" speed="7">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export3.png" />
@@ -467,7 +467,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export5.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular este\Enloquecido deambular este-export6.png" />
                 </animation>
-                <animation framecount="6" loop="1" name="DeambularIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="972047992088041" speed="7">
+                <animation framecount="6" loop="0" name="DeambularIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="972047992088041" speed="7">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export3.png" />
@@ -475,7 +475,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export5.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Deambular oeste\Enloquecido deambular oeste-export6.png" />
                 </animation>
-                <animation framecount="6" loop="1" name="DeambularArriba" pingpong="0" repeatcount="1" repeatto="0" sid="255657641491479" speed="7">
+                <animation framecount="6" loop="0" name="DeambularArriba" pingpong="0" repeatcount="1" repeatto="0" sid="255657641491479" speed="7">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte2.png" />
@@ -483,7 +483,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte4.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular norte\Enloquecido deambular norte5.png" />
                 </animation>
-                <animation framecount="6" loop="1" name="DeambularAbajo" pingpong="0" repeatcount="1" repeatto="0" sid="850020178882506" speed="7">
+                <animation framecount="6" loop="0" name="DeambularAbajo" pingpong="0" repeatcount="1" repeatto="0" sid="850020178882506" speed="7">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur3.png" />
@@ -491,7 +491,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur5.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\deambular sur\Enloquecido deambular sur6.png" />
                 </animation>
-                <animation framecount="6" loop="1" name="CorrerDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="427454346954671" speed="7">
+                <animation framecount="6" loop="0" name="CorrerDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="427454346954671" speed="7">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export3.png" />
@@ -499,7 +499,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export5.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr este\Enloquecido correr este-export6.png" />
                 </animation>
-                <animation framecount="6" loop="1" name="CorrerIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="791101466092983" speed="7">
+                <animation framecount="6" loop="0" name="CorrerIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="791101466092983" speed="7">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export3.png" />
@@ -507,7 +507,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export5.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr oeste\Enloquecido correr oeste-export6.png" />
                 </animation>
-                <animation framecount="7" loop="1" name="CorrerArriba" pingpong="0" repeatcount="1" repeatto="0" sid="897937988100789" speed="7">
+                <animation framecount="7" loop="0" name="CorrerArriba" pingpong="0" repeatcount="1" repeatto="0" sid="897937988100789" speed="7">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte2.png" />
@@ -516,7 +516,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte5.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\Correr norte\Enloquecido correr norte6.png" />
                 </animation>
-                <animation framecount="6" loop="1" name="CorrerAbajo" pingpong="0" repeatcount="1" repeatto="0" sid="382921365988686" speed="7">
+                <animation framecount="6" loop="0" name="CorrerAbajo" pingpong="0" repeatcount="1" repeatto="0" sid="382921365988686" speed="7">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr sur\Enloquecido correr sur1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr sur\Enloquecido correr sur2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Enloquecido\correr sur\Enloquecido correr sur3.png" />
@@ -645,12 +645,12 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda8.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda9.png" />
                 </animation>
-                <animation framecount="3" loop="1" name="Impulso" pingpong="0" repeatcount="1" repeatto="0" sid="281700142959626" speed="6">
+                <animation framecount="3" loop="0" name="Impulso" pingpong="0" repeatcount="1" repeatto="0" sid="281700142959626" speed="6">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impulso\cuervo impulso1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impulso\cuervo impulso2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\impulso\cuervo impulso3.png" />
                 </animation>
-                <animation framecount="16" loop="0" name="CuervoClavado" pingpong="0" repeatcount="1" repeatto="0" sid="235591424400761" speed="10">
+                <animation framecount="16" loop="0" name="CuervoClavado" pingpong="0" repeatcount="1" repeatto="0" sid="235591424400761" speed="4">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck step bro 1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck step bro 2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\1\im stuck step bro 3.png" />
