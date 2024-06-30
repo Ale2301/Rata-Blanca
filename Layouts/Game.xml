@@ -2185,11 +2185,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1096.911254883</x>
-                        <y>464.056762695</y>
+                        <x>1096.540527344</x>
+                        <y>476.238525391</y>
                         <z>0</z>
-                        <width>65.748535156</width>
-                        <height>146.619232178</height>
+                        <width>55.155712128</width>
+                        <height>122.997238159</height>
                         <depth>0</depth>
                         <hotspotX>0.535000026</hotspotX>
                         <hotspotY>0.484304935</hotspotY>
@@ -2472,10 +2472,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1189</x>
-                        <y>472.720581055</y>
+                        <y>479.469665527</y>
                         <z>0</z>
-                        <width>209.850570679</width>
-                        <height>120.552452087</height>
+                        <width>186.353897095</width>
+                        <height>107.054367065</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2499,11 +2499,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1096.276611328</x>
-                        <y>605.469482422</y>
+                        <x>1096.392822266</x>
+                        <y>609.814331055</y>
                         <z>0</z>
-                        <width>71.766288757</width>
-                        <height>106.679618835</height>
+                        <width>66.024787903</width>
+                        <height>98.144950867</height>
                         <depth>0</depth>
                         <hotspotX>0.479729742</hotspotX>
                         <hotspotY>0.4909091</hotspotY>
@@ -2527,11 +2527,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1183.860107422</x>
-                        <y>594.79876709</y>
+                        <x>1182.830322266</x>
+                        <y>602.370239258</y>
                         <z>0</z>
-                        <width>41.709781647</width>
-                        <height>101.295188904</height>
+                        <width>35.773799896</width>
+                        <height>86.879226685</height>
                         <depth>0</depth>
                         <hotspotX>0.673469365</hotspotX>
                         <hotspotY>0.474789917</hotspotY>
@@ -2555,11 +2555,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1144.199707031</x>
-                        <y>715.679199219</y>
+                        <x>1144.626342773</x>
+                        <y>714.143005371</y>
                         <z>0</z>
-                        <width>114.567825317</width>
-                        <height>66.772666931</height>
+                        <width>118.54246521</width>
+                        <height>69.089172363</height>
                         <depth>0</depth>
                         <hotspotX>0.607361972</hotspotX>
                         <hotspotY>0.33684212</hotspotY>
