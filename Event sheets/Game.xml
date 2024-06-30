@@ -5068,6 +5068,13 @@
                                                     <param id="0" name="Name">&quot;killEnemy&quot;</param>
                                                     <param id="1" name="Parameter {n}">Cuervo.energyDropRate{###}Cuervo.UID</param>
                                                 </action>
+                                                <action id="-10" name="Set value" sid="841611633800157" type="Cuervo">
+                                                    <param id="0" name="Instance variable">vulnerable</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="11" name="Set collisions enabled" sid="602021084614688" type="Cuervo">
+                                                    <param id="0" name="Collisions">0</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                     </sub-events>
@@ -5600,6 +5607,7 @@
                                                     <param id="1" name="Comparison">3</param>
                                                     <param id="2" name="Value">0</param>
                                                 </condition>
+                                                <condition id="-4" name="Trigger once while true" sid="432541730298187" type="System" />
                                             </conditions>
                                             <actions>
                                                 <action id="-9" name="Destroy" sid="289177883457890" type="Enloquecido" />
