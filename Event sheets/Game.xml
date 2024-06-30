@@ -759,7 +759,7 @@
             <actions>
                 <action id="0" name="Add key" sid="151566602233680" type="RoomPos">
                     <param id="0" name="Key">currentRoomRow&amp;&quot;,&quot;&amp;currentRoomColumn</param>
-                    <param id="1" name="Value">round(random(4,5))</param>
+                    <param id="1" name="Value">round(random(0,5))</param>
                 </action>
                 <action id="-10" name="Add to" sid="745041090042614" type="System">
                     <param id="0" name="Variable">currentRoomRow</param>
@@ -4682,6 +4682,46 @@
                             <param id="0" name="Text">Player.playerCurrentHealth&amp;&quot;/&quot;&amp;Player.playerMaxHealth</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="921636596774944">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="878293937359580" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;shareStats&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="649968967421249" type="TextSpeed">
+                                    <param id="0" name="Text">&quot;Velocidad: &quot;&amp;playerSpeed</param>
+                                </action>
+                                <action id="0" name="Set text" sid="285864895062939" type="TextDamage">
+                                    <param id="0" name="Text">&quot;Daño: &quot;&amp;playerDamage</param>
+                                </action>
+                                <action id="0" name="Set text" sid="789848631681073" type="TextASPD">
+                                    <param id="0" name="Text">&quot;Vel ataque: &quot;&amp;playerFireRate</param>
+                                </action>
+                                <action id="0" name="Set text" sid="451655431640784" type="TextShootSpeed">
+                                    <param id="0" name="Text">&quot;Vel de disparo: &quot;&amp;playerShootSpeed</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="541448720005313">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="729768378060188" type="System">
+                                            <param id="0" name="Object">TextStats</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="370244098889413" type="TextStats">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action behavior="Fade" id="1" name="Start fade" sid="210516001580677" type="TextStats" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="885975562644703">
                     <conditions>
@@ -6559,30 +6599,46 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="789450419996757">
+                                <event-block sid="754031454437437">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="977271469357232" type="Cuervo">
+                                        <condition id="-7" name="Compare instance variable" sid="889672127203986" type="Cuervo">
                                             <param id="0" name="Instance variable">life</param>
                                             <param id="1" name="Comparison">3</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" sid="295907957138045" type="Cuervo" />
-                                        <action id="-11" name="Subtract from" sid="460532241622936" type="System">
+                                        <action id="4" name="Set animation" sid="537379539855921" type="Cuervo">
+                                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="948637049193692" type="Sounds">
+                                            <param id="0" name="Audio file">Cuervo Muriendo</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="366137729116016" type="System">
                                             <param id="0" name="Variable">enemyCountOnRoom</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-10" name="Add to" sid="620589287960265" type="System">
+                                        <action id="-10" name="Add to" sid="317580847003307" type="System">
                                             <param id="0" name="Variable">Score</param>
                                             <param id="1" name="Value">200</param>
                                         </action>
-                                        <action id="0" name="Set text" sid="939095676665852" type="Score">
+                                        <action id="0" name="Set text" sid="344867270930868" type="Score">
                                             <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
                                         </action>
-                                        <action id="0" name="Call function" sid="437997844785884" type="Function">
+                                        <action id="0" name="Call function" sid="178002309962024" type="Function">
                                             <param id="0" name="Name">&quot;killEnemy&quot;</param>
                                             <param id="1" name="Parameter {n}">Cuervo.energyDropRate{###}Cuervo.UID</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="760438833848233" type="Cuervo">
+                                            <param id="0" name="Instance variable">vulnerable</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="11" name="Set collisions enabled" sid="964367229882714" type="Cuervo">
+                                            <param id="0" name="Collisions">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -6606,32 +6662,80 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="373332630904461">
+                                <event-block sid="965489843842713">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="499309156662056" type="Enloquecido">
+                                        <condition id="-7" name="Compare instance variable" sid="340362028994622" type="Enloquecido">
                                             <param id="0" name="Instance variable">life</param>
                                             <param id="1" name="Comparison">3</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-9" name="Destroy" sid="611396153094246" type="Enloquecido" />
-                                        <action id="-11" name="Subtract from" sid="987796490818560" type="System">
+                                        <action id="11" name="Set collisions enabled" sid="420559625723036" type="Enloquecido">
+                                            <param id="0" name="Collisions">0</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="995227536103735" type="System">
                                             <param id="0" name="Variable">enemyCountOnRoom</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="0" name="Call function" sid="337197928525955" type="Function">
+                                        <action id="0" name="Call function" sid="958510607990014" type="Function">
                                             <param id="0" name="Name">&quot;killEnemy&quot;</param>
                                             <param id="1" name="Parameter {n}">Enloquecido.energyDropRate{###}Enloquecido.UID</param>
                                         </action>
-                                        <action id="-10" name="Add to" sid="844637851785925" type="System">
+                                        <action id="-10" name="Add to" sid="120666850890680" type="System">
                                             <param id="0" name="Variable">Score</param>
                                             <param id="1" name="Value">100</param>
                                         </action>
-                                        <action id="0" name="Set text" sid="276497458717966" type="Score">
+                                        <action id="0" name="Set text" sid="891883336178453" type="Score">
                                             <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block any="1" sid="464520711008784">
+                                            <conditions>
+                                                <condition id="2" name="Is playing" sid="772186499384303" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;CorrerAbajo&quot;</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="817539380658959" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;CorrerDerecha&quot;</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="647932231859496" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;DeambularAbajo&quot;</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="757762828087375" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;DeambularDerecha&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="629493225142360" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block any="1" sid="790815527303690">
+                                            <conditions>
+                                                <condition id="2" name="Is playing" sid="855216955901629" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;CorrerArriba&quot;</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="485812656587293" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;CorrerIzquierda&quot;</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="461094709024726" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;DeambularArriba&quot;</param>
+                                                </condition>
+                                                <condition id="2" name="Is playing" sid="689341764273155" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;DeambularIzquierda&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="109553491474060" type="Enloquecido">
+                                                    <param id="0" name="Animation">&quot;MuerteIzquierda&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -6685,6 +6789,10 @@
                                 <action id="-9" name="Set value" sid="274247971997950" type="System">
                                     <param id="0" name="Variable">RubyIsStanding</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="469020691115932" type="FlavorTextItems">
+                                    <param id="0" name="X">250</param>
+                                    <param id="1" name="Y">103</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -6778,6 +6886,10 @@
                                             <param id="0" name="Variable">RubyIsStanding</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
+                                        <action id="-3" name="Set position" sid="906326739608664" type="FlavorTextItems">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -6790,6 +6902,9 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="693060669335364" type="ItemNinfa" />
+                                <action id="0" name="Set text" sid="130172082749141" type="FlavorTextItems">
+                                    <param id="0" name="Text">ItemNinfa.flavorText</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="522303996092773">
@@ -6800,6 +6915,9 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="327638576666584" type="itemMejoraRobotica" />
+                                <action id="0" name="Set text" sid="796220251286686" type="FlavorTextItems">
+                                    <param id="0" name="Text">itemMejoraRobotica.flavorText</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="164415605817735" type="System">
                                     <param id="0" name="Variable">playerFireRate</param>
                                     <param id="1" name="Value">max(round(playerFireRate/2),0.3)</param>
@@ -6810,7 +6928,7 @@
                                 </action>
                                 <action id="0" name="Call function" sid="247496447947048" type="Function">
                                     <param id="0" name="Name">&quot;updateStats&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                    <param id="1" name="Parameter {n}">&quot;shareStats&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -6826,9 +6944,12 @@
                                     <param id="0" name="Variable">playerDamage</param>
                                     <param id="1" name="Value">playerDamage*2.5</param>
                                 </action>
-                                <action id="0" name="Call function" sid="868392729789518" type="Function">
+                                <action id="0" name="Call function" sid="329507747825796" type="Function">
                                     <param id="0" name="Name">&quot;updateStats&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                    <param id="1" name="Parameter {n}">&quot;shareStats&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="643035421203355" type="FlavorTextItems">
+                                    <param id="0" name="Text">ItemLibroMaquiavelico.flavorText</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -6848,9 +6969,12 @@
                                     <param id="0" name="Variable">playerFireRate</param>
                                     <param id="1" name="Value">max(playerFireRate/1.3,0.3)</param>
                                 </action>
-                                <action id="0" name="Call function" sid="160378748036070" type="Function">
+                                <action id="0" name="Call function" sid="350386842256083" type="Function">
                                     <param id="0" name="Name">&quot;updateStats&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                    <param id="1" name="Parameter {n}">&quot;shareStats&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="450803273294042" type="FlavorTextItems">
+                                    <param id="0" name="Text">ItemBateria.flavorText</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -6878,9 +7002,12 @@
                                     <param id="0" name="Variable">playerShootSpeed</param>
                                     <param id="1" name="Value">playerShootSpeed*1.2</param>
                                 </action>
-                                <action id="0" name="Call function" sid="722413877895039" type="Function">
+                                <action id="0" name="Call function" sid="816170655101829" type="Function">
                                     <param id="0" name="Name">&quot;updateStats&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                    <param id="1" name="Parameter {n}">&quot;shareStats&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="272417937812639" type="FlavorTextItems">
+                                    <param id="0" name="Text">ItemMaestriaRunica.flavorText</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -7310,9 +7437,9 @@
                                                     <param id="0" name="Variable">playerEnergy</param>
                                                     <param id="1" name="Value">Player.energy - 10</param>
                                                 </action>
-                                                <action id="0" name="Call function" sid="538810779092855" type="Function">
+                                                <action id="0" name="Call function" sid="931404182357260" type="Function">
                                                     <param id="0" name="Name">&quot;updateStats&quot;</param>
-                                                    <param id="1" name="Parameter {n}"></param>
+                                                    <param id="1" name="Parameter {n}">&quot;shareStats&quot;</param>
                                                 </action>
                                                 <action id="-3" name="Set position" sid="982363384889615" type="TextVendor">
                                                     <param id="0" name="X">Vendor.X - 100</param>
@@ -7355,6 +7482,16 @@
                 </action>
                 <action id="3" name="Set progress" sid="750687807996987" type="BuyingStats">
                     <param id="0" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="351968692746178">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="288270147699096" type="TextStats" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="498562791788970" type="TextStats">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>

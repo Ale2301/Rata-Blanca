@@ -221,6 +221,7 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
+                        <flavorText>Fiuummm</flavorText>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Persist" />
@@ -249,6 +250,7 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
+                        <flavorText>Como hacer magia 101</flavorText>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Persist" />
@@ -277,6 +279,7 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
+                        <flavorText>Mala idea..</flavorText>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Persist" />
@@ -305,6 +308,7 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
+                        <flavorText>Es tan doloroso como siempre..</flavorText>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Persist" />
@@ -333,6 +337,7 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
+                        <flavorText>Su mejor amiga</flavorText>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Persist" />

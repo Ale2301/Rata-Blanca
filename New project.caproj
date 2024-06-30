@@ -845,6 +845,9 @@
         </object-type>
         <object-type name="ItemNinfa" sid="151358105699073">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="flavorText" sid="269820645340831" type="string" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463374301621450" speed="7">
                     <frame duration="1" hotspotX="0.535" hotspotY="0.484305" original-source="C:\Users\lucho\Desktop\RB\Ninfa\1.png">
@@ -1526,6 +1529,9 @@
         </object-type>
         <object-type name="itemMejoraRobotica" sid="891281992797323">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="flavorText" sid="316916609724122" type="string" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878002130261867" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\brazo.png">
@@ -1544,6 +1550,9 @@
         </object-type>
         <object-type name="ItemLibroMaquiavelico" sid="226676892509405">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="flavorText" sid="389246580944826" type="string" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877186763757003" speed="5">
                     <frame duration="1" hotspotX="0.47973" hotspotY="0.490909" original-source="C:\Users\lucho\Desktop\RB\Items\Libro.png">
@@ -1561,6 +1570,9 @@
         </object-type>
         <object-type name="ItemBateria" sid="380395710977132">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="flavorText" sid="354445725038478" type="string" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829567258953898" speed="5">
                     <frame duration="1" hotspotX="0.673469" hotspotY="0.47479" original-source="C:\Users\lucho\Desktop\RB\Items\Bateria.png">
@@ -1578,6 +1590,9 @@
         </object-type>
         <object-type name="ItemMaestriaRunica" sid="438844556606287">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="flavorText" sid="249072714459434" type="string" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231945534075393" speed="5">
                     <frame duration="1" hotspotX="0.607362" hotspotY="0.336842" original-source="C:\Users\lucho\Desktop\RB\Items\Runa.png">
@@ -1924,6 +1939,21 @@
         <object-type name="BuyingStats" sid="816852322276014">
             <plugin id="progressbar" />
         </object-type>
+        <object-type name="FlavorTextItems" sid="710178938611292">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextSpeed" sid="818207675504184">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextASPD" sid="487914960830077">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextShootSpeed" sid="631773170618814">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextDamage" sid="581434828902923">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
@@ -1965,6 +1995,19 @@
             <behaviors>
                 <behavior-type name="Persist" sid="346551887966725">
                     <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="TextStats" plugin-id="Text" sid="371759075354715">
+            <members>
+                <member>TextASPD</member>
+                <member>TextDamage</member>
+                <member>TextShootSpeed</member>
+                <member>TextSpeed</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Fade" sid="530784691215113">
+                    <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
         </family>
