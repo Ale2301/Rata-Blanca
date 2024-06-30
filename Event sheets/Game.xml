@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game</name>
     <events>
+        <variable constant="0" name="levelsCompleted" sid="382247440519609" static="0" type="number">0</variable>
         <variable constant="0" name="RubyIsStanding" sid="244540284469047" static="0" type="number">0</variable>
         <variable constant="0" name="RubyIsAnimated" sid="228913055798703" static="0" type="number">0</variable>
         <variable constant="0" name="PlayerIsLookingAt" sid="607717405069171" static="0" type="text">up</variable>
@@ -5160,6 +5161,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
+                                        <condition id="11" name="Collisions enabled" sid="631775978735437" type="Enloquecido" />
                                     </conditions>
                                     <actions>
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="482344625612184" type="Enloquecido">
@@ -5202,6 +5204,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
+                                        <condition id="11" name="Collisions enabled" sid="532974360420655" type="Enloquecido" />
                                     </conditions>
                                     <actions>
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="202545987350290" type="Enloquecido">
@@ -5244,6 +5247,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
+                                        <condition id="11" name="Collisions enabled" sid="512815763478204" type="Enloquecido" />
                                     </conditions>
                                     <actions>
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="684905580026575" type="Enloquecido">
@@ -5286,6 +5290,7 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
+                                        <condition id="11" name="Collisions enabled" sid="597018790828512" type="Enloquecido" />
                                     </conditions>
                                     <actions>
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="589748400664681" type="Enloquecido">
@@ -5549,22 +5554,40 @@
                                         <condition id="-11" name="For Each" sid="572051652354256" type="System">
                                             <param id="0" name="Object">Enloquecido</param>
                                         </condition>
-                                        <condition id="-3" name="Is on-screen" sid="721871729730464" type="Enloquecido" />
-                                        <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="446989264996610" type="Enloquecido">
-                                            <param id="0" name="Object">Player</param>
-                                        </condition>
-                                        <condition id="11" name="Collisions enabled" sid="396919022076960" type="Enloquecido" />
                                     </conditions>
-                                    <actions>
-                                        <action behavior="Pathfinding" id="3" name="Set enabled" sid="337482729798932" type="Enloquecido">
-                                            <param id="0" name="Set">0</param>
-                                        </action>
-                                        <action behavior="Pathfinding" id="2" name="Stop" sid="547008612987322" type="Enloquecido" />
-                                        <action id="-10" name="Set value" sid="202129087649111" type="Enloquecido">
-                                            <param id="0" name="Instance variable">movingTo</param>
-                                            <param id="1" name="Value">round(random(0,3))</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="543742636582746">
+                                            <conditions>
+                                                <condition id="-3" name="Is on-screen" sid="547820373120161" type="Enloquecido" />
+                                                <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="967729698302797" type="Enloquecido">
+                                                    <param id="0" name="Object">Player</param>
+                                                </condition>
+                                                <condition id="11" name="Collisions enabled" sid="896915028885179" type="Enloquecido" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Pathfinding" id="3" name="Set enabled" sid="337482729798932" type="Enloquecido">
+                                                    <param id="0" name="Set">0</param>
+                                                </action>
+                                                <action behavior="Pathfinding" id="2" name="Stop" sid="547008612987322" type="Enloquecido" />
+                                                <action id="-10" name="Set value" sid="202129087649111" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">movingTo</param>
+                                                    <param id="1" name="Value">round(random(0,3))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="224034361213130">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="645730499197226" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="776222621038040" type="Enloquecido">
+                                                    <param id="0" name="Instance variable">movingTo</param>
+                                                    <param id="1" name="Value">-1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <comment>If enemy gets, someway, to the end of Pathfinding, will check it again. This is only for avoid possible future bugs</comment>
                                 <event-block sid="122540767386223">
@@ -6466,8 +6489,71 @@
                 <action id="6" name="Stop" sid="447031106646484" type="Sounds">
                     <param id="0" name="Tag">&quot;backgroundMusic&quot;</param>
                 </action>
-                <action id="-26" name="Restart layout" sid="360746402186872" type="System" />
+                <action id="-10" name="Add to" sid="932429906660064" type="System">
+                    <param id="0" name="Variable">levelsCompleted</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
+            <sub-events>
+                <event-block sid="871429083492323">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="151442893151474" type="System">
+                            <param id="0" name="Variable">levelsCompleted</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="360746402186872" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="400355601761077">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="888738721533225" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="373217290293695">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="224200798211491" type="System">
+                                    <param id="0" name="Object">Items</param>
+                                </condition>
+                                <condition id="-31" inverted="1" name="Object UID exists" sid="492663419970338" type="System">
+                                    <param id="0" name="UID">Items.UID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="969499864526919" type="Kitchen">
+                                    <param id="0" name="Object">Items</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="813843483000198">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="618816994428632" type="System">
+                                    <param id="0" name="Object">Enemies</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="957702818565737" type="Enemies" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="273441179673898">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="351341234629973" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="419090743714324" type="System">
+                                    <param id="0" name="Layout">Credits</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="895897904037912">
             <conditions>
