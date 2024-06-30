@@ -5338,6 +5338,7 @@
                                         <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="725651460214840" type="Enloquecido">
                                             <param id="0" name="Object">Player</param>
                                         </condition>
+                                        <condition id="11" name="Collisions enabled" sid="573423857358250" type="Enloquecido" />
                                     </conditions>
                                     <actions>
                                         <action id="-10" name="Set value" sid="484486091037701" type="Enloquecido">
@@ -5552,6 +5553,7 @@
                                         <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="446989264996610" type="Enloquecido">
                                             <param id="0" name="Object">Player</param>
                                         </condition>
+                                        <condition id="11" name="Collisions enabled" sid="396919022076960" type="Enloquecido" />
                                     </conditions>
                                     <actions>
                                         <action behavior="Pathfinding" id="3" name="Set enabled" sid="337482729798932" type="Enloquecido">
@@ -5607,10 +5609,11 @@
                                                     <param id="1" name="Comparison">3</param>
                                                     <param id="2" name="Value">0</param>
                                                 </condition>
-                                                <condition id="-4" name="Trigger once while true" sid="432541730298187" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Destroy" sid="289177883457890" type="Enloquecido" />
+                                                <action id="11" name="Set collisions enabled" sid="719653898248578" type="Enloquecido">
+                                                    <param id="0" name="Collisions">0</param>
+                                                </action>
                                                 <action id="-11" name="Subtract from" sid="898955864055840" type="System">
                                                     <param id="0" name="Variable">enemyCountOnRoom</param>
                                                     <param id="1" name="Value">1</param>
@@ -5627,6 +5630,52 @@
                                                     <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block any="1" sid="379388255780083">
+                                                    <conditions>
+                                                        <condition id="2" name="Is playing" sid="549017336614703" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;CorrerAbajo&quot;</param>
+                                                        </condition>
+                                                        <condition id="2" name="Is playing" sid="329854856837326" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;CorrerDerecha&quot;</param>
+                                                        </condition>
+                                                        <condition id="2" name="Is playing" sid="931237434914816" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;DeambularAbajo&quot;</param>
+                                                        </condition>
+                                                        <condition id="2" name="Is playing" sid="300212968025755" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;DeambularDerecha&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="291851662105696" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block any="1" sid="824447465915720">
+                                                    <conditions>
+                                                        <condition id="2" name="Is playing" sid="200513274561311" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;CorrerArriba&quot;</param>
+                                                        </condition>
+                                                        <condition id="2" name="Is playing" sid="425546070389537" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;CorrerIzquierda&quot;</param>
+                                                        </condition>
+                                                        <condition id="2" name="Is playing" sid="861598197905521" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;DeambularArriba&quot;</param>
+                                                        </condition>
+                                                        <condition id="2" name="Is playing" sid="340719873259722" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;DeambularIzquierda&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="835550922860091" type="Enloquecido">
+                                                            <param id="0" name="Animation">&quot;MuerteIzquierda&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -5731,6 +5780,19 @@
                                             </sub-events>
                                         </event-block>
                                     </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="509863685591724">
+                                    <conditions>
+                                        <condition id="4" name="On finished" sid="784637032929973" type="Enloquecido">
+                                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                                        </condition>
+                                        <condition id="4" name="On finished" sid="337909059056813" type="Enloquecido">
+                                            <param id="0" name="Animation">&quot;MuerteIzquierda&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="213895404956429" type="Enloquecido" />
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-group>
