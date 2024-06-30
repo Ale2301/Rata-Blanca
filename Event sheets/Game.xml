@@ -4440,6 +4440,11 @@
                                         </condition>
                                         <condition id="-3" name="Is on-screen" sid="357316119065467" type="BossSlime" />
                                         <condition behavior="Pathfinding" id="7" inverted="1" name="Diagonals are enabled" sid="402618041938731" type="BossSlime" />
+                                        <condition id="-7" name="Compare instance variable" sid="799860466406641" type="BossSlime">
+                                            <param id="0" name="Instance variable">IsAttacking</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action behavior="Pathfinding" id="3" name="Set enabled" sid="863103949293136" type="BossSlime">
@@ -4457,6 +4462,83 @@
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="987456209551563">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="587883154402262" type="System">
+                                                    <param id="0" name="First value">round(random(0,10))</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="461690768188646" type="BossSlime">
+                                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action behavior="Pathfinding" id="3" name="Set enabled" sid="898451084994897" type="BossSlime">
+                                                    <param id="0" name="Set">0</param>
+                                                </action>
+                                                <action id="6" name="Set speed" sid="260722263272400" type="BossSlime">
+                                                    <param id="0" name="Speed">3</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="600358842195757" type="BossSlime">
+                                                    <param id="0" name="Frame number">0</param>
+                                                </action>
+                                                <action id="11" name="Set collisions enabled" sid="375783307902909" type="BossSlime">
+                                                    <param id="0" name="Collisions">0</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="105695311393782" type="System">
+                                                    <param id="0" name="Seconds">0.5</param>
+                                                </action>
+                                                <action id="11" name="Set collisions enabled" sid="906441813400606" type="BossSlime">
+                                                    <param id="0" name="Collisions">1</param>
+                                                </action>
+                                                <action id="-3" name="Set position" sid="604566164056259" type="BackgroundDanger">
+                                                    <param id="0" name="X">448</param>
+                                                    <param id="1" name="Y">450</param>
+                                                </action>
+                                                <action behavior="Flash" id="0" name="Flash" sid="524228839709996" type="BackgroundDanger">
+                                                    <param id="0" name="&apos;On&apos; time">0.3</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.3</param>
+                                                    <param id="2" name="Duration">1.0</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="702723037622215" type="System">
+                                                    <param id="0" name="Seconds">1</param>
+                                                </action>
+                                                <action behavior="Flash" id="0" name="Flash" sid="547762627035337" type="BackgroundDanger">
+                                                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                                                    <param id="2" name="Duration">1.0</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="945787094049387" type="System">
+                                                    <param id="0" name="Seconds">1</param>
+                                                </action>
+                                                <action behavior="Flash" id="0" name="Flash" sid="721728994772757" type="BackgroundDanger">
+                                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                                    <param id="2" name="Duration">5</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="119474319882689" type="System">
+                                                    <param id="0" name="Seconds">1</param>
+                                                </action>
+                                                <action id="-3" name="Set position" sid="975908494891693" type="BossSlime">
+                                                    <param id="0" name="X">437</param>
+                                                    <param id="1" name="Y">140</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="129243308693985" type="BossSlime">
+                                                    <param id="0" name="Instance variable">IsReturning</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="6" name="Set speed" sid="256161691118224" type="BossSlime">
+                                                    <param id="0" name="Speed">15</param>
+                                                </action>
+                                                <action id="5" name="Set frame" sid="592544341216617" type="BossSlime">
+                                                    <param id="0" name="Frame number">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="347682561956728">
                                     <conditions>
@@ -4465,6 +4547,11 @@
                                         </condition>
                                         <condition id="-3" name="Is on-screen" sid="146939989088507" type="BossMiniSlime" />
                                         <condition behavior="Pathfinding" id="7" inverted="1" name="Diagonals are enabled" sid="581021773995510" type="BossMiniSlime" />
+                                        <condition id="-7" name="Compare instance variable" sid="327588562381353" type="BossSlime">
+                                            <param id="0" name="Instance variable">IsAttacking</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action behavior="Pathfinding" id="3" name="Set enabled" sid="966644448978742" type="BossMiniSlime">
@@ -4480,6 +4567,35 @@
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="169440020864911">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="761150333184859" type="BossSlime">
+                                            <param id="0" name="Instance variable">IsAttacking</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="11" inverted="1" name="Collisions enabled" sid="178971565660129" type="BossSlime" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="803772190024241" type="BossSlime">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="973345166667535">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="731848556567781" type="BossSlime">
+                                            <param id="0" name="Instance variable">IsReturning</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="668123022076115" type="BossSlime">
+                                            <param id="0" name="Control">3</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -4700,6 +4816,61 @@
                                                     <param id="1" name="Value">playerCurrentHealth - BossMiniSlime.damage</param>
                                                 </action>
                                                 <action id="0" name="Call function" sid="681441124358239" type="Function">
+                                                    <param id="0" name="Name">&quot;playerDamaged&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="750940457388077">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="825073897424034" type="BossSlime">
+                                            <param id="0" name="Object">CameraCenter</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="388910301201135" type="BossSlime">
+                                            <param id="0" name="Instance variable">IsReturning</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="701323623665979" type="BackgroundDanger">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="217347434594474" type="BossSlime">
+                                            <param id="0" name="Instance variable">IsReturning</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action behavior="ScrollTo" id="0" name="Shake" sid="780363483786532" type="CameraCenter">
+                                            <param id="0" name="Magnitude">75</param>
+                                            <param id="1" name="Duration">1</param>
+                                            <param id="2" name="Mode">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="623575899777143" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="698048495855231" type="BossSlime">
+                                            <param id="0" name="Instance variable">IsAttacking</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="632122564155958">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="589801481086078" type="Player">
+                                                    <param id="0" name="Instance variable">vulnerable</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="452209214543017" type="System">
+                                                    <param id="0" name="Variable">playerCurrentHealth</param>
+                                                    <param id="1" name="Value">playerCurrentHealth - BossSlime.damage</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="396135625948972" type="Function">
                                                     <param id="0" name="Name">&quot;playerDamaged&quot;</param>
                                                     <param id="1" name="Parameter {n}"></param>
                                                 </action>

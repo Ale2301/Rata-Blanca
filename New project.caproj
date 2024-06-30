@@ -1006,6 +1006,8 @@
                 <instance-variable name="damage" sid="133024778574847" type="number" />
                 <instance-variable name="life" sid="870369015552044" type="number" />
                 <instance-variable name="breakPoint" sid="550861158032188" type="number" />
+                <instance-variable name="IsAttacking" sid="863922518570411" type="number" />
+                <instance-variable name="IsReturning" sid="431898290237122" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pathfinding" sid="654933113098979">
@@ -1013,6 +1015,9 @@
                 </behavior-type>
                 <behavior-type name="Flash" sid="327819578955004">
                     <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="253553929069830">
+                    <behavior id="EightDir" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -1874,6 +1879,19 @@
         </object-type>
         <object-type name="TextDashOnCooldown" sid="869510062203381">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="BackgroundDanger" sid="601802006278055">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="404306478582504">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645915390550100" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>

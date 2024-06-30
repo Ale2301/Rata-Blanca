@@ -220,69 +220,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player" uid="0">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <vulnerable>1</vulnerable>
-                        <playerCanDash>1</playerCanDash>
-                        <energy>100</energy>
-                        <energyConsumed>0</energyConsumed>
-                        <damage>1</damage>
-                        <resistance>0</resistance>
-                        <playerFireRate>0</playerFireRate>
-                        <playerShootSpeed>0</playerShootSpeed>
-                        <playerMaxHealth>0</playerMaxHealth>
-                        <playerCurrentHealth>0</playerCurrentHealth>
-                        <playerIsDashing>0</playerIsDashing>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>400</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>No</set-angle>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Flash" />
-                        <behavior-instance type="Pathfinding">
-                            <properties>
-                                <cell-size>30</cell-size>
-                                <cell-border>-1</cell-border>
-                                <obstacles>Solids</obstacles>
-                                <max-speed>6000</max-speed>
-                                <acceleration>100000</acceleration>
-                                <deceleration>3000</deceleration>
-                                <rotate-speed>10000</rotate-speed>
-                                <rotate-object>No</rotate-object>
-                                <diagonals>Disabled</diagonals>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>416.925872803</x>
-                        <y>436.084747314</y>
-                        <z>0</z>
-                        <width>42.039066315</width>
-                        <height>68.237327576</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Border" uid="1">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -2369,6 +2306,8 @@
                         <damage>5</damage>
                         <life>100</life>
                         <breakPoint>90</breakPoint>
+                        <IsAttacking>0</IsAttacking>
+                        <IsReturning>0</IsReturning>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pathfinding">
@@ -2386,12 +2325,23 @@
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Flash" />
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>2500</max-speed>
+                                <acceleration>8000</acceleration>
+                                <deceleration>1000000</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2959</x>
-                        <y>1031.607666016</y>
+                        <x>674</x>
+                        <y>721</y>
                         <z>0</z>
                         <width>249.570144653</width>
                         <height>132.932556152</height>
@@ -7941,6 +7891,94 @@
                         <z>0</z>
                         <width>100.259735107</width>
                         <height>94.31212616</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BackgroundDanger" uid="260">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3408</x>
+                        <y>3100</y>
+                        <z>0</z>
+                        <width>764</width>
+                        <height>770</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Player" uid="0">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <vulnerable>1</vulnerable>
+                        <playerCanDash>1</playerCanDash>
+                        <energy>100</energy>
+                        <energyConsumed>0</energyConsumed>
+                        <damage>1</damage>
+                        <resistance>0</resistance>
+                        <playerFireRate>0</playerFireRate>
+                        <playerShootSpeed>0</playerShootSpeed>
+                        <playerMaxHealth>0</playerMaxHealth>
+                        <playerCurrentHealth>0</playerCurrentHealth>
+                        <playerIsDashing>0</playerIsDashing>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>400</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>500</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>-1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>6000</max-speed>
+                                <acceleration>100000</acceleration>
+                                <deceleration>3000</deceleration>
+                                <rotate-speed>10000</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Disabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>416.925872803</x>
+                        <y>436.084747314</y>
+                        <z>0</z>
+                        <width>42.039066315</width>
+                        <height>68.237327576</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
