@@ -10,9 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Game</layout>
+        <layout order="0">Game</layout>
         <layout order="2">Start</layout>
-        <event-sheet order="1">Game</event-sheet>
+        <event-sheet active="1" order="1">Game</event-sheet>
         <event-sheet order="3">Start</event-sheet>
     </open-tabs>
     <properties>
@@ -92,5 +92,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SinTítulo/" />
         <folder expanded="1" path="animation-folder/HUD/" />
         <folder expanded="1" path="animation-folder/BackgroundDanger/" />
+        <folder expanded="1" path="animation-folder/Vendor/" />
     </folders-expanded>
 </c2uistate>

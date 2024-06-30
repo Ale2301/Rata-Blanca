@@ -25,6 +25,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
@@ -1892,6 +1893,36 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Vendor" sid="541998454294987">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="isSelling" sid="365388857270671" type="number" />
+                <instance-variable name="statSelling" sid="253195216708122" type="string" />
+                <instance-variable name="quantitySelling" sid="147011232370426" type="number" />
+                <instance-variable name="priceSetted" sid="845277841042606" type="number" />
+                <instance-variable name="BelongsToRoom" sid="506474322943599" type="number" />
+                <instance-variable name="BelongsToUID" sid="620665295538452" type="number" />
+                <instance-variable name="isInTemplate" sid="108622819597455" type="boolean" />
+                <instance-variable name="xRelative" sid="893959300036744" type="number" />
+                <instance-variable name="yRelative" sid="697841483776175" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Fade" sid="590773976528178">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="800862425237947" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextVendor" sid="246138757348102">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BuyingStats" sid="816852322276014">
+            <plugin id="progressbar" />
         </object-type>
     </object-folder>
     <families>

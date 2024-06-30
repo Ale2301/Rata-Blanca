@@ -7986,6 +7986,98 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Vendor" uid="261">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <isSelling>0</isSelling>
+                        <statSelling></statSelling>
+                        <quantitySelling>0</quantitySelling>
+                        <priceSetted>0</priceSetted>
+                        <BelongsToRoom>0</BelongsToRoom>
+                        <BelongsToUID>0</BelongsToUID>
+                        <isInTemplate>true</isInTemplate>
+                        <xRelative>0</xRelative>
+                        <yRelative>0</yRelative>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>2</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>415</x>
+                        <y>2568</y>
+                        <z>0</z>
+                        <width>77</width>
+                        <height>77</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TextVendor" uid="262">
+                    <properties>
+                        <text>Test</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-19,400,0</font>
+                        <color>153,255,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-2550</x>
+                        <y>2370</y>
+                        <z>0</z>
+                        <width>800</width>
+                        <height>350</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BuyingStats" uid="263">
+                    <properties>
+                        <value>0</value>
+                        <maximum>100</maximum>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <id-optional></id-optional>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-2166</x>
+                        <y>3030</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

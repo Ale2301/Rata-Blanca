@@ -340,6 +340,22 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="955275430030880">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="482757608472242" type="System">
+                            <param id="0" name="Object">Vendor</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="612733857736282" type="Vendor">
+                            <param id="0" name="Object">SpecialRoom</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="871880266126684" type="Vendor">
+                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="944031714894511">
                     <conditions>
                         <condition id="-11" name="For Each" sid="256145152719440" type="System">
@@ -743,7 +759,7 @@
             <actions>
                 <action id="0" name="Add key" sid="151566602233680" type="RoomPos">
                     <param id="0" name="Key">currentRoomRow&amp;&quot;,&quot;&amp;currentRoomColumn</param>
-                    <param id="1" name="Value">round(random(0,5))</param>
+                    <param id="1" name="Value">round(random(4,5))</param>
                 </action>
                 <action id="-10" name="Add to" sid="745041090042614" type="System">
                     <param id="0" name="Variable">currentRoomRow</param>
@@ -2653,6 +2669,171 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="734477457534506">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="266316729039669" type="System">
+                                            <param id="0" name="Object">Vendor</param>
+                                        </condition>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="267674592221765" type="Vendor">
+                                            <param id="0" name="Instance variable">isInTemplate</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="224811425026609" type="Vendor">
+                                            <param id="0" name="Instance variable">BelongsToRoom</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="890367341175443" type="System">
+                                            <param id="0" name="Variable">currentPosStoneX</param>
+                                            <param id="1" name="Value">Vendor.X</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="817397783491239" type="System">
+                                            <param id="0" name="Variable">currentPosStoneY</param>
+                                            <param id="1" name="Value">Vendor.Y</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="328045887161437" type="SpecialRoom">
+                                            <param id="0" name="Object">Vendor</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="176090927930090" type="Vendor">
+                                            <param id="0" name="Instance variable">xRelative</param>
+                                            <param id="1" name="Value">SpecialRoom.basePositionX-currentPosStoneX</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="319057593634898" type="Vendor">
+                                            <param id="0" name="Instance variable">yRelative</param>
+                                            <param id="1" name="Value">SpecialRoom.basePositionY-currentPosStoneY</param>
+                                        </action>
+                                        <action id="-14" name="Toggle boolean" sid="483217890283411" type="Vendor">
+                                            <param id="0" name="Instance variable">isInTemplate</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="645593019938272" type="Vendor">
+                                            <param id="0" name="Instance variable">BelongsToUID</param>
+                                            <param id="1" name="Value">SpecialRoom.UID</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="617466291178990" type="Vendor">
+                                            <param id="0" name="Instance variable">isSelling</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="201464723279088" type="Vendor">
+                                            <param id="0" name="Instance variable">statSelling</param>
+                                            <param id="1" name="Value">choose(&quot;speed&quot;,&quot;maxhp&quot;,&quot;rechargehp&quot;,&quot;shootspeed&quot;,&quot;damage&quot;,&quot;asp&quot;)</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="690478300557780">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="106571029350707" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;speed&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="732906566386395" type="Vendor">
+                                                    <param id="0" name="Instance variable">quantitySelling</param>
+                                                    <param id="1" name="Value">choose(1.1,1.2,1.3,1.4)</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="432423979068707" type="Vendor">
+                                                    <param id="0" name="Instance variable">priceSetted</param>
+                                                    <param id="1" name="Value">round(random(5,10))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="405328321631158">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="326421703497838" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;maxhp&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="133297809415219" type="Vendor">
+                                                    <param id="0" name="Instance variable">quantitySelling</param>
+                                                    <param id="1" name="Value">round(random(5,15))</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="681860556041106" type="Vendor">
+                                                    <param id="0" name="Instance variable">priceSetted</param>
+                                                    <param id="1" name="Value">round(random(10,15))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="481668863001644">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="891572039703245" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;shootspeed&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="988273707615010" type="Vendor">
+                                                    <param id="0" name="Instance variable">quantitySelling</param>
+                                                    <param id="1" name="Value">choose(1.5,2)</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="632431092327444" type="Vendor">
+                                                    <param id="0" name="Instance variable">priceSetted</param>
+                                                    <param id="1" name="Value">round(random(2,5))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="137628728047547">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="332112990707323" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;damage&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="650493550867659" type="Vendor">
+                                                    <param id="0" name="Instance variable">quantitySelling</param>
+                                                    <param id="1" name="Value">choose(1.1,1.2)</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="227773117487700" type="Vendor">
+                                                    <param id="0" name="Instance variable">priceSetted</param>
+                                                    <param id="1" name="Value">round(random(15,30))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="538773034610070">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="338420241162903" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;rechargehp&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="967819010643488" type="Vendor">
+                                                    <param id="0" name="Instance variable">priceSetted</param>
+                                                    <param id="1" name="Value">round(random(10,15))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="524755305047855">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="811351427001925" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;asp&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="364597674532997" type="Vendor">
+                                                    <param id="0" name="Instance variable">quantitySelling</param>
+                                                    <param id="1" name="Value">choose(1.1,1.2,1.3)</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="840384201718593" type="Vendor">
+                                                    <param id="0" name="Instance variable">priceSetted</param>
+                                                    <param id="1" name="Value">round(random(15,20))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
@@ -3612,6 +3793,10 @@
                                     <param id="0" name="Name">&quot;destroyBullets&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
+                                <action id="-3" name="Set position" sid="390607766792280" type="TextVendor">
+                                    <param id="0" name="X">9999</param>
+                                    <param id="1" name="Y">9999</param>
+                                </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="197087543640226">
@@ -3652,6 +3837,20 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="574729588703789" type="Items" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="711479882897444">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="967410578598125" type="System">
+                                            <param id="0" name="Object">Vendor</param>
+                                        </condition>
+                                        <condition id="-3" name="Is on-screen" sid="772874985079021" type="Vendor" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="519525729980672" type="Vendor">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -3825,6 +4024,125 @@
                                                     <param id="1" name="Image point (optional)">0</param>
                                                 </action>
                                             </actions>
+                                        </event-block>
+                                        <event-block sid="590014348171699">
+                                            <conditions>
+                                                <condition id="-11" name="For Each" sid="825302838668099" type="System">
+                                                    <param id="0" name="Object">Vendor</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="428517842948345" type="Vendor">
+                                                    <param id="0" name="Instance variable">BelongsToUID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-4" name="Set position to another object" sid="505688688733113" type="Vendor">
+                                                    <param id="0" name="Object">Rooms</param>
+                                                    <param id="1" name="Image point (optional)">0</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="324579485553430" type="TextVendor">
+                                                    <param id="0" name="Text">&quot;¡Tengo una oferta especial! Por &quot;&amp;Vendor.priceSetted&amp;&quot; energías sin consumir, te otorgaré &quot;</param>
+                                                </action>
+                                                <action id="-3" name="Set position" sid="685710871647970" type="TextVendor">
+                                                    <param id="0" name="X">Vendor.X  - 350</param>
+                                                    <param id="1" name="Y">Vendor.Y - 100</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="954982756811361">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="805564998937397" type="Vendor">
+                                                            <param id="0" name="Instance variable">statSelling</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;speed&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="1" name="Append text" sid="790459187455767" type="TextVendor">
+                                                            <param id="0" name="Text">&quot;un bonus de &quot;&amp;Vendor.quantitySelling&amp;&quot; a tu velocidad!&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="313947523624326">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="670297559964261" type="Vendor">
+                                                            <param id="0" name="Instance variable">statSelling</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;maxhp&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="1" name="Append text" sid="643430753379961" type="TextVendor">
+                                                            <param id="0" name="Text">&quot;un bonus de &quot;&amp;Vendor.quantitySelling&amp;&quot; a tu vida máxima y actual!&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="816199636197419">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="451415692204540" type="Vendor">
+                                                            <param id="0" name="Instance variable">statSelling</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;shootspeed&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="1" name="Append text" sid="171819173585336" type="TextVendor">
+                                                            <param id="0" name="Text">Vendor.quantitySelling&amp;&quot; extras de velocidad de disparo!&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="162429507484628">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="115920412873760" type="Vendor">
+                                                            <param id="0" name="Instance variable">statSelling</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;damage&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="1" name="Append text" sid="189832284346879" type="TextVendor">
+                                                            <param id="0" name="Text">&quot;un bonus de &quot;&amp;Vendor.quantitySelling&amp;&quot; a tu daño!&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="613652013329025">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="613578374311451" type="Vendor">
+                                                            <param id="0" name="Instance variable">statSelling</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;rechargehp&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="1" name="Append text" sid="803067932497714" type="TextVendor">
+                                                            <param id="0" name="Text">&quot;toda tu vida de nuevo!&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="914346639916323">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="559020404962966" type="Vendor">
+                                                            <param id="0" name="Instance variable">statSelling</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;asp&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="1" name="Append text" sid="300421565522445" type="TextVendor">
+                                                            <param id="0" name="Text">&quot;un bonus de &quot;&amp;Vendor.quantitySelling&amp;&quot; a tu cadencia de disparo!&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="680356047410765">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="1" name="Append text" sid="255817618870425" type="TextVendor">
+                                                            <param id="0" name="Text">&quot;. Acercate y manten E para comprar! &quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -6820,6 +7138,223 @@
                 <action id="-9" name="Set value" sid="131830997750192" type="System">
                     <param id="0" name="Variable">RubyIsAnimated</param>
                     <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="269863762516960">
+            <conditions>
+                <condition id="2" name="Key is down" sid="767004004890947" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="475142938969818" type="Player">
+                    <param id="0" name="Object">Vendor</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="703162164899121" type="System">
+                    <param id="0" name="First value">Player.energy</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">Vendor.priceSetted</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="143184569897832">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="278743233038290" type="Player">
+                            <param id="0" name="Instance variable">energy</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">Vendor.priceSetted</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="716412707583772" type="Vendor">
+                            <param id="0" name="Instance variable">isSelling</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="270278235503609">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="172013752842329" type="System">
+                                    <param id="0" name="Interval (seconds)">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Set progress" sid="575345860669917" type="BuyingStats">
+                                    <param id="0" name="Value">BuyingStats.Progress + 10</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="106429094538016">
+                                    <conditions>
+                                        <condition id="1" name="Compare progress" sid="177363341679290" type="BuyingStats">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Value">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="857514452134897" type="BuyingStats">
+                                            <param id="0" name="X">9999</param>
+                                            <param id="1" name="Y">9999</param>
+                                        </action>
+                                        <action id="3" name="Set progress" sid="960584933239600" type="BuyingStats">
+                                            <param id="0" name="Value">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="566880309060514" type="Vendor">
+                                            <param id="0" name="Instance variable">isSelling</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="670506844725740">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="442205118504334" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;speed&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="553389130099672" type="System">
+                                                    <param id="0" name="Variable">playerSpeed</param>
+                                                    <param id="1" name="Value">playerSpeed * Vendor.quantitySelling</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="873559800935286">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="695249916609765" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;maxhp&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="625905439137311" type="System">
+                                                    <param id="0" name="Variable">playerMaxHealth</param>
+                                                    <param id="1" name="Value">playerMaxHealth + Vendor.quantitySelling</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="372244012722946" type="System">
+                                                    <param id="0" name="Variable">playerCurrentHealth</param>
+                                                    <param id="1" name="Value">playerCurrentHealth + Vendor.quantitySelling</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="472594623248411">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="393891874895425" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;shootspeed&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="690447831251074" type="System">
+                                                    <param id="0" name="Variable">playerShootSpeed</param>
+                                                    <param id="1" name="Value">playerShootSpeed * Vendor.quantitySelling</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="981432485207961">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="626148101340704" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;damage&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="699683086244379" type="System">
+                                                    <param id="0" name="Variable">playerDamage</param>
+                                                    <param id="1" name="Value">playerDamage * Vendor.quantitySelling</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="931328930553263">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="441239365969166" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;rechargehp&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="511983956049820" type="System">
+                                                    <param id="0" name="Variable">playerCurrentHealth</param>
+                                                    <param id="1" name="Value">playerMaxHealth</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="235099636737160">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="468008560059728" type="Vendor">
+                                                    <param id="0" name="Instance variable">statSelling</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;asp&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="900303499005069" type="System">
+                                                    <param id="0" name="Variable">playerFireRate</param>
+                                                    <param id="1" name="Value">playerFireRate * Vendor.quantitySelling</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="144973910055829">
+                                            <conditions />
+                                            <actions>
+                                                <action id="0" name="Set text" sid="171093357861663" type="TextVendor">
+                                                    <param id="0" name="Text">&quot;Nunca lo olvides..&quot;</param>
+                                                </action>
+                                                <action behavior="Fade" id="1" name="Start fade" sid="282066317720323" type="Vendor" />
+                                                <action id="-9" name="Set value" sid="291874237575558" type="System">
+                                                    <param id="0" name="Variable">playerEnergy</param>
+                                                    <param id="1" name="Value">Player.energy - 10</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="538810779092855" type="Function">
+                                                    <param id="0" name="Name">&quot;updateStats&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                                <action id="-3" name="Set position" sid="982363384889615" type="TextVendor">
+                                                    <param id="0" name="X">Vendor.X - 100</param>
+                                                    <param id="1" name="Y">Vendor.Y - 100</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="473100919811183">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="269822548056794" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="668288303135505" type="BuyingStats">
+                                    <param id="0" name="X">Player.X - 100</param>
+                                    <param id="1" name="Y">Player.Y - 100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="959425771077791">
+            <conditions>
+                <condition id="2" inverted="1" name="Key is down" sid="842019079762791" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="372057230492238" type="Player">
+                    <param id="0" name="Object">Vendor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="347182478660696" type="BuyingStats">
+                    <param id="0" name="X">9999</param>
+                    <param id="1" name="Y">9999</param>
+                </action>
+                <action id="3" name="Set progress" sid="750687807996987" type="BuyingStats">
+                    <param id="0" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
