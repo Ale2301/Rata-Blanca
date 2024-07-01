@@ -673,11 +673,6 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Spawn another object" sid="233386372617101" type="Kitchen">
-                                    <param id="0" name="Object">ItemNinfa</param>
-                                    <param id="1" name="Layer">0</param>
-                                    <param id="2" name="Image point">0</param>
-                                </action>
                                 <action id="0" name="Spawn another object" sid="719893658453574" type="Kitchen">
                                     <param id="0" name="Object">itemMejoraRobotica</param>
                                     <param id="1" name="Layer">0</param>
@@ -6580,11 +6575,6 @@
                         </event-block>
                         <event-block sid="682942344836611">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="297150358114012" type="System">
-                                    <param id="0" name="First value">ItemNinfa.Count</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
                                 <condition id="-3" inverted="1" name="Is on-screen" sid="825565782242543" type="EntityNinfa" />
                                 <condition id="-4" name="Trigger once while true" sid="558835062752209" type="System" />
                             </conditions>
@@ -6916,19 +6906,6 @@
                                     </actions>
                                 </event-block>
                             </sub-events>
-                        </event-block>
-                        <event-block sid="650533468463226">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="138344160848067" type="Player">
-                                    <param id="0" name="Object">ItemNinfa</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="693060669335364" type="ItemNinfa" />
-                                <action id="0" name="Set text" sid="130172082749141" type="FlavorTextItems">
-                                    <param id="0" name="Text">ItemNinfa.flavorText</param>
-                                </action>
-                            </actions>
                         </event-block>
                         <event-block sid="522303996092773">
                             <conditions>

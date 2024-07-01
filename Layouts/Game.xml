@@ -2128,35 +2128,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ItemNinfa" uid="36">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <id>0</id>
-                        <flavorText>Su mejor amiga</flavorText>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Persist" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1096.540527344</x>
-                        <y>476.238525391</y>
-                        <z>0</z>
-                        <width>55.155712128</width>
-                        <height>122.997238159</height>
-                        <depth>0</depth>
-                        <hotspotX>0.535000026</hotspotX>
-                        <hotspotY>0.484304935</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="EntityNinfa" uid="39">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>

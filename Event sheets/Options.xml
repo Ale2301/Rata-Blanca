@@ -97,5 +97,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="521863884758747">
+            <conditions>
+                <condition id="0" name="On clicked" sid="455698290259625" type="ButtonGoToBestiary" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="729514830112338" type="System">
+                    <param id="0" name="Layout">Bestiario</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

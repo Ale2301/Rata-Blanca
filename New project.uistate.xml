@@ -10,10 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Game</layout>
-        <layout order="2">Start</layout>
-        <event-sheet order="1">Game</event-sheet>
-        <event-sheet order="3">Start</event-sheet>
+        <layout active="1" order="0">Bestiario</layout>
+        <layout order="3">Options</layout>
+        <event-sheet order="1">Bestiario</event-sheet>
+        <event-sheet order="2">Game</event-sheet>
+        <event-sheet order="4">Options</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -27,9 +28,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="Rooms" />
         <family expanded="0" name="Items" />
         <family expanded="0" name="TextStats" />
+        <family expanded="0" name="BestiaryThings" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -56,7 +58,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/bulletCuervo/" />
         <folder expanded="1" path="animation-folder/Energy/" />
         <folder expanded="1" path="animation-folder/Chest/" />
-        <folder expanded="1" path="animation-folder/ItemNinfa/" />
         <folder expanded="1" path="animation-folder/EntityNinfa/" />
         <folder expanded="1" path="animation-folder/StartBackGround/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
@@ -90,9 +91,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Altar/" />
         <folder expanded="1" path="animation-folder/Enredaderas1/" />
         <folder expanded="1" path="animation-folder/Enredaderas2/" />
-        <folder expanded="1" path="animation-folder/SinTítulo/" />
+        <folder expanded="1" path="animation-folder/BackgroundBestiary/" />
         <folder expanded="1" path="animation-folder/HUD/" />
         <folder expanded="1" path="animation-folder/BackgroundDanger/" />
         <folder expanded="1" path="animation-folder/Vendor/" />
+        <folder expanded="1" path="animation-folder/PreviousPage/" />
+        <folder expanded="1" path="animation-folder/NextPage/" />
     </folders-expanded>
 </c2uistate>

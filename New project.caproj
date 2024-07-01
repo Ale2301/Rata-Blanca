@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
@@ -198,7 +199,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo sur\Ruby disparo sur3.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\_Disparos\disparo sur\Ruby disparo sur4.png" />
                 </animation>
-                <animation framecount="9" loop="1" name="MuerteDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="103159517327673" speed="6">
+                <animation framecount="9" loop="0" name="MuerteDerecha" pingpong="0" repeatcount="1" repeatto="0" sid="103159517327673" speed="6">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Ruby\Muerte derecha\ruby muerte3.png" />
@@ -747,6 +748,20 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\3\im stuck step bro 5.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\im stuck stepbro\3\im stuck step bro 6.png" />
                 </animation>
+                <animation framecount="5" loop="0" name="VueloDerechaBestiary" pingpong="0" repeatcount="1" repeatto="0" sid="328360442650859" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="5" loop="0" name="VueloIzquierdaBestiary" pingpong="0" repeatcount="1" repeatto="0" sid="297452530557608" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Mark" sid="104182454275444">
@@ -832,7 +847,7 @@
                 <instance-variable name="BelongsToUID" sid="321553679080880" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292889700827717" speed="10">
+                <animation framecount="7" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292889700827717" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop3.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop4.png" />
@@ -841,26 +856,14 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop7.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre.png" />
                 </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="ItemNinfa" sid="151358105699073">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="flavorText" sid="269820645340831" type="string" />
-            </instance-variables>
-            <animation-folder>
-                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463374301621450" speed="7">
-                    <frame duration="1" hotspotX="0.535" hotspotY="0.484305" original-source="C:\Users\lucho\Desktop\RB\Ninfa\1.png">
-                        <collision-poly>
-                            <point x="0.455" y="0.00224216" />
-                            <point x="0.69" y="0.00224215" />
-                            <point x="0.99" y="0.486547" />
-                            <point x="0.735" y="0.952915" />
-                            <point x="0.39" y="0.997758" />
-                            <point x="0.015" y="0.979821" />
-                            <point x="0.04" y="0.473094" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="7" loop="0" name="DefaultBestiary" pingpong="0" repeatcount="1" repeatto="0" sid="503469938089203" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1877,7 +1880,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="SinTítulo" sid="836629770850640">
+        <object-type name="BackgroundBestiary" sid="836629770850640">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280533988168111" speed="5">
@@ -1957,6 +1960,37 @@
         <object-type name="TextDamage" sid="581434828902923">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Button" sid="638551062141898">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="ButtonGoToBestiary" sid="188921406142074">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="TextTitlePageBestiary" sid="855902765919529">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextDescriptionBestiary" sid="578417963518098">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="296282056179353">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="PreviousPage" sid="990859135083562">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879189494185932" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NextPage" sid="611475707899860">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="925156141085808" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
@@ -1990,7 +2024,6 @@
                 <member>ItemLibroMaquiavelico</member>
                 <member>ItemMaestriaRunica</member>
                 <member>itemMejoraRobotica</member>
-                <member>ItemNinfa</member>
             </members>
             <instance-variables>
                 <instance-variable name="id" sid="314461689074055" type="number" />
@@ -2013,6 +2046,23 @@
                     <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
+        </family>
+        <family name="BestiaryThings" plugin-id="Sprite" sid="617059087265209">
+            <members>
+                <member>BossMiniSlime</member>
+                <member>BossSlime</member>
+                <member>Chest</member>
+                <member>Cuervo</member>
+                <member>Energy</member>
+                <member>Enloquecido</member>
+                <member>EntityNinfa</member>
+                <member>ItemBateria</member>
+                <member>ItemLibroMaquiavelico</member>
+                <member>ItemMaestriaRunica</member>
+                <member>itemMejoraRobotica</member>
+                <member>Player</member>
+                <member>Vendor</member>
+            </members>
         </family>
     </families>
     <layout-folder>
@@ -2050,6 +2100,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Mouse" uid="275" />
     </global-instances>
     <sounds-folder>
         <file name="Cofre Apareciendo.ogg" />
