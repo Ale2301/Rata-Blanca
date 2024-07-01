@@ -7046,8 +7046,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1189</x>
-                        <y>479.469665527</y>
+                        <x>1196</x>
+                        <y>486</y>
                         <z>0</z>
                         <width>186.353897095</width>
                         <height>107.054367065</height>
@@ -8296,6 +8296,62 @@
                         <z>0</z>
                         <width>923.980529785</width>
                         <height>923.980529785</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ItemNinfa" uid="247">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <id>0</id>
+                        <flavorText>La mejor amiga del Mago</flavorText>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1096</x>
+                        <y>461</y>
+                        <z>0</z>
+                        <width>183.925994873</width>
+                        <height>180.094192505</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PauseText" uid="248">
+                    <properties>
+                        <text>PAUSA, ESC para continuar.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-96,400,0</font>
+                        <color>0,102,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>453</x>
+                        <y>449</y>
+                        <z>0</z>
+                        <width>445</width>
+                        <height>445</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

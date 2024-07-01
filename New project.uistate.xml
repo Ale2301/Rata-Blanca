@@ -10,14 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="6">Bestiario</layout>
-        <layout order="4">Options</layout>
         <layout order="0">Start</layout>
-        <layout active="1" order="2">Game</layout>
-        <event-sheet order="7">Bestiario</event-sheet>
-        <event-sheet order="3">Game</event-sheet>
-        <event-sheet order="5">Options</event-sheet>
+        <layout order="5">Options</layout>
+        <layout order="6">Bestiario</layout>
+        <layout order="2">Game</layout>
         <event-sheet order="1">Start</event-sheet>
+        <event-sheet active="1" order="3">Game</event-sheet>
+        <event-sheet order="4">Options</event-sheet>
+        <event-sheet order="7">Bestiario</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -29,7 +29,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="Enemies" />
         <family expanded="0" name="Solids" />
         <family expanded="0" name="Rooms" />
-        <family expanded="0" name="Items" />
+        <family expanded="1" name="Items" />
         <family expanded="0" name="TextStats" />
         <family expanded="0" name="BestiaryThings" />
     </families-expanded>
@@ -100,5 +100,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Vendor/" />
         <folder expanded="1" path="animation-folder/PreviousPage/" />
         <folder expanded="1" path="animation-folder/NextPage/" />
+        <folder expanded="1" path="animation-folder/ItemNinfa/" />
     </folders-expanded>
 </c2uistate>

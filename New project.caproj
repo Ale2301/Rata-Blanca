@@ -847,7 +847,7 @@
                 <instance-variable name="BelongsToUID" sid="321553679080880" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="7" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292889700827717" speed="10">
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292889700827717" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop3.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop4.png" />
@@ -856,7 +856,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre drop\cofre drop7.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cofre\cofre.png" />
                 </animation>
-                <animation framecount="7" loop="0" name="DefaultBestiary" pingpong="0" repeatcount="1" repeatto="0" sid="503469938089203" speed="10">
+                <animation framecount="7" loop="1" name="DefaultBestiary" pingpong="0" repeatcount="1" repeatto="0" sid="503469938089203" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -2003,6 +2003,20 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="ItemNinfa" sid="786914007797482">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="flavorText" sid="191599147069295" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="800303013595631" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PauseText" sid="587267732799604">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
@@ -2036,6 +2050,7 @@
                 <member>ItemLibroMaquiavelico</member>
                 <member>ItemMaestriaRunica</member>
                 <member>itemMejoraRobotica</member>
+                <member>ItemNinfa</member>
             </members>
             <instance-variables>
                 <instance-variable name="id" sid="314461689074055" type="number" />

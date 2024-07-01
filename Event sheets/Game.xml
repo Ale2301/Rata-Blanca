@@ -693,6 +693,11 @@
                                     <param id="1" name="Layer">0</param>
                                     <param id="2" name="Image point">0</param>
                                 </action>
+                                <action id="0" name="Spawn another object" sid="381438609562608" type="Kitchen">
+                                    <param id="0" name="Object">ItemNinfa</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="410325692444492" type="System">
                                     <param id="0" name="Variable">ItemPoolReset</param>
                                     <param id="1" name="Value">1</param>
@@ -6245,6 +6250,15 @@
                                                         </action>
                                                     </actions>
                                                 </event-block>
+                                                <event-block sid="298822446117216">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="-16" name="Wait" sid="886489753424055" type="System">
+                                                            <param id="0" name="Seconds">2</param>
+                                                        </action>
+                                                        <action id="-9" name="Destroy" sid="374616659642968" type="Enloquecido" />
+                                                    </actions>
+                                                </event-block>
                                             </sub-events>
                                         </event-block>
                                     </sub-events>
@@ -6576,6 +6590,11 @@
                         <event-block sid="682942344836611">
                             <conditions>
                                 <condition id="-3" inverted="1" name="Is on-screen" sid="825565782242543" type="EntityNinfa" />
+                                <condition id="-8" name="Compare two values" sid="391067129678458" type="System">
+                                    <param id="0" name="First value">ItemNinfa.Count</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
                                 <condition id="-4" name="Trigger once while true" sid="558835062752209" type="System" />
                             </conditions>
                             <actions>
@@ -6932,6 +6951,19 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="582254557447032">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="417763230776276" type="Player">
+                                    <param id="0" name="Object">ItemNinfa</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="331448362273325" type="ItemNinfa" />
+                                <action id="0" name="Set text" sid="753569890003987" type="FlavorTextItems">
+                                    <param id="0" name="Text">ItemNinfa.flavorText</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="772672959664117">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="733215903182069" type="Player">
@@ -7176,6 +7208,7 @@
                 <condition id="0" name="On key pressed" sid="998357198551024" type="Keyboard">
                     <param id="0" name="Key">27</param>
                 </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="503346678575237" type="LoadScreen" />
             </conditions>
             <actions />
             <sub-events>
@@ -7191,6 +7224,9 @@
                         <action id="-13" name="Set time scale" sid="126874727153789" type="System">
                             <param id="0" name="Time scale">0</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="253355172831261" type="PauseText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="212509210898855">
@@ -7200,6 +7236,9 @@
                     <actions>
                         <action id="-13" name="Set time scale" sid="540486003219213" type="System">
                             <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="378086995741364" type="PauseText">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
