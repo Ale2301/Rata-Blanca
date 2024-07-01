@@ -3,6 +3,14 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game</name>
     <events>
+        <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">10</variable>
+        <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">999</variable>
+        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">150</variable>
+        <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">10</variable>
+        <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">400</variable>
+        <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">0.1</variable>
+        <variable constant="0" name="playerEnergy" sid="657378199167735" static="0" type="number">20</variable>
+        <variable constant="0" name="playerConsumedEnergy" sid="486041956109124" static="0" type="number">50</variable>
         <variable constant="0" name="levelsCompleted" sid="382247440519609" static="0" type="number">0</variable>
         <variable constant="0" name="RubyIsStanding" sid="244540284469047" static="0" type="number">0</variable>
         <variable constant="0" name="RubyIsAnimated" sid="228913055798703" static="0" type="number">0</variable>
@@ -10,17 +18,9 @@
         <variable constant="0" name="ItemPoolReset" sid="896117925124847" static="0" type="number">0</variable>
         <variable constant="0" name="completedRooms" sid="172608554826793" static="0" type="number">0</variable>
         <variable constant="0" name="QuantityOfSpawnableItems" sid="530174953702453" static="0" type="number">0</variable>
-        <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">999</variable>
-        <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">10</variable>
-        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">150</variable>
         <variable constant="0" name="playerResistance" sid="289707736190923" static="0" type="number">0</variable>
-        <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">10</variable>
-        <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">400</variable>
-        <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">0.1</variable>
         <variable constant="0" name="playerLife" sid="186121573667452" static="0" type="number">100</variable>
         <variable constant="0" name="playerCanMove" sid="975110956151980" static="0" type="number">1</variable>
-        <variable constant="0" name="playerEnergy" sid="657378199167735" static="0" type="number">20</variable>
-        <variable constant="0" name="playerConsumedEnergy" sid="486041956109124" static="0" type="number">0</variable>
         <variable constant="0" name="variableRoomPosX" sid="693664031443667" static="0" type="number">0</variable>
         <variable constant="0" name="variableRoomPosY" sid="841770477888913" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="519366257059953" static="0" type="number">0</variable>
@@ -124,7 +124,7 @@
                 </action>
                 <action id="0" name="Call function" sid="510152405846369" type="Function">
                     <param id="0" name="Name">&quot;updateStats&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
+                    <param id="1" name="Parameter {n}">&quot;shareStats&quot;</param>
                 </action>
                 <action id="-9" name="Set value" sid="670484265924618" type="System">
                     <param id="0" name="Variable">currentPosEnemyX</param>
@@ -4046,7 +4046,7 @@
                                                 </action>
                                                 <action id="-3" name="Set position" sid="685710871647970" type="TextVendor">
                                                     <param id="0" name="X">Vendor.X  - 350</param>
-                                                    <param id="1" name="Y">Vendor.Y - 100</param>
+                                                    <param id="1" name="Y">Vendor.Y - 120</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
@@ -4644,32 +4644,13 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="4" name="Set max speed" sid="572529460411302" type="Player">
-                            <param id="0" name="Max Speed">playerSpeed</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="559184934543570" type="Player">
-                            <param id="0" name="Instance variable">damage</param>
-                            <param id="1" name="Value">playerDamage</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="632779377643923" type="Player">
-                            <param id="0" name="Instance variable">resistance</param>
-                            <param id="1" name="Value">playerResistance</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="168855944647282" type="Player">
-                            <param id="0" name="Instance variable">playerFireRate</param>
-                            <param id="1" name="Value">playerFireRate</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="960635997080722" type="Player">
-                            <param id="0" name="Instance variable">playerShootSpeed</param>
-                            <param id="1" name="Value">playerShootSpeed</param>
+                        <action id="-10" name="Set value" sid="938042228571438" type="Player">
+                            <param id="0" name="Instance variable">playerCurrentHealth</param>
+                            <param id="1" name="Value">playerCurrentHealth</param>
                         </action>
                         <action id="-10" name="Set value" sid="946978538017319" type="Player">
                             <param id="0" name="Instance variable">playerMaxHealth</param>
                             <param id="1" name="Value">playerMaxHealth</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="938042228571438" type="Player">
-                            <param id="0" name="Instance variable">playerCurrentHealth</param>
-                            <param id="1" name="Value">playerCurrentHealth</param>
                         </action>
                         <action id="-10" name="Set value" sid="172301380904995" type="Player">
                             <param id="0" name="Instance variable">energy</param>
@@ -4702,17 +4683,36 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="649968967421249" type="TextSpeed">
-                                    <param id="0" name="Text">&quot;Velocidad: &quot;&amp;playerSpeed</param>
+                                <action id="0" name="Set text" sid="378714813019824" type="TextSpeed">
+                                    <param id="0" name="Text">&quot;Velocidad: &quot;&amp;player.8Direction.MaxSpeed&amp;&quot; =&gt; &quot;&amp;playerSpeed</param>
                                 </action>
-                                <action id="0" name="Set text" sid="285864895062939" type="TextDamage">
-                                    <param id="0" name="Text">&quot;Daño: &quot;&amp;playerDamage</param>
+                                <action id="0" name="Set text" sid="539758555099041" type="TextDamage">
+                                    <param id="0" name="Text">&quot;Daño: &quot;&amp;player.damage&amp;&quot; =&gt; &quot;&amp;playerDamage</param>
                                 </action>
-                                <action id="0" name="Set text" sid="789848631681073" type="TextASPD">
-                                    <param id="0" name="Text">&quot;Vel ataque: &quot;&amp;playerFireRate</param>
+                                <action id="0" name="Set text" sid="469779492734621" type="TextASPD">
+                                    <param id="0" name="Text">&quot;Vel ataque: &quot;&amp;player.playerFireRate&amp;&quot; =&gt; &quot;&amp;playerFireRate</param>
                                 </action>
-                                <action id="0" name="Set text" sid="451655431640784" type="TextShootSpeed">
-                                    <param id="0" name="Text">&quot;Vel de disparo: &quot;&amp;playerShootSpeed</param>
+                                <action id="0" name="Set text" sid="108558450724515" type="TextShootSpeed">
+                                    <param id="0" name="Text">&quot;Vel de disparo&quot;&amp;player.playerShootSpeed&amp;&quot; =&gt; &quot;&amp;playerShootSpeed</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="572529460411302" type="Player">
+                                    <param id="0" name="Max Speed">playerSpeed</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="559184934543570" type="Player">
+                                    <param id="0" name="Instance variable">damage</param>
+                                    <param id="1" name="Value">playerDamage</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="632779377643923" type="Player">
+                                    <param id="0" name="Instance variable">resistance</param>
+                                    <param id="1" name="Value">playerResistance</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="168855944647282" type="Player">
+                                    <param id="0" name="Instance variable">playerFireRate</param>
+                                    <param id="1" name="Value">playerFireRate</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="960635997080722" type="Player">
+                                    <param id="0" name="Instance variable">playerShootSpeed</param>
+                                    <param id="1" name="Value">playerShootSpeed</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -4727,6 +4727,7 @@
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                         <action behavior="Fade" id="1" name="Start fade" sid="210516001580677" type="TextStats" />
+                                        <action id="-24" name="Move to top" sid="390604636052539" type="TextStats" />
                                     </actions>
                                 </event-block>
                             </sub-events>
