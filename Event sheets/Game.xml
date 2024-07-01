@@ -6251,8 +6251,16 @@
                                                     </actions>
                                                 </event-block>
                                                 <event-block sid="298822446117216">
-                                                    <conditions />
+                                                    <conditions>
+                                                        <condition id="-4" name="Trigger once while true" sid="307350050005261" type="System" />
+                                                    </conditions>
                                                     <actions>
+                                                        <action id="0" name="Play" sid="372559927073422" type="Sounds">
+                                                            <param id="0" name="Audio file">Enloquecido Muriendo</param>
+                                                            <param id="2" name="Loop">0</param>
+                                                            <param id="3" name="Volume">0</param>
+                                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                        </action>
                                                         <action id="-16" name="Wait" sid="886489753424055" type="System">
                                                             <param id="0" name="Seconds">2</param>
                                                         </action>
@@ -6801,7 +6809,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Play" sid="964342744900897" type="Sounds">
-                                    <param id="0" name="Audio file">Pickeeando Item</param>
+                                    <param id="0" name="Audio file">Pickeeando Item Corregido</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>

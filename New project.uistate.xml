@@ -29,7 +29,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="0" name="Enemies" />
         <family expanded="0" name="Solids" />
         <family expanded="0" name="Rooms" />
-        <family expanded="1" name="Items" />
+        <family expanded="0" name="Items" />
         <family expanded="0" name="TextStats" />
         <family expanded="0" name="BestiaryThings" />
     </families-expanded>
