@@ -1979,7 +1979,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879189494185932" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\image.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1987,7 +1987,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="925156141085808" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\image.png">
+                        <collision-poly>
+                            <point x="0.513292" y="0.49182" />
+                            <point x="0.802658" y="0.502045" />
+                            <point x="0.721881" y="0.720859" />
+                            <point x="0.502045" y="0.655419" />
+                            <point x="0.39775" y="0.606339" />
+                            <point x="0.246421" y="0.502045" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -2063,6 +2072,10 @@
                 <member>Player</member>
                 <member>Vendor</member>
             </members>
+            <instance-variables>
+                <instance-variable name="PositionX" sid="311507033748151" type="number" />
+                <instance-variable name="PositionY" sid="498522872854600" type="number" />
+            </instance-variables>
         </family>
     </families>
     <layout-folder>

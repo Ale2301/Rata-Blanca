@@ -1212,6 +1212,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -1339,6 +1341,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>0</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -1437,6 +1441,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>0</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -1535,6 +1541,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>0</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -1633,6 +1641,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>0</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -1767,6 +1777,10 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
@@ -1802,6 +1816,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -1915,6 +1931,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -2013,6 +2031,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToUID>0</BelongsToUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -2038,6 +2058,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -2136,6 +2158,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <damage>5</damage>
                     </instance-variables>
                     <behavior-instances>
@@ -2220,6 +2244,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -2297,6 +2323,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <damage>5</damage>
                         <life>100</life>
                         <breakPoint>90</breakPoint>
@@ -2354,6 +2382,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <life>1</life>
                         <damage>1</damage>
                     </instance-variables>
@@ -2408,6 +2438,8 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <flavorText>Es tan doloroso como siempre..</flavorText>
                     </instance-variables>
                     <behavior-instances>
@@ -2437,6 +2469,8 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <flavorText>Como hacer magia 101</flavorText>
                     </instance-variables>
                     <behavior-instances>
@@ -2466,6 +2500,8 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <flavorText>Fiuummm</flavorText>
                     </instance-variables>
                     <behavior-instances>
@@ -2495,6 +2531,8 @@
                     </properties>
                     <instance-variables>
                         <id>0</id>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <flavorText>Mala idea..</flavorText>
                     </instance-variables>
                     <behavior-instances>
@@ -4800,6 +4838,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -4898,6 +4938,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -4996,6 +5038,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -5094,6 +5138,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -5192,6 +5238,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -5290,6 +5338,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -5388,6 +5438,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -7321,6 +7373,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -7398,6 +7452,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -7475,6 +7531,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -7552,6 +7610,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -7629,6 +7689,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -7706,6 +7768,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -7783,6 +7847,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <BelongsToRoom>-1</BelongsToRoom>
                         <isInTemplate>true</isInTemplate>
                         <BelongsToUID>0</BelongsToUID>
@@ -7885,6 +7951,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <vulnerable>1</vulnerable>
                         <playerCanDash>1</playerCanDash>
                         <energy>100</energy>
@@ -7948,6 +8016,8 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
                         <isSelling>0</isSelling>
                         <statSelling></statSelling>
                         <quantitySelling>0</quantitySelling>

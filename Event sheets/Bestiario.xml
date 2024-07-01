@@ -839,11 +839,62 @@
             <conditions>
                 <condition id="0" name="On clicked" sid="558524758571213" type="ButtonBackToInit" />
             </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="518532746047484" type="System">
-                    <param id="0" name="Layout">Start</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="540203420125626">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="685587358483048" type="System">
+                            <param id="0" name="Object">BestiaryThings</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="677037487152567" type="BestiaryThings">
+                            <param id="0" name="X">BestiaryThings.PositionX</param>
+                            <param id="1" name="Y">BestiaryThings.PositionY</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="920904508649268">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Wait" sid="301901855112977" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="518532746047484" type="System">
+                            <param id="0" name="Layout">Start</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="338843746852927">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="922926875750233" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="541936880373123">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="303911427329177" type="System">
+                            <param id="0" name="Object">BestiaryThings</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="754283781229973" type="BestiaryThings">
+                            <param id="0" name="Instance variable">PositionX</param>
+                            <param id="1" name="Value">BestiaryThings.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="455421508698952" type="BestiaryThings">
+                            <param id="0" name="Instance variable">PositionY</param>
+                            <param id="1" name="Value">BestiaryThings.Y</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="830425203407568" type="BestiaryThings">
+                            <param id="0" name="X">BestiaryThings.PositionX</param>
+                            <param id="1" name="Y">BestiaryThings.PositionY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
