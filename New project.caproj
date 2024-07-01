@@ -890,8 +890,11 @@
         <object-type name="StartBackGround" sid="994936530280810">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527924789561567" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="1" name="PantallaInicio" pingpong="0" repeatcount="1" repeatto="0" sid="527924789561567" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\pantalla de inicio\pantalla de inicio1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\pantalla de inicio\pantalla de inicio2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\pantalla de inicio\pantalla de inicio3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\pantalla de inicio\pantalla de inicio4.png" />
                 </animation>
             </animation-folder>
         </object-type>
