@@ -3,6 +3,36 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>DeathScreen</name>
     <events>
+        <event-block sid="825775724460527">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="482379072865542" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="435371417131956" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume&quot;</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="136610408244480" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="880288408835272">
+            <conditions>
+                <condition id="1" name="On item get" sid="316102125770893" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="727418971531372" type="System">
+                    <param id="0" name="Variable">currentVolume</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+                <action id="3" name="Set value" sid="464491739584537" type="SliderBar">
+                    <param id="0" name="Value">(10^(LocalStorage.ItemValue/20))+40</param>
+                </action>
+                <action id="10" name="Set master volume" sid="689005793369006" type="Sounds">
+                    <param id="0" name="dB">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="649722530334991">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="111436918195150" type="System" />
@@ -17,6 +47,18 @@
                 <action id="0" name="Set text" sid="301458756004887" type="DeathText">
                     <param id="0" name="Text">Browser.ExecJS(&quot;getDeathScreenPhrase()&quot;)</param>
                 </action>
+                <action id="0" name="Play" sid="391159363450378" type="Sounds">
+                    <param id="0" name="Audio file">Pantalla de Muerte</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;deathMusic&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="964563009656191" type="Sounds">
+                    <param id="0" name="Tag">&quot;backgroundMusic&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="492952142472770" type="Sounds">
+                    <param id="0" name="Tag">&quot;backgroundBossMusic&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="814099946639330">
@@ -24,6 +66,9 @@
                 <condition id="0" name="On clicked" sid="218121739054320" type="ButtonRestart" />
             </conditions>
             <actions>
+                <action id="6" name="Stop" sid="474568826151807" type="Sounds">
+                    <param id="0" name="Tag">&quot;deathMusic&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="831458347818915" type="System">
                     <param id="0" name="Layout">Start</param>
                 </action>

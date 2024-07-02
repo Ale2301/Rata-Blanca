@@ -39,8 +39,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>449.469696045</x>
-                        <y>454.469696045</y>
+                        <x>450</x>
+                        <y>450</y>
                         <z>0</z>
                         <width>913.65802002</width>
                         <height>913.65802002</height>
@@ -102,7 +102,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="80">
+                <instance type="RubyCry" uid="80">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -128,14 +128,6 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances>
-        <instance type="ArrayDeathPhrases" uid="66">
-            <properties>
-                <width>10</width>
-                <height>1</height>
-                <depth>1</depth>
-            </properties>
-        </instance>
-    </nonworld-instances>
+    <nonworld-instances />
     <effects />
 </c2layout>

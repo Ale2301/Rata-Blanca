@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Options</name>
     <events>
+        <variable constant="0" name="currentVolume" sid="625644562671234" static="0" type="number">0</variable>
         <event-block sid="412435913409153">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="627256026930506" type="System" />
@@ -20,8 +21,35 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="464701423145049" type="System">
+                    <param id="0" name="Variable">currentVolume</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
                 <action id="3" name="Set value" sid="459804220642509" type="SliderBar">
-                    <param id="0" name="Value">LocalStorage.ItemValue</param>
+                    <param id="0" name="Value">(10^(LocalStorage.ItemValue/20))+40</param>
+                </action>
+                <action id="10" name="Set master volume" sid="953339860695576" type="Sounds">
+                    <param id="0" name="dB">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="316490601950666">
+            <conditions>
+                <condition id="10" name="On item missing" sid="297386921891284" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set item" sid="702030708443379" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume&quot;</param>
+                    <param id="1" name="Value">(log10(SliderBar.Value )* 20)-40</param>
+                </action>
+                <action id="-9" name="Set value" sid="441735011347857" type="System">
+                    <param id="0" name="Variable">currentVolume</param>
+                    <param id="1" name="Value">(log10(SliderBar.Value )* 20)-40</param>
+                </action>
+                <action id="10" name="Set master volume" sid="106778049437231" type="Sounds">
+                    <param id="0" name="dB">LocalStorage.ItemValue</param>
                 </action>
             </actions>
         </event-block>
@@ -30,9 +58,22 @@
                 <condition id="2" name="On changed" sid="714412921124412" type="SliderBar" />
             </conditions>
             <actions>
-                <action id="0" name="Set item" sid="111549465009226" type="LocalStorage">
+                <action id="0" name="Set item" sid="921029636000222" type="LocalStorage">
                     <param id="0" name="Key">&quot;volume&quot;</param>
-                    <param id="1" name="Value">SliderBar.Value</param>
+                    <param id="1" name="Value">(log10(SliderBar.Value )* 20)-40</param>
+                </action>
+                <action id="-9" name="Set value" sid="622452167802105" type="System">
+                    <param id="0" name="Variable">currentVolume</param>
+                    <param id="1" name="Value">(log10(SliderBar.Value )* 20)-40</param>
+                </action>
+                <action id="10" name="Set master volume" sid="574618658491114" type="Sounds">
+                    <param id="0" name="dB">currentVolume</param>
+                </action>
+                <action id="0" name="Play" sid="352294946003846" type="Sounds">
+                    <param id="0" name="Audio file">Sonido De Prueba</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -43,6 +84,26 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="764971679804568" type="System">
                     <param id="0" name="Layout">Start</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="602366667147398">
+            <conditions>
+                <condition id="0" name="On clicked" sid="376855150970981" type="ButtonCredits" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="179874884948663" type="System">
+                    <param id="0" name="Layout">Credits</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521863884758747">
+            <conditions>
+                <condition id="0" name="On clicked" sid="455698290259625" type="ButtonGoToBestiary" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="729514830112338" type="System">
+                    <param id="0" name="Layout">Bestiario</param>
                 </action>
             </actions>
         </event-block>

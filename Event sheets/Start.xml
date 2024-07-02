@@ -3,11 +3,60 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Start</name>
     <events>
+        <event-block sid="388179997692342">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="562854437513651" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="143305777845540" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="240925716965655">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="668833486201648" type="Sounds">
+                            <param id="0" name="Tag">&quot;titleMusic&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="389315645431091" type="Sounds">
+                            <param id="0" name="Audio file">Pantalla de titulo</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;titleMusic&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="894026664645382">
+            <conditions>
+                <condition id="1" name="On item get" sid="531958772773709" type="LocalStorage">
+                    <param id="0" name="Key">&quot;volume&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="788054926927326" type="System">
+                    <param id="0" name="Variable">currentVolume</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+                <action id="3" name="Set value" sid="816115990868590" type="SliderBar">
+                    <param id="0" name="Value">(10^(LocalStorage.ItemValue/20))+40</param>
+                </action>
+                <action id="10" name="Set master volume" sid="952462895441883" type="Sounds">
+                    <param id="0" name="dB">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="269161826551949">
             <conditions>
                 <condition id="0" name="On clicked" sid="276458413689723" type="ButtonStart" />
             </conditions>
             <actions>
+                <action id="6" name="Stop" sid="188235128737354" type="Sounds">
+                    <param id="0" name="Tag">&quot;titleMusic&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="951166765749538" type="System">
                     <param id="0" name="Layout">Game</param>
                 </action>

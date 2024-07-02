@@ -10,13 +10,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Start</layout>
+        <layout order="0">Start</layout>
+        <layout active="1" order="2">Game</layout>
         <layout order="5">Options</layout>
-        <layout order="3">Game</layout>
-        <layout active="1" order="7">DeathScreen</layout>
-        <event-sheet order="2">Start</event-sheet>
-        <event-sheet order="6">Options</event-sheet>
-        <event-sheet order="4">Game</event-sheet>
+        <layout order="6">Bestiario</layout>
+        <layout order="8">DeathScreen</layout>
+        <event-sheet order="1">Start</event-sheet>
+        <event-sheet order="3">Game</event-sheet>
+        <event-sheet order="4">Options</event-sheet>
+        <event-sheet order="7">Bestiario</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,10 +27,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="1" name="Enemies" />
+        <family expanded="0" name="Enemies" />
         <family expanded="0" name="Solids" />
         <family expanded="0" name="Rooms" />
-        <family expanded="1" name="Items" />
+        <family expanded="0" name="Items" />
+        <family expanded="0" name="TextStats" />
+        <family expanded="0" name="BestiaryThings" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="0" path="object-folder/" />
@@ -58,14 +62,49 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/bulletCuervo/" />
         <folder expanded="1" path="animation-folder/Energy/" />
         <folder expanded="1" path="animation-folder/Chest/" />
-        <folder expanded="1" path="animation-folder/ItemNinfa/" />
-        <folder expanded="1" path="animation-folder/doubleSpeed/" />
         <folder expanded="1" path="animation-folder/EntityNinfa/" />
         <folder expanded="1" path="animation-folder/StartBackGround/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/LoadScreen/" />
         <folder expanded="1" path="animation-folder/DeathBackGround/" />
         <folder expanded="1" path="animation-folder/OptionsBackGround/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/RubyCry/" />
+        <folder expanded="1" path="animation-folder/CreditsBackGround/" />
+        <folder expanded="1" path="animation-folder/NextLevel/" />
+        <folder expanded="1" path="animation-folder/RubyShoot/" />
+        <folder expanded="1" path="animation-folder/BossSlime/" />
+        <folder expanded="1" path="animation-folder/BossMiniSlime/" />
+        <folder expanded="1" path="animation-folder/itemMejoraRobotica/" />
+        <folder expanded="1" path="animation-folder/ItemLibroMaquiavelico/" />
+        <folder expanded="1" path="animation-folder/ItemBateria/" />
+        <folder expanded="1" path="animation-folder/ItemMaestriaRunica/" />
+        <folder expanded="1" path="animation-folder/Room2/" />
+        <folder expanded="1" path="animation-folder/Room3/" />
+        <folder expanded="1" path="animation-folder/Room4/" />
+        <folder expanded="1" path="animation-folder/Room5/" />
+        <folder expanded="1" path="animation-folder/Room6/" />
+        <folder expanded="1" path="animation-folder/Room7/" />
+        <folder expanded="1" path="animation-folder/Room8/" />
+        <folder expanded="1" path="animation-folder/ImpactoCuervo/" />
+        <folder expanded="1" path="animation-folder/Door/" />
+        <folder expanded="1" path="animation-folder/Barril/" />
+        <folder expanded="1" path="animation-folder/Bandera/" />
+        <folder expanded="1" path="animation-folder/BanderaRota/" />
+        <folder expanded="1" path="animation-folder/Estante/" />
+        <folder expanded="1" path="animation-folder/EstanteRoto/" />
+        <folder expanded="1" path="animation-folder/Altar/" />
+        <folder expanded="1" path="animation-folder/Enredaderas1/" />
+        <folder expanded="1" path="animation-folder/Enredaderas2/" />
+        <folder expanded="1" path="animation-folder/BackgroundBestiary/" />
+        <folder expanded="1" path="animation-folder/HUD/" />
+        <folder expanded="1" path="animation-folder/BackgroundDanger/" />
+        <folder expanded="1" path="animation-folder/Vendor/" />
+        <folder expanded="1" path="animation-folder/PreviousPage/" />
+        <folder expanded="1" path="animation-folder/NextPage/" />
+        <folder expanded="1" path="animation-folder/ItemNinfa/" />
+        <folder expanded="1" path="animation-folder/RoomBackground/" />
+        <folder expanded="1" path="animation-folder/ItemPelotasDeJuguete/" />
+        <folder expanded="1" path="animation-folder/ItemEscudoMistico/" />
+        <folder expanded="1" path="animation-folder/ItemGorroDelHechicero/" />
     </folders-expanded>
 </c2uistate>

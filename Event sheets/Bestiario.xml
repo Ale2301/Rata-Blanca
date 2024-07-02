@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Bestiario</name>
+    <events>
+        <variable constant="0" name="CanGoLeft" sid="769962125448005" static="0" type="number">0</variable>
+        <variable constant="0" name="CanGoRight" sid="742232191980571" static="0" type="number">1</variable>
+        <event-group description="" sid="875949582335226" title="Enloquecido Bestiary">
+            <sub-events>
+                <event-block sid="292563323045680">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="309926680231813" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="108058689440106" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;CorrerAbajo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="436493616802522">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="480839879125306" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;CorrerAbajo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="638063006302513" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;CorrerArriba&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="766725768656854">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="875755674912062" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;CorrerArriba&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="691545982479486" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;CorrerDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="687318714816729">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="924447943403772" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;CorrerDerecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="213072430960519" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;CorrerIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="843229965310305">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="352041392161238" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;CorrerIzquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="933889887050890" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;DeambularAbajo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="616101077258544">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="480056641664391" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;DeambularAbajo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="149606433390297" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;DeambularArriba&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="113179630077810">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="783976498681774" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;DeambularArriba&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="368340158130011" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;DeambularDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="249262258069528">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="204235203780564" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;DeambularDerecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="152429829047139" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;DeambularIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="522446652421707">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="406462964180701" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;DeambularIzquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="464012303361513" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="459228522445334">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="767959905688047" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="718061167361383" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;MuerteIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="739743268398078">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="428752649624123" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;MuerteIzquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="846091475813446" type="Enloquecido">
+                            <param id="0" name="Animation">&quot;CorrerAbajo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="862110158067642" title="Cuervo Bestiary">
+            <sub-events>
+                <event-block sid="650398134808093">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="698681759637586" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="273686452477820" type="Cuervo">
+                            <param id="0" name="Animation">&quot;VueloIzquierdaBestiary&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="899403973860239">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="247883770633883" type="Cuervo">
+                            <param id="0" name="Animation">&quot;VueloIzquierdaBestiary&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="141515002568081" type="Cuervo">
+                            <param id="0" name="Animation">&quot;VueloDerechaBestiary&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="889886289557351">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="604397996491648" type="Cuervo">
+                            <param id="0" name="Animation">&quot;VueloDerechaBestiary&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="221756647347199" type="Cuervo">
+                            <param id="0" name="Animation">&quot;CuervoClavado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="792422467004698">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="418333513042375" type="Cuervo">
+                            <param id="0" name="Animation">&quot;CuervoClavado&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="564759511078508" type="Cuervo">
+                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="532805223430479">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="673645780431029" type="Cuervo">
+                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="230602990215975" type="Cuervo">
+                            <param id="0" name="Animation">&quot;MuerteIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="222422274376359">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="418733093888771" type="Cuervo">
+                            <param id="0" name="Animation">&quot;MuerteIzquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="955003725185014" type="Cuervo">
+                            <param id="0" name="Animation">&quot;VueloIzquierdaBestiary&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="536263684405690" title="BossSlime Bestiary">
+            <sub-events>
+                <event-block sid="810050899305815">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="951338843728499" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="719274254081862" type="BossSlime">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="819897531352816">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="879777354656653" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="555854712641057" type="BossMiniSlime">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="888867146874193" title="Ruby Bestiar">
+            <sub-events>
+                <event-block sid="331987127404790">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="264501930201225" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="528840966637222" type="Player">
+                            <param id="0" name="Animation">&quot;CaminarAbajo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="404261147717606">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="264919157762322" type="Player">
+                            <param id="0" name="Animation">&quot;CaminarAbajo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="914937406172717" type="Player">
+                            <param id="0" name="Animation">&quot;CaminarArriba&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="617938719935777">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="221332206287649" type="Player">
+                            <param id="0" name="Animation">&quot;CaminarArriba&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="524317713621347" type="Player">
+                            <param id="0" name="Animation">&quot;CaminarDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="159691428247091">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="441553418663731" type="Player">
+                            <param id="0" name="Animation">&quot;CaminarDerecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="954847871949142" type="Player">
+                            <param id="0" name="Animation">&quot;CaminarIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="904149832307687">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="192010871226817" type="Player">
+                            <param id="0" name="Animation">&quot;CaminarIzquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="218322560609962" type="Player">
+                            <param id="0" name="Animation">&quot;DashAbajo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="696111205709607">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="614357916003429" type="Player">
+                            <param id="0" name="Animation">&quot;DashAbajo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="142983493772905" type="Player">
+                            <param id="0" name="Animation">&quot;DashArriba&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="606405762497098">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="997104294755088" type="Player">
+                            <param id="0" name="Animation">&quot;DashArriba&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="626516850877808" type="Player">
+                            <param id="0" name="Animation">&quot;DashDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="375760066615449">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="745049697839369" type="Player">
+                            <param id="0" name="Animation">&quot;DashDerecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="413988374478663" type="Player">
+                            <param id="0" name="Animation">&quot;DashIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="938582323296640">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="839585656370514" type="Player">
+                            <param id="0" name="Animation">&quot;DashIzquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="614227920664944" type="Player">
+                            <param id="0" name="Animation">&quot;DispararAbajo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="183066715026040">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="526928616806408" type="Player">
+                            <param id="0" name="Animation">&quot;DispararAbajo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="262282680826650" type="Player">
+                            <param id="0" name="Animation">&quot;DispararArriba&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="478353178369640">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="696109725381006" type="Player">
+                            <param id="0" name="Animation">&quot;DispararArriba&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="404432143618746" type="Player">
+                            <param id="0" name="Animation">&quot;DispararIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="698084530079503">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="525897618433682" type="Player">
+                            <param id="0" name="Animation">&quot;DispararIzquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="321302986976939" type="Player">
+                            <param id="0" name="Animation">&quot;DispararDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="867119578282073">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="964346753285590" type="Player">
+                            <param id="0" name="Animation">&quot;DispararDerecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="773734210166559" type="Player">
+                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="163799530180989">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="333763896684331" type="Player">
+                            <param id="0" name="Animation">&quot;MuerteDerecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="970091594756794" type="Player">
+                            <param id="0" name="Animation">&quot;MuerteIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="668253645288916">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="703245747771834" type="Player">
+                            <param id="0" name="Animation">&quot;MuerteIzquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="294541064320795" type="Player">
+                            <param id="0" name="Animation">&quot;RubyCryDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="105644643918184">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="326715465932596" type="Player">
+                            <param id="0" name="Animation">&quot;RubyCryDerecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="644881142049419" type="Player">
+                            <param id="0" name="Animation">&quot;RubCryIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="906311281415438">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="452490545868355" type="Player">
+                            <param id="0" name="Animation">&quot;RubCryIzquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="683559130074206" type="Player">
+                            <param id="0" name="Animation">&quot;RubyRecolectarDerecha&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="666766793156486">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="546644240471126" type="Player">
+                            <param id="0" name="Animation">&quot;RubyRecolectarDerecha&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="449641135607770" type="Player">
+                            <param id="0" name="Animation">&quot;RubyRecolectarIzquierda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="821690336142517">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="288328199380123" type="Player">
+                            <param id="0" name="Animation">&quot;RubyRecolectarIzquierda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="374246785316810" type="Player">
+                            <param id="0" name="Animation">&quot;CaminarAbajo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="573213302909198" title="Items Bestiary">
+            <sub-events>
+                <event-block sid="569591832709006">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="124014552170220" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="712575682652343" type="EntityNinfa">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="179471973877113">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="699093488630392" type="Enloquecido" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="766487058069616" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Las estadísticas de un Enloquecido varían dependiendo de qué tanto lleve su víctima en sus bolsillos, se debe tener cuidado de acumular muchas energías. Los mismos son seres totalmente podridos por dentro, en su momento humanos, que cayeron en una peligrosa adicción a una droga fabricada con energía pura. Mientras tienen los ojos cubiertos, no tienen mucho rango de visión, sin embargo al descubrirse, entran en cólera y son extremadamente peligrosos...&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="594508003400380" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Enemigo: Enloquecido&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="944599275556576" type="System">
+                    <param id="0" name="Variable">CanGoLeft</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="752072549839129">
+            <conditions>
+                <condition id="-22" name="Else" sid="150415644299903" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="148996572374615" type="System">
+                    <param id="0" name="Variable">CanGoLeft</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="772743732567759">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="275468425373950" type="Cuervo" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="276311851775781" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Tocado por la magia oscura del Nigromante, este cuervo común y corriente se volvió un servidor del mal. Con sus garras mecánicas y pico de hierro, espera pacientemente el momento perfecto para embestir. Tampoco tendrá miedo de sacar a relucir sus filosas alas en caso de que la embestida no sea suficiente.... Al volar, es totalmente invulnerable, sin embargo, posee una vida muy baja en compensación.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="912515321736305" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Enemigo: Cuervo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="174662447637954">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="167699281317243" type="BossSlime" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="219965231284888" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Hecho de pura magia y maldad, él cuida los pisos de la mazmorra. Solo se dejará ver una vez perturbes lo suficiente en el suelo el cual es el Jefe. A pesar de su gran tamaño, es muy ágil, siendo capaz de dar grandes saltos en cuestión de segundos. Lo más peligroso es su habilidad especial, con la cual da un gran salto y, al caer, genera daño en toda su habitación, por lo que el jugador debe de esquivarlo. Posee un ataque absurdamente alto, se debe priorizar esquivarlo&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="395649514387247" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Boss: Slime Oscuro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="548428300480567">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="288077326874717" type="BossMiniSlime" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="236012753968433" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Al ser una extensión del Slime Oscuro, es tan peligroso como el mismo. El slime pequeño posee mucha más agilidad que su predecesor, sin embargo, su vida es extremadamente baja. Si el Slime Oscuro muere, todos los Slimes pequeños también lo harán.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="828331359846085" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Minion: Slime&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="634701767175662">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="948337223628859" type="Player" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="114079744585699" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Si algo caracteriza a Ruby, es su miedo, y a su vez su valentía: Enfrentarse a una mazmorra rodeada de peligrosas meca-creaciones es algo muy peligroso para cualquiera. A pesar de que Ruby quiere y desea sentarse y llorar, tiene una misión: Cobrar venganza del infame Nigromante, quien le quitó lo que más quería en el mundo. Ruby recuerda muchas cosas de su maestro, que le serán útiles en su travesía. Esto junto con los objetos que va encontrando en su camino, forjarán su camino hacia la salvación, la venganza, o ambas..&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="603813207026872" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Protagonista: Ruby la rata&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="584194000152916">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="706986238675352" type="EntityNinfa" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="683534830680180" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;La mejor amiga del maestro de Ruby. Esta pequeña figuriita genera un hada al tomarla, la cual es capaz de realizar un inmenso daño al mínimo contacto con un enemigo.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="990199178547148" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: Ninfa&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="339779344445822">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="335315591308203" type="ItemBateria" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="892415095469419" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;La energía que potencia la magia es algo muy raro de entender para Ruby. Esto es uno de ellos: El núcleo de energía se concentra en el interior, creando una batería prácticamente infinita.&#x0D;&#x0A;&#x0D;&#x0A;Al tomarlo, Ruby se sobrecarga, ganando velocidad de movimiento y de ataque.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="108576182406752" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: Batería&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="127436268148936">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="592544218836972" type="ItemLibroMaquiavelico" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="912426537429055" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;A pesar de estar un poco polvoriento, el libro continúa emanando su magia. Los oscuros secretos de la magia viven en este libro. Él siempre dijo que no había que tocarlo... Pero es una emergencia, ¿No?&#x0D;&#x0A;&#x0D;&#x0A;Al tomarlo, Ruby aprende como hacer sus hechizos más letales, aumentando su daño.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="758105305226500" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: Libro maquiavélico&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="331935924715442">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="907066095129879" type="ItemMaestriaRunica" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="303780377837700" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Las runas deciden el destino de quien las porta. Lástima que en este caso es una piedra, pero llevarla debería de tener un resultado similar, ¿Verdad?&#x0D;&#x0A;&#x0D;&#x0A;Al tomarlo, Ruby empieza a cargar una pesada piedra, perdiendo velocidad de movimiento y daño. Sin embargo se compensa disparando mucho más rápido y lejos.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="566258725452399" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: Maestría Rúnica&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="730914999164025">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="251963778334534" type="itemMejoraRobotica" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="747320943826433" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;El brazo robótico es algo que acompañará a Ruby toda su vida. El simple hecho de verlo le recuerda al dolor que sintió al ser incrustado en su carne viva, mientras no entendía absolutamente nada de lo que estaba ocurriendo. A pesar de todo esto, ponerse otro sería de gran ayuda para la misión.&#x0D;&#x0A;&#x0D;&#x0A;Al tomarlo, Ruby dispara muy rápido. Sin embargo, el dolor que le provoca también reduce su daño.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="460344872209443" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: mejora robotica&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="101690699519673">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="643938564871600" type="Energy" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="838610936273481" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;La energía, la moneda de cambio del distópico mundo. También tiene un uso multifacético: Su valor viene arraigado del hecho de que toda la magia se basa en esta energía. Los enemigos la dejarán caer al moriir, ya que la codician más que otra cosa. Algunos intentarán ofrecerte todo tipo de baratijas por porciones de esta energía. Puedes elegir si guardarla y hacer un trato con alguien a cambio de la misma, o consumirla y utilizarla para realizar tus propios y poderosos conjuros.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="517301238059310" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Pickup: Energía&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="365594110797127">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="402835902740952" type="Chest" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="838179578185913" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Un cofre cerrado. Con al menos 10 de energía consumida, el jugador puede mantener la tecla E sobre el cofre para abrirlo, soltando una cantidad de energía y la posibilidad de un ítem (No repetido)&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="622391898727682" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Pickup: Cofre&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="659310250127274">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="586363039748794" type="Vendor" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="384221883037990" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;De una realidad alterna, el vendedor ambiciona con recolectar la mayor cantidad de energía. Sus poderes son desconocidos, pero conoce como maximizar la eficiencia de la energía, pudiendo realizar conjuros con muy poco coste. Él sabe qué es lo que quiere Ruby, y Ruby tiene algo que él quiere.. Y todo tiene su precio.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="948483097358387" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;NPC: Vendedor&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="189777552571968" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="668006018324607">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="163028336999311" type="ItemGorroDelHechicero" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="209228264735099" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;El gorrito que tuvo en algún tiempo el Mago, parece que aún posee un poco de energía. Aumenta levemente el daño y la cadencia de fuego&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="984503063499851" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: Gorro del Hechicero&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="678343165361711" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="930191394118149">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="393108090668500" type="ItemEscudoMistico" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="811915637372667" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Un poderoso escudo de cristal, imbuído en energía consumida. Es muy pesado, con lo que baja todas tus estadísticas, excepto tu daño, el cual se ve increíblemente amplificado&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="979651607889867" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: Escudo cristalino&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="505964067022563" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="617772255735837">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="927375581493365" type="ItemPelotasDeJuguete" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="398153439302032" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Unas pelotitas con las que Ruby jugaba. Quizás sirvan como proyectiles... Aumenta tu cadencia de fuego y velocidad de disparo enormemente&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="782760745124893" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: Pelotas de juguete&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="187882115147851" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="653663294671234">
+            <conditions>
+                <condition id="-22" name="Else" sid="135361982750973" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="652203387808048" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="865815491192107">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="682969371355530" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">PreviousPage</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="421856180569111" type="System">
+                    <param id="0" name="Variable">CanGoLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="150293083580904">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="837333912488291" type="System">
+                            <param id="0" name="Object">BestiaryThings</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="630056067872442" type="BestiaryThings">
+                            <param id="0" name="X">BestiaryThings.X</param>
+                            <param id="1" name="Y">BestiaryThings.Y - 800</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="621902796891967">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="514228192240789" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">NextPage</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="576219600226391" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="456343992609362">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="633645948023320" type="System">
+                            <param id="0" name="Object">BestiaryThings</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="386167417544221" type="BestiaryThings">
+                            <param id="0" name="X">BestiaryThings.X</param>
+                            <param id="1" name="Y">BestiaryThings.Y + 800</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="957188444757134">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="747133790526980" type="System">
+                    <param id="0" name="Variable">CanGoLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="815815259437769" type="PreviousPage">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="256691933386406">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="372934878213174" type="System">
+                    <param id="0" name="Variable">CanGoLeft</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="695322861822232" type="PreviousPage">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="354648305501740">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="612220632649582" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="861767981874335" type="NextPage">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="813681659951117">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="101517273020293" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="253907600442046" type="NextPage">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="724074856752054">
+            <conditions>
+                <condition id="0" name="On clicked" sid="558524758571213" type="ButtonBackToInit" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="540203420125626">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="685587358483048" type="System">
+                            <param id="0" name="Object">BestiaryThings</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="677037487152567" type="BestiaryThings">
+                            <param id="0" name="X">BestiaryThings.PositionX</param>
+                            <param id="1" name="Y">BestiaryThings.PositionY</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="920904508649268">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Wait" sid="301901855112977" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="518532746047484" type="System">
+                            <param id="0" name="Layout">Start</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="338843746852927">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="922926875750233" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="541936880373123">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="303911427329177" type="System">
+                            <param id="0" name="Object">BestiaryThings</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="754283781229973" type="BestiaryThings">
+                            <param id="0" name="Instance variable">PositionX</param>
+                            <param id="1" name="Value">BestiaryThings.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="455421508698952" type="BestiaryThings">
+                            <param id="0" name="Instance variable">PositionY</param>
+                            <param id="1" name="Value">BestiaryThings.Y</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="830425203407568" type="BestiaryThings">
+                            <param id="0" name="X">BestiaryThings.PositionX</param>
+                            <param id="1" name="Y">BestiaryThings.PositionY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
