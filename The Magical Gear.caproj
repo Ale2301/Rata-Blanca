@@ -2,7 +2,7 @@
 <c2project>
     <name>The Magical Gear</name>
     <description></description>
-    <version>1.0.0.2</version>
+    <version>1.0.0.3</version>
     <author>Esoteric Edge Games</author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -807,10 +807,21 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="175994574975637" speed="7">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\Shoot\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502242" original-source="C:\Users\lucho\Desktop\RB\Cuervo\Shoot\1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\Shoot\2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\Shoot\3.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\Shoot\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\Shoot\4.png">
+                        <collision-poly>
+                            <point x="0.116279" y="0" />
+                            <point x="0.5" y="0.0578231" />
+                            <point x="0.988372" y="0.0646259" />
+                            <point x="0.926357" y="0.482993" />
+                            <point x="0.860465" y="0.772108" />
+                            <point x="0.5" y="0.833333" />
+                            <point x="0.120155" y="0.870748" />
+                            <point x="0.158915" y="0.442177" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1545,15 +1556,16 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878002130261867" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\brazo.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\brazo2.png">
                         <collision-poly>
-                            <point x="0.478724" y="0.118519" />
-                            <point x="0.342553" y="0.425926" />
-                            <point x="0.589361" y="0.507407" />
-                            <point x="0.759574" y="0.592593" />
-                            <point x="0.421277" y="0.918519" />
-                            <point x="0.223404" y="0.466667" />
-                            <point x="0.374468" y="0.0851852" />
+                            <point x="0.188742" y="0.0642202" />
+                            <point x="0.427152" y="0.00917426" />
+                            <point x="0.218543" y="0.665138" />
+                            <point x="0.89404" y="0.559633" />
+                            <point x="0.996689" y="0.995413" />
+                            <point x="0.172185" y="0.880734" />
+                            <point x="0.0198675" y="0.711009" />
+                            <point x="0.0496689" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
