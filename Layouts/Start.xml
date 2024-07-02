@@ -53,9 +53,9 @@
                 </instance>
                 <instance type="StartText" uid="57">
                     <properties>
-                        <text>RATA BLANCA</text>
+                        <text>The Magical Gear</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-96,400,0</font>
+                        <font>Consolas,-64,700,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -66,8 +66,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>50</x>
-                        <y>100</y>
+                        <x>47</x>
+                        <y>-192</y>
                         <z>0</z>
                         <width>776.328796387</width>
                         <height>277.482971191</height>
@@ -88,11 +88,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>447</x>
-                        <y>415</y>
+                        <x>450</x>
+                        <y>450</y>
                         <z>0</z>
-                        <width>194.636978149</width>
-                        <height>103.043113708</height>
+                        <width>190</width>
+                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.578703701</hotspotY>
@@ -110,14 +110,63 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>451.52822876</x>
-                        <y>539.884277344</y>
+                        <x>450</x>
+                        <y>570</y>
                         <z>0</z>
-                        <width>180.499313354</width>
-                        <height>90.249656677</height>
+                        <width>150</width>
+                        <height>80</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.578703701</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EsotericEdgeGames" uid="306">
+                    <properties>
+                        <text>Esoteric Edge Games©</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Consolas,-19,700,1</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5</x>
+                        <y>878</y>
+                        <z>0</z>
+                        <width>218.336746216</width>
+                        <height>28.982753754</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TheMagicalGearTitulo" uid="307">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>450</x>
+                        <y>225</y>
+                        <z>0</z>
+                        <width>634.980285645</width>
+                        <height>79.372535706</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

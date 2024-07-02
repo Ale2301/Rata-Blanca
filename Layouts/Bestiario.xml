@@ -234,7 +234,7 @@
                     <properties>
                         <text>Enloquecido</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-21,700,1</font>
+                        <font>Consolas,-19,700,1</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -246,7 +246,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>615.977783203</x>
-                        <y>107.301063538</y>
+                        <y>114.301063538</y>
                         <z>0</z>
                         <width>293</width>
                         <height>63</height>
@@ -261,7 +261,7 @@
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-19,400,1</font>
+                        <font>Consolas,-16,400,1</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -528,11 +528,11 @@
                         <x>308.912994385</x>
                         <y>-4450</y>
                         <z>0</z>
-                        <width>205.063552856</width>
-                        <height>498.011474609</height>
+                        <width>122.625160217</width>
+                        <height>295.526641846</height>
                         <depth>0</depth>
-                        <hotspotX>0.673469365</hotspotX>
-                        <hotspotY>0.474789917</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -805,7 +805,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>315</x>
-                        <y>-10950</y>
+                        <y>-11100</y>
                         <z>0</z>
                         <width>200.895980835</width>
                         <height>336.796203613</height>
@@ -888,11 +888,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>454</x>
-                        <y>842</y>
+                        <x>450</x>
+                        <y>850</y>
                         <z>0</z>
-                        <width>251.759353638</width>
-                        <height>130.402297974</height>
+                        <width>165.813995361</width>
+                        <height>85.885688782</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.578703701</hotspotY>

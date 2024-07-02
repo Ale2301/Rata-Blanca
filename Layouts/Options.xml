@@ -55,7 +55,7 @@
                     <properties>
                         <text>Opciones</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
+                        <font>Consolas,-48,700,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -69,7 +69,7 @@
                         <x>334</x>
                         <y>38</y>
                         <z>0</z>
-                        <width>211</width>
+                        <width>219</width>
                         <height>76</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -106,7 +106,7 @@
                     <properties>
                         <text>Volumen</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
+                        <font>Consolas,-48,700,1</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

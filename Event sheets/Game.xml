@@ -3,12 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game</name>
     <events>
-        <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">100</variable>
+        <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">175</variable>
         <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">1</variable>
         <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">2</variable>
-        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">150</variable>
-        <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">100</variable>
-        <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">100</variable>
+        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">250</variable>
+        <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">150</variable>
+        <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">150</variable>
         <variable constant="0" name="playerEnergy" sid="657378199167735" static="0" type="number">0</variable>
         <variable constant="0" name="playerConsumedEnergy" sid="486041956109124" static="0" type="number">0</variable>
         <variable constant="0" name="levelsCompleted" sid="382247440519609" static="0" type="number">0</variable>
@@ -3882,6 +3882,7 @@
                                     <param id="0" name="Variable">currentIndexRoom</param>
                                     <param id="1" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
                                 </action>
+                                <action id="-25" name="Move to bottom" sid="186783163886059" type="Tutorial" />
                                 <action id="-25" name="Move to bottom" sid="126267805204263" type="RoomBackground" />
                             </actions>
                             <sub-events>

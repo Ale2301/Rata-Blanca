@@ -55,7 +55,7 @@
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-32,400,0</font>
+                        <font>Consolas,-24,700,1</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -111,10 +111,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>229</x>
-                        <y>795</y>
+                        <y>805.20324707</y>
                         <z>0</z>
-                        <width>280.276855469</width>
-                        <height>148.381866455</height>
+                        <width>235</width>
+                        <height>125</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.578703701</hotspotY>

@@ -1586,14 +1586,14 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829567258953898" speed="5">
-                    <frame duration="1" hotspotX="0.673469" hotspotY="0.47479" original-source="C:\Users\lucho\Desktop\RB\Items\Bateria.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Items\bobina2.png">
                         <collision-poly>
-                            <point x="0.147959" y="0.0105042" />
-                            <point x="0.867347" y="0.012605" />
-                            <point x="0.887755" y="0.827731" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.137755" y="0.829833" />
+                            <point x="0.0247446" y="0.0125353" />
+                            <point x="0.995918" y="0.0146274" />
+                            <point x="1" y="0.826371" />
+                            <point x="1" y="0.997925" />
+                            <point x="0" y="0.997925" />
+                            <point x="0.0109693" y="0.828464" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -2100,6 +2100,35 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="216181364153339" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.578704" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tutorial" sid="420930134633184">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="748034782337946" speed="5">
+                    <frame duration="1" hotspotX="0.501129" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\tutorial3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EsotericEdgeGames" sid="657733841826682">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TheMagicalGearTitulo" sid="785104433471620">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810605110482211" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\The_magical_Gear.png">
+                        <collision-poly>
+                            <point x="0.00209205" y="0.016129" />
+                            <point x="0.504184" y="0.016129" />
+                            <point x="0.972803" y="0.274194" />
+                            <point x="0.972803" y="0.725806" />
+                            <point x="0.504184" y="0.790323" />
+                            <point x="0.0355649" y="0.725806" />
+                            <point x="0.0355649" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
