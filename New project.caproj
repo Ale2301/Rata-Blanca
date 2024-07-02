@@ -715,7 +715,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte\cuervo muerte derecha9.png" />
                 </animation>
                 <animation framecount="9" loop="0" name="MuerteIzquierda" pingpong="0" repeatcount="1" repeatto="0" sid="722703057408781" speed="5">
-                    <frame duration="1" hotspotX="-0.324561" hotspotY="-0.134228" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda2.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda3.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucho\Desktop\RB\Cuervo\frames\muerte izquierda\cuervo muerte izquierda4.png" />

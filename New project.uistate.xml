@@ -11,9 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Start</layout>
-        <layout active="1" order="2">Game</layout>
+        <layout order="2">Game</layout>
         <layout order="4">Options</layout>
-        <layout order="6">Bestiario</layout>
+        <layout active="1" order="6">Bestiario</layout>
         <layout order="8">DeathScreen</layout>
         <layout order="10">Credits</layout>
         <event-sheet order="1">Start</event-sheet>
