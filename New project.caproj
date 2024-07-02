@@ -2063,6 +2063,46 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="ButtonStartFinal" sid="400554738017183">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="571367045510352" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.578704" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonOptionsFinal" sid="704365973634757">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192248935991822" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.578704" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonGoToBestiaryFinal" sid="946932901578132">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121433662458055" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.578704" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonRestartFinal" sid="271137562639192">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595781590723536" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.578704" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonGoToCreditsFinal" sid="618837393493915">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="216181364153339" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.578704" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">

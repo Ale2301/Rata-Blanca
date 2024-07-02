@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">100</variable>
         <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">1</variable>
-        <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">0.1</variable>
+        <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">2</variable>
         <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">150</variable>
         <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">100</variable>
         <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">100</variable>

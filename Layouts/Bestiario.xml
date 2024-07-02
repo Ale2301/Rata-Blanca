@@ -741,30 +741,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ButtonBackToInit" uid="278">
-                    <properties>
-                        <type>Button</type>
-                        <text>Volver al inicio</text>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>259</x>
-                        <y>773</y>
-                        <z>0</z>
-                        <width>371.346191406</width>
-                        <height>123.782066345</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
                 <instance type="NextPage" uid="273">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -898,6 +874,28 @@
                         <depth>0</depth>
                         <hotspotX>0.578651667</hotspotX>
                         <hotspotY>-0.089430891</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ButtonStartFinal" uid="270">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>454</x>
+                        <y>842</y>
+                        <z>0</z>
+                        <width>251.759353638</width>
+                        <height>130.402297974</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.578703701</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

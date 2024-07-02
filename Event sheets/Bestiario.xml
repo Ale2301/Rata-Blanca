@@ -888,7 +888,11 @@
         </event-block>
         <event-block sid="724074856752054">
             <conditions>
-                <condition id="0" name="On clicked" sid="558524758571213" type="ButtonBackToInit" />
+                <condition id="6" name="On object clicked" sid="637011842053596" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonStartFinal</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>

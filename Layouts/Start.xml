@@ -78,52 +78,48 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ButtonStart" uid="58">
+                <instance type="ButtonStartFinal" uid="305">
                     <properties>
-                        <type>Button</type>
-                        <text>START</text>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>No</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>375</x>
-                        <y>396</y>
+                        <x>447</x>
+                        <y>415</y>
                         <z>0</z>
-                        <width>125.666229248</width>
-                        <height>41.888744354</height>
+                        <width>194.636978149</width>
+                        <height>103.043113708</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.578703701</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ButtonOptions" uid="72">
+                <instance type="ButtonOptionsFinal" uid="58">
                     <properties>
-                        <type>Button</type>
-                        <text>OPTIONS</text>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>No</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>378</x>
-                        <y>475</y>
+                        <x>451.52822876</x>
+                        <y>539.884277344</y>
                         <z>0</z>
-                        <width>125.666229248</width>
-                        <height>41.888744354</height>
+                        <width>180.499313354</width>
+                        <height>90.249656677</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.578703701</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

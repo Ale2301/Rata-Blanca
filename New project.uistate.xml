@@ -10,15 +10,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Start</layout>
-        <layout active="1" order="2">Game</layout>
-        <layout order="5">Options</layout>
+        <layout active="1" order="0">Start</layout>
+        <layout order="2">Game</layout>
+        <layout order="4">Options</layout>
         <layout order="6">Bestiario</layout>
         <layout order="8">DeathScreen</layout>
+        <layout order="10">Credits</layout>
         <event-sheet order="1">Start</event-sheet>
         <event-sheet order="3">Game</event-sheet>
-        <event-sheet order="4">Options</event-sheet>
+        <event-sheet order="5">Options</event-sheet>
         <event-sheet order="7">Bestiario</event-sheet>
+        <event-sheet order="9">DeathScreen</event-sheet>
+        <event-sheet order="11">Credits</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -106,5 +109,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/ItemPelotasDeJuguete/" />
         <folder expanded="1" path="animation-folder/ItemEscudoMistico/" />
         <folder expanded="1" path="animation-folder/ItemGorroDelHechicero/" />
+        <folder expanded="1" path="animation-folder/ButtonStartFinal/" />
+        <folder expanded="1" path="animation-folder/ButtonOptionsFinal/" />
+        <folder expanded="1" path="animation-folder/ButtonGoToBestiaryFinal/" />
+        <folder expanded="1" path="animation-folder/ButtonRestartFinal/" />
+        <folder expanded="1" path="animation-folder/ButtonGoToCreditsFinal/" />
     </folders-expanded>
 </c2uistate>

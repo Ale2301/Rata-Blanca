@@ -51,7 +51,11 @@
         </event-block>
         <event-block sid="269161826551949">
             <conditions>
-                <condition id="0" name="On clicked" sid="276458413689723" type="ButtonStart" />
+                <condition id="6" name="On object clicked" sid="816532411177578" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonStartFinal</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="6" name="Stop" sid="188235128737354" type="Sounds">
@@ -62,9 +66,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="239510156933834">
+        <event-block sid="594499308204226">
             <conditions>
-                <condition id="0" name="On clicked" sid="516085586908418" type="ButtonOptions" />
+                <condition id="6" name="On object clicked" sid="102982836782152" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonOptionsFinal</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="466121418636767" type="System">

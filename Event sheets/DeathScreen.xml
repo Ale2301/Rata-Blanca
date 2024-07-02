@@ -63,7 +63,11 @@
         </event-block>
         <event-block sid="814099946639330">
             <conditions>
-                <condition id="0" name="On clicked" sid="218121739054320" type="ButtonRestart" />
+                <condition id="6" name="On object clicked" sid="912111530388577" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonRestartFinal</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="6" name="Stop" sid="474568826151807" type="Sounds">

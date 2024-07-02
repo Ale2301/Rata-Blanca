@@ -79,7 +79,11 @@
         </event-block>
         <event-block sid="536504575667012">
             <conditions>
-                <condition id="0" name="On clicked" sid="709471729102568" type="ButtonBackToInit" />
+                <condition id="6" name="On object clicked" sid="270062895180998" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonStartFinal</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="764971679804568" type="System">
@@ -89,7 +93,11 @@
         </event-block>
         <event-block sid="602366667147398">
             <conditions>
-                <condition id="0" name="On clicked" sid="376855150970981" type="ButtonCredits" />
+                <condition id="6" name="On object clicked" sid="924168779009842" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonGoToCreditsFinal</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="179874884948663" type="System">
@@ -99,7 +107,11 @@
         </event-block>
         <event-block sid="521863884758747">
             <conditions>
-                <condition id="0" name="On clicked" sid="455698290259625" type="ButtonGoToBestiary" />
+                <condition id="6" name="On object clicked" sid="726779675696565" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonGoToBestiaryFinal</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="729514830112338" type="System">
