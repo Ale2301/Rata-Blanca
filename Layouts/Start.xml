@@ -66,8 +66,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>64</x>
-                        <y>36</y>
+                        <x>50</x>
+                        <y>100</y>
                         <z>0</z>
                         <width>776.328796387</width>
                         <height>277.482971191</height>

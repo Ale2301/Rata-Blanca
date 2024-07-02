@@ -3867,6 +3867,7 @@
                                     <param id="0" name="Variable">currentIndexRoom</param>
                                     <param id="1" name="Value">RoomPos.Get(PlayerCurrentX&amp;&quot;,&quot;&amp;PlayerCurrentY)</param>
                                 </action>
+                                <action id="-25" name="Move to bottom" sid="126267805204263" type="RoomBackground" />
                             </actions>
                             <sub-events>
                                 <event-block sid="493756995064709">
@@ -3877,8 +3878,8 @@
                                     </conditions>
                                     <actions>
                                         <action id="-3" name="Set position" sid="303203260037616" type="Rooms">
-                                            <param id="0" name="X">458</param>
-                                            <param id="1" name="Y">458</param>
+                                            <param id="0" name="X">450</param>
+                                            <param id="1" name="Y">450</param>
                                         </action>
                                         <action id="0" name="Call function" sid="497184637179794" type="Function">
                                             <param id="0" name="Name">&quot;paintRoom&quot;</param>
@@ -5064,11 +5065,15 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Destroy" sid="188246603800320" type="BossSlime" />
                                                 <action id="0" name="Spawn another object" sid="514358619763155" type="CameraCenter">
                                                     <param id="0" name="Object">NextLevel</param>
                                                     <param id="1" name="Layer">0</param>
-                                                    <param id="2" name="Image point">0</param>
+                                                    <param id="2" name="Image point">450</param>
+                                                </action>
+                                                <action id="-9" name="Destroy" sid="188246603800320" type="BossSlime" />
+                                                <action id="-3" name="Set position" sid="514358619763155" type="CameraCenter">
+                                                    <param id="0" name="X">450</param>
+                                                    <param id="1" name="Y">450</param>
                                                 </action>
                                                 <action id="0" name="Play" sid="588879752928010" type="Sounds">
                                                     <param id="0" name="Audio file">Slime Muriendo</param>
@@ -6835,6 +6840,7 @@
                                     <param id="0" name="X">250</param>
                                     <param id="1" name="Y">103</param>
                                 </action>
+                                <action id="-24" name="Move to top" sid="280516708037282" type="FlavorTextItems" />
                             </actions>
                             <sub-events>
                                 <event-block sid="404256857900559">
@@ -7236,6 +7242,7 @@
                         <action id="-15" name="Set visible" sid="253355172831261" type="PauseText">
                             <param id="0" name="Visibility">1</param>
                         </action>
+                        <action id="-24" name="Move to top" sid="264637678920981" type="PauseText" />
                     </actions>
                 </event-block>
                 <event-block sid="212509210898855">
