@@ -4,17 +4,17 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <show-addaction-links>1</show-addaction-links>
-    <scroll-pos>6428</scroll-pos>
+    <scroll-pos>1650</scroll-pos>
     <conditions-column>216</conditions-column>
-    <actions-namecolumn>90</actions-namecolumn>
+    <actions-namecolumn>105</actions-namecolumn>
     <condition-namecolumns>
         <nest>76</nest>
         <nest>41</nest>
         <nest>20</nest>
         <nest>20</nest>
+        <nest>15</nest>
         <nest>20</nest>
-        <nest>20</nest>
-        <nest>16</nest>
+        <nest>15</nest>
     </condition-namecolumns>
     <events>
         <event collapsed="1" sid="916904981726356" />
@@ -33,8 +33,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event collapsed="1" sid="204419824962581" />
         <event collapsed="1" sid="293750018611259" />
         <event collapsed="1" sid="349723855228820" />
+        <event collapsed="1" sid="201130205718484" />
         <event collapsed="1" sid="211324208053446" />
         <event collapsed="1" sid="255177401203612" />
+        <event collapsed="1" sid="493756995064709" />
         <event collapsed="1" sid="966776925159872" />
         <event collapsed="1" sid="941764316052288" />
         <event collapsed="1" sid="164361626643078" />
@@ -45,6 +47,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event collapsed="1" sid="965078372852972" />
         <event collapsed="1" sid="941078746657598" />
         <event collapsed="1" sid="467130054362831" />
+        <event collapsed="1" sid="865106182965961" />
         <event collapsed="1" sid="391142985734015" />
         <event collapsed="1" sid="918203214178306" />
         <event collapsed="1" sid="728187217075676" />
@@ -52,6 +55,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event collapsed="1" sid="379514724335496" />
         <event collapsed="1" sid="406833065310304" />
         <event collapsed="1" sid="354106795307795" />
+        <event collapsed="1" sid="892819825228976" />
         <event collapsed="1" sid="423583529945995" />
         <event collapsed="1" sid="173439685168354" />
         <event collapsed="1" sid="121896889319088" />

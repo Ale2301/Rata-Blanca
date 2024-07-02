@@ -708,6 +708,57 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="668006018324607">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="163028336999311" type="ItemGorroDelHechicero" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="209228264735099" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;El gorrito que tuvo en algún tiempo el Mago, parece que aún posee un poco de energía. Aumenta levemente el daño y la cadencia de fuego&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="984503063499851" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: Gorro del Hechicero&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="678343165361711" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="930191394118149">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="393108090668500" type="ItemEscudoMistico" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="811915637372667" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Un poderoso escudo de cristal, imbuído en energía consumida. Es muy pesado, con lo que baja todas tus estadísticas, excepto tu daño, el cual se ve increíblemente amplificado&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="979651607889867" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: Escudo cristalino&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="505964067022563" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="617772255735837">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="927375581493365" type="ItemPelotasDeJuguete" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="398153439302032" type="TextDescriptionBestiary">
+                    <param id="0" name="Text">&quot;Unas pelotitas con las que Ruby jugaba. Quizás sirvan como proyectiles... Aumenta tu cadencia de fuego y velocidad de disparo enormemente&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="782760745124893" type="TextTitlePageBestiary">
+                    <param id="0" name="Text">&quot;Item: Pelotas de juguete&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="187882115147851" type="System">
+                    <param id="0" name="Variable">CanGoRight</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="653663294671234">
             <conditions>
                 <condition id="-22" name="Else" sid="135361982750973" type="System" />

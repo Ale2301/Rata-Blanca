@@ -3,14 +3,14 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game</name>
     <events>
-        <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">10</variable>
-        <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">999</variable>
-        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">150</variable>
-        <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">10</variable>
-        <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">400</variable>
+        <variable constant="0" name="playerSpeed" sid="780089937500396" static="0" type="number">100</variable>
+        <variable constant="0" name="playerDamage" sid="186792196916898" static="0" type="number">1</variable>
         <variable constant="0" name="playerFireRate" sid="278398774355574" static="0" type="number">0.1</variable>
-        <variable constant="0" name="playerEnergy" sid="657378199167735" static="0" type="number">20</variable>
-        <variable constant="0" name="playerConsumedEnergy" sid="486041956109124" static="0" type="number">50</variable>
+        <variable constant="0" name="playerShootSpeed" sid="309617301280095" static="0" type="number">150</variable>
+        <variable constant="0" name="playerMaxHealth" sid="974066193797233" static="0" type="number">100</variable>
+        <variable constant="0" name="playerCurrentHealth" sid="546148149037272" static="0" type="number">100</variable>
+        <variable constant="0" name="playerEnergy" sid="657378199167735" static="0" type="number">0</variable>
+        <variable constant="0" name="playerConsumedEnergy" sid="486041956109124" static="0" type="number">0</variable>
         <variable constant="0" name="levelsCompleted" sid="382247440519609" static="0" type="number">0</variable>
         <variable constant="0" name="RubyIsStanding" sid="244540284469047" static="0" type="number">0</variable>
         <variable constant="0" name="RubyIsAnimated" sid="228913055798703" static="0" type="number">0</variable>
@@ -695,6 +695,21 @@
                                 </action>
                                 <action id="0" name="Spawn another object" sid="381438609562608" type="Kitchen">
                                     <param id="0" name="Object">ItemNinfa</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="449250194719469" type="Kitchen">
+                                    <param id="0" name="Object">ItemPelotasDeJuguete</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="340813794480474" type="Kitchen">
+                                    <param id="0" name="Object">ItemEscudoMistico</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="826029388505735" type="Kitchen">
+                                    <param id="0" name="Object">ItemGorroDelHechicero</param>
                                     <param id="1" name="Layer">0</param>
                                     <param id="2" name="Image point">0</param>
                                 </action>
@@ -2737,7 +2752,7 @@
                                                 </action>
                                                 <action id="-10" name="Set value" sid="432423979068707" type="Vendor">
                                                     <param id="0" name="Instance variable">priceSetted</param>
-                                                    <param id="1" name="Value">round(random(5,10))</param>
+                                                    <param id="1" name="Value">round(random(10,15))</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -2752,7 +2767,7 @@
                                             <actions>
                                                 <action id="-10" name="Set value" sid="133297809415219" type="Vendor">
                                                     <param id="0" name="Instance variable">quantitySelling</param>
-                                                    <param id="1" name="Value">round(random(5,15))</param>
+                                                    <param id="1" name="Value">round(random(30,80))</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="681860556041106" type="Vendor">
                                                     <param id="0" name="Instance variable">priceSetted</param>
@@ -2790,7 +2805,7 @@
                                             <actions>
                                                 <action id="-10" name="Set value" sid="650493550867659" type="Vendor">
                                                     <param id="0" name="Instance variable">quantitySelling</param>
-                                                    <param id="1" name="Value">choose(1.1,1.2)</param>
+                                                    <param id="1" name="Value">choose(1,1.5,2)</param>
                                                 </action>
                                                 <action id="-10" name="Set value" sid="227773117487700" type="Vendor">
                                                     <param id="0" name="Instance variable">priceSetted</param>
@@ -3577,9 +3592,9 @@
                                             <param id="2" name="Second value">0</param>
                                         </condition>
                                         <condition id="-8" name="Compare two values" sid="986007629235249" type="System">
-                                            <param id="0" name="First value">round(random(0,1))</param>
+                                            <param id="0" name="First value">round(random(0,2))</param>
                                             <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Second value">1</param>
+                                            <param id="2" name="Second value">2</param>
                                         </condition>
                                         <condition id="-15" name="Pick nearest/furthest" sid="941741730150616" type="Rooms">
                                             <param id="0" name="Which">0</param>
@@ -3949,14 +3964,14 @@
                                                     <conditions>
                                                         <condition id="-14" name="Compare variable" sid="226177872220426" type="System">
                                                             <param id="0" name="Variable">playerEnergy</param>
-                                                            <param id="1" name="Comparison">5</param>
-                                                            <param id="2" name="Value">10</param>
+                                                            <param id="1" name="Comparison">4</param>
+                                                            <param id="2" name="Value">5</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
                                                         <action id="-10" name="Set value" sid="617112221542069" type="Enloquecido">
                                                             <param id="0" name="Instance variable">life</param>
-                                                            <param id="1" name="Value">round((playerEnergy/2)+1)</param>
+                                                            <param id="1" name="Value">(round((playerEnergy/2)+1 )) + Enloquecido.life</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
@@ -3964,14 +3979,14 @@
                                                     <conditions>
                                                         <condition id="-14" name="Compare variable" sid="664191487594282" type="System">
                                                             <param id="0" name="Variable">playerConsumedEnergy</param>
-                                                            <param id="1" name="Comparison">5</param>
-                                                            <param id="2" name="Value">10</param>
+                                                            <param id="1" name="Comparison">4</param>
+                                                            <param id="2" name="Value">3</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
                                                         <action id="-10" name="Set value" sid="234145029116982" type="Enloquecido">
                                                             <param id="0" name="Instance variable">damage</param>
-                                                            <param id="1" name="Value">round(playerConsumedEnergy/5)</param>
+                                                            <param id="1" name="Value">playerConsumedEnergy + Enloquecido.damage</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
@@ -5105,35 +5120,44 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-12" name="Subtract from" sid="828283376956983" type="BossMiniSlime">
-                                            <param id="0" name="Instance variable">life</param>
-                                            <param id="1" name="Value">Player.damage</param>
-                                        </action>
-                                        <action behavior="Flash" id="0" name="Flash" sid="342397535547045" type="BossMiniSlime">
-                                            <param id="0" name="&apos;On&apos; time">0.1</param>
-                                            <param id="1" name="&apos;Off&apos; time">0.1</param>
-                                            <param id="2" name="Duration">1.0</param>
-                                        </action>
                                         <action id="-9" name="Destroy" sid="971679093648014" type="Bullet" />
                                     </actions>
                                     <sub-events>
-                                        <event-block sid="626039573963800">
+                                        <event-block sid="865106182965961">
                                             <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="829820868990023" type="BossMiniSlime">
-                                                    <param id="0" name="Instance variable">life</param>
-                                                    <param id="1" name="Comparison">3</param>
-                                                    <param id="2" name="Value">0</param>
-                                                </condition>
+                                                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="542018434190045" type="BossSlime" />
                                             </conditions>
                                             <actions>
-                                                <action id="-9" name="Destroy" sid="602916445256016" type="BossMiniSlime" />
-                                                <action id="0" name="Play" sid="254185761933217" type="Sounds">
-                                                    <param id="0" name="Audio file">Slime Muriendo</param>
-                                                    <param id="2" name="Loop">0</param>
-                                                    <param id="3" name="Volume">0</param>
-                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                <action id="-12" name="Subtract from" sid="828283376956983" type="BossMiniSlime">
+                                                    <param id="0" name="Instance variable">life</param>
+                                                    <param id="1" name="Value">Player.damage</param>
+                                                </action>
+                                                <action behavior="Flash" id="0" name="Flash" sid="342397535547045" type="BossMiniSlime">
+                                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                                    <param id="2" name="Duration">0.2</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="626039573963800">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="829820868990023" type="BossMiniSlime">
+                                                            <param id="0" name="Instance variable">life</param>
+                                                            <param id="1" name="Comparison">3</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="602916445256016" type="BossMiniSlime" />
+                                                        <action id="0" name="Play" sid="254185761933217" type="Sounds">
+                                                            <param id="0" name="Audio file">Slime Muriendo</param>
+                                                            <param id="2" name="Loop">0</param>
+                                                            <param id="3" name="Volume">0</param>
+                                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -5242,7 +5266,7 @@
                                             <actions>
                                                 <action id="-9" name="Set value" sid="452209214543017" type="System">
                                                     <param id="0" name="Variable">playerCurrentHealth</param>
-                                                    <param id="1" name="Value">playerCurrentHealth - BossSlime.damage</param>
+                                                    <param id="1" name="Value">playerCurrentHealth - (BossSlime.damage * 5)</param>
                                                 </action>
                                                 <action id="0" name="Call function" sid="396135625948972" type="Function">
                                                     <param id="0" name="Name">&quot;playerDamaged&quot;</param>
@@ -5883,6 +5907,23 @@
                                             </actions>
                                         </event-block>
                                     </sub-events>
+                                </event-block>
+                                <event-block sid="992378770940797">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="235421065488964" type="System">
+                                            <param id="0" name="First value">Enloquecido.LineOfSight.ConeOfView</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">360</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="14" name="Set speed" sid="332540275411361" type="Enloquecido">
+                                            <param id="0" name="Speed">400</param>
+                                        </action>
+                                        <action behavior="8Direction" id="4" name="Set max speed" sid="429003020954226" type="Enloquecido">
+                                            <param id="0" name="Max Speed">400</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-group>
@@ -6989,7 +7030,7 @@
                                 <action id="-9" name="Destroy" sid="727898177932436" type="ItemLibroMaquiavelico" />
                                 <action id="-9" name="Set value" sid="393036836900568" type="System">
                                     <param id="0" name="Variable">playerDamage</param>
-                                    <param id="1" name="Value">playerDamage*2.5</param>
+                                    <param id="1" name="Value">playerDamage*2</param>
                                 </action>
                                 <action id="0" name="Call function" sid="329507747825796" type="Function">
                                     <param id="0" name="Name">&quot;updateStats&quot;</param>
@@ -7055,6 +7096,86 @@
                                 </action>
                                 <action id="0" name="Set text" sid="272417937812639" type="FlavorTextItems">
                                     <param id="0" name="Text">ItemMaestriaRunica.flavorText</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="302760739527785">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="145259370717146" type="Player">
+                                    <param id="0" name="Object">ItemPelotasDeJuguete</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="574895093425345" type="ItemPelotasDeJuguete" />
+                                <action id="-9" name="Set value" sid="822600259059226" type="System">
+                                    <param id="0" name="Variable">playerFireRate</param>
+                                    <param id="1" name="Value">max(playerFireRate/1.1,0.3)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="721950629930836" type="System">
+                                    <param id="0" name="Variable">playerShootSpeed</param>
+                                    <param id="1" name="Value">playerShootSpeed*2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="943904600169634" type="Function">
+                                    <param id="0" name="Name">&quot;updateStats&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;shareStats&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="348178782869149" type="FlavorTextItems">
+                                    <param id="0" name="Text">ItemPelotasDeJuguete.flavorText</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="374395048022259">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="537618621822341" type="Player">
+                                    <param id="0" name="Object">ItemEscudoMistico</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="945520849085757" type="ItemEscudoMistico" />
+                                <action id="-9" name="Set value" sid="378829291527754" type="System">
+                                    <param id="0" name="Variable">playerSpeed</param>
+                                    <param id="1" name="Value">playerSpeed * 0.1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="306717904526382" type="System">
+                                    <param id="0" name="Variable">playerDamage</param>
+                                    <param id="1" name="Value">playerDamage * 3</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="762930207900318" type="System">
+                                    <param id="0" name="Variable">playerFireRate</param>
+                                    <param id="1" name="Value">playerFireRate * 10</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="369999902489597" type="System">
+                                    <param id="0" name="Variable">playerShootSpeed</param>
+                                    <param id="1" name="Value">playerShootSpeed * 0.2</param>
+                                </action>
+                                <action id="0" name="Call function" sid="923145401068002" type="Function">
+                                    <param id="0" name="Name">&quot;updateStats&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;shareStats&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="768257122360295" type="FlavorTextItems">
+                                    <param id="0" name="Text">ItemEscudoMistico.flavorText</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="291483333360474">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="545949652917297" type="Player">
+                                    <param id="0" name="Object">ItemGorroDelHechicero</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="554479691823763" type="ItemGorroDelHechicero" />
+                                <action id="-9" name="Set value" sid="894352558096542" type="System">
+                                    <param id="0" name="Variable">playerDamage</param>
+                                    <param id="1" name="Value">playerDamage * 1.1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="234810788601530" type="System">
+                                    <param id="0" name="Variable">playerFireRate</param>
+                                    <param id="1" name="Value">playerFireRate / 1.3</param>
+                                </action>
+                                <action id="0" name="Call function" sid="349438751174512" type="Function">
+                                    <param id="0" name="Name">&quot;updateStats&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;shareStats&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

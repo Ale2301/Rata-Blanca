@@ -809,6 +809,99 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="ItemEscudoMistico" uid="302">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <id>0</id>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
+                        <flavorText>¿Valdrá la pena?</flavorText>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>315</x>
+                        <y>-10950</y>
+                        <z>0</z>
+                        <width>200.895980835</width>
+                        <height>336.796203613</height>
+                        <depth>0</depth>
+                        <hotspotX>0.656862736</hotspotX>
+                        <hotspotY>-0.245614037</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ItemGorroDelHechicero" uid="303">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <id>0</id>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
+                        <flavorText>Su gorro...</flavorText>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>372</x>
+                        <y>-10150</y>
+                        <z>0</z>
+                        <width>222.469314575</width>
+                        <height>138.805648804</height>
+                        <depth>0</depth>
+                        <hotspotX>0.91452992</hotspotX>
+                        <hotspotY>-0.678082168</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ItemPelotasDeJuguete" uid="304">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <id>0</id>
+                        <PositionX>0</PositionX>
+                        <PositionY>0</PositionY>
+                        <flavorText>Bote rebote</flavorText>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Persist" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>308</x>
+                        <y>-11750</y>
+                        <z>0</z>
+                        <width>255.598007202</width>
+                        <height>176.62109375</height>
+                        <depth>0</depth>
+                        <hotspotX>0.578651667</hotspotX>
+                        <hotspotY>-0.089430891</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

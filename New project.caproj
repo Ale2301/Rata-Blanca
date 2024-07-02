@@ -2030,6 +2030,39 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="ItemPelotasDeJuguete" sid="435052863362054">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="flavorText" sid="612253598178915" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950101501261371" speed="5">
+                    <frame duration="1" hotspotX="0.578652" hotspotY="-0.0894309" original-source="C:\Users\lucho\Desktop\RB\Items\Runa.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ItemEscudoMistico" sid="386297754146291">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="flavorText" sid="734120404977630" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425945466901383" speed="5">
+                    <frame duration="1" hotspotX="0.656863" hotspotY="-0.245614" original-source="C:\Users\lucho\Desktop\RB\Items\Runa.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ItemGorroDelHechicero" sid="717977754138313">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="flavorText" sid="160556471421358" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="866784014134810" speed="5">
+                    <frame duration="1" hotspotX="0.91453" hotspotY="-0.678082" original-source="C:\Users\lucho\Desktop\RB\Items\Runa.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemies" plugin-id="Sprite" sid="795345320232591">
@@ -2060,10 +2093,13 @@
         <family name="Items" plugin-id="Sprite" sid="336569925668737">
             <members>
                 <member>ItemBateria</member>
+                <member>ItemEscudoMistico</member>
+                <member>ItemGorroDelHechicero</member>
                 <member>ItemLibroMaquiavelico</member>
                 <member>ItemMaestriaRunica</member>
                 <member>itemMejoraRobotica</member>
                 <member>ItemNinfa</member>
+                <member>ItemPelotasDeJuguete</member>
             </members>
             <instance-variables>
                 <instance-variable name="id" sid="314461689074055" type="number" />
@@ -2097,9 +2133,12 @@
                 <member>Enloquecido</member>
                 <member>EntityNinfa</member>
                 <member>ItemBateria</member>
+                <member>ItemEscudoMistico</member>
+                <member>ItemGorroDelHechicero</member>
                 <member>ItemLibroMaquiavelico</member>
                 <member>ItemMaestriaRunica</member>
                 <member>itemMejoraRobotica</member>
+                <member>ItemPelotasDeJuguete</member>
                 <member>Player</member>
                 <member>Vendor</member>
             </members>
