@@ -7822,7 +7822,7 @@
                     <properties>
                         <text>PAUSA ESC para continuar</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Consolas,-96,700,1</font>
+                        <font>Consolas,-91,700,1</font>
                         <color>0,102,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
