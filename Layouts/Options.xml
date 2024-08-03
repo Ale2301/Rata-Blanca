@@ -39,8 +39,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>449.5</x>
-                        <y>451.5</y>
+                        <x>450</x>
+                        <y>450</y>
                         <z>0</z>
                         <width>897</width>
                         <height>903</height>
@@ -55,7 +55,7 @@
                     <properties>
                         <text>Opciones</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
+                        <font>Consolas,-48,700,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -69,7 +69,7 @@
                         <x>334</x>
                         <y>38</y>
                         <z>0</z>
-                        <width>211</width>
+                        <width>219</width>
                         <height>76</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -102,11 +102,11 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="TextVolume" uid="77">
+                <instance type="TextCreds" uid="77">
                     <properties>
                         <text>Volumen</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
+                        <font>Consolas,-48,700,1</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -129,52 +129,70 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ButtonCredits" uid="78">
+                <instance type="ButtonGoToBestiaryFinal" uid="72">
                     <properties>
-                        <type>Button</type>
-                        <text>CREDITOS</text>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>244</x>
-                        <y>510</y>
+                        <x>437</x>
+                        <y>626</y>
                         <z>0</z>
-                        <width>371.346191406</width>
-                        <height>123.782066345</height>
+                        <width>361.359466553</width>
+                        <height>171.170272827</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.578703701</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ButtonBackToInit" uid="79">
+                <instance type="ButtonStartFinal" uid="79">
                     <properties>
-                        <type>Button</type>
-                        <text>Volver al inicio</text>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>252</x>
-                        <y>736</y>
+                        <x>434.169677734</x>
+                        <y>808.747070313</y>
                         <z>0</z>
-                        <width>371.346191406</width>
-                        <height>123.782066345</height>
+                        <width>334</width>
+                        <height>173</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.578703701</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ButtonGoToCreditsFinal" uid="71">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>436</x>
+                        <y>438</y>
+                        <z>0</z>
+                        <width>323.768310547</width>
+                        <height>158.940811157</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.578703701</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
